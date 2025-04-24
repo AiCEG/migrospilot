@@ -1,0 +1,727 @@
+id,name,type,latitude,longitude,city,radius_minutes
+23080,Liestal,mm,47.4825911,7.7359876,Liestal,20
+23160,Basel - Schützenmatt,m,47.5560094,7.5812888,Basel,20
+23170,Basel - Allschwiler,m,47.5559314,7.5734192,Basel,20
+23220,Allschwil - Ziegelei,m,47.5530962,7.5499775,Allschwil,20
+23230,Laufen - Birscenter,mm,47.419968,7.5018211,Laufen,20
+23310,Lehenmatt,m,47.547153,7.620881,Basel,20
+23620,Dornach,m,47.4881024,7.6119786,Dornach,20
+23640,Pratteln,mm,47.5204545,7.6940945,Pratteln,20
+23670,Basel - Neuweiler,m,47.5469569,7.5642044,Basel,20
+23720,Basel - Mülhauser,m,47.5685421,7.5796836,Basel,20
+23740,Binningen - Gorenmatt,mm,47.5324671,7.5729746,Binningen,20
+23790,Bubendorf,mm,47.4568583,7.7432173,Bubendorf,20
+23800,Oberwil,mmm,47.5099303,7.5546791,Oberwil,20
+23810,Muttenz - Lutzert,m,47.5338563,7.6333891,Muttenz,20
+23820,Basel - Märtplatz,m,47.5592591,7.5877372,Basel,20
+23830,Sissach,mm,47.462086,7.816352,Sissach,20
+23840,Basel - Efringer,mm,47.5691589,7.5965886,Basel,20
+23850,Reinach - Zentrum,m,47.4926693,7.5944243,Reinach BL,20
+23870,Basel - Hardstrasse,m,47.549313,7.607221,Basel,20
+23880,Basel - Eglisee,m,47.5701213,7.6152494,Basel,20
+23890,Basel - Juniors Market,m,47.55872,7.6016293,Basel,20
+23900,Basel - Bahnhof SBB,m,47.5479172,7.5886351,Basel,20
+23910,Basel - Stücki,m,47.579952,7.5957171,Basel,20
+24240,Basel - Claramarkt,mmm,47.5615832,7.5920619,Basel,20
+24270,Porrentruy,mm,47.4164582,7.0771359,Porrentruy,20
+24280,Basel - Drachen-Center,mm,47.5528056,7.5928077,Basel,20
+24320,Delémont,mm,47.3635367,7.34649,Delémont,20
+24360,Riehen - Dorf,mm,47.5852499,7.6519616,Riehen,20
+24380,Muttenz - Rothausstrasse,mm,47.5263912,7.6556813,Muttenz,20
+24400,Moutier,mm,47.2766867,7.3698395,Moutier,20
+24420,Reinach - Mischeli,mm,47.5022541,7.5964432,Reinach BL,20
+24440,Birsfelden,mm,47.5554924,7.6242615,Birsfelden,20
+24460,Gelterkinden,mm,47.4660758,7.8506659,Gelterkinden,20
+24480,Füllinsdorf - Schönthal,mm,47.502619,7.7251059,Füllinsdorf,20
+24500,Breitenbach - Wydehof,mm,47.4083107,7.542466,Breitenbach,20
+24520,Basel - Gundelitor,mm,47.543266,7.5919952,Basel,20
+24540,Binningen - Zentrum,m,47.5412885,7.5742852,Binningen,20
+24560,Basel - Burgfelder,mm,47.5622371,7.5724253,Basel,20
+24580,Münchenstein - Gartenstadt,mm,47.5215941,7.6069894,Münchenstein,20
+24600,Aesch,mm,47.4694175,7.5960676,Aesch,20
+24610,Ettingen,mm,47.4844491,7.5468089,Ettingen,20
+24630,Arlesheim,mm,47.494261,7.6185546,Arlesheim,20
+24720,Allschwil - Paradies,mmm,47.547382,7.5536404,Allschwil,20
+33091,Gümligen,m,46.93282,7.5042952,Gümligen,20
+33115,Bern - Christoffel,m,46.9475739,7.4401581,Bern,20
+33121,Bern - Lorraine,m,46.9559292,7.4465984,Bern,20
+33123,Erlinsbach,m,47.4053477,8.0084956,Erlinsbach AG,20
+33140,Bern - Egghölzli,m,46.9368899,7.475067,Bern,20
+33163,Möhlin,m,47.5563791,7.8469474,Möhlin,20
+33200,Zollikofen,m,46.9933993,7.4570099,Zollikofen,20
+33220,Bern - Kirchenfeld,m,46.9421839,7.4531633,Bern,20
+33233,Lostorf,m,47.3831117,7.9478151,Lostorf,20
+33260,Schwarzenburg,m,46.8177012,7.339902,Schwarzenburg,20
+33270,Ipsach,m,47.1156818,7.2353249,Ipsach,20
+33280,Hünibach,m,46.7451794,7.6454474,Hünibach,20
+33290,Biel - Bözingen,m,47.1518033,7.2671886,Biel/Bienne,20
+33330,Uetendorf,m,46.7739279,7.5741096,Uetendorf,20
+33350,Utzenstorf,m,47.1284908,7.5585845,Utzenstorf,20
+33360,Hasle Rüegsau,m,47.0134658,7.6595141,Hasle-Rüegsau,20
+33370,Frutigen,m,46.5856019,7.6483603,Frutigen,20
+33380,Mellingen,m,47.4130888,8.2668681,Mellingen,20
+33383,Rothrist,m,47.3066918,7.8866601,Rothrist,20
+33390,Bern Burgernziel,m,46.941223,7.464587,Bern,20
+33393,Gebenstorf,m,47.4900828,8.2443692,Gebenstorf,20
+33613,Villmergen,m,47.34739,8.244348,Villmergen,20
+33623,Biberist,m,47.1831041,7.5617677,Biberist,20
+33630,Bern - Breitenrain,m,46.9580156,7.4532328,Bern,20
+33640,Bern - Eigerplatz,m,46.939953,7.432047,Bern,20
+33643,Gerlafingen,m,47.1710372,7.5740858,Gerlafingen,20
+33653,Unterentfelden,mm,47.3619645,8.0456204,Unterentfelden,20
+33663,Neuenhof,m,47.4501589,8.3275251,Neuenhof,20
+33670,Biel Stadion,m,47.1559201,7.2822405,Biel,20
+33673,Stein,m,47.5492231,7.9544805,Stein AG,20
+33680,Thun - Dürrenast,m,46.7450418,7.6261582,Thun,20
+33684,Suhr Suhrepark,m,47.3732376,8.0816706,Suhr,20
+33703,Windisch,m,47.474655,8.212573,Windisch,20
+33713,Untersiggenthal,m,47.499219,8.258718,Untersiggenthal,20
+33720,Ostermundigen Poststrasse,m,46.95615,7.4827247,Ostermundigen 1,20
+33723,Balsthal,m,47.3168586,7.6955408,Balsthal,20
+33730,Münchenbuchsee,m,47.0199113,7.4511193,Münchenbuchsee,20
+33733,Nussbaumen - Markthof,m,47.488235,8.292417,Nussbaumen b.Baden,20
+33743,Döttingen,m,47.574184,8.255778,Döttingen,20
+33750,Bremgarten Kalchacker,m,46.9753771,7.4375202,Bremgarten b. Bern,20
+33753,Frick,m,47.5080226,8.0188978,Frick,20
+33770,Kirchberg,mm,47.088436,7.5816193,Kirchberg BE,20
+33773,Derendingen,m,47.1974163,7.5836013,Derendingen,20
+33780,Brienz,m,46.755197,8.0282209,Brienz BE,20
+33783,Schönenwerd,m,47.3735275,8.0031216,Schönenwerd,20
+33790,Matten,m,46.6734205,7.8681811,Wilderswil,20
+33793,Wildegg,m,47.4164275,8.1663545,Wildegg,20
+33810,Bern - Welle 7,m,46.9480604,7.4369117,Bern,20
+33813,Lupfig,m,47.4401518,8.2085453,Lupfig,20
+33820,Bern Westflügel,m,46.9467745,7.3953525,Bern,20
+33823,Aarau Bahnhof,m,47.3919221,8.0528306,Aarau,20
+33833,Solothurn Öufi,m,47.2113187,7.5261313,Solothurn,20
+33843,Fislisbach,m,47.4363454,8.2908926,Fislisbach,20
+33853,Solothurn Baselstrasse,m,47.2112133,7.5446377,Solothurn,20
+33863,Zuchwil,m,47.2033261,7.5600061,Zuchwil,20
+33873,Murgenthal,m,47.2649304,7.8289909,Murgenthal,20
+33883,Schöftland,m,47.3027032,8.0474765,Schöftland,20
+33893,Berikon - Mutschellen,m,47.3631663,8.3664932,Berikon,20
+33903,Fahrwangen,m,47.2942089,8.2432889,Fahrwangen,20
+33913,Seon,m,47.3477982,8.1612469,Seon,20
+33920,Heimberg,m,46.782963,7.609361,Heimberg,20
+33923,Oensingen,m,47.2889751,7.718937,Oensingen,20
+33934,Muri AG,mm,47.2720346,8.3419017,Muri AG,20
+33953,Gränichen,m,47.3598479,8.0979932,Gränichen,20
+33963,Menziken,m,47.2416,8.1865863,Menziken,20
+34180,Steffisburg Unterdorf,mm,46.77754,7.634178,Steffisburg,20
+34190,Konolfingen,mm,46.8764297,7.6211259,Konolfingen,20
+34200,Burgdorf - Neumarkt,mm,47.0592476,7.6208431,Burgdorf,20
+34210,Bern - Bethlehem,mm,46.9475326,7.3832855,Bern,20
+34213,Aarau - Igelweid,mm,47.3917082,8.0460946,Aarau,20
+34220,Bern - Freudenberg,mm,46.9454091,7.4727611,Bern,20
+34230,Bern - Winkelried,mm,46.9657983,7.4635232,Bern,20
+34233,Baden - City,mm,47.4771453,8.3086998,Baden,20
+34240,Köniz - Bläuacker,mm,46.9235082,7.414453,Köniz,20
+34243,Lenzburg,mm,47.3870206,8.1768398,Lenzburg,20
+34250,Thun - Bälliz,mm,46.7601164,7.6266358,Thun,20
+34253,Oftringen,mm,47.3125554,7.9213265,Oftringen,20
+34260,Biel - Neumarkt,mm,47.140721,7.2475398,Biel/Bienne,20
+34263,Bremgarten AG,mm,47.3526495,8.3497522,Bremgarten AG,20
+34270,Münsingen,mm,46.8731986,7.5601405,Münsingen,20
+34280,Spiez - Terminus,mm,46.6857824,7.6817159,Spiez,20
+34290,Herzogenbuchsee,mm,47.18653,7.7037935,Herzogenbuchsee,20
+34293,Rheinfelden,mm,47.555335,7.7982876,Rheinfelden,20
+34300,Interlaken,mm,46.6815587,7.8521379,Interlaken,20
+34310,Langenthal,mm,47.2143024,7.7841656,Langenthal,20
+34320,Bern - Westside,mm,46.9455311,7.3743954,Bern,20
+34323,Wettingen - Landstrasse,mm,47.467274,8.324826,Wettingen,20
+34330,Nidau,mm,47.1263507,7.2463285,Nidau,20
+34333,Wohlen,mm,47.3493209,8.2724163,Wohlen AG,20
+34340,Worb,mm,46.9266974,7.5649883,Worb,20
+34350,Wabern - Chly Wabere,mm,46.922607,7.4597626,Wabern,20
+34360,Bern - Zähringer,mm,46.955387,7.433226,Bern,20
+34363,Zofingen,mm,47.2914999,7.9421429,Zofingen,20
+34373,Solothurn,m,47.2068855,7.533167,Solothurn,20
+34380,Hinterkappelen - Chappelemärit,mm,46.96677,7.3766563,Hinterkappelen,20
+34383,Olten - Hammer,mm,47.3499928,7.8987827,Olten,20
+34390,Biel - Madretsch,mm,47.1320095,7.2523976,Biel/Bienne,20
+34393,Bad Zurzach,mm,47.5857967,8.2959683,Bad Zurzach,20
+34400,Huttwil,mm,47.1137122,7.8401887,Huttwil,20
+34403,Olten - Sälipark,mm,47.3463482,7.9104394,Olten,20
+34411,Zweisimmen,m,46.5553701,7.3728404,Zweisimmen,20
+34413,Egerkingen - Gäupark,mm,47.3175094,7.8020478,Egerkingen,20
+34420,Lyss Lyssbachpark,mm,47.078457,7.304151,Lyss,20
+34430,Ostermundigen,mm,46.956966,7.495635,Ostermundigen,20
+34440,Bern - Bubenberg,mm,46.9474381,7.4379673,Bern,20
+34450,Bern - Bachmätteli,mm,46.9392241,7.3900576,Bern,20
+34460,Langnau i.E.,mm,46.9398058,7.787702,Langnau i. E.,20
+34463,Reinach AG,mm,47.2578265,8.1816799,Reinach AG,20
+34470,Meiringen,mm,46.7282562,8.1847964,Meiringen,20
+34480,Biel - Bielerhof,mm,47.1350714,7.2443054,Biel/Bienne,20
+34490,Gstaad,mm,46.4782457,7.2825683,Gstaad,20
+34510,Ittigen,mm,46.9742162,7.4852772,Ittigen,20
+34520,Hilterfingen,m,46.7353444,7.6586756,Hilterfingen,20
+34530,Bern - Bahnhof,mm,46.949378,7.4401642,Bern,20
+34540,Belp,mm,46.8964728,7.4926529,Belp,20
+34700,Schönbühl - Shoppyland,mmm,47.0169335,7.4923677,Schönbühl,20
+34710,Bern - Marktgasse,mmm,46.9482654,7.4448371,Bern,20
+34720,Thun - Oberland,mmm,46.7447598,7.614778,Thun,20
+34730,Brügg - Centre Brügg,mmm,47.119664,7.267001,Brügg b. Biel,20
+34803,Grenchen,mm,47.1897743,7.3992644,Grenchen,20
+34813,Langendorf - Ladedorf,mmm,47.2184063,7.5113259,Langendorf,20
+34823,Buchs AG - Wynecenter,mmm,47.3846372,8.0889759,Buchs AG,20
+34833,Spreitenbach - Tivoli,mmm,47.4233238,8.3700585,Spreitenbach,20
+34843,Brugg - Neumarkt,mmm,47.481945,8.209613,Brugg AG,20
+37302,VOI Strengelbach,voi,47.2784744,7.9286,Strengelbach,20
+37303,VOI Bern - Fellergut,voi,46.9453512,7.3902179,Bern,20
+37304,VOI Trimbach,voi,47.3623369,7.8988859,Trimbach,20
+37306,VOI Bern - Fischermätteli,voi,46.9413645,7.4185558,Bern,20
+37307,VOI Brügg,voi,47.1239464,7.2804096,Brügg BE,20
+37308,VOI Grindelwald,voi,46.6236074,8.0391045,Grindelwald,20
+37309,VOI Rombach,voi,47.401845,8.0448105,Rombach,20
+37311,VOI Bern - Schosshalde,voi,46.9453775,7.4629318,Bern,20
+37312,VOI Seengen,voi,47.3249241,8.2036078,Seengen,20
+37313,VOI Wabern,voi,46.9286391,7.4523149,Wabern,20
+37314,VOI Bettlach,voi,47.1993568,7.426077,Bettlach,20
+37315,VOI Wangen a. Aare,voi,47.23393,7.6554199,Wangen an der Aare,20
+37316,VOI Niederbipp,voi,47.2698326,7.6926322,Niederbipp,20
+37317,VOI Niedergösgen,voi,47.3717743,7.9936894,Niedergösgen,20
+37318,VOI Sumiswald,voi,47.0288821,7.7463868,Sumiswald,20
+37319,VOI Biel - Mett,voi,47.1426268,7.2721353,Biel/Bienne,20
+37321,VOI Dulliken,voi,47.354143,7.9345418,Dulliken,20
+37322,VOI Aarwangen,voi,47.2362174,7.7718237,Aarwangen,20
+37323,VOI Jegenstorf,voi,47.051416,7.5103611,Jegenstorf,20
+37324,VOI Ins,voi,47.0042581,7.1070561,Ins,20
+37325,VOI Bern - Spiegel,voi,46.9264088,7.433499,Bern,20
+37326,VOI Unterkulm,voi,47.310751,8.1136799,Unterkulm,20
+37328,VOI Lengnau,voi,47.1808069,7.3631011,Lengnau BE,20
+37329,VOI Roggwil,voi,47.2393252,7.8218895,Roggwil,20
+37331,VOI Studen,voi,47.1142052,7.3011494,Studen,20
+37332,VOI Wilderswil,voi,46.6660645,7.8690846,Wilderswil,20
+37333,VOI Wichtrach,voi,46.850993,7.5753497,Wichtrach,20
+37334,VOI Bern - Viktoriastrasse,voi,46.9536364,7.4545541,Bern,20
+37335,VOI Baden - Mellingerstrasse,voi,47.4673446,8.2932847,Baden,20
+37336,VOI Niederlenz,voi,47.3990619,8.1777989,Niederlenz,20
+37337,VOI Steffisburg,voi,46.773617,7.6161447,Steffisburg,20
+37338,VOI Aarburg,voi,47.320554,7.9071351,Aarburg,20
+37339,VOI Boll,voi,46.9546925,7.5479454,Boll,20
+37341,VOI Safenwil,voi,47.321305,7.9851441,Safenwil,20
+37342,VOI Zollbrück,voi,46.973156,7.7477865,Zollbrück,20
+37343,VOI Bern - Kramgasse,voi,46.9481109,7.4497459,Bern,20
+37344,VOI Kappel,voi,47.3236429,7.8468992,Kappel SO,20
+37345,VOI Biel - Jardin du Paradis,voi,47.1454026,7.2632867,Biel/Bienne,20
+37346,VOI Niederrohrdorf,voi,47.4250876,8.30086,Niederrohrdorf,20
+37347,VOI Schafisheim,voi,47.375744,8.143915,Schafisheim,20
+37348,VOI Thun Bahnhof,voi,46.75493,7.6308928,Thun,20
+37351,VOI Bern Warmbächli,voi,46.94683,7.415601,Bern,20
+37353,VOI Dottikon,voi,47.382822,8.242143,Dottikon,20
+37355,VOI Köniz-Neuhausplatz,voi,46.928673,7.416791,Liebefeld,20
+37356,VOI Lenzburg,voi,47.38932,8.17072,Lenzburg,20
+37358,VOI Egerkingen,voi,47.321882,7.794294,Egerkingen,20
+37361,VOI Stettlen,voi,46.958812,7.523631,Stettlen,20
+37362,VOI Aarau-Buchserstrasse,voi,47.390267,8.063823,Aarau,20
+44010,Carouge - Acacias,m,46.1914249,6.1376403,Carouge GE,20
+44020,Chêne-Vert,mm,46.195988,6.1962886,Chêne-Bourg,20
+44030,Genève - Balexert,mmm,46.2187665,6.1131166,Genève 28,20
+44060,Genève - Cointrin Aéroport,m,46.2312856,6.1102265,Genève 15 Aéroport,20
+44090,Carouge,m,46.1834886,6.1407522,Carouge GE,20
+44110,Genève - Champel,mm,46.1909267,6.1524674,Genève,20
+44140,Genève - Charmilles,mm,46.2082241,6.1231482,Genève,20
+44180,Genève - Cornavin Gare,m,46.210102,6.142462,Genève,20
+44230,Genève - Plainpalais,mm,46.1931467,6.1435018,Genève,20
+44250,Genève - Eaux-Vives,mm,46.2039608,6.1585088,Genève,20
+44290,Genève - Fusterie M-Express,m,46.2039287,6.1461998,Genève,20
+44300,Gland,m,46.4170516,6.2756695,Gland,20
+44340,Gd Saconnex - Le Pommier,m,46.228951,6.1198025,Le Grand-Saconnex,20
+44350,Genève - Jonction,mm,46.2007896,6.1306224,Genève,20
+44360,Gradelle,m,46.2054501,6.1812063,Chêne-Bougeries,20
+44370,Le Lignon,m,46.2034469,6.0963765,Le Lignon,20
+44410,Meyrin,mm,46.2319199,6.0826195,Meyrin,20
+44430,Genève - Navigation,mm,46.212579,6.14974,Genève,20
+44450,Genève - Les Cygnes,mm,46.2113723,6.1449087,Genève,20
+44470,Nyon - La Combe,mmm,46.3827028,6.2348109,Nyon,20
+44530,Lancy-Onex,mm,46.1885214,6.1100997,Petit-Lancy,20
+44550,Grand-Lancy - Palettes,mm,46.1749719,6.1223706,Grand-Lancy,20
+44590,Plan-les-Ouates,mm,46.1674266,6.1148529,Plan-les-Ouates,20
+44600,Pont-Rouge,m,46.1872348,6.1274789,Grand-Lancy,20
+44730,Genève - Rieu,mm,46.1919217,6.1639476,Genève,20
+44810,Servette,mm,46.2134099,6.1296584,Genève,20
+44830,Thônex,mm,46.1930274,6.1996185,Thônex,20
+44840,Genève - Tourelle,m,46.2243865,6.1258169,Genève,20
+44860,Vernier - Arcenter,m,46.2167048,6.0833327,Vernier,20
+44880,Collonge-Bellerive - Vésenaz,mm,46.240334,6.1985909,Collonge-Bellerive,20
+44890,Genève - Vidollet,m,46.2162367,6.1391683,Genève,20
+44900,Genève - Villereuse,mm,46.2007706,6.1588299,Genève,20
+44920,Porte de Versoix,mm,46.2744374,6.1674765,Versoix,20
+44950,Carouge - Vibert,mm,46.1824507,6.1344054,Carouge GE,20
+49000,Thoiry (F),mmm,46.2286354,5.9941326,Thoiry,20
+49010,Etrembières (F),mmm,46.1810413,6.2322629,Etrembières,20
+49030,Neydens (F),m,46.123435,6.0976331,Neydens,20
+49100,VOI Genève-Cirque,voi,46.2010565,6.1397642,Genève,20
+49101,VOI Meyrin - Les Vergers,voi,46.2309568,6.0668592,Meyrin,20
+49102,VOI Gland,voi,46.4232158,6.2617789,Gland,20
+49103,VOI Bellevue,voi,46.250263,6.146959,Bellevue,20
+63620,Echallens,mm,46.639032,6.635783,Echallens,20
+63625,Renens Quai Ouest,m,46.53747,6.577771,Renens VD,20
+63630,Estavayer-le-Lac,mm,46.847963,6.8513418,Estavayer-le-Lac,20
+63635,Vevey Des 2 Gares,mm,46.46498,6.842394,Vevey,20
+63640,Bex,m,46.25036,7.015925,Bex,20
+63645,Noville,m,46.388385,6.920954,Noville,20
+63655,Préverenges,m,46.518125,6.517526,Préverenges,20
+63660,Lausanne - Cour,m,46.51559,6.617706,Lausanne,20
+63665,Aigle gare,m,46.316276,6.964818,Aigle,20
+63675,Chavannes les Cèdres,m,46.529935,6.572694,Chavannes-près-Renens,20
+63680,Cossonay,m,46.613976,6.506806,Cossonay-Ville,20
+63690,Ecublens - Croset,mm,46.534255,6.564657,Ecublens,20
+63695,Blécherette,m,46.539434,6.618219,Lausanne,20
+63710,Lausanne - La Harpe,m,46.512339,6.625935,Lausanne,20
+63720,Cugy,m,46.585431,6.640202,Cugy VD,20
+63730,Blonay,m,46.465325,6.89541,Blonay,20
+63740,Vallorbe,m,46.711924,6.377775,Vallorbe,20
+63750,Yverdon Sud,m,46.767975,6.650346,Yverdon-les-Bains,20
+63770,Lausanne - Sévelin,m,46.5216627,6.6166202,Lausanne,20
+63810,Oron-la-Ville,m,46.571906,6.825843,Oron-la-Ville,20
+63820,Prilly,m,46.533247,6.607706,Prilly,20
+63825,Orbe Gruvatiez,m,46.721355,6.537643,Orbe,20
+63835,Lutry – La Conversion,m,46.513393,6.676909,La Conversion,20
+63840,Sainte-Croix,m,46.819684,6.502962,Ste-Croix,20
+63850,La Vallée,m,46.605846,6.230565,Le Sentier,20
+63865,Lausanne - La Borde,m,46.526959,6.633064,Lausanne,20
+63870,Prilly - Malley,m,46.527394,6.602872,Prilly,20
+63880,Lausanne - Bellevaux,m,46.537606,6.63363,Lausanne,20
+63895,Lausanne - Flon Europe,m,46.5206694,6.6296469,Lausanne,20
+63900,Etoy,m,46.473931,6.425846,Etoy,20
+63910,Ecublens - EPFL,m,46.523029,6.565145,Ecublens VD,20
+63930,Orbe,m,46.723956,6.531316,Orbe,20
+63940,Epalinges,mm,46.548465,6.670864,Epalinges,20
+63950,La Tour-de-Peilz,m,46.452697,6.858005,La Tour-de-Peilz,20
+63970,Lausanne - Saint-Paul,m,46.527802,6.616047,Lausanne,20
+63991,Clarens - Centre,m,46.440759,6.893382,Clarens,20
+64270,Montagny,mm,46.792458,6.621591,Montagny-près-Yverdon,20
+64280,Renens - Florissant,m,46.530832,6.598313,Renens VD,20
+64290,Morges,mm,46.509725,6.494764,Morges,20
+64320,Chavannes - Renens,m,46.536398,6.57637,Chavannes-Renens,20
+64325,Renens Silo,m,46.533162,6.58586,Renens,20
+64330,Bussigny,mm,46.54754,6.553088,Bussigny-Lausanne,20
+64340,Lausanne - La Sallaz,m,46.533347,6.646768,Lausanne,20
+64350,Moudon,mm,46.668716,6.7971907,Moudon,20
+64360,Payerne,mm,46.820247,6.939556,Payerne,20
+64380,Rolle,mm,46.460997,6.338111,Rolle,20
+64410,Montreux,mm,46.431698,6.909716,Montreux,20
+64420,Vevey - Midi Coindet,mm,46.463506,6.840133,Vevey,20
+64520,Lausanne - Chailly,mm,46.527309,6.651514,Lausanne,20
+64570,Lausanne - Bergières,mm,46.531451,6.618467,Lausanne,20
+64580,Lausanne - Closelet,mm,46.514869,6.632713,Lausanne,20
+64590,Renens - Métropole,mm,46.538544,6.580878,Renens VD,20
+64600,Pully,mm,46.511668,6.659662,Pully,20
+64950,Yverdon - Métropole,mmm,46.781175,6.63551,Yverdon-les-Bains,20
+64970,Lausanne - Métropole,mmm,46.522757,6.626973,Lausanne,20
+65000,Crissier,mmm,46.554124,6.569005,Crissier,20
+65010,Romanel-sur-Lausanne,mmm,46.55972,6.6113696,Romanel-s-Lausanne,20
+65100,Aigle - Chablais Centre,mmm,46.316331,6.939938,Aigle,20
+73120,Zug Herti,m,47.1780404,8.505821,Zug,20
+73140,Luzern - Schlossberg,m,47.0611806,8.3078217,Luzern,20
+73150,Luzern - Bahnhof Daily,m,47.0497659,8.3097035,Luzern,20
+73170,Weinbergli Luzern,m,47.042706,8.3160305,Luzern,20
+73180,Erstfeld,m,46.8251526,8.6500662,Erstfeld,20
+73190,Zug - Grabenstrasse,m,47.1652634,8.5151671,Zug,20
+73200,Buchrain - Tschannhof,m,47.0954005,8.3488964,Buchrain,20
+73210,Reiden,m,47.2484269,7.9715113,Reiden,20
+73220,Buochs,m,46.9777789,8.4159724,Buochs,20
+73230,Luzern - Bahnhof,m,47.0501738,8.3103365,Luzern,20
+73270,Luzern - Würzenbachstrasse,m,47.0550833,8.3437092,Luzern,20
+73280,Oberkirch,m,47.1651653,8.1137803,Oberkirch LU,20
+73290,Root,m,47.116936,8.391274,Root,20
+73300,Wylpark Hergiswil,m,46.98708,8.312451,Hergiswil NW,20
+73330,Bertiswil Rothenburg LU,m,47.101345,8.263377,Rothenburg,20
+73340,Adligenswil LU,m,47.071438,8.362019,Adligenswil,20
+73350,Grienbachstrasse Zug,m,47.183948,8.522788,Zug,20
+73670,Luzern - Brüelstrasse,m,47.0544761,8.3402123,Luzern,20
+73680,Emmen - Kapf,m,47.0898808,8.2738074,Emmenbrücke,20
+73690,Luzern - Waldstätter,m,47.0462259,8.3071716,Luzern,20
+73710,Ruopigen Zentrum Luzern,m,47.0622438,8.2740577,Luzern,20
+73720,Küssnacht - Rigimärt,mm,47.0836743,8.4412034,Küssnacht am Rigi,20
+73740,Cham - Neudorf,m,47.1820876,8.4615121,Cham,20
+73750,Brunnen - Bahnhofsmärcht,m,46.99991,8.608986,Brunnen,20
+73760,Unterägeri,m,47.1380428,8.579203,Unterägeri,20
+73770,Luzern - Bruchstrasse,m,47.050865,8.299126,Luzern,20
+73780,Willisau - Chrüzhof,m,47.122768,7.9941804,Willisau,20
+73790,Goldau,m,47.05089,8.551124,Goldau,20
+73800,Horw,m,47.0189983,8.309017,Horw,20
+73810,Zell,m,47.1371898,7.9282486,Zell LU,20
+73820,Rotkreuz,m,47.1411731,8.4287677,Rotkreuz,20
+73830,Schüpfheim,m,46.9482657,8.0165859,Schüpfheim,20
+73840,Luzern - Allmend,m,47.031586,8.304944,Luzern,20
+73850,Baar,m,47.195539,8.5250447,Baar,20
+73860,Ruswil,m,47.0884106,8.1127902,Ruswil,20
+73870,Egolzwil - Schötz,m,47.183407,7.9813676,Egolzwil,20
+73880,Hitzkirch,m,47.2222081,8.2518859,Hitzkirch,20
+73890,Engelberg,m,46.8207122,8.4057173,Engelberg,20
+73910,Sempach Station,m,47.1169163,8.1993284,Sempach Station,20
+73920,Rain,m,47.1269865,8.2496975,Rain,20
+73930,Luzern - Grossmatte,m,47.0494761,8.2633687,Luzern,20
+73940,Hünenberg Dorf,m,47.17504,8.427463,Hünenberg,20
+73950,Malters,m,47.0378576,8.1793523,Malters,20
+73960,Dagmersellen,m,47.212984,7.988328,Dagmersellen,20
+73970,Steinhausen Dorf,m,47.1970572,8.4846747,Steinhausen,20
+73980,Kriens - Mattenhof,m,47.0267443,8.30067,Kriens,20
+73990,Altdorf,m,46.8796664,8.6416105,Altdorf,20
+74260,Luzern - Schönbühl,mm,47.0372897,8.3283997,Luzern,20
+74290,Sarnen - Sarnen-Center,mm,46.8967489,8.2494742,Sarnen,20
+74300,Ebikon - Ladengasse,mm,47.0811001,8.3408568,Ebikon,20
+74310,Bürglen/Altdorf - Urnertor,mm,46.8727476,8.6515004,Altdorf UR,20
+74320,Wolhusen - Dorfmärt,mm,47.0560514,8.0705934,Wolhusen,20
+74330,Zug - Metalli,mm,47.1732476,8.5170158,Zug,20
+74340,Hochdorf - Seetal-Center,mm,47.1660917,8.2913828,Hochdorf,20
+74350,Emmenbrücke - Sonnenplatz,mm,47.0779516,8.2752688,Emmenbrücke,20
+74360,Kriens - Hofmatt,mm,47.0337928,8.2829724,Kriens,20
+74370,Ibach-Schwyz - Mythen-Center,mmm,47.0155468,8.64652,Ibach,20
+74380,Luzern - Schweizerhof,mm,47.054745,8.3096768,Luzern,20
+74390,Emmen - Wohncenter,mm,47.0737906,8.2930347,Emmenbrücke,20
+74400,Ebikon - Mall of Switzerland,mmm,47.0939482,8.3588978,Ebikon,20
+74700,Surseepark,mmm,47.1728531,8.1021962,Sursee,20
+74710,Steinhausen - Zugerland,mmm,47.1920625,8.4777745,Steinhausen,20
+74720,Stans - Länderpark,mmm,46.9646845,8.3556565,Stans,20
+77350,VOI Beromünster,voi,47.209729,8.1917754,Beromünster,20
+77351,VOI Sempach Stadt,voi,47.1362307,8.1920443,Sempach Stadt,20
+77354,VOI Büron,voi,47.2136699,8.0944046,Büron,20
+77355,VOI Luzern Wesemlin,voi,47.060284,8.314992,Luzern,20
+77356,VOI Stans,voi,46.9565347,8.366329,Stans,20
+77357,VOI Alpnach,voi,46.9398339,8.2709654,Alpnach Dorf,20
+83610,Tramelan,m,47.2234176,7.0997558,Tramelan,20
+83630,Courtepin,m,46.8656187,7.1201102,Courtepin,20
+83640,Schoenberg,m,46.8097786,7.1723464,Fribourg,20
+83650,Marly,mm,46.7761541,7.1612389,Marly,20
+83670,Beauregard,m,46.8006068,7.1444374,Fribourg,20
+83690,St-Imier,m,47.1515265,6.9952813,St-Imier,20
+83700,Fleurier,mm,46.9020353,6.5805278,Fleurier,20
+83730,Cernier,mm,47.0580103,6.9017185,Cernier,20
+83740,Tavannes,m,47.21932,7.1978861,Tavannes,20
+83750,La Neuveville,m,47.0618892,7.0886002,La Neuveville,20
+83760,Grande Béroche,m,46.8996814,6.7838713,Chez-Le-Bart,20
+83770,Colombier,m,46.9672459,6.8517986,Colombier,20
+83780,Cormanon,m,46.7937778,7.1335773,Villars-sur-Glâne,20
+83790,Saignelégier,m,47.254553,6.9998167,Saignelégier,20
+83800,Kerzers,m,46.9737039,7.1939798,Kerzers,20
+83810,Avenches,m,46.8854592,7.0451655,Avenches,20
+83820,Boudry,m,46.9505063,6.8405634,Boudry,20
+83830,Ste-Thérèse,mm,46.8101267,7.1490104,Fribourg,20
+83840,La Roche,m,46.6980151,7.1419287,La Roche,20
+83850,Belfaux,m,46.8259234,7.1131443,Belfaux,20
+83860,Granges - Paccot,m,46.8289721,7.1489877,Granges-Paccot,20
+83871,Gare de Bulle,m,46.61881,7.0545635,Bulle,20
+83880,Le Landeron,m,47.0563834,7.0607499,Le Landeron,20
+83890,Cortaillod,m,46.9442979,6.8429599,Cortaillod,20
+83920,Plaffeien,m,46.7397917,7.2910651,Plaffeien,20
+83930,Les Cadolles,m,46.998427,6.924552,Neuchâtel,20
+83940,Domdidier,m,46.8653776,7.0092891,Domdidier,20
+83950,Charrière,m,47.112343,6.8354115,La Chaux-de-Fonds,20
+83960,Neyruz,m,46.7671371,7.0655105,Neyruz,20
+83970,La Tour-de-Trême Tivoli,m,46.6106241,7.0633925,La Tour-de-Trême,20
+83980,Gare Fribourg,m,46.8033304,7.1500941,Fribourg,20
+84210,Hôpital,mm,46.991987,6.929815,Neuchâtel,20
+84220,Portes-Rouges,m,47.0040433,6.9553682,Neuchâtel,20
+84230,Métropole Centre,mmm,47.1000474,6.8273056,La Chaux-de-Fonds,20
+84240,Marché FR,m,46.8034025,7.1543652,Fribourg,20
+84250,Morat,mm,46.9300318,7.1227072,Morat,20
+84260,Peseux,mm,46.9859094,6.8895441,Peseux,20
+84270,Gruyère-Centre,mmm,46.6232086,7.0574539,Bulle,20
+84280,Le Locle,mm,47.0561079,6.7477529,Le Locle,20
+84292,Romont,mm,46.6926707,6.9126508,Romont,20
+84300,Pérolles Centre,mm,46.7997003,7.152315,Fribourg,20
+84310,Les Eplatures,mm,47.0900296,6.8030468,La Chaux-de-Fonds,20
+84320,Düdingen,mm,46.8469871,7.19207,Düdingen,20
+84330,Châtel-St-Denis,mm,46.5237831,6.9048889,Châtel-St-Denis,20
+84340,Centre la Tour,mm,46.6004826,7.0758334,La Tour-de-Trême,20
+84350,Flamatt,m,46.8896931,7.3191353,Flamatt,20
+84360,Agy,mm,46.8209959,7.1539379,Granges-Paccot,20
+84710,Avry Centre,mmm,46.7876479,7.0781119,Avry-sur-Matran,20
+84721,Marin Centre,mmm,47.0116002,7.0079209,Marin-Epagnier,20
+90311,Arnegg,m,47.442257,9.2531395,Arnegg,20
+90312,Schaan,m,47.1692926,9.5037209,Schaan,20
+90313,Gossau - Stadtbühlpark,m,47.4119695,9.2504373,Gossau SG,20
+90314,Degersheim,m,47.3724798,9.1965728,Degersheim,20
+90317,Heiden,m,47.4389521,9.5361583,Heiden,20
+90318,Herisau - Alpsteinstrasse,m,47.3787332,9.2788104,Herisau,20
+90320,Aachtal,m,47.5482982,9.2732473,Amriswil,20
+90321,St. Gallen - Lachen,m,47.4204665,9.3536906,St.Gallen,20
+90323,Au SG,m,47.431293,9.6377624,Au SG,20
+90324,Rorschach - Promenade,m,47.4740862,9.4950791,Rorschach,20
+90325,Flums,m,47.098083,9.353505,Flums,20
+90326,Rheineck,m,47.4684353,9.5886584,Rheineck,20
+90327,Diepoldsau,m,47.3857976,9.6562685,Diepoldsau,20
+90328,Thal,m,47.4795373,9.5771551,Thal,20
+90331,Oberriet,m,47.3158345,9.5634422,Oberriet,20
+90333,Davos-Dorf,m,46.8073239,9.8382834,Davos Dorf,20
+90334,Chur - Ringstrasse,m,46.8577894,9.5207396,Chur,20
+90335,St. Gallen - Langgasse,m,47.4352582,9.3862519,St. Gallen,20
+90336,St. Gallen - Neudorf,m,47.4372078,9.4050204,St. Gallen,20
+90337,Walenstadt,m,47.1219487,9.3135977,Walenstadt,20
+90339,St. Gallen - Spisermarkt,m,47.4252078,9.3782359,St.Gallen,20
+90341,Triesen,m,47.108894,9.525209,Triesen,20
+90349,Kreuzlingen,m,47.6481842,9.1756501,Kreuzlingen,20
+90351,Müllheim,m,47.6001921,9.0003577,Müllheim,20
+90352,Horn,m,47.49744,9.453102,Horn,20
+90361,Tägerwilen,m,47.6538552,9.1419927,Tägerwilen,20
+90363,Bischofszell,m,47.4925953,9.2441346,Bischofszell,20
+90364,St. Gallen - Bruggen,m,47.4100595,9.3354232,St.Gallen,20
+90368,Ebnat-Kappel,m,47.2664736,9.1197808,Ebnat-Kappel,20
+90373,Bütschwil,m,47.3631624,9.0730977,Bütschwil,20
+90375,Goldach,m,47.474811,9.4677839,Goldach,20
+90376,Münchwilen,m,47.4777001,8.9982661,Münchwilen,20
+90377,Sirnach,m,47.4634678,8.9916638,Sirnach,20
+90378,Kirchberg-Stelz,m,47.4388794,9.0568321,Kirchberg,20
+90380,Bazenheid,m,47.4126848,9.0682158,Bazenheid,20
+90381,Domat-Ems,m,46.8372082,9.4653889,Domat/Ems,20
+90383,Sulgen - Passerelle,m,47.5401419,9.1829867,Sulgen,20
+90384,Churwalden,m,46.7779744,9.543758,Churwalden,20
+90385,Teufen,m,47.3907355,9.3908514,Teufen AR,20
+90387,Weinfelden Weststrasse,m,47.56718,9.094288,Weinfelden,20
+90389,Chur Masans,m,46.8717233,9.5346776,Chur,20
+90390,Wittenbach,mm,47.460354,9.389376,Wittenbach,20
+90391,Zuzwil,m,47.47228,9.1124966,Zuzwil,20
+90392,Bronschhofen,m,47.4807063,9.0325903,Bronschhofen,20
+90415,Altstätten SG,mm,47.377183,9.537698,Altstätten,20
+90420,Amriswil,mm,47.54671,9.297961,Amriswil,20
+90421,Arbon,mm,47.5119795,9.432242,Arbon,20
+90422,Appenzell,mm,47.333888,9.405552,Appenzell,20
+90424,Buchs SG,mm,47.163967,9.472575,Buchs,20
+90425,Chur - Calandapark,mm,46.846195,9.513262,Chur,20
+90427,Chur - Gäuggeli,mm,46.851696,9.527312,Chur,20
+90428,Landquart,mm,46.9677876,9.561865,Landquart,20
+90431,Flawil,mm,47.4130548,9.1863798,Flawil,20
+90432,Davos Symondpark,mm,46.8015209,9.8327029,Davos Platz,20
+90433,Gossau,mm,47.4175531,9.2563798,Gossau SG,20
+90436,Herisau,mm,47.38613,9.284552,Herisau,20
+90440,Kreuzlingen - Seepark,mm,47.6418058,9.1960063,Kreuzlingen,20
+90443,Romanshorn - Hubzelg,mm,47.5646479,9.3674826,Romanshorn,20
+90445,Rorschach - Trischliplatz,mm,47.4778206,9.4889596,Rorschach,20
+90447,St. Gallen - Silberturm,m,47.4311418,9.3950643,St. Gallen,20
+90448,St. Gallen - St. Fiden,mm,47.4358241,9.391591,St. Gallen,20
+90450,Uzwil - Birkenhof,mm,47.436874,9.133884,Uzwil,20
+90452,Wattwil,mm,47.2984452,9.0881625,Wattwil,20
+90455,Weinfelden - Rösslifelsen,mm,47.5674427,9.1110836,Weinfelden,20
+90458,Widnau - Rhydorf-Center,mm,47.4077549,9.6288579,Widnau,20
+90461,Wil SG,mm,47.4628222,9.0423748,Wil,20
+90466,Thusis - im Park,mm,46.6944915,9.4398532,Thusis,20
+90467,Ilanz - Center Marcau,mm,46.7745715,9.2075797,Ilanz,20
+90468,Samedan,mm,46.531044,9.873851,Samedan,20
+90471,Mels - Pizolpark,mmm,47.04178,9.4308,Mels,20
+90475,St. Margrethen - Rheinpark,mmm,47.450115,9.651184,St.Margrethen,20
+90478,St. Gallen - Neumarkt,mmm,47.422127,9.370636,St.Gallen,20
+90491,Abtwil - Säntispark,mm,47.41782,9.316143,Abtwil,20
+93120,Winterthur - Obertor,m,47.5003636,8.7317613,Winterthur,20
+93130,Schaffhausen - Buchthalen,m,47.6992534,8.6542202,Schaffhausen,20
+93175,Turbenthal,m,47.4385237,8.8445994,Turbenthal,20
+93300,Bauma,m,47.3681049,8.8775133,Bauma,20
+93600,Frauenfeld - Multiplex,m,47.565858,8.9052823,Frauenfeld,20
+93610,Winterthur - Blumenau,m,47.5068665,8.711992,Winterthur,20
+93620,Diessenhofen,m,47.6859558,8.7521372,Diessenhofen,20
+93650,Hinwil,mm,47.30048,8.844325,Hinwil,20
+93670,Schaffhausen - Breite,m,47.7064686,8.6200072,Schaffhausen,20
+93680,Winterthur - Hegi,mm,47.5042465,8.7721562,Winterthur,20
+93690,Winterthur - Wülflingen,m,47.5108438,8.6937262,Winterthur,20
+93700,Beringen,m,47.6963713,8.5838803,Beringen,20
+93710,Thayngen,m,47.7488083,8.7067801,Thayngen,20
+93720,Seuzach,m,47.5355288,8.7303174,Seuzach,20
+93740,Steckborn,m,47.6639509,8.9758158,Steckborn,20
+93750,Neunkirch,m,47.6903787,8.5045443,Neunkirch,20
+93770,Wald ZH,m,47.2748553,8.9147079,Wald,20
+93780,Aadorf,m,47.4900907,8.8994059,Aadorf,20
+93790,Andelfingen,m,47.601998,8.6887258,Kleinandelfingen,20
+93800,Fehraltorf,m,47.3866248,8.755505,Fehraltorf,20
+93810,Winterthur - Deutweg,m,47.4947417,8.7402503,Winterthur,20
+93820,Pfungen,m,47.5172846,8.6500909,Pfungen,20
+93830,Matzingen,m,47.5268556,8.9221349,Matzingen,20
+93840,Elgg,m,47.4983247,8.8617399,Elgg,20
+93850,Hittnau,m,47.3631688,8.8254402,Hittnau,20
+93860,Kollbrunn,m,47.4578401,8.7707847,Kollbrunn,20
+93870,Dättnau,m,47.477406,8.699324,Dättnau,20
+93900,Nürensdorf,m,47.445654,8.642428,Nürensdorf,20
+93910,Wiesendangen,m,47.52307,8.773215,Wiesendangen,20
+94220,Neuhausen,m,47.68262,8.613568,Neuhausen,20
+94230,Rüti ZH,mm,47.2581252,8.8489703,Rüti,20
+94250,Winterthur - Oberwinterthur,m,47.5112274,8.7587494,Winterthur,20
+94260,Winterthur - Töss,m,47.491878,8.7064972,Winterthur,20
+94270,Winterthur - Seen,mm,47.485586,8.7623465,Winterthur,20
+94290,Effretikon - Effi-Märt,mm,47.428474,8.686003,Effretikon,20
+94300,Stein am Rhein,m,47.6514436,8.8526236,Stein am Rhein,20
+94310,Schaffhausen - Vorstadt,mm,47.69878,8.634116,Schaffhausen,20
+94320,Embrach,mm,47.5101139,8.5917376,Embrach,20
+94330,Frauenfeld - Passage,mm,47.558308,8.897511,Frauenfeld,20
+94340,Pfäffikon ZH,mm,47.3686343,8.7812381,Pfäffikon,20
+94710,Schaffhausen - Herblinger Markt,mmm,47.7203,8.664005,Schaffhausen,20
+94720,Wetzikon - Züri-Oberland-Märt,mmm,47.3276616,8.7996977,Wetzikon,20
+94730,Winterthur - Neuwiesen,mmm,47.499126,8.720857,Winterthur,20
+94740,Winterthur - Rosenberg,mm,47.518753,8.719194,Winterthur,20
+96531,Unterwetzikon,m,47.3135,8.795556,Wetzikon ZH,20
+123620,Biasca,m,46.353636,8.972488,Biasca,20
+123630,Crocifisso,m,46.0164918,8.9413299,Savosa,20
+123640,Boffalora,m,45.8373775,9.0240412,Chiasso,20
+123650,Minusio,m,46.1753162,8.8113912,Minusio,20
+123660,Paradiso,m,45.991271,8.943587,Lugano,20
+123690,Tesserete,m,46.066934,8.967299,Tesserete,20
+123700,Faido,m,46.4780639,8.7997979,Faido,20
+123710,Molino Nuovo,m,46.0183828,8.9586482,Lugano,20
+123720,Radio,m,46.0097658,8.9390275,Massagno,20
+123730,Solduno,m,46.1684941,8.7824201,Locarno,20
+123740,Giubiasco,m,46.178211,9.0136059,Giubiasco,20
+123750,Ascona,m,46.1540856,8.773702,Ascona,20
+123760,Mendrisio,m,45.8703698,8.9859445,Mendrisio,20
+123770,Tenero,m,46.18077,8.850552,Tenero,20
+123780,Arbedo Castione,m,46.2250903,9.0440908,Castione,20
+123790,Grancia,m,45.9712181,8.9263036,Grancia,20
+123800,Taverne,m,46.060572,8.9315827,Taverne,20
+123810,Pregassona,m,46.0236673,8.9672005,Pregassona,20
+123820,Maggia,m,46.2455272,8.7058678,Maggia,20
+123840,Campagna Adorna,m,45.861982,8.972938,Mendrisio,20
+123850,Melano,m,45.9194213,8.9853335,Melano,20
+123870,Bellinzona Nord,m,46.209694,9.039044,Bellinzona,20
+123880,Caslano,m,45.9769776,8.8766875,Caslano,20
+123890,Riazzino,m,46.1752568,8.8895944,Riazzino,20
+124210,Bellinzona,mm,46.1937973,9.0243305,Bellinzona,20
+124240,Locarno,mm,46.1656809,8.7957267,Locarno,20
+124270,Centro Serfontana,mmm,45.8452376,9.0161047,Morbio Inferiore,20
+124290,Cassarate,mm,46.0061779,8.9657425,Lugano,20
+124300,Centro Agno,mmm,45.9982691,8.9054575,Agno,20
+125010,Lugano,mmm,46.0070314,8.9517478,Lugano,20
+125020,Centro S.Antonino,mmm,46.153893,8.961926,Sant'Antonino,20
+127610,VOI Viganello,voi,46.011734,8.965999,Viganello,20
+127620,VOI Sementina,voi,46.18221,8.992037,Sementina,20
+127630,VOI Lugano-Roncaccio,voi,46.003031,8.941699,Lugano,20
+133690,Sion - Le Ritz,m,46.2358562,7.3595336,Sion,20
+133697,Sion - Tourbillon Center,m,46.2314201,7.3843456,Sion,20
+133710,Fully,m,46.136677,7.1193852,Fully,20
+133720,Savièse,m,46.2502976,7.3519659,Savièse,20
+133730,St-Maurice,m,46.2147953,7.0052498,St-Maurice,20
+133750,Saas Fee,m,46.1085428,7.9281535,Saas Fee,20
+133760,Le Bouveret,m,46.3773421,6.8606288,Bouveret,20
+133770,Naters,m,46.3252623,7.9901216,Naters,20
+133920,Crans-Montana,m,46.3094446,7.4732188,Crans-Montana,20
+134220,Zermatt,mm,46.0217113,7.7481512,Zermatt,20
+134230,Leukerbad,m,46.379201,7.625959,Leukerbad,20
+134240,Verbier,m,46.0966164,7.2232795,Verbier,20
+134250,Haute-Nendaz,m,46.182229,7.2918787,Haute-Nendaz,20
+134260,Steg,m,46.3147018,7.7453717,Steg,20
+134480,Visp,mm,46.2929559,7.8798626,Visp,20
+134500,Sierre,mm,46.292358,7.5291519,Sierre,20
+134520,Collombey,mm,46.2652306,6.9566145,Collombey,20
+134530,Monthey - M Central,mmm,46.2535582,6.9522265,Monthey,20
+134540,Brig,mm,46.3184112,7.9893511,Brig,20
+134550,Martigny - Manoir,mmm,46.1017023,7.0718577,Martigny,20
+134900,Sion - Métropole,mmm,46.2286124,7.356213,Sion,20
+136401,Glis - Simplon,mmm,46.3089074,7.9695103,Glis,20
+136411,Conthey - Forum des Alpes,mmm,46.2235391,7.3009436,Conthey,20
+136465,Fiesch,m,46.4040003,8.1355669,Fiesch,20
+136475,Saxon,m,46.148724,7.1732993,Saxon,20
+136480,Sembrancher,m,46.0791549,7.1446967,Sembrancher,20
+136485,Martigny Avouillons,m,46.105713,7.0852003,Martigny,20
+137300,VOI Raron,voi,46.308622,7.795652,Raron,20
+150007,Zürich - Stadelhofen,m,47.3654727,8.5478721,Zürich,20
+150008,Zürich - Wollishofen,mm,47.3445909,8.5301409,Zürich,20
+150009,Zürich - Kreuzplatz,mm,47.3645091,8.5537771,Zürich,20
+150010,Zürich - Wengihof,m,47.3749444,8.5230687,Zürich,20
+150011,Zürich - Witikon-Zentrum,mm,47.3589998,8.5855777,Zürich,20
+150014,Zürich - Schwamendingen,m,47.4038478,8.5725326,Zürich,20
+150015,Zürich - Affoltern,mm,47.4202196,8.5082588,Zürich,20
+150016,Zürich - Wiedikon M-Märt,mm,47.3699977,8.5085226,Zürich,20
+150017,Zürich - Oerlikon Neumarkt,mm,47.410484,8.5429281,Zürich,20
+150018,Zürich - Limmatplatz,mmm,47.385379,8.5310561,Zürich,20
+150020,Zürich - Seebach,mm,47.4193716,8.54861,Zürich,20
+150021,Oberglatt,m,47.47556,8.507587,Oberglatt ZH,20
+150050,Wollerau Märt Roospark,m,47.1920378,8.7214742,Wollerau,20
+150053,Schlieren - Kesslerplatz,m,47.3961553,8.4371696,Schlieren,20
+150054,Dübendorf,mm,47.3982637,8.6176168,Dübendorf,20
+150055,Horgen - Schinzenhof,mm,47.2601197,8.5970064,Horgen,20
+150056,Glattbrugg,m,47.4340313,8.567435,Glattbrugg,20
+150059,Bülach - Sonnenhof,mm,47.5209712,8.5399087,Bülach,20
+150060,Regensdorf - Zentrum,mmm,47.4313251,8.4691306,Regensdorf,20
+150061,Volketswil,mm,47.3884116,8.6805761,Volketswil,20
+150062,Adliswil,mm,47.3112824,8.5252672,Adliswil,20
+150063,Meilen,mm,47.2683937,8.6454362,Meilen,20
+150064,Glarus - Zentrum Glärnisch,mm,47.0406732,9.0708899,Glarus,20
+150065,Dietikon - Löwenzentrum,mm,47.4051079,8.4018695,Dietikon,20
+150066,Thalwil,mm,47.294262,8.564114,Thalwil,20
+150067,Kloten,mm,47.4505,8.582302,Kloten,20
+150068,Einsiedeln,mm,47.1287061,8.7459076,Einsiedeln,20
+150069,Stäfa,mm,47.2406714,8.7234301,Stäfa,20
+150071,Rapperswil - Sonnenhof,mm,47.22935,8.820889,Rapperswil SG,20
+150072,Pfäffikon - Seedammcenter,mm,47.2005836,8.7927006,Pfäffikon SZ,20
+150073,Lachen,mm,47.1917747,8.8549009,Lachen,20
+150074,Egg,mm,47.30247,8.691354,Egg,20
+150075,Rüschlikon Parkside,m,47.3010372,8.5488346,Rüschlikon,20
+150077,Zürich - Höngg,m,47.403841,8.4973707,Zürich,20
+150078,Eglisau-Nord,m,47.5792535,8.5139362,Eglisau,20
+150079,Affoltern a. A.,mm,47.2780275,8.453809,Affoltern am Albis,20
+150080,Uitikon-Waldegg,m,47.3687168,8.4616665,Uitikon Waldegg,20
+150081,Schlieren - Rietbach,mm,47.40073,8.434955,Schlieren,20
+150082,Dübendorf Stettbach,m,47.3976505,8.598034,Dübendorf,20
+150083,Reichenburg,m,47.1730561,8.9691015,Reichenburg,20
+150115,Zürich - Rigiplatz,m,47.3862231,8.5487676,Zürich,20
+150116,Zürich - Höschgasse,m,47.35856,8.554269,Zürich,20
+150117,Zürich - Burgwies,m,47.3576581,8.5715375,Zürich,20
+150120,Zürich - Schmiede Wiedikon,m,47.3702468,8.5204177,Zürich,20
+150122,Zürich - Pünt,m,47.3751082,8.4858095,Zürich,20
+150130,Dietikon - Limmatfeld,m,47.4090317,8.4051555,Dietikon,20
+150131,Zürich - Stockerstrasse M-Express,m,47.368282,8.53412,Zürich,20
+150132,Zürich - Puls 5 M-Express,m,47.39135,8.518202,Zürich,20
+150140,Zürich - ShopVilleMärt,m,47.3772377,8.54007,Zürich,20
+150147,Rümlang Hofwisencenter,m,47.4509866,8.537906,Rümlang,20
+150149,Dielsdorf,mm,47.4807739,8.4644704,Dielsdorf,20
+150151,Urdorf - Spitzacker,m,47.3848945,8.4223769,Urdorf,20
+150153,Fällanden,m,47.3739538,8.6409527,Fällanden,20
+150154,Opfikon - Glattpark,mm,47.4212446,8.5579927,Opfikon,20
+150156,Greifensee,m,47.3678007,8.6796218,Greifensee,20
+150157,Küsnacht ZH,m,47.3185861,8.5821107,Küsnacht ZH,20
+150158,Richterswil,m,47.2063902,8.7053798,Richterswil,20
+150160,Eschenbach,m,47.2408601,8.92332,Eschenbach,20
+150161,Oberengstringen,m,47.4086394,8.462976,Oberengstringen,20
+150163,Wallisellen,m,47.4134998,8.5916082,Wallisellen,20
+150164,Bassersdorf,mm,47.4422909,8.6298002,Bassersdorf,20
+150168,Langnau a. A.,m,47.2911414,8.5376553,Langnau am Albis,20
+150169,Dietlikon - Brunnenwiese,m,47.4191512,8.6216426,Dietlikon,20
+150170,Ebmatingen,m,47.350978,8.6432014,Ebmatingen,20
+150177,Zollikon - Dorf,m,47.3377789,8.5760777,Zollikon,20
+150178,Jona - Stadttor,m,47.2314638,8.8373964,Jona,20
+150179,Uznach - Frohsinn,mm,47.2264591,8.9806843,Uznach,20
+150180,Niederhasli,m,47.479847,8.485262,Niederhasli,20
+150181,Hombrechtikon,m,47.2517184,8.7694304,Hombrechtikon,20
+150182,Gossau ZH,m,47.3065422,8.7558044,Gossau ZH,20
+150183,Zürich - Leimbach Sihlbogen,m,47.3362301,8.5189546,Zürich,20
+150184,Zürich - Hauptbahnhof,m,47.37744,8.5394,Zürich,20
+150185,Erlenbach - Erlibacher Märt,m,47.3070068,8.5904643,Erlenbach ZH,20
+150187,Niederurnen,m,47.1284992,9.0559104,Niederurnen,20
+150188,Rapperswil - Zentrum,m,47.2258032,8.818166,Rapperswil SG,20
+150189,Birmensdorf,m,47.3541611,8.4367541,Birmensdorf ZH,20
+150190,Zumikon,mm,47.3364667,8.6193207,Zumikon,20
+150193,Zürich - Airport,mm,47.4502749,8.5626585,Kloten,20
+150197,Männedorf,m,47.2529296,8.6959795,Männedorf,20
+150198,Schlieren - Zentrum,m,47.3986438,8.4468471,Schlieren,20
+150201,Zürich - Altstetten Neumarkt,mmm,47.3882886,8.4875256,Zürich,20
+150202,Zürich - City,mmm,47.375286,8.536137,Zürich,20
+150203,Bülach Süd,mmm,47.510067,8.540387,Bülach,20
+150251,Uster - Illuster,mmm,47.349891,8.7152446,Uster,20
+150252,Wädenswil,mmm,47.2290738,8.6675403,Wädenswil,20
+150303,Zürich - Bahnhof Enge,m,47.3638859,8.5310653,Zürich,20
+150307,Dietikon Silbern,mm,47.419937,8.393975,Dietikon,20
+150312,Zürich - Schaffhauserplatz,m,47.392636,8.5384895,Zürich,20
+150319,Zürich - Toblerplatz,m,47.3795452,8.5593819,Zürich,20
+150326,Zürich - Wipkingen,m,47.3938846,8.5291765,Zürich,20
+150327,Zürich - Albisriederplatz,m,47.3792702,8.5086822,Zürich,20
+150329,Schindellegi,m,47.1756607,8.7133184,Schindellegi,20
+150330,Näfels,m,47.0936714,9.05966,Näfels,20
+150360,Zürich - Altstetten M-Express,m,47.39148,8.487461,Zürich,20
+150361,Zürich - HB Sihlquai,m,47.3785227,8.5357604,Zürich,20
+150362,Daily Zürich-Zollstrasse,m,47.3798176,8.5369492,Zürich,20
+150665,Zürich - Brunaupark,mm,47.3582422,8.5180694,Zürich,20
+150670,Wallisellen - Glattzentrum,mmm,47.4084534,8.5960556,Wallisellen,20
+150801,VOI Zürich - Grünau,voi,47.3963402,8.4863988,Zürich,20
+150802,VOI Buchs ZH,voi,47.4563902,8.4396784,Buchs,20
+150803,VOI Horgen,voi,47.2548701,8.6119618,Horgen,20
+150804,VOI Zürich - In der Ey,voi,47.3705108,8.4928295,Zürich,20
+150805,VOI Zürich - Paradies,voi,47.3347241,8.5294762,Zürich,20
+150806,VOI Geroldswil,voi,47.4215795,8.4117228,Geroldswil,20
+150807,VOI Siebnen,voi,47.1753754,8.9004331,Siebnen,20
+150808,VOI Rümlang,voi,47.4497963,8.5315694,Rümlang,20
+150809,VOI Zürich - Leimbach,voi,47.3297396,8.5153194,Zürich,20
+150810,VOI Schwerzenbach,voi,47.3851497,8.6589504,Schwerzenbach,20
+150812,VOI Zürich - Hönggerstrasse,voi,47.3952404,8.5184213,Zürich,20
+150813,VOI Kilchberg,voi,47.3245116,8.5480624,Kilchberg ZH,20
+150814,Zürich - Albisriederstrasse,voi,47.3780898,8.493271,Zürich,20
+150815,VOI Wallisellen,voi,47.41978,8.597648,Wallisellen,20
+150816,VOI Bonstetten,voi,47.325294,8.472362,Bonstetten,20
+150817,VOI Obfelden,voi,47.264569,8.430915,Obfelden,20

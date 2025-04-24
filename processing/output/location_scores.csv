@@ -1,0 +1,21 @@
+branch_id,branch_name,branch_type,city,population_coverage,area_coverage,reach_factor,total_score
+23080,Liestal,mm,Liestal,0.99724,0.9745779887999999,0.9307,0.97713339664
+23160,Basel - Schützenmatt,m,Basel,1.0,1.0,1.0,1.0
+23170,Basel - Allschwiler,m,Basel,1.0,1.0,1.0,1.0
+23220,Allschwil - Ziegelei,m,Allschwil,1.0,1.0,0.9854,0.9970800000000001
+23230,Laufen - Birscenter,mm,Laufen,0.41536,0.8363927773333333,0.7987,0.6183378332
+23310,Lehenmatt,m,Basel,1.0,0.9414493693333333,0.899,0.9622348108000001
+23620,Dornach,m,Dornach,1.0,0.8903000266666666,0.8502,0.937130008
+23640,Pratteln,mm,Pratteln,1.0,0.7532724528,0.7193,0.86984173584
+23670,Basel - Neuweiler,m,Basel,1.0,1.0,1.0,1.0
+23720,Basel - Mülhauser,m,Basel,1.0,1.0,1.0,1.0
+23740,Binningen - Gorenmatt,mm,Binningen,1.0,1.0,0.9576,0.9915200000000001
+23790,Bubendorf,mm,Bubendorf,0.66202,0.8415808498666667,0.8037,0.74422425496
+23800,Oberwil,mmm,Oberwil,1.0,0.9623718841333334,0.919,0.97251156524
+23810,Muttenz - Lutzert,m,Muttenz,1.0,0.8729458349333333,0.8336,0.92860375048
+23820,Basel - Märtplatz,m,Basel,1.0,1.0,1.0,1.0
+23830,Sissach,mm,Sissach,0.62904,0.9110154808,0.87,0.7618246442400001
+23840,Basel - Efringer,mm,Basel,1.0,1.0,1.0,1.0
+23850,Reinach - Zentrum,m,Reinach BL,1.0,0.9529106925333333,0.91,0.96787320776
+23870,Basel - Hardstrasse,m,Basel,1.0,1.0,0.9711,0.9942200000000001
+23880,Basel - Eglisee,m,Basel,1.0,1.0,1.0,1.0

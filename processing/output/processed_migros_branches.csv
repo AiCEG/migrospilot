@@ -1,0 +1,727 @@
+id,name,type,type_name,type_description,address,zip_code,city,country,latitude,longitude
+0023080,Liestal,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Kasernenstrasse 1,4410,Liestal,CH,47.4825911,7.7359876
+0023160,Basel - Schützenmatt,m,M-Migros,Kleine Filiale mit Grundsortiment,Schützenmattstrasse 27,4051,Basel,CH,47.5560094,7.5812888
+0023170,Basel - Allschwiler,m,M-Migros,Kleine Filiale mit Grundsortiment,Allschwilerstrasse 31,4055,Basel,CH,47.5559314,7.5734192
+0023220,Allschwil - Ziegelei,m,M-Migros,Kleine Filiale mit Grundsortiment,Baslerstrasse 191,4123,Allschwil,CH,47.5530962,7.5499775
+0023230,Laufen - Birscenter,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 4,4242,Laufen,CH,47.419968,7.5018211
+0023310,Lehenmatt,m,M-Migros,Kleine Filiale mit Grundsortiment,Lehenmattstrasse 260,4052,Basel,CH,47.547153,7.620881
+0023620,Dornach,m,M-Migros,Kleine Filiale mit Grundsortiment,Wollmattweg 7,4143,Dornach,CH,47.4881024,7.6119786
+0023640,Pratteln,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Burggartenstrasse 21,4133,Pratteln,CH,47.5204545,7.6940945
+0023670,Basel - Neuweiler,m,M-Migros,Kleine Filiale mit Grundsortiment,Neuweilerplatz 7,4054,Basel,CH,47.5469569,7.5642044
+0023720,Basel - Mülhauser,m,M-Migros,Kleine Filiale mit Grundsortiment,Mülhauserstrasse 70-72,4056,Basel,CH,47.5685421,7.5796836
+0023740,Binningen - Gorenmatt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Gorenmattstrasse 17,4102,Binningen,CH,47.5324671,7.5729746
+0023790,Bubendorf,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Grüngenstrasse 1,4416,Bubendorf,CH,47.4568583,7.7432173
+0023800,Oberwil,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Mühlemattstrasse 18,4104,Oberwil,CH,47.5099303,7.5546791
+0023810,Muttenz - Lutzert,m,M-Migros,Kleine Filiale mit Grundsortiment,Lutzertstrasse 40,4132,Muttenz,CH,47.5338563,7.6333891
+0023820,Basel - Märtplatz,m,M-Migros,Kleine Filiale mit Grundsortiment,Eisengasse 12,4051,Basel,CH,47.5592591,7.5877372
+0023830,Sissach,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hauptstrasse 17,4450,Sissach,CH,47.462086,7.816352
+0023840,Basel - Efringer,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Efringerstrasse 32,4057,Basel,CH,47.5691589,7.5965886
+0023850,Reinach - Zentrum,m,M-Migros,Kleine Filiale mit Grundsortiment,Herrenweg 11,4153,Reinach BL,CH,47.4926693,7.5944243
+0023870,Basel - Hardstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Hardstrasse 105,4052,Basel,CH,47.549313,7.607221
+0023880,Basel - Eglisee,m,M-Migros,Kleine Filiale mit Grundsortiment,Riehenstrasse 315,4058,Basel,CH,47.5701213,7.6152494
+0023890,Basel - Juniors Market,m,M-Migros,Kleine Filiale mit Grundsortiment,Grenzacherstrasse 62/64,4058,Basel,CH,47.55872,7.6016293
+0023900,Basel - Bahnhof SBB,m,M-Migros,Kleine Filiale mit Grundsortiment,Centralbahnstrasse 10,4051,Basel,CH,47.5479172,7.5886351
+0023910,Basel - Stücki,m,M-Migros,Kleine Filiale mit Grundsortiment,Hochbergerstrasse 70,4057,Basel,CH,47.579952,7.5957171
+0024240,Basel - Claramarkt,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Untere Rebgasse 11,4058,Basel,CH,47.5615832,7.5920619
+0024270,Porrentruy,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Faubourg St Germain 2,2900,Porrentruy,CH,47.4164582,7.0771359
+0024280,Basel - Drachen-Center,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Aeschenvorstadt 24,4051,Basel,CH,47.5528056,7.5928077
+0024320,Delémont,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de la Maltière 12,2800,Delémont,CH,47.3635367,7.34649
+0024360,Riehen - Dorf,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rössligasse/Webergässchen 8,4125,Riehen,CH,47.5852499,7.6519616
+0024380,Muttenz - Rothausstrasse,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rothausstrasse 17,4132,Muttenz,CH,47.5263912,7.6556813
+0024400,Moutier,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de l'Ecluse 1,2740,Moutier,CH,47.2766867,7.3698395
+0024420,Reinach - Mischeli,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Niederbergstrasse 1,4153,Reinach BL,CH,47.5022541,7.5964432
+0024440,Birsfelden,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Chrischonastrasse 2,4127,Birsfelden,CH,47.5554924,7.6242615
+0024460,Gelterkinden,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Badweg 2,4460,Gelterkinden,CH,47.4660758,7.8506659
+0024480,Füllinsdorf - Schönthal,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Ergolzstrasse 2,4414,Füllinsdorf,CH,47.502619,7.7251059
+0024500,Breitenbach - Wydehof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Laufenstrasse 4,4226,Breitenbach,CH,47.4083107,7.542466
+0024520,Basel - Gundelitor,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Güterstrasse 180,4053,Basel,CH,47.543266,7.5919952
+0024540,Binningen - Zentrum,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 71,4102,Binningen,CH,47.5412885,7.5742852
+0024560,Basel - Burgfelder,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Burgfelderstrasse 11,4055,Basel,CH,47.5622371,7.5724253
+0024580,Münchenstein - Gartenstadt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Kaspar Pfeiffer-Strasse 2,4142,Münchenstein,CH,47.5215941,7.6069894
+0024600,Aesch,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hauptstrasse 95,4147,Aesch,CH,47.4694175,7.5960676
+0024610,Ettingen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Therwilerstrasse 9,4107,Ettingen,CH,47.4844491,7.5468089
+0024630,Arlesheim,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Postplatz 7,4144,Arlesheim,CH,47.494261,7.6185546
+0024720,Allschwil - Paradies,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Spitzwaldstrasse 215,4123,Allschwil,CH,47.547382,7.5536404
+0033091,Gümligen,m,M-Migros,Kleine Filiale mit Grundsortiment,Turbenweg 1,3073,Gümligen,CH,46.93282,7.5042952
+0033115,Bern - Christoffel,m,M-Migros,Kleine Filiale mit Grundsortiment,Christoffelunterführung,3011,Bern,CH,46.9475739,7.4401581
+0033121,Bern - Lorraine,m,M-Migros,Kleine Filiale mit Grundsortiment,Dammweg 9,3013,Bern,CH,46.9559292,7.4465984
+0033123,Erlinsbach,m,M-Migros,Kleine Filiale mit Grundsortiment,Zentrum Rössli,5018,Erlinsbach AG,CH,47.4053477,8.0084956
+0033140,Bern - Egghölzli,m,M-Migros,Kleine Filiale mit Grundsortiment,Egghölzlistrasse 1 / 1a,3006,Bern,CH,46.9368899,7.475067
+0033163,Möhlin,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 91,4313,Möhlin,CH,47.5563791,7.8469474
+0033200,Zollikofen,m,M-Migros,Kleine Filiale mit Grundsortiment,Bernstrasse 103,3052,Zollikofen,CH,46.9933993,7.4570099
+0033220,Bern - Kirchenfeld,m,M-Migros,Kleine Filiale mit Grundsortiment,Thunstrasse 18,3005,Bern,CH,46.9421839,7.4531633
+0033233,Lostorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 20,4654,Lostorf,CH,47.3831117,7.9478151
+0033260,Schwarzenburg,m,M-Migros,Kleine Filiale mit Grundsortiment,Freiburgstrasse 5b,3150,Schwarzenburg,CH,46.8177012,7.339902
+0033270,Ipsach,m,M-Migros,Kleine Filiale mit Grundsortiment,Dorfstrasse 1,2563,Ipsach,CH,47.1156818,7.2353249
+0033280,Hünibach,m,M-Migros,Kleine Filiale mit Grundsortiment,Staatsstrasse 134,3626,Hünibach,CH,46.7451794,7.6454474
+0033290,Biel - Bözingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Schlösslistrasse 7,2504,Biel/Bienne,CH,47.1518033,7.2671886
+0033330,Uetendorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Dorfstrasse 21,3661,Uetendorf,CH,46.7739279,7.5741096
+0033350,Utzenstorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 29,3427,Utzenstorf,CH,47.1284908,7.5585845
+0033360,Hasle Rüegsau,m,M-Migros,Kleine Filiale mit Grundsortiment,Emmenau 3,3415,Hasle-Rüegsau,CH,47.0134658,7.6595141
+0033370,Frutigen,m,M-Migros,Kleine Filiale mit Grundsortiment,Kanderstegstrasse 31,3714,Frutigen,CH,46.5856019,7.6483603
+0033380,Mellingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Lenzburgerstrasse 50,5507,Mellingen,CH,47.4130888,8.2668681
+0033383,Rothrist,m,M-Migros,Kleine Filiale mit Grundsortiment,Neue Aarburgstrasse 20,4852,Rothrist,CH,47.3066918,7.8866601
+0033390,Bern Burgernziel,m,M-Migros,Kleine Filiale mit Grundsortiment,Thunstrasse 110,3006,Bern,CH,46.941223,7.464587
+0033393,Gebenstorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Wambisterstrasse,5412,Gebenstorf,CH,47.4900828,8.2443692
+0033613,Villmergen,m,M-Migros,Kleine Filiale mit Grundsortiment,Schulhausstrasse 2,5612,Villmergen,CH,47.34739,8.244348
+0033623,Biberist,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 21,4562,Biberist,CH,47.1831041,7.5617677
+0033630,Bern - Breitenrain,m,M-Migros,Kleine Filiale mit Grundsortiment,Breitenrainstrasse 11,3013,Bern,CH,46.9580156,7.4532328
+0033640,Bern - Eigerplatz,m,M-Migros,Kleine Filiale mit Grundsortiment,Seftigenstrasse 1,3007,Bern,CH,46.939953,7.432047
+0033643,Gerlafingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Friedhofstrasse 1,4563,Gerlafingen,CH,47.1710372,7.5740858
+0033653,Unterentfelden,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Binzmattweg 8,5035,Unterentfelden,CH,47.3619645,8.0456204
+0033663,Neuenhof,m,M-Migros,Kleine Filiale mit Grundsortiment,Zürcherstrasse 113,5432,Neuenhof,CH,47.4501589,8.3275251
+0033670,Biel Stadion,m,M-Migros,Kleine Filiale mit Grundsortiment,Sportallee 20,2504,Biel,CH,47.1559201,7.2822405
+0033673,Stein,m,M-Migros,Kleine Filiale mit Grundsortiment,Schaffhauserstrasse 61,4332,Stein AG,CH,47.5492231,7.9544805
+0033680,Thun - Dürrenast,m,M-Migros,Kleine Filiale mit Grundsortiment,Frutigenstrasse 60,3604,Thun,CH,46.7450418,7.6261582
+0033684,Suhr Suhrepark,m,M-Migros,Kleine Filiale mit Grundsortiment,Bernstrasse Ost 52,5034,Suhr,CH,47.3732376,8.0816706
+0033703,Windisch,m,M-Migros,Kleine Filiale mit Grundsortiment,Bachmattstrasse 35,5210,Windisch,CH,47.474655,8.212573
+0033713,Untersiggenthal,m,M-Migros,Kleine Filiale mit Grundsortiment,Mardeläckerstrasse 1c,5417,Untersiggenthal,CH,47.499219,8.258718
+0033720,Ostermundigen Poststrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Poststr. 1,3072,Ostermundigen 1,CH,46.95615,7.4827247
+0033723,Balsthal,m,M-Migros,Kleine Filiale mit Grundsortiment,Goldgasse 13,4710,Balsthal,CH,47.3168586,7.6955408
+0033730,Münchenbuchsee,m,M-Migros,Kleine Filiale mit Grundsortiment,Bernstrasse 14,3053,Münchenbuchsee,CH,47.0199113,7.4511193
+0033733,Nussbaumen - Markthof,m,M-Migros,Kleine Filiale mit Grundsortiment,Schulstrasse 2,5415,Nussbaumen b.Baden,CH,47.488235,8.292417
+0033743,Döttingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 17,5312,Döttingen,CH,47.574184,8.255778
+0033750,Bremgarten Kalchacker,m,M-Migros,Kleine Filiale mit Grundsortiment,Kalchackerstrasse 9,3047,Bremgarten b. Bern,CH,46.9753771,7.4375202
+0033753,Frick,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 44,5070,Frick,CH,47.5080226,8.0188978
+0033770,Kirchberg,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Solothurnstrasse 17a,3422,Kirchberg BE,CH,47.088436,7.5816193
+0033773,Derendingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 22,4552,Derendingen,CH,47.1974163,7.5836013
+0033780,Brienz,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 51,3855,Brienz BE,CH,46.755197,8.0282209
+0033783,Schönenwerd,m,M-Migros,Kleine Filiale mit Grundsortiment,C.F. Ballystrasse 14,5012,Schönenwerd,CH,47.3735275,8.0031216
+0033790,Matten,m,M-Migros,Kleine Filiale mit Grundsortiment,Aegertiweg 33,3812,Wilderswil,CH,46.6734205,7.8681811
+0033793,Wildegg,m,M-Migros,Kleine Filiale mit Grundsortiment,Bruggerstrasse 11 c,5103,Wildegg,CH,47.4164275,8.1663545
+0033810,Bern - Welle 7,m,M-Migros,Kleine Filiale mit Grundsortiment,Schanzenstrasse 5,3000,Bern,CH,46.9480604,7.4369117
+0033813,Lupfig,m,M-Migros,Kleine Filiale mit Grundsortiment,Flachsacherstrasse 17,5242,Lupfig,CH,47.4401518,8.2085453
+0033820,Bern Westflügel,m,M-Migros,Kleine Filiale mit Grundsortiment,Bethlehemstrasse 40,3027,Bern,CH,46.9467745,7.3953525
+0033823,Aarau Bahnhof,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofplatz 3h,5000,Aarau,CH,47.3919221,8.0528306
+0033833,Solothurn Öufi,m,M-Migros,Kleine Filiale mit Grundsortiment,Bielstrasse 80,4500,Solothurn,CH,47.2113187,7.5261313
+0033843,Fislisbach,m,M-Migros,Kleine Filiale mit Grundsortiment,Badenerstrasse 7d,5442,Fislisbach,CH,47.4363454,8.2908926
+0033853,Solothurn Baselstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Baselstrasse 30/32,4500,Solothurn,CH,47.2112133,7.5446377
+0033863,Zuchwil,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 60-62,4528,Zuchwil,CH,47.2033261,7.5600061
+0033873,Murgenthal,m,M-Migros,Kleine Filiale mit Grundsortiment,Fahrackerstrasse 1,4853,Murgenthal,CH,47.2649304,7.8289909
+0033883,Schöftland,m,M-Migros,Kleine Filiale mit Grundsortiment,Picardiestrasse 3,5040,Schöftland,CH,47.3027032,8.0474765
+0033893,Berikon - Mutschellen,m,M-Migros,Kleine Filiale mit Grundsortiment,Bellikerstrasse 13,8965,Berikon,CH,47.3631663,8.3664932
+0033903,Fahrwangen,m,M-Migros,Kleine Filiale mit Grundsortiment,Hintergasse 12,5615,Fahrwangen,CH,47.2942089,8.2432889
+0033913,Seon,m,M-Migros,Kleine Filiale mit Grundsortiment,Unterdorfstrasse 21,5703,Seon,CH,47.3477982,8.1612469
+0033920,Heimberg,m,M-Migros,Kleine Filiale mit Grundsortiment,Bernstrasse 223,3627,Heimberg,CH,46.782963,7.609361
+0033923,Oensingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Mühlefeldstrasse 53,4702,Oensingen,CH,47.2889751,7.718937
+0033934,Muri AG,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Kirchfeldstrasse 8,5630,Muri AG,CH,47.2720346,8.3419017
+0033953,Gränichen,m,M-Migros,Kleine Filiale mit Grundsortiment,Lindenplatz 2,5722,Gränichen,CH,47.3598479,8.0979932
+0033963,Menziken,m,M-Migros,Kleine Filiale mit Grundsortiment,Sagiweg 8,5737,Menziken,CH,47.2416,8.1865863
+0034180,Steffisburg Unterdorf,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Unterdorfstrasse 10,3612,Steffisburg,CH,46.77754,7.634178
+0034190,Konolfingen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Thunstrasse 17,3510,Konolfingen,CH,46.8764297,7.6211259
+0034200,Burgdorf - Neumarkt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Lyssachstrasse 27,3400,Burgdorf,CH,47.0592476,7.6208431
+0034210,Bern - Bethlehem,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Riedbachstrasse 10,3027,Bern,CH,46.9475326,7.3832855
+0034213,Aarau - Igelweid,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Igelweid 18,5000,Aarau,CH,47.3917082,8.0460946
+0034220,Bern - Freudenberg,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Giacomettistrasse 15,3006,Bern,CH,46.9454091,7.4727611
+0034230,Bern - Winkelried,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Wankdorffeldstrasse 71,3014,Bern,CH,46.9657983,7.4635232
+0034233,Baden - City,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 40/42,5400,Baden,CH,47.4771453,8.3086998
+0034240,Köniz - Bläuacker,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bläuacker 10,3098,Köniz,CH,46.9235082,7.414453
+0034243,Lenzburg,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bachstrasse 15,5600,Lenzburg,CH,47.3870206,8.1768398
+0034250,Thun - Bälliz,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bälliz 2,3600,Thun,CH,46.7601164,7.6266358
+0034253,Oftringen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Zürichstrasse 2,4665,Oftringen,CH,47.3125554,7.9213265
+0034260,Biel - Neumarkt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Kanalgasse 36-38,2502,Biel/Bienne,CH,47.140721,7.2475398
+0034263,Bremgarten AG,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Zufikerstrasse 2,5620,Bremgarten AG,CH,47.3526495,8.3497522
+0034270,Münsingen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofplatz 5,3110,Münsingen,CH,46.8731986,7.5601405
+0034280,Spiez - Terminus,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse,3700,Spiez,CH,46.6857824,7.6817159
+0034290,Herzogenbuchsee,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bernstrasse 33,3360,Herzogenbuchsee,CH,47.18653,7.7037935
+0034293,Rheinfelden,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Lindenstrasse 3,4310,Rheinfelden,CH,47.555335,7.7982876
+0034300,Interlaken,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rugenparkstrasse 1,3800,Interlaken,CH,46.6815587,7.8521379
+0034310,Langenthal,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Wiesenstrasse 28,4900,Langenthal,CH,47.2143024,7.7841656
+0034320,Bern - Westside,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Gilberte-de-Courgenay-Platz 4,3027,Bern,CH,46.9455311,7.3743954
+0034323,Wettingen - Landstrasse,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Landstrasse 69,5430,Wettingen,CH,47.467274,8.324826
+0034330,Nidau,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Lyssstrasse 15,2560,Nidau,CH,47.1263507,7.2463285
+0034333,Wohlen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 7,5610,Wohlen AG,CH,47.3493209,8.2724163
+0034340,Worb,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Richigenstrasse 1,3076,Worb,CH,46.9266974,7.5649883
+0034350,Wabern - Chly Wabere,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Seftigenstrasse 368,3084,Wabern,CH,46.922607,7.4597626
+0034360,Bern - Zähringer,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Zähringerstrasse 43,3012,Bern,CH,46.955387,7.433226
+0034363,Zofingen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Aarburgerstrasse 5,4800,Zofingen,CH,47.2914999,7.9421429
+0034373,Solothurn,m,M-Migros,Kleine Filiale mit Grundsortiment,Wengistrasse 13,4500,Solothurn,CH,47.2068855,7.533167
+0034380,Hinterkappelen - Chappelemärit,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Kappelenring 2,3032,Hinterkappelen,CH,46.96677,7.3766563
+0034383,Olten - Hammer,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Solothurnerstrasse 21,4600,Olten,CH,47.3499928,7.8987827
+0034390,Biel - Madretsch,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Brüggstrasse 5,2503,Biel/Bienne,CH,47.1320095,7.2523976
+0034393,Bad Zurzach,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Promenadenstrasse 10,5330,Bad Zurzach,CH,47.5857967,8.2959683
+0034400,Huttwil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bernstrasse 6,4950,Huttwil,CH,47.1137122,7.8401887
+0034403,Olten - Sälipark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Louis Giroud-Strasse 20,4600,Olten,CH,47.3463482,7.9104394
+0034411,Zweisimmen,m,M-Migros,Kleine Filiale mit Grundsortiment,Thunstrasse 11,3770,Zweisimmen,CH,46.5553701,7.3728404
+0034413,Egerkingen - Gäupark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hausimollstrasse 1,4622,Egerkingen,CH,47.3175094,7.8020478
+0034420,Lyss Lyssbachpark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Steinweg 28,3250,Lyss,CH,47.078457,7.304151
+0034430,Ostermundigen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bernstrasse 114,3072,Ostermundigen,CH,46.956966,7.495635
+0034440,Bern - Bubenberg,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bubenbergplatz 8,3011,Bern,CH,46.9474381,7.4379673
+0034450,Bern - Bachmätteli,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bottigenstrasse 7,3018,Bern,CH,46.9392241,7.3900576
+0034460,Langnau i.E.,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Schlossstrasse 1a,3550,Langnau i. E.,CH,46.9398058,7.787702
+0034463,Reinach AG,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Sandgasse 6,5734,Reinach AG,CH,47.2578265,8.1816799
+0034470,Meiringen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 1,3860,Meiringen,CH,46.7282562,8.1847964
+0034480,Biel - Bielerhof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 15,2502,Biel/Bienne,CH,47.1350714,7.2443054
+0034490,Gstaad,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Untergstaadstrasse 3,3780,Gstaad,CH,46.4782457,7.2825683
+0034510,Ittigen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Talweg 6,3063,Ittigen,CH,46.9742162,7.4852772
+0034520,Hilterfingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Staatsstrasse 16b,3652,Hilterfingen,CH,46.7353444,7.6586756
+0034530,Bern - Bahnhof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofplatz 10,3011,Bern,CH,46.949378,7.4401642
+0034540,Belp,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Steinbachstrasse 28,3123,Belp,CH,46.8964728,7.4926529
+0034700,Schönbühl - Shoppyland,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Industriestrasse 10,3321,Schönbühl,CH,47.0169335,7.4923677
+0034710,Bern - Marktgasse,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Marktgasse 46,3011,Bern,CH,46.9482654,7.4448371
+0034720,Thun - Oberland,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Talackerstrasse 62,3604,Thun,CH,46.7447598,7.614778
+0034730,Brügg - Centre Brügg,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Erlenstrasse 40,2555,Brügg b. Biel,CH,47.119664,7.267001
+0034803,Grenchen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Freiestrasse 10,2540,Grenchen,CH,47.1897743,7.3992644
+0034813,Langendorf - Ladedorf,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Fabrikstrasse 6,4513,Langendorf,CH,47.2184063,7.5113259
+0034823,Buchs AG - Wynecenter,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Bresteneggstrasse 9b,5033,Buchs AG,CH,47.3846372,8.0889759
+0034833,Spreitenbach - Tivoli,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Shoppi Tivoli,8957,Spreitenbach,CH,47.4233238,8.3700585
+0034843,Brugg - Neumarkt,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Neumarkt 1,5200,Brugg AG,CH,47.481945,8.209613
+0037302,VOI Strengelbach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Langenthalerstrasse 1,4802,Strengelbach,CH,47.2784744,7.9286
+0037303,VOI Bern - Fellergut,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Mühledorfstrasse 15,3018,Bern,CH,46.9453512,7.3902179
+0037304,VOI Trimbach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Chäppeligasse 5,4632,Trimbach,CH,47.3623369,7.8988859
+0037306,VOI Bern - Fischermätteli,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Könizstrasse 60,3008,Bern,CH,46.9413645,7.4185558
+0037307,VOI Brügg,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Hauptstrasse 17,2555,Brügg BE,CH,47.1239464,7.2804096
+0037308,VOI Grindelwald,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Dorfstrasse 155,3818,Grindelwald,CH,46.6236074,8.0391045
+0037309,VOI Rombach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bibersteinstrasse 4,5022,Rombach,CH,47.401845,8.0448105
+0037311,VOI Bern - Schosshalde,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Schossshaldenstrasse 16,3006,Bern,CH,46.9453775,7.4629318
+0037312,VOI Seengen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Unterdorfstrasse 7a,5707,Seengen,CH,47.3249241,8.2036078
+0037313,VOI Wabern,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Seftigenstrasse 259,3084,Wabern,CH,46.9286391,7.4523149
+0037314,VOI Bettlach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Dorfstrasse 12,2544,Bettlach,CH,47.1993568,7.426077
+0037315,VOI Wangen a. Aare,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Vorstadt 14,3380,Wangen an der Aare,CH,47.23393,7.6554199
+0037316,VOI Niederbipp,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Wydenstrasse 9,4704,Niederbipp,CH,47.2698326,7.6926322
+0037317,VOI Niedergösgen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Aarestrasse 49,5013,Niedergösgen,CH,47.3717743,7.9936894
+0037318,VOI Sumiswald,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Spitalstrasse 10,3454,Sumiswald,CH,47.0288821,7.7463868
+0037319,VOI Biel - Mett,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Schollstrasse 2,2504,Biel/Bienne,CH,47.1426268,7.2721353
+0037321,VOI Dulliken,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Grundstrasse 1,4657,Dulliken,CH,47.354143,7.9345418
+0037322,VOI Aarwangen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Langenthalstrasse 44,4912,Aarwangen,CH,47.2362174,7.7718237
+0037323,VOI Jegenstorf,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Solothurnstrasse 24,3303,Jegenstorf,CH,47.051416,7.5103611
+0037324,VOI Ins,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Moosgasse 7,3232,Ins,CH,47.0042581,7.1070561
+0037325,VOI Bern - Spiegel,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Chasseralstrasse 156,3095,Bern,CH,46.9264088,7.433499
+0037326,VOI Unterkulm,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Böhlerstrasse 2,5726,Unterkulm,CH,47.310751,8.1136799
+0037328,VOI Lengnau,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bielstrasse 35,2543,Lengnau BE,CH,47.1808069,7.3631011
+0037329,VOI Roggwil,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Dorfstrasse 19,4914,Roggwil,CH,47.2393252,7.8218895
+0037331,VOI Studen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Hauptstrasse 65,2557,Studen,CH,47.1142052,7.3011494
+0037332,VOI Wilderswil,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Hauptstrasse 27,3812,Wilderswil,CH,46.6660645,7.8690846
+0037333,VOI Wichtrach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Dorfplatz 1,3114,Wichtrach,CH,46.850993,7.5753497
+0037334,VOI Bern - Viktoriastrasse,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Viktoriastrasse 49,3013,Bern,CH,46.9536364,7.4545541
+0037335,VOI Baden - Mellingerstrasse,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Mellingerstrasse 142,5400,Baden,CH,47.4673446,8.2932847
+0037336,VOI Niederlenz,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Lenzburgerstrasse 2,5702,Niederlenz,CH,47.3990619,8.1777989
+0037337,VOI Steffisburg,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bahnhofstrasse 87,3613,Steffisburg,CH,46.773617,7.6161447
+0037338,VOI Aarburg,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bahnhofstrasse 59,4663,Aarburg,CH,47.320554,7.9071351
+0037339,VOI Boll,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Kernstrasse 9,3067,Boll,CH,46.9546925,7.5479454
+0037341,VOI Safenwil,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Güterstrasse 1A,5745,Safenwil,CH,47.321305,7.9851441
+0037342,VOI Zollbrück,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Langnaustr. 16,3436,Zollbrück,CH,46.973156,7.7477865
+0037343,VOI Bern - Kramgasse,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Kramgasse 54,3011,Bern,CH,46.9481109,7.4497459
+0037344,VOI Kappel,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Mittelgäustrasse 22,4616,Kappel SO,CH,47.3236429,7.8468992
+0037345,VOI Biel - Jardin du Paradis,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Jakob-Stämpflistrasse 112,2502,Biel/Bienne,CH,47.1454026,7.2632867
+0037346,VOI Niederrohrdorf,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Moosstrasse 2,5443,Niederrohrdorf,CH,47.4250876,8.30086
+0037347,VOI Schafisheim,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Seetalstrasse 117,5503,Schafisheim,CH,47.375744,8.143915
+0037348,VOI Thun Bahnhof,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Panoramastrasse 1a,3600,Thun,CH,46.75493,7.6308928
+0037351,VOI Bern Warmbächli,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Holligerplatz 1,3008,Bern,CH,46.94683,7.415601
+0037353,VOI Dottikon,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bahnhofstrasse 6,5605,Dottikon,CH,47.382822,8.242143
+0037355,VOI Köniz-Neuhausplatz,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Könizstrasse 251,3097,Liebefeld,CH,46.928673,7.416791
+0037356,VOI Lenzburg,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Augustin Keller-Strasse 19,5600,Lenzburg,CH,47.38932,8.17072
+0037358,VOI Egerkingen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Oltnerstrasse 1,4622,Egerkingen,CH,47.321882,7.794294
+0037361,VOI Stettlen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bernstrasse 57,3066,Stettlen,CH,46.958812,7.523631
+0037362,VOI Aarau-Buchserstrasse,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Buchserstrasse 71,5000,Aarau,CH,47.390267,8.063823
+0044010,Carouge - Acacias,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue Gustave-Revilliod 4,1227,Carouge GE,CH,46.1914249,6.1376403
+0044020,Chêne-Vert,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Place de la Gare 2,1225,Chêne-Bourg,CH,46.195988,6.1962886
+0044030,Genève - Balexert,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Avenue Louis-Casaï 27,1211,Genève 28,CH,46.2187665,6.1131166
+0044060,Genève - Cointrin Aéroport,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de l'Aéroport 25,1215,Genève 15 Aéroport,CH,46.2312856,6.1102265
+0044090,Carouge,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue du Marché 16,1227,Carouge GE,CH,46.1834886,6.1407522
+0044110,Genève - Champel,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue de Champel 61,1206,Genève,CH,46.1909267,6.1524674
+0044140,Genève - Charmilles,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Promenade de l'Europe 11,1203,Genève,CH,46.2082241,6.1231482
+0044180,Genève - Cornavin Gare,m,M-Migros,Kleine Filiale mit Grundsortiment,Place de Cornavin 3-7,1201,Genève,CH,46.210102,6.142462
+0044230,Genève - Plainpalais,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de Carouge 64,1205,Genève,CH,46.1931467,6.1435018
+0044250,Genève - Eaux-Vives,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue des Eaux-Vives 17-19,1207,Genève,CH,46.2039608,6.1585088
+0044290,Genève - Fusterie M-Express,m,M-Migros,Kleine Filiale mit Grundsortiment,Place de la Fusterie 7,1204,Genève,CH,46.2039287,6.1461998
+0044300,Gland,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de Mauverney 22,1196,Gland,CH,46.4170516,6.2756695
+0044340,Gd Saconnex - Le Pommier,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue Sonnex 20,1218,Le Grand-Saconnex,CH,46.228951,6.1198025
+0044350,Genève - Jonction,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Boulevard Carl-Vogt 6,1205,Genève,CH,46.2007896,6.1306224
+0044360,Gradelle,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin de la Gradelle 10,1224,Chêne-Bougeries,CH,46.2054501,6.1812063
+0044370,Le Lignon,m,M-Migros,Kleine Filiale mit Grundsortiment,Place du Lignon 29 A,1219,Le Lignon,CH,46.2034469,6.0963765
+0044410,Meyrin,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue de Feuillasse 24,1217,Meyrin,CH,46.2319199,6.0826195
+0044430,Genève - Navigation,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue des Paquis 41,1201,Genève,CH,46.212579,6.14974
+0044450,Genève - Les Cygnes,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de Lausanne 18-20,1201,Genève,CH,46.2113723,6.1449087
+0044470,Nyon - La Combe,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Rue de la Morâche 6,1260,Nyon,CH,46.3827028,6.2348109
+0044530,Lancy-Onex,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue des Bossons 78-80,1213,Petit-Lancy,CH,46.1885214,6.1100997
+0044550,Grand-Lancy - Palettes,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Av. des Communes-Réunies 52,1212,Grand-Lancy,CH,46.1749719,6.1223706
+0044590,Plan-les-Ouates,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Route de Saint-Julien 176,1228,Plan-les-Ouates,CH,46.1674266,6.1148529
+0044600,Pont-Rouge,m,M-Migros,Kleine Filiale mit Grundsortiment,Esplanade de Pont-Rouge 2,1212,Grand-Lancy,CH,46.1872348,6.1274789
+0044730,Genève - Rieu,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Route de Florissant 86,1206,Genève,CH,46.1919217,6.1639476
+0044810,Servette,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de la Servette 93,1202,Genève,CH,46.2134099,6.1296584
+0044830,Thônex,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de Genève 92,1226,Thônex,CH,46.1930274,6.1996185
+0044840,Genève - Tourelle,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin de la Tourelle 2-4,1209,Genève,CH,46.2243865,6.1258169
+0044860,Vernier - Arcenter,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de Peney 2-4,1214,Vernier,CH,46.2167048,6.0833327
+0044880,Collonge-Bellerive - Vésenaz,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Route de Thonon 55,1245,Collonge-Bellerive,CH,46.240334,6.1985909
+0044890,Genève - Vidollet,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue du Vidollet 5,1202,Genève,CH,46.2162367,6.1391683
+0044900,Genève - Villereuse,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de la Terrassière 29,1207,Genève,CH,46.2007706,6.1588299
+0044920,Porte de Versoix,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Chemin de l'ancien péage 1,1290,Versoix,CH,46.2744374,6.1674765
+0044950,Carouge - Vibert,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue Vibert 29,1227,Carouge GE,CH,46.1824507,6.1344054
+0049000,Thoiry (F),mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,CC Val Thoiry,01710,Thoiry,FR,46.2286354,5.9941326
+0049010,Etrembières (F),mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,CC Shopping-Etrembières,74112,Etrembières,FR,46.1810413,6.2322629
+0049030,Neydens (F),m,M-Migros,Kleine Filiale mit Grundsortiment,"500, route des Envignes 74",74 160,Neydens,FR,46.123435,6.0976331
+0049100,VOI Genève-Cirque,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Place du Cirque 2,1204,Genève,CH,46.2010565,6.1397642
+0049101,VOI Meyrin - Les Vergers,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,"3, place de la Diversité",1217,Meyrin,CH,46.2309568,6.0668592
+0049102,VOI Gland,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Rue du Borgeaud 10d,1196,Gland,CH,46.4232158,6.2617789
+0049103,VOI Bellevue,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Chemin des Romelles 17,1293,Bellevue,CH,46.250263,6.146959
+0063620,Echallens,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de Praz-Palud 2,1040,Echallens,CH,46.639032,6.635783
+0063625,Renens Quai Ouest,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue d'Epenex 4c,1020,Renens VD,CH,46.53747,6.577771
+0063630,Estavayer-le-Lac,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Route de la Chapelle 24,1470,Estavayer-le-Lac,CH,46.847963,6.8513418
+0063635,Vevey Des 2 Gares,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue des Moulins 5 b,1800,Vevey,CH,46.46498,6.842394
+0063640,Bex,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue Centrale 43-45,1880,Bex,CH,46.25036,7.015925
+0063645,Noville,m,M-Migros,Kleine Filiale mit Grundsortiment,Route du Simplon,1845,Noville,CH,46.388385,6.920954
+0063655,Préverenges,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin du Vuasset 2,1028,Préverenges,CH,46.518125,6.517526
+0063660,Lausanne - Cour,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue de Cour 36,1007,Lausanne,CH,46.51559,6.617706
+0063665,Aigle gare,m,M-Migros,Kleine Filiale mit Grundsortiment,Place de la gare 5,1860,Aigle,CH,46.316276,6.964818
+0063675,Chavannes les Cèdres,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue de la Gare 84,1022,Chavannes-près-Renens,CH,46.529935,6.572694
+0063680,Cossonay,m,M-Migros,Kleine Filiale mit Grundsortiment,Route des Chavannes 1,1304,Cossonay-Ville,CH,46.613976,6.506806
+0063690,Ecublens - Croset,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,chemin du Croset 7,1024,Ecublens,CH,46.534255,6.564657
+0063695,Blécherette,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin des Bossons 52,1018,Lausanne,CH,46.539434,6.618219
+0063710,Lausanne - La Harpe,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue de la Harpe 17,1007,Lausanne,CH,46.512339,6.625935
+0063720,Cugy,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de Bottens 1,1053,Cugy VD,CH,46.585431,6.640202
+0063730,Blonay,m,M-Migros,Kleine Filiale mit Grundsortiment,Route du Village 37,1807,Blonay,CH,46.465325,6.89541
+0063740,Vallorbe,m,M-Migros,Kleine Filiale mit Grundsortiment,Grand-Rue 23,1337,Vallorbe,CH,46.711924,6.377775
+0063750,Yverdon Sud,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de Lausanne 10,1400,Yverdon-les-Bains,CH,46.767975,6.650346
+0063770,Lausanne - Sévelin,m,M-Migros,Kleine Filiale mit Grundsortiment,Av. de Sévelin 2 Ab,1007,Lausanne,CH,46.5216627,6.6166202
+0063810,Oron-la-Ville,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de Lausanne 2,1610,Oron-la-Ville,CH,46.571906,6.825843
+0063820,Prilly,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de Cossonay 9,1008,Prilly,CH,46.533247,6.607706
+0063825,Orbe Gruvatiez,m,M-Migros,Kleine Filiale mit Grundsortiment,Route des Granges-Martin 22,1350,Orbe,CH,46.721355,6.537643
+0063835,Lutry – La Conversion,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de la Conversion 314,1093,La Conversion,CH,46.513393,6.676909
+0063840,Sainte-Croix,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de l'Industrie 21,1450,Ste-Croix,CH,46.819684,6.502962
+0063850,La Vallée,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de la Gare 7,1347,Le Sentier,CH,46.605846,6.230565
+0063865,Lausanne - La Borde,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de la Borde 3B,1018,Lausanne,CH,46.526959,6.633064
+0063870,Prilly - Malley,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin du Viaduc 1,1008,Prilly,CH,46.527394,6.602872
+0063880,Lausanne - Bellevaux,m,M-Migros,Kleine Filiale mit Grundsortiment,Route Aloys-Fauquez 97,1018,Lausanne,CH,46.537606,6.63363
+0063895,Lausanne - Flon Europe,m,M-Migros,Kleine Filiale mit Grundsortiment,Place de l'Europe 8,1003,Lausanne,CH,46.5206694,6.6296469
+0063900,Etoy,m,M-Migros,Kleine Filiale mit Grundsortiment,Route Suisse 26,1163,Etoy,CH,46.473931,6.425846
+0063910,Ecublens - EPFL,m,M-Migros,Kleine Filiale mit Grundsortiment,Louis Favre 8A,1024,Ecublens VD,CH,46.523029,6.565145
+0063930,Orbe,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue des Terreaux 22,1350,Orbe,CH,46.723956,6.531316
+0063940,Epalinges,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Place de la Croix-Blanche 11,1066,Epalinges,CH,46.548465,6.670864
+0063950,La Tour-de-Peilz,m,M-Migros,Kleine Filiale mit Grundsortiment,Place des Anciens-Fossés 10B,1814,La Tour-de-Peilz,CH,46.452697,6.858005
+0063970,Lausanne - Saint-Paul,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue d'Echallens 63,1004,Lausanne,CH,46.527802,6.616047
+0063991,Clarens - Centre,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue du Léman 9,1815,Clarens,CH,46.440759,6.893382
+0064270,Montagny,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,En Chamard,1442,Montagny-près-Yverdon,CH,46.792458,6.621591
+0064280,Renens - Florissant,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue de Florissant 38,1020,Renens VD,CH,46.530832,6.598313
+0064290,Morges,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de la gare 19,1110,Morges,CH,46.509725,6.494764
+0064320,Chavannes - Renens,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue du Tir-Fédéral 12,1022,Chavannes-Renens,CH,46.536398,6.57637
+0064325,Renens Silo,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue du Silo 11,1020,Renens,CH,46.533162,6.58586
+0064330,Bussigny,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de la Gare 2,1030,Bussigny-Lausanne,CH,46.54754,6.553088
+0064340,Lausanne - La Sallaz,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de Berne 1,1010,Lausanne,CH,46.533347,6.646768
+0064350,Moudon,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue de la Grande Fin 1,1510,Moudon,CH,46.668716,6.7971907
+0064360,Payerne,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue du Temple 19,1530,Payerne,CH,46.820247,6.939556
+0064380,Rolle,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Av. de la Gare 17,1180,Rolle,CH,46.460997,6.338111
+0064410,Montreux,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Place du Marché 6,1820,Montreux,CH,46.431698,6.909716
+0064420,Vevey - Midi Coindet,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Av. Gustave Coindet 11,1800,Vevey,CH,46.463506,6.840133
+0064520,Lausanne - Chailly,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue de la Vallonnette 2,1012,Lausanne,CH,46.527309,6.651514
+0064570,Lausanne - Bergières,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue des Bergières 50,1004,Lausanne,CH,46.531451,6.618467
+0064580,Lausanne - Closelet,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue d'Ouchy 11,1006,Lausanne,CH,46.514869,6.632713
+0064590,Renens - Métropole,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de la Mèbre 9,1020,Renens VD,CH,46.538544,6.580878
+0064600,Pully,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Chemin du Pré-de-la-Tour 3,1009,Pully,CH,46.511668,6.659662
+0064950,Yverdon - Métropole,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Rue de Neuchâtel 3,1400,Yverdon-les-Bains,CH,46.781175,6.63551
+0064970,Lausanne - Métropole,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Rue des Terreaux 25,1003,Lausanne,CH,46.522757,6.626973
+0065000,Crissier,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Chemin du Closalet 7,1023,Crissier,CH,46.554124,6.569005
+0065010,Romanel-sur-Lausanne,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,En Félezin,1032,Romanel-s-Lausanne,CH,46.55972,6.6113696
+0065100,Aigle - Chablais Centre,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Ch. Sous-le-Grand Pré 4,1860,Aigle,CH,46.316331,6.939938
+0073120,Zug Herti,m,M-Migros,Kleine Filiale mit Grundsortiment,Hertizentrum 10,6300,Zug,CH,47.1780404,8.505821
+0073140,Luzern - Schlossberg,m,M-Migros,Kleine Filiale mit Grundsortiment,Friedentalstrasse 6,6004,Luzern,CH,47.0611806,8.3078217
+0073150,Luzern - Bahnhof Daily,m,M-Migros,Kleine Filiale mit Grundsortiment,Zentralstrasse 7,6003,Luzern,CH,47.0497659,8.3097035
+0073170,Weinbergli Luzern,m,M-Migros,Kleine Filiale mit Grundsortiment,Tribschenstrasse 62,6005,Luzern,CH,47.042706,8.3160305
+0073180,Erstfeld,m,M-Migros,Kleine Filiale mit Grundsortiment,Gotthardstrasse 144,6472,Erstfeld,CH,46.8251526,8.6500662
+0073190,Zug - Grabenstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Grabenstrasse 5,6300,Zug,CH,47.1652634,8.5151671
+0073200,Buchrain - Tschannhof,m,M-Migros,Kleine Filiale mit Grundsortiment,Unterdorfstrasse,6033,Buchrain,CH,47.0954005,8.3488964
+0073210,Reiden,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 52,6260,Reiden,CH,47.2484269,7.9715113
+0073220,Buochs,m,M-Migros,Kleine Filiale mit Grundsortiment,Ennetbürgerstrasse 45,6374,Buochs,CH,46.9777789,8.4159724
+0073230,Luzern - Bahnhof,m,M-Migros,Kleine Filiale mit Grundsortiment,Zentralstrasse 1,6003,Luzern,CH,47.0501738,8.3103365
+0073270,Luzern - Würzenbachstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Würzenbachstrasse 19,6006,Luzern,CH,47.0550833,8.3437092
+0073280,Oberkirch,m,M-Migros,Kleine Filiale mit Grundsortiment,Luzernstrasse 36,6208,Oberkirch LU,CH,47.1651653,8.1137803
+0073290,Root,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 11b,6037,Root,CH,47.116936,8.391274
+0073300,Wylpark Hergiswil,m,M-Migros,Kleine Filiale mit Grundsortiment,Seestrasse 43,6052,Hergiswil NW,CH,46.98708,8.312451
+0073330,Bertiswil Rothenburg LU,m,M-Migros,Kleine Filiale mit Grundsortiment,Rosengartenstrasse 2,6023,Rothenburg,CH,47.101345,8.263377
+0073340,Adligenswil LU,m,M-Migros,Kleine Filiale mit Grundsortiment,Obgardirain 1,6043,Adligenswil,CH,47.071438,8.362019
+0073350,Grienbachstrasse Zug,m,M-Migros,Kleine Filiale mit Grundsortiment,Grienbachstrasse 11,6302,Zug,CH,47.183948,8.522788
+0073670,Luzern - Brüelstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Kreuzbuchstrasse 53,6006,Luzern,CH,47.0544761,8.3402123
+0073680,Emmen - Kapf,m,M-Migros,Kleine Filiale mit Grundsortiment,Kapfstrasse 3,6020,Emmenbrücke,CH,47.0898808,8.2738074
+0073690,Luzern - Waldstätter,m,M-Migros,Kleine Filiale mit Grundsortiment,Winkelriedstrasse 58,6003,Luzern,CH,47.0462259,8.3071716
+0073710,Ruopigen Zentrum Luzern,m,M-Migros,Kleine Filiale mit Grundsortiment,Ruopigenplatz,6015,Luzern,CH,47.0622438,8.2740577
+0073720,Küssnacht - Rigimärt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Siegwartstrasse 11,6403,Küssnacht am Rigi,CH,47.0836743,8.4412034
+0073740,Cham - Neudorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Zugerstrasse 15/17,6330,Cham,CH,47.1820876,8.4615121
+0073750,Brunnen - Bahnhofsmärcht,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofplatz 19,6440,Brunnen,CH,46.99991,8.608986
+0073760,Unterägeri,m,M-Migros,Kleine Filiale mit Grundsortiment,Zugerstrasse 32,6314,Unterägeri,CH,47.1380428,8.579203
+0073770,Luzern - Bruchstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Bruchstrasse 18,6003,Luzern,CH,47.050865,8.299126
+0073780,Willisau - Chrüzhof,m,M-Migros,Kleine Filiale mit Grundsortiment,Ettiswilerstrasse 14,6130,Willisau,CH,47.122768,7.9941804
+0073790,Goldau,m,M-Migros,Kleine Filiale mit Grundsortiment,Parkstrasse 25,6410,Goldau,CH,47.05089,8.551124
+0073800,Horw,m,M-Migros,Kleine Filiale mit Grundsortiment,Gemeindehausplatz 14+15,6048,Horw,CH,47.0189983,8.309017
+0073810,Zell,m,M-Migros,Kleine Filiale mit Grundsortiment,Zelgmatte 2,6144,Zell LU,CH,47.1371898,7.9282486
+0073820,Rotkreuz,m,M-Migros,Kleine Filiale mit Grundsortiment,Buonaserstrasse 1,6343,Rotkreuz,CH,47.1411731,8.4287677
+0073830,Schüpfheim,m,M-Migros,Kleine Filiale mit Grundsortiment,Vormüli 1,6170,Schüpfheim,CH,46.9482657,8.0165859
+0073840,Luzern - Allmend,m,M-Migros,Kleine Filiale mit Grundsortiment,Zihlmattweg 46,6005,Luzern,CH,47.031586,8.304944
+0073850,Baar,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 5,6340,Baar,CH,47.195539,8.5250447
+0073860,Ruswil,m,M-Migros,Kleine Filiale mit Grundsortiment,Rüediswilerstrasse 79,6017,Ruswil,CH,47.0884106,8.1127902
+0073870,Egolzwil - Schötz,m,M-Migros,Kleine Filiale mit Grundsortiment,Grossmatt 1,6243,Egolzwil,CH,47.183407,7.9813676
+0073880,Hitzkirch,m,M-Migros,Kleine Filiale mit Grundsortiment,Richensee 2,6285,Hitzkirch,CH,47.2222081,8.2518859
+0073890,Engelberg,m,M-Migros,Kleine Filiale mit Grundsortiment,Klosterstrasse 5,6390,Engelberg,CH,46.8207122,8.4057173
+0073910,Sempach Station,m,M-Migros,Kleine Filiale mit Grundsortiment,Mettenwilstrasse 11,6203,Sempach Station,CH,47.1169163,8.1993284
+0073920,Rain,m,M-Migros,Kleine Filiale mit Grundsortiment,Gääli 6,6026,Rain,CH,47.1269865,8.2496975
+0073930,Luzern - Grossmatte,m,M-Migros,Kleine Filiale mit Grundsortiment,Luzernerstrasse 143,6014,Luzern,CH,47.0494761,8.2633687
+0073940,Hünenberg Dorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Maihölzli 5,6331,Hünenberg,CH,47.17504,8.427463
+0073950,Malters,m,M-Migros,Kleine Filiale mit Grundsortiment,Weihermatte 7a/7b,6102,Malters,CH,47.0378576,8.1793523
+0073960,Dagmersellen,m,M-Migros,Kleine Filiale mit Grundsortiment,Baselstrasse 7,6252,Dagmersellen,CH,47.212984,7.988328
+0073970,Steinhausen Dorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 2,6312,Steinhausen,CH,47.1970572,8.4846747
+0073980,Kriens - Mattenhof,m,M-Migros,Kleine Filiale mit Grundsortiment,Am Mattenhof 2,6010,Kriens,CH,47.0267443,8.30067
+0073990,Altdorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Gitschenstrasse 14,6460,Altdorf,CH,46.8796664,8.6416105
+0074260,Luzern - Schönbühl,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Langensandstr. 23,6005,Luzern,CH,47.0372897,8.3283997
+0074290,Sarnen - Sarnen-Center,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Nelkenstrasse 5,6060,Sarnen,CH,46.8967489,8.2494742
+0074300,Ebikon - Ladengasse,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Zentralstrasse 16,6030,Ebikon,CH,47.0811001,8.3408568
+0074310,Bürglen/Altdorf - Urnertor,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Gotthardstrasse 67,6460,Altdorf UR,CH,46.8727476,8.6515004
+0074320,Wolhusen - Dorfmärt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Entlebucherstr. 36,6110,Wolhusen,CH,47.0560514,8.0705934
+0074330,Zug - Metalli,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Baarerstrasse 22,6300,Zug,CH,47.1732476,8.5170158
+0074340,Hochdorf - Seetal-Center,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hauptstrasse 5,6280,Hochdorf,CH,47.1660917,8.2913828
+0074350,Emmenbrücke - Sonnenplatz,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Sonnenplatz 1,6020,Emmenbrücke,CH,47.0779516,8.2752688
+0074360,Kriens - Hofmatt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Luzernerstrasse 30,6010,Kriens,CH,47.0337928,8.2829724
+0074370,Ibach-Schwyz - Mythen-Center,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Mythen-Centerstr. 18,6438,Ibach,CH,47.0155468,8.64652
+0074380,Luzern - Schweizerhof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hertensteinstrasse 9,6004,Luzern,CH,47.054745,8.3096768
+0074390,Emmen - Wohncenter,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Seetalstrasse 50,6020,Emmenbrücke,CH,47.0737906,8.2930347
+0074400,Ebikon - Mall of Switzerland,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Ebisquare-Strasse 1,6030,Ebikon,CH,47.0939482,8.3588978
+0074700,Surseepark,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Bahnhofstrasse 28,6210,Sursee,CH,47.1728531,8.1021962
+0074710,Steinhausen - Zugerland,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Hinterbergstrasse 40,6312,Steinhausen,CH,47.1920625,8.4777745
+0074720,Stans - Länderpark,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Bitzistrasse 2,6370,Stans,CH,46.9646845,8.3556565
+0077350,VOI Beromünster,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Aargauerstrasse 16,6215,Beromünster,CH,47.209729,8.1917754
+0077351,VOI Sempach Stadt,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Oberstadt 6,6204,Sempach Stadt,CH,47.1362307,8.1920443
+0077354,VOI Büron,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Sagipark 7,6233,Büron,CH,47.2136699,8.0944046
+0077355,VOI Luzern Wesemlin,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Abendweg 46,6006,Luzern,CH,47.060284,8.314992
+0077356,VOI Stans,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Marktgasse 2,6370,Stans,CH,46.9565347,8.366329
+0077357,VOI Alpnach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Brünigstrasse 29,6055,Alpnach Dorf,CH,46.9398339,8.2709654
+0083610,Tramelan,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue Albert-Gobat 1,2720,Tramelan,CH,47.2234176,7.0997558
+0083630,Courtepin,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de l'Industrie 25,1784,Courtepin,CH,46.8656187,7.1201102
+0083640,Schoenberg,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin Cité-des-Jardins 13A,1700,Fribourg,CH,46.8097786,7.1723464
+0083650,Marly,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Route des Pralettes 1,1723,Marly,CH,46.7761541,7.1612389
+0083670,Beauregard,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin de Béthléem 7,1700,Fribourg,CH,46.8006068,7.1444374
+0083690,St-Imier,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue Baptiste-Savoye 62,2610,St-Imier,CH,47.1515265,6.9952813
+0083700,Fleurier,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Grand-Rue 27,2114,Fleurier,CH,46.9020353,6.5805278
+0083730,Cernier,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue Comble-Emine 5,2053,Cernier,CH,47.0580103,6.9017185
+0083740,Tavannes,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de Pierre-Pertuis 11,2710,Tavannes,CH,47.21932,7.1978861
+0083750,La Neuveville,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin des Vergers 20,2520,La Neuveville,CH,47.0618892,7.0886002
+0083760,Grande Béroche,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de Combamare 21,2025,Chez-Le-Bart,CH,46.8996814,6.7838713
+0083770,Colombier,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue de la Gare 16,2013,Colombier,CH,46.9672459,6.8517986
+0083780,Cormanon,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue du centre 4,1752,Villars-sur-Glâne,CH,46.7937778,7.1335773
+0083790,Saignelégier,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de la Gruère 23,2350,Saignelégier,CH,47.254553,6.9998167
+0083800,Kerzers,m,M-Migros,Kleine Filiale mit Grundsortiment,Murtenstrasse 15,3210,Kerzers,CH,46.9737039,7.1939798
+0083810,Avenches,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de Pré-Vert 5,1580,Avenches,CH,46.8854592,7.0451655
+0083820,Boudry,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue du Collège 37,2017,Boudry,CH,46.9505063,6.8405634
+0083830,Ste-Thérèse,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Route de Sainte-Thérèse 2a,1700,Fribourg,CH,46.8101267,7.1490104
+0083840,La Roche,m,M-Migros,Kleine Filiale mit Grundsortiment,Haut de Scherwil 2,1634,La Roche,CH,46.6980151,7.1419287
+0083850,Belfaux,m,M-Migros,Kleine Filiale mit Grundsortiment,route de Lossy 16b,1782,Belfaux,CH,46.8259234,7.1131443
+0083860,Granges - Paccot,m,M-Migros,Kleine Filiale mit Grundsortiment,Route d'Englisberg 15b,1763,Granges-Paccot,CH,46.8289721,7.1489877
+0083871,Gare de Bulle,m,M-Migros,Kleine Filiale mit Grundsortiment,Place de la Gare,1630,Bulle,CH,46.61881,7.0545635
+0083880,Le Landeron,m,M-Migros,Kleine Filiale mit Grundsortiment,Route de Neuchâtel 40,2525,Le Landeron,CH,47.0563834,7.0607499
+0083890,Cortaillod,m,M-Migros,Kleine Filiale mit Grundsortiment,Chemin de Ronzi 2,2016,Cortaillod,CH,46.9442979,6.8429599
+0083920,Plaffeien,m,M-Migros,Kleine Filiale mit Grundsortiment,Obere Matte 9,1716,Plaffeien,CH,46.7397917,7.2910651
+0083930,Les Cadolles,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue du Plan 32,2000,Neuchâtel,CH,46.998427,6.924552
+0083940,Domdidier,m,M-Migros,Kleine Filiale mit Grundsortiment,Grand-Rhain 54,1564,Domdidier,CH,46.8653776,7.0092891
+0083950,Charrière,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de la Charrière 71,2300,La Chaux-de-Fonds,CH,47.112343,6.8354115
+0083960,Neyruz,m,M-Migros,Kleine Filiale mit Grundsortiment,Place de la Gare 10,1740,Neyruz,CH,46.7671371,7.0655105
+0083970,La Tour-de-Trême Tivoli,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de l'Ancien Comté 17b,1635,La Tour-de-Trême,CH,46.6106241,7.0633925
+0083980,Gare Fribourg,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue Louis-d'Affry 2,1701,Fribourg,CH,46.8033304,7.1500941
+0084210,Hôpital,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue de l'Hôpital 12,2000,Neuchâtel,CH,46.991987,6.929815
+0084220,Portes-Rouges,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue des Portes-Rouges 46,2000,Neuchâtel,CH,47.0040433,6.9553682
+0084230,Métropole Centre,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Rue Daniel-Jeanrichard 23,2300,La Chaux-de-Fonds,CH,47.1000474,6.8273056
+0084240,Marché FR,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue St-Pierre 2,1700,Fribourg,CH,46.8034025,7.1543652
+0084250,Morat,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bernstrasse 18,3280,Morat,CH,46.9300318,7.1227072
+0084260,Peseux,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue Jämes-Paris 4,2034,Peseux,CH,46.9859094,6.8895441
+0084270,Gruyère-Centre,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Rue Château d'En-Bas 2,1630,Bulle,CH,46.6232086,7.0574539
+0084280,Le Locle,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rue Bournot 35,2400,Le Locle,CH,47.0561079,6.7477529
+0084292,Romont,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue de la Gare 7,1680,Romont,CH,46.6926707,6.9126508
+0084300,Pérolles Centre,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Boulevard de Pérolles 21 A,1700,Fribourg,CH,46.7997003,7.152315
+0084310,Les Eplatures,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Charles Naine 44,2300,La Chaux-de-Fonds,CH,47.0900296,6.8030468
+0084320,Düdingen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Käsereistrasse 3,3186,Düdingen,CH,46.8469871,7.19207
+0084330,Châtel-St-Denis,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rte de Montreux 56,1618,Châtel-St-Denis,CH,46.5237831,6.9048889
+0084340,Centre la Tour,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Route de Pra-Riond 2,1635,La Tour-de-Trême,CH,46.6004826,7.0758334
+0084350,Flamatt,m,M-Migros,Kleine Filiale mit Grundsortiment,Bernstrasse 36,3175,Flamatt,CH,46.8896931,7.3191353
+0084360,Agy,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,route d'Agy 2,1763,Granges-Paccot,CH,46.8209959,7.1539379
+0084710,Avry Centre,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Route de Matran 9,1754,Avry-sur-Matran,CH,46.7876479,7.0781119
+0084721,Marin Centre,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Rue Fleur-de-Lys 26,2074,Marin-Epagnier,CH,47.0116002,7.0079209
+0090311,Arnegg,m,M-Migros,Kleine Filiale mit Grundsortiment,Bächigenstrasse 11,9212,Arnegg,CH,47.442257,9.2531395
+0090312,Schaan,m,M-Migros,Kleine Filiale mit Grundsortiment,Im Rösle 2,9494,Schaan,LI,47.1692926,9.5037209
+0090313,Gossau - Stadtbühlpark,m,M-Migros,Kleine Filiale mit Grundsortiment,Stadtbühlstrasse 12,9200,Gossau SG,CH,47.4119695,9.2504373
+0090314,Degersheim,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 81,9113,Degersheim,CH,47.3724798,9.1965728
+0090317,Heiden,m,M-Migros,Kleine Filiale mit Grundsortiment,Sonnentalstrasse 2,9410,Heiden,CH,47.4389521,9.5361583
+0090318,Herisau - Alpsteinstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Alpsteinstrasse 8b,9100,Herisau,CH,47.3787332,9.2788104
+0090320,Aachtal,m,M-Migros,Kleine Filiale mit Grundsortiment,Schrofenstrasse 19,8580,Amriswil,CH,47.5482982,9.2732473
+0090321,St. Gallen - Lachen,m,M-Migros,Kleine Filiale mit Grundsortiment,Ulmenstrasse 11,9000,St.Gallen,CH,47.4204665,9.3536906
+0090323,Au SG,m,M-Migros,Kleine Filiale mit Grundsortiment,Nollenhornstrasse 9,9434,Au SG,CH,47.431293,9.6377624
+0090324,Rorschach - Promenade,m,M-Migros,Kleine Filiale mit Grundsortiment,Promenadenstrasse 83,9400,Rorschach,CH,47.4740862,9.4950791
+0090325,Flums,m,M-Migros,Kleine Filiale mit Grundsortiment,Lochrietstrasse 27,8890,Flums,CH,47.098083,9.353505
+0090326,Rheineck,m,M-Migros,Kleine Filiale mit Grundsortiment,Rhyguetstrasse 2,9424,Rheineck,CH,47.4684353,9.5886584
+0090327,Diepoldsau,m,M-Migros,Kleine Filiale mit Grundsortiment,Hintere Kirchstrasse 1,9444,Diepoldsau,CH,47.3857976,9.6562685
+0090328,Thal,m,M-Migros,Kleine Filiale mit Grundsortiment,Wiesentalstrasse 4,9425,Thal,CH,47.4795373,9.5771551
+0090331,Oberriet,m,M-Migros,Kleine Filiale mit Grundsortiment,Staatsstrasse 56,9463,Oberriet,CH,47.3158345,9.5634422
+0090333,Davos-Dorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Promenade 146,7260,Davos Dorf,CH,46.8073239,9.8382834
+0090334,Chur - Ringstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Ringstrasse 91,7000,Chur,CH,46.8577894,9.5207396
+0090335,St. Gallen - Langgasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Langgasse 20,9008,St. Gallen,CH,47.4352582,9.3862519
+0090336,St. Gallen - Neudorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Rorschacherstrasse 249,9016,St. Gallen,CH,47.4372078,9.4050204
+0090337,Walenstadt,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 27,8880,Walenstadt,CH,47.1219487,9.3135977
+0090339,St. Gallen - Spisermarkt,m,M-Migros,Kleine Filiale mit Grundsortiment,Brühlgasse 28,9000,St.Gallen,CH,47.4252078,9.3782359
+0090341,Triesen,m,M-Migros,Kleine Filiale mit Grundsortiment,Landstrasse 251,9495,Triesen,LI,47.108894,9.525209
+0090349,Kreuzlingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 63,8280,Kreuzlingen,CH,47.6481842,9.1756501
+0090351,Müllheim,m,M-Migros,Kleine Filiale mit Grundsortiment,Thurstrasse 3,8555,Müllheim,CH,47.6001921,9.0003577
+0090352,Horn,m,M-Migros,Kleine Filiale mit Grundsortiment,Seestrasse 119,9326,Horn,CH,47.49744,9.453102
+0090361,Tägerwilen,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 117,8274,Tägerwilen,CH,47.6538552,9.1419927
+0090363,Bischofszell,m,M-Migros,Kleine Filiale mit Grundsortiment,Steigstrasse 5,9220,Bischofszell,CH,47.4925953,9.2441346
+0090364,St. Gallen - Bruggen,m,M-Migros,Kleine Filiale mit Grundsortiment,Fürstenlandstrasse 157,9014,St.Gallen,CH,47.4100595,9.3354232
+0090368,Ebnat-Kappel,m,M-Migros,Kleine Filiale mit Grundsortiment,Kapplerstrasse 16,9642,Ebnat-Kappel,CH,47.2664736,9.1197808
+0090373,Bütschwil,m,M-Migros,Kleine Filiale mit Grundsortiment,Landstrasse 41,9606,Bütschwil,CH,47.3631624,9.0730977
+0090375,Goldach,m,M-Migros,Kleine Filiale mit Grundsortiment,Ulrich-Rösch-Strasse 5,9403,Goldach,CH,47.474811,9.4677839
+0090376,Münchwilen,m,M-Migros,Kleine Filiale mit Grundsortiment,Wilerstrasse 5,9542,Münchwilen,CH,47.4777001,8.9982661
+0090377,Sirnach,m,M-Migros,Kleine Filiale mit Grundsortiment,Winterthurerstrasse 27,8370,Sirnach,CH,47.4634678,8.9916638
+0090378,Kirchberg-Stelz,m,M-Migros,Kleine Filiale mit Grundsortiment,Wilerstrasse 204,9533,Kirchberg,CH,47.4388794,9.0568321
+0090380,Bazenheid,m,M-Migros,Kleine Filiale mit Grundsortiment,Wilerstrasse 17,9602,Bazenheid,CH,47.4126848,9.0682158
+0090381,Domat-Ems,m,M-Migros,Kleine Filiale mit Grundsortiment,Via La Val 1,7013,Domat/Ems,CH,46.8372082,9.4653889
+0090383,Sulgen - Passerelle,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 3,8583,Sulgen,CH,47.5401419,9.1829867
+0090384,Churwalden,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptstrasse 146,7075,Churwalden,CH,46.7779744,9.543758
+0090385,Teufen,m,M-Migros,Kleine Filiale mit Grundsortiment,Speicherstrasse 8,9053,Teufen AR,CH,47.3907355,9.3908514
+0090387,Weinfelden Weststrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Weststrasse 27/29,8570,Weinfelden,CH,47.56718,9.094288
+0090389,Chur Masans,m,M-Migros,Kleine Filiale mit Grundsortiment,Masanserstrasse 240,7000,Chur,CH,46.8717233,9.5346776
+0090390,Wittenbach,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Oedenhof 1c,9300,Wittenbach,CH,47.460354,9.389376
+0090391,Zuzwil,m,M-Migros,Kleine Filiale mit Grundsortiment,Herbergstrasse 17,9524,Zuzwil,CH,47.47228,9.1124966
+0090392,Bronschhofen,m,M-Migros,Kleine Filiale mit Grundsortiment,Amp-Strasse 2,9552,Bronschhofen,CH,47.4807063,9.0325903
+0090415,Altstätten SG,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Stossstrasse 2,9450,Altstätten,CH,47.377183,9.537698
+0090420,Amriswil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rütistrasse 10a,8580,Amriswil,CH,47.54671,9.297961
+0090421,Arbon,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,St. Gallerstrasse 6,9320,Arbon,CH,47.5119795,9.432242
+0090422,Appenzell,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Feldstrasse 16,9050,Appenzell,CH,47.333888,9.405552
+0090424,Buchs SG,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Churerstrasse 10,9470,Buchs,CH,47.163967,9.472575
+0090425,Chur - Calandapark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Pargherastrasse 1-3,7000,Chur,CH,46.846195,9.513262
+0090427,Chur - Gäuggeli,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Gäuggelistrasse 28,7000,Chur,CH,46.851696,9.527312
+0090428,Landquart,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 54,7302,Landquart,CH,46.9677876,9.561865
+0090431,Flawil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Magdenauerstrasse 10,9230,Flawil,CH,47.4130548,9.1863798
+0090432,Davos Symondpark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Promenade 105,7270,Davos Platz,CH,46.8015209,9.8327029
+0090433,Gossau,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,St. Gallerstrasse 115,9200,Gossau SG,CH,47.4175531,9.2563798
+0090436,Herisau,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Gartenstrasse 2,9100,Herisau,CH,47.38613,9.284552
+0090440,Kreuzlingen - Seepark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bleichestrasse 15,8280,Kreuzlingen,CH,47.6418058,9.1960063
+0090443,Romanshorn - Hubzelg,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 54a,8590,Romanshorn,CH,47.5646479,9.3674826
+0090445,Rorschach - Trischliplatz,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Trischlistrasse 15,9400,Rorschach,CH,47.4778206,9.4889596
+0090447,St. Gallen - Silberturm,m,M-Migros,Kleine Filiale mit Grundsortiment,Rorschacherstrasse 150,9006,St. Gallen,CH,47.4311418,9.3950643
+0090448,St. Gallen - St. Fiden,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bachstrasse 29,9008,St. Gallen,CH,47.4358241,9.391591
+0090450,Uzwil - Birkenhof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Lindenstrasse 5,9240,Uzwil,CH,47.436874,9.133884
+0090452,Wattwil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 19,9630,Wattwil,CH,47.2984452,9.0881625
+0090455,Weinfelden - Rösslifelsen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Amriswilerstrasse 12,8570,Weinfelden,CH,47.5674427,9.1110836
+0090458,Widnau - Rhydorf-Center,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 2,9443,Widnau,CH,47.4077549,9.6288579
+0090461,Wil SG,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Obere Bahnhofstrasse 5,9500,Wil,CH,47.4628222,9.0423748
+0090466,Thusis - im Park,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Im Park,7430,Thusis,CH,46.6944915,9.4398532
+0090467,Ilanz - Center Marcau,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Poststrasse 4,7130,Ilanz,CH,46.7745715,9.2075797
+0090468,Samedan,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Cho d`Punt 10,7503,Samedan,CH,46.531044,9.873851
+0090471,Mels - Pizolpark,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Grossfeldstrasse 56,8879,Mels,CH,47.04178,9.4308
+0090475,St. Margrethen - Rheinpark,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Neudorfstrasse 60,9430,St.Margrethen,CH,47.450115,9.651184
+0090478,St. Gallen - Neumarkt,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,St. Leonhardstrasse 35,9000,St.Gallen,CH,47.422127,9.370636
+0090491,Abtwil - Säntispark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Wiesenbachstrasse 7,9030,Abtwil,CH,47.41782,9.316143
+0093120,Winterthur - Obertor,m,M-Migros,Kleine Filiale mit Grundsortiment,Stadthausstrasse 31,8400,Winterthur,CH,47.5003636,8.7317613
+0093130,Schaffhausen - Buchthalen,m,M-Migros,Kleine Filiale mit Grundsortiment,Dürstlingweg 2,8203,Schaffhausen,CH,47.6992534,8.6542202
+0093175,Turbenthal,m,M-Migros,Kleine Filiale mit Grundsortiment,Tösstalstrasse 54,8488,Turbenthal,CH,47.4385237,8.8445994
+0093300,Bauma,m,M-Migros,Kleine Filiale mit Grundsortiment,Heinrich - Gujerstrasse 10,8494,Bauma,CH,47.3681049,8.8775133
+0093600,Frauenfeld - Multiplex,m,M-Migros,Kleine Filiale mit Grundsortiment,Langfeldstrasse 53a,8500,Frauenfeld,CH,47.565858,8.9052823
+0093610,Winterthur - Blumenau,m,M-Migros,Kleine Filiale mit Grundsortiment,Wülflingerstrasse 71,8400,Winterthur,CH,47.5068665,8.711992
+0093620,Diessenhofen,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 15,8253,Diessenhofen,CH,47.6859558,8.7521372
+0093650,Hinwil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bachtelstrasse 16,8340,Hinwil,CH,47.30048,8.844325
+0093670,Schaffhausen - Breite,m,M-Migros,Kleine Filiale mit Grundsortiment,Hohlenbaumstrasse 79,8200,Schaffhausen,CH,47.7064686,8.6200072
+0093680,Winterthur - Hegi,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hintermühlenstrasse 4,8409,Winterthur,CH,47.5042465,8.7721562
+0093690,Winterthur - Wülflingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Lindenplatz 1,8408,Winterthur,CH,47.5108438,8.6937262
+0093700,Beringen,m,M-Migros,Kleine Filiale mit Grundsortiment,Schaffhauserstrasse 72,8222,Beringen,CH,47.6963713,8.5838803
+0093710,Thayngen,m,M-Migros,Kleine Filiale mit Grundsortiment,Biberstrasse 30,8240,Thayngen,CH,47.7488083,8.7067801
+0093720,Seuzach,m,M-Migros,Kleine Filiale mit Grundsortiment,Winterthurerstrasse 5,8472,Seuzach,CH,47.5355288,8.7303174
+0093740,Steckborn,m,M-Migros,Kleine Filiale mit Grundsortiment,Im Feldbach 1b,8266,Steckborn,CH,47.6639509,8.9758158
+0093750,Neunkirch,m,M-Migros,Kleine Filiale mit Grundsortiment,Löhningerstrasse 4,8213,Neunkirch,CH,47.6903787,8.5045443
+0093770,Wald ZH,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 20,8636,Wald,CH,47.2748553,8.9147079
+0093780,Aadorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 2,8355,Aadorf,CH,47.4900907,8.8994059
+0093790,Andelfingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Weinlandstrasse 4,8451,Kleinandelfingen,CH,47.601998,8.6887258
+0093800,Fehraltorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Grundstrasse 4,8320,Fehraltorf,CH,47.3866248,8.755505
+0093810,Winterthur - Deutweg,m,M-Migros,Kleine Filiale mit Grundsortiment,Pflanzschulstrasse 9,8400,Winterthur,CH,47.4947417,8.7402503
+0093820,Pfungen,m,M-Migros,Kleine Filiale mit Grundsortiment,Weiacherstrasse 1,8422,Pfungen,CH,47.5172846,8.6500909
+0093830,Matzingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Frauenfelderstrasse 95,9548,Matzingen,CH,47.5268556,8.9221349
+0093840,Elgg,m,M-Migros,Kleine Filiale mit Grundsortiment,St. Gallerstrasse 16,8353,Elgg,CH,47.4983247,8.8617399
+0093850,Hittnau,m,M-Migros,Kleine Filiale mit Grundsortiment,Jakob Stutz-Strasse 75,8335,Hittnau,CH,47.3631688,8.8254402
+0093860,Kollbrunn,m,M-Migros,Kleine Filiale mit Grundsortiment,Tösstalstrasse 24,8483,Kollbrunn,CH,47.4578401,8.7707847
+0093870,Dättnau,m,M-Migros,Kleine Filiale mit Grundsortiment,Ziegeleiplatz 2,8406,Dättnau,CH,47.477406,8.699324
+0093900,Nürensdorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Alte Winterthurerstrasse 7,8309,Nürensdorf,CH,47.445654,8.642428
+0093910,Wiesendangen,m,M-Migros,Kleine Filiale mit Grundsortiment,Alte Frauenfelderstrasse 9,8542,Wiesendangen,CH,47.52307,8.773215
+0094220,Neuhausen,m,M-Migros,Kleine Filiale mit Grundsortiment,Im RhyTech 4,8212,Neuhausen,CH,47.68262,8.613568
+0094230,Rüti ZH,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bandwiesstrasse 6,8630,Rüti,CH,47.2581252,8.8489703
+0094250,Winterthur - Oberwinterthur,m,M-Migros,Kleine Filiale mit Grundsortiment,Guggenbühlstrasse 1,8404,Winterthur,CH,47.5112274,8.7587494
+0094260,Winterthur - Töss,m,M-Migros,Kleine Filiale mit Grundsortiment,Zürcherstrasse 102,8406,Winterthur,CH,47.491878,8.7064972
+0094270,Winterthur - Seen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hinterdorfstrasse 40,8405,Winterthur,CH,47.485586,8.7623465
+0094290,Effretikon - Effi-Märt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Märtplatz 5,8307,Effretikon,CH,47.428474,8.686003
+0094300,Stein am Rhein,m,M-Migros,Kleine Filiale mit Grundsortiment,Kaltenbacherstrasse 41,8260,Stein am Rhein,CH,47.6514436,8.8526236
+0094310,Schaffhausen - Vorstadt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 56/58,8200,Schaffhausen,CH,47.69878,8.634116
+0094320,Embrach,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bülacherstrasse 17,8424,Embrach,CH,47.5101139,8.5917376
+0094330,Frauenfeld - Passage,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofplatz 72,8500,Frauenfeld,CH,47.558308,8.897511
+0094340,Pfäffikon ZH,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Turmstrasse 9,8330,Pfäffikon,CH,47.3686343,8.7812381
+0094710,Schaffhausen - Herblinger Markt,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Stüdliackerstrasse 4,8207,Schaffhausen,CH,47.7203,8.664005
+0094720,Wetzikon - Züri-Oberland-Märt,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Bahnhofstrasse 151,8620,Wetzikon,CH,47.3276616,8.7996977
+0094730,Winterthur - Neuwiesen,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Strickerstrasse 3,8400,Winterthur,CH,47.499126,8.720857
+0094740,Winterthur - Rosenberg,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Schaffhauserstrasse 154,8400,Winterthur,CH,47.518753,8.719194
+0096531,Unterwetzikon,m,M-Migros,Kleine Filiale mit Grundsortiment,Hofstrasse 47,8620,Wetzikon ZH,CH,47.3135,8.795556
+0123620,Biasca,m,M-Migros,Kleine Filiale mit Grundsortiment,Via General Guisan 26,6710,Biasca,CH,46.353636,8.972488
+0123630,Crocifisso,m,M-Migros,Kleine Filiale mit Grundsortiment,Via San Gottardo 150,6942,Savosa,CH,46.0164918,8.9413299
+0123640,Boffalora,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Bernardino Luini,6830,Chiasso,CH,45.8373775,9.0240412
+0123650,Minusio,m,M-Migros,Kleine Filiale mit Grundsortiment,Via S.Gottardo 56,6648,Minusio,CH,46.1753162,8.8113912
+0123660,Paradiso,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Geretta,6902,Lugano,CH,45.991271,8.943587
+0123690,Tesserete,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Luigi Canonica 40,6950,Tesserete,CH,46.066934,8.967299
+0123700,Faido,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Pian della Croce,6760,Faido,CH,46.4780639,8.7997979
+0123710,Molino Nuovo,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Monte Boglia 5,6900,Lugano,CH,46.0183828,8.9586482
+0123720,Radio,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Besso 74,6900,Massagno,CH,46.0097658,8.9390275
+0123730,Solduno,m,M-Migros,Kleine Filiale mit Grundsortiment,Via A. Franzoni 43,6604,Locarno,CH,46.1684941,8.7824201
+0123740,Giubiasco,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Bellinzona 33,6512,Giubiasco,CH,46.178211,9.0136059
+0123750,Ascona,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Muraccio 2,6612,Ascona,CH,46.1540856,8.773702
+0123760,Mendrisio,m,M-Migros,Kleine Filiale mit Grundsortiment,"Via L. Lavizzari 2, Piazza alla Valle",6850,Mendrisio,CH,45.8703698,8.9859445
+0123770,Tenero,m,M-Migros,Kleine Filiale mit Grundsortiment,Via al Giardino 4,6598,Tenero,CH,46.18077,8.850552
+0123780,Arbedo Castione,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Corogna,6532,Castione,CH,46.2250903,9.0440908
+0123790,Grancia,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Cantonale 28,6916,Grancia,CH,45.9712181,8.9263036
+0123800,Taverne,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Cantonale,6807,Taverne,CH,46.060572,8.9315827
+0123810,Pregassona,m,M-Migros,Kleine Filiale mit Grundsortiment,Via alla Bozzoreda 39,6963,Pregassona,CH,46.0236673,8.9672005
+0123820,Maggia,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Cantonale,6673,Maggia,CH,46.2455272,8.7058678
+0123840,Campagna Adorna,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Campagna Adorna,6850,Mendrisio,CH,45.861982,8.972938
+0123850,Melano,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Cantonale 89,6818,Melano,CH,45.9194213,8.9853335
+0123870,Bellinzona Nord,m,M-Migros,Kleine Filiale mit Grundsortiment,Via San Gottardo 124,6500,Bellinzona,CH,46.209694,9.039044
+0123880,Caslano,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Stazione 80,6987,Caslano,CH,45.9769776,8.8766875
+0123890,Riazzino,m,M-Migros,Kleine Filiale mit Grundsortiment,Via Cantonale 40,6595,Riazzino,CH,46.1752568,8.8895944
+0124210,Bellinzona,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Piazza Rinaldo Simen 8,6500,Bellinzona,CH,46.1937973,9.0243305
+0124240,Locarno,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Via Stefano Franscini 31,6600,Locarno,CH,46.1656809,8.7957267
+0124270,Centro Serfontana,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Viale Serfontana 20,6834,Morbio Inferiore,CH,45.8452376,9.0161047
+0124290,Cassarate,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Viale Castagnola 21,6900,Lugano,CH,46.0061779,8.9657425
+0124300,Centro Agno,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Via Lugano 21,6982,Agno,CH,45.9982691,8.9054575
+0125010,Lugano,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Via Pretorio 15,6900,Lugano,CH,46.0070314,8.9517478
+0125020,Centro S.Antonino,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Via Serrai 5,6592,Sant'Antonino,CH,46.153893,8.961926
+0127610,VOI Viganello,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,alla Chiesa 2,6962,Viganello,CH,46.011734,8.965999
+0127620,VOI Sementina,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Via al Ticino 28,6514,Sementina,CH,46.18221,8.992037
+0127630,VOI Lugano-Roncaccio,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Sorengo 25,6903,Lugano,CH,46.003031,8.941699
+0133690,Sion - Le Ritz,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue Ritz 31,1950,Sion,CH,46.2358562,7.3595336
+0133697,Sion - Tourbillon Center,m,M-Migros,Kleine Filiale mit Grundsortiment,Avenue Grand-Champsec 30,1950,Sion,CH,46.2314201,7.3843456
+0133710,Fully,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de Provence 4,1926,Fully,CH,46.136677,7.1193852
+0133720,Savièse,m,M-Migros,Kleine Filiale mit Grundsortiment,Centre Commercial du Stade,1965,Savièse,CH,46.2502976,7.3519659
+0133730,St-Maurice,m,M-Migros,Kleine Filiale mit Grundsortiment,Av. du Simplon 15,1890,St-Maurice,CH,46.2147953,7.0052498
+0133750,Saas Fee,m,M-Migros,Kleine Filiale mit Grundsortiment,Hôtel du Glacier,3906,Saas Fee,CH,46.1085428,7.9281535
+0133760,Le Bouveret,m,M-Migros,Kleine Filiale mit Grundsortiment,En Bellossy,1897,Bouveret,CH,46.3773421,6.8606288
+0133770,Naters,m,M-Migros,Kleine Filiale mit Grundsortiment,Kelchbachstrasse 16,3904,Naters,CH,46.3252623,7.9901216
+0133920,Crans-Montana,m,M-Migros,Kleine Filiale mit Grundsortiment,Route du Rawyl 32,3963,Crans-Montana,CH,46.3094446,7.4732188
+0134220,Zermatt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hofmattstrasse 12,3920,Zermatt,CH,46.0217113,7.7481512
+0134230,Leukerbad,m,M-Migros,Kleine Filiale mit Grundsortiment,Thermenstrasse 32,3954,Leukerbad,CH,46.379201,7.625959
+0134240,Verbier,m,M-Migros,Kleine Filiale mit Grundsortiment,Les Arcades,1936,Verbier,CH,46.0966164,7.2232795
+0134250,Haute-Nendaz,m,M-Migros,Kleine Filiale mit Grundsortiment,"Lake Placid, rte des Ecluses 23",1997,Haute-Nendaz,CH,46.182229,7.2918787
+0134260,Steg,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse,3940,Steg,CH,46.3147018,7.7453717
+0134480,Visp,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Brückenweg 10,3930,Visp,CH,46.2929559,7.8798626
+0134500,Sierre,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Avenue Général Guisan,3960,Sierre,CH,46.292358,7.5291519
+0134520,Collombey,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Entre-deux-Fossaux,1868,Collombey,CH,46.2652306,6.9566145
+0134530,Monthey - M Central,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Avenue de la Gare 36,1870,Monthey,CH,46.2535582,6.9522265
+0134540,Brig,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Belalpstrasse 1,3900,Brig,CH,46.3184112,7.9893511
+0134550,Martigny - Manoir,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Rue du Manoir 1,1920,Martigny,CH,46.1017023,7.0718577
+0134900,Sion - Métropole,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Avenue de France 14-20,1950,Sion,CH,46.2286124,7.356213
+0136401,Glis - Simplon,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Kantonsstrasse 58,3902,Glis,CH,46.3089074,7.9695103
+0136411,Conthey - Forum des Alpes,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Route des Rottes 15,1964,Conthey,CH,46.2235391,7.3009436
+0136465,Fiesch,m,M-Migros,Kleine Filiale mit Grundsortiment,Furkastrasse 46,3984,Fiesch,CH,46.4040003,8.1355669
+0136475,Saxon,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de Gottefrey 38,1907,Saxon,CH,46.148724,7.1732993
+0136480,Sembrancher,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue de la Chapalette 1,1933,Sembrancher,CH,46.0791549,7.1446967
+0136485,Martigny Avouillons,m,M-Migros,Kleine Filiale mit Grundsortiment,Rue des Avouillons 8,1920,Martigny,CH,46.105713,7.0852003
+0137300,VOI Raron,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Brückenmoosstrasse 21,3942,Raron,CH,46.308622,7.795652
+0150007,Zürich - Stadelhofen,m,M-Migros,Kleine Filiale mit Grundsortiment,Falkenstrasse 19 - 21,8008,Zürich,CH,47.3654727,8.5478721
+0150008,Zürich - Wollishofen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Etzelstrasse 3,8038,Zürich,CH,47.3445909,8.5301409
+0150009,Zürich - Kreuzplatz,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Kreuzplatz 20,8008,Zürich,CH,47.3645091,8.5537771
+0150010,Zürich - Wengihof,m,M-Migros,Kleine Filiale mit Grundsortiment,Wengistrasse 7,8004,Zürich,CH,47.3749444,8.5230687
+0150011,Zürich - Witikon-Zentrum,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Witikonerstrasse 293,8053,Zürich,CH,47.3589998,8.5855777
+0150014,Zürich - Schwamendingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Winterthurerstrasse 524,8051,Zürich,CH,47.4038478,8.5725326
+0150015,Zürich - Affoltern,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Jonas-Furrer-Strasse 21,8046,Zürich,CH,47.4202196,8.5082588
+0150016,Zürich - Wiedikon M-Märt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Birmensdorferstrasse 320,8055,Zürich,CH,47.3699977,8.5085226
+0150017,Zürich - Oerlikon Neumarkt,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Hofwiesenstrasse 350-354,8050,Zürich,CH,47.410484,8.5429281
+0150018,Zürich - Limmatplatz,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Limmatstrasse 152,8005,Zürich,CH,47.385379,8.5310561
+0150020,Zürich - Seebach,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Schaffhauserstrasse 470,8052,Zürich,CH,47.4193716,8.54861
+0150021,Oberglatt,m,M-Migros,Kleine Filiale mit Grundsortiment,Lägernstrasse 6,8154,Oberglatt ZH,CH,47.47556,8.507587
+0150050,Wollerau Märt Roospark,m,M-Migros,Kleine Filiale mit Grundsortiment,Roosstrasse 23,8832,Wollerau,CH,47.1920378,8.7214742
+0150053,Schlieren - Kesslerplatz,m,M-Migros,Kleine Filiale mit Grundsortiment,Badenerstrasse 57,8952,Schlieren,CH,47.3961553,8.4371696
+0150054,Dübendorf,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Unterdorfstrasse 7,8600,Dübendorf,CH,47.3982637,8.6176168
+0150055,Horgen - Schinzenhof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Alte Landstrasse 24,8810,Horgen,CH,47.2601197,8.5970064
+0150056,Glattbrugg,m,M-Migros,Kleine Filiale mit Grundsortiment,Wallisellerstrasse 8,8152,Glattbrugg,CH,47.4340313,8.567435
+0150059,Bülach - Sonnenhof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Bahnhofstrasse 28,8180,Bülach,CH,47.5209712,8.5399087
+0150060,Regensdorf - Zentrum,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Zentrum 1,8105,Regensdorf,CH,47.4313251,8.4691306
+0150061,Volketswil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Im Zentrum 18,8604,Volketswil,CH,47.3884116,8.6805761
+0150062,Adliswil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Albisstrasse 10,8134,Adliswil,CH,47.3112824,8.5252672
+0150063,Meilen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rosengartenstrasse 10,8706,Meilen,CH,47.2683937,8.6454362
+0150064,Glarus - Zentrum Glärnisch,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Schweizerhofstrasse 6,8750,Glarus,CH,47.0406732,9.0708899
+0150065,Dietikon - Löwenzentrum,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Löwenstrasse 28,8953,Dietikon,CH,47.4051079,8.4018695
+0150066,Thalwil,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Alte Landstrasse 130,8800,Thalwil,CH,47.294262,8.564114
+0150067,Kloten,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Kirchgasse 5,8302,Kloten,CH,47.4505,8.582302
+0150068,Einsiedeln,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Eisenbahnstrasse 2,8840,Einsiedeln,CH,47.1287061,8.7459076
+0150069,Stäfa,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Goethestrasse 18,8712,Stäfa,CH,47.2406714,8.7234301
+0150071,Rapperswil - Sonnenhof,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Zürcherstrasse 4,8640,Rapperswil SG,CH,47.22935,8.820889
+0150072,Pfäffikon - Seedammcenter,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Gwattstrasse 11,8808,Pfäffikon SZ,CH,47.2005836,8.7927006
+0150073,Lachen,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Feldstrasse 6,8853,Lachen,CH,47.1917747,8.8549009
+0150074,Egg,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Gewerbestrasse 2-10,8132,Egg,CH,47.30247,8.691354
+0150075,Rüschlikon Parkside,m,M-Migros,Kleine Filiale mit Grundsortiment,Zürcherstrasse 4,8803,Rüschlikon,CH,47.3010372,8.5488346
+0150077,Zürich - Höngg,m,M-Migros,Kleine Filiale mit Grundsortiment,Regensdorferstrasse 20,8049,Zürich,CH,47.403841,8.4973707
+0150078,Eglisau-Nord,m,M-Migros,Kleine Filiale mit Grundsortiment,Bauelenzelgstrasse 16,8193,Eglisau,CH,47.5792535,8.5139362
+0150079,Affoltern a. A.,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Oberdorfstrasse 4,8910,Affoltern am Albis,CH,47.2780275,8.453809
+0150080,Uitikon-Waldegg,m,M-Migros,Kleine Filiale mit Grundsortiment,Zürcherstrasse 8,8142,Uitikon Waldegg,CH,47.3687168,8.4616665
+0150081,Schlieren - Rietbach,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Rietbachstrasse 14,8952,Schlieren,CH,47.40073,8.434955
+0150082,Dübendorf Stettbach,m,M-Migros,Kleine Filiale mit Grundsortiment,Am Stadtrand 5,8600,Dübendorf,CH,47.3976505,8.598034
+0150083,Reichenburg,m,M-Migros,Kleine Filiale mit Grundsortiment,Gewerbestrasse 4,8864,Reichenburg,CH,47.1730561,8.9691015
+0150115,Zürich - Rigiplatz,m,M-Migros,Kleine Filiale mit Grundsortiment,Winterthurerstrasse 2-4,8006,Zürich,CH,47.3862231,8.5487676
+0150116,Zürich - Höschgasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Seefeldstrasse 111-113,8008,Zürich,CH,47.35856,8.554269
+0150117,Zürich - Burgwies,m,M-Migros,Kleine Filiale mit Grundsortiment,Forchstrasse 260,8008,Zürich,CH,47.3576581,8.5715375
+0150120,Zürich - Schmiede Wiedikon,m,M-Migros,Kleine Filiale mit Grundsortiment,Birmensdorferstrasse 140,8003,Zürich,CH,47.3702468,8.5204177
+0150122,Zürich - Pünt,m,M-Migros,Kleine Filiale mit Grundsortiment,Albisriederstrasse 365,8047,Zürich,CH,47.3751082,8.4858095
+0150130,Dietikon - Limmatfeld,m,M-Migros,Kleine Filiale mit Grundsortiment,Überlandstrasse 22,8953,Dietikon,CH,47.4090317,8.4051555
+0150131,Zürich - Stockerstrasse M-Express,m,M-Migros,Kleine Filiale mit Grundsortiment,Stockerstrasse 47,8002,Zürich,CH,47.368282,8.53412
+0150132,Zürich - Puls 5 M-Express,m,M-Migros,Kleine Filiale mit Grundsortiment,Hardturmstrasse 11,8005,Zürich,CH,47.39135,8.518202
+0150140,Zürich - ShopVilleMärt,m,M-Migros,Kleine Filiale mit Grundsortiment,Shop Ville,8001,Zürich,CH,47.3772377,8.54007
+0150147,Rümlang Hofwisencenter,m,M-Migros,Kleine Filiale mit Grundsortiment,Hofwisenstrasse 40A,8153,Rümlang,CH,47.4509866,8.537906
+0150149,Dielsdorf,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Ruchwiesenstrasse 2,8157,Dielsdorf,CH,47.4807739,8.4644704
+0150151,Urdorf - Spitzacker,m,M-Migros,Kleine Filiale mit Grundsortiment,Birmensdorferstrasse 87,8902,Urdorf,CH,47.3848945,8.4223769
+0150153,Fällanden,m,M-Migros,Kleine Filiale mit Grundsortiment,Unterdorfstrasse 2,8117,Fällanden,CH,47.3739538,8.6409527
+0150154,Opfikon - Glattpark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Thurgauerstrasse 106,8152,Opfikon,CH,47.4212446,8.5579927
+0150156,Greifensee,m,M-Migros,Kleine Filiale mit Grundsortiment,Meierwis,8606,Greifensee,CH,47.3678007,8.6796218
+0150157,Küsnacht ZH,m,M-Migros,Kleine Filiale mit Grundsortiment,Zürichstrasse 149,8700,Küsnacht ZH,CH,47.3185861,8.5821107
+0150158,Richterswil,m,M-Migros,Kleine Filiale mit Grundsortiment,Schützengass 4,8805,Richterswil,CH,47.2063902,8.7053798
+0150160,Eschenbach,m,M-Migros,Kleine Filiale mit Grundsortiment,Rickenstrasse 12,8733,Eschenbach,CH,47.2408601,8.92332
+0150161,Oberengstringen,m,M-Migros,Kleine Filiale mit Grundsortiment,Im Zentrum 2,8102,Oberengstringen,CH,47.4086394,8.462976
+0150163,Wallisellen,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 30,8304,Wallisellen,CH,47.4134998,8.5916082
+0150164,Bassersdorf,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Baltenswilerstrasse 5a,8303,Bassersdorf,CH,47.4422909,8.6298002
+0150168,Langnau a. A.,m,M-Migros,Kleine Filiale mit Grundsortiment,Hintere Grundstrasse 2,8135,Langnau am Albis,CH,47.2911414,8.5376553
+0150169,Dietlikon - Brunnenwiese,m,M-Migros,Kleine Filiale mit Grundsortiment,Pappelstrasse 2,8305,Dietlikon,CH,47.4191512,8.6216426
+0150170,Ebmatingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Zürichstrasse 108,8123,Ebmatingen,CH,47.350978,8.6432014
+0150177,Zollikon - Dorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Rotfluhstrasse 100,8702,Zollikon,CH,47.3377789,8.5760777
+0150178,Jona - Stadttor,m,M-Migros,Kleine Filiale mit Grundsortiment,Molkereistrasse 5,8645,Jona,CH,47.2314638,8.8373964
+0150179,Uznach - Frohsinn,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Zürcherstrasse 25,8730,Uznach,CH,47.2264591,8.9806843
+0150180,Niederhasli,m,M-Migros,Kleine Filiale mit Grundsortiment,Dorfstrasse 20,8155,Niederhasli,CH,47.479847,8.485262
+0150181,Hombrechtikon,m,M-Migros,Kleine Filiale mit Grundsortiment,Rütistrasse 16,8634,Hombrechtikon,CH,47.2517184,8.7694304
+0150182,Gossau ZH,m,M-Migros,Kleine Filiale mit Grundsortiment,Im Zentrum 3,8625,Gossau ZH,CH,47.3065422,8.7558044
+0150183,Zürich - Leimbach Sihlbogen,m,M-Migros,Kleine Filiale mit Grundsortiment,Leimbachstrasse 23,8041,Zürich,CH,47.3362301,8.5189546
+0150184,Zürich - Hauptbahnhof,m,M-Migros,Kleine Filiale mit Grundsortiment,Hauptbahnhof,8001,Zürich,CH,47.37744,8.5394
+0150185,Erlenbach - Erlibacher Märt,m,M-Migros,Kleine Filiale mit Grundsortiment,Bahnhofstrasse 42,8703,Erlenbach ZH,CH,47.3070068,8.5904643
+0150187,Niederurnen,m,M-Migros,Kleine Filiale mit Grundsortiment,Ziegelbrückstrasse 21,8867,Niederurnen,CH,47.1284992,9.0559104
+0150188,Rapperswil - Zentrum,m,M-Migros,Kleine Filiale mit Grundsortiment,Untere Bahnhofstrasse 19,8640,Rapperswil SG,CH,47.2258032,8.818166
+0150189,Birmensdorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Zürcherstrasse 15,8903,Birmensdorf ZH,CH,47.3541611,8.4367541
+0150190,Zumikon,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Dorfstrasse 17,8126,Zumikon,CH,47.3364667,8.6193207
+0150193,Zürich - Airport,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Flughafen Zürich AG,8302,Kloten,CH,47.4502749,8.5626585
+0150197,Männedorf,m,M-Migros,Kleine Filiale mit Grundsortiment,Alte Landstrasse 262,8708,Männedorf,CH,47.2529296,8.6959795
+0150198,Schlieren - Zentrum,m,M-Migros,Kleine Filiale mit Grundsortiment,Güterstrasse 5,8952,Schlieren,CH,47.3986438,8.4468471
+0150201,Zürich - Altstetten Neumarkt,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Altstetterstrasse 145,8048,Zürich,CH,47.3882886,8.4875256
+0150202,Zürich - City,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Löwenstrasse 31-35,8001,Zürich,CH,47.375286,8.536137
+0150203,Bülach Süd,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Feldstrasse 85,8180,Bülach,CH,47.510067,8.540387
+0150251,Uster - Illuster,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Zürichstrasse 20,8610,Uster,CH,47.349891,8.7152446
+0150252,Wädenswil,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Oberdorfstrasse 27-31,8820,Wädenswil,CH,47.2290738,8.6675403
+0150303,Zürich - Bahnhof Enge,m,M-Migros,Kleine Filiale mit Grundsortiment,Tessinerplatz 10,8002,Zürich,CH,47.3638859,8.5310653
+0150307,Dietikon Silbern,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Riedstrasse 3,8953,Dietikon,CH,47.419937,8.393975
+0150312,Zürich - Schaffhauserplatz,m,M-Migros,Kleine Filiale mit Grundsortiment,Schaffhauserstrasse 75,8057,Zürich,CH,47.392636,8.5384895
+0150319,Zürich - Toblerplatz,m,M-Migros,Kleine Filiale mit Grundsortiment,Toblerstrasse 73,8044,Zürich,CH,47.3795452,8.5593819
+0150326,Zürich - Wipkingen,m,M-Migros,Kleine Filiale mit Grundsortiment,Scheffelstrasse 3,8037,Zürich,CH,47.3938846,8.5291765
+0150327,Zürich - Albisriederplatz,m,M-Migros,Kleine Filiale mit Grundsortiment,Badenerstrasse 376,8004,Zürich,CH,47.3792702,8.5086822
+0150329,Schindellegi,m,M-Migros,Kleine Filiale mit Grundsortiment,Pfäffikonerstrasse 19,8834,Schindellegi,CH,47.1756607,8.7133184
+0150330,Näfels,m,M-Migros,Kleine Filiale mit Grundsortiment,Oberdorf 44,8752,Näfels,CH,47.0936714,9.05966
+0150360,Zürich - Altstetten M-Express,m,M-Migros,Kleine Filiale mit Grundsortiment,Hohlstrasse 600,8048,Zürich,CH,47.39148,8.487461
+0150361,Zürich - HB Sihlquai,m,M-Migros,Kleine Filiale mit Grundsortiment,Sihlpassage,8004,Zürich,CH,47.3785227,8.5357604
+0150362,Daily Zürich-Zollstrasse,m,M-Migros,Kleine Filiale mit Grundsortiment,Zollstrasse 6,8005,Zürich,CH,47.3798176,8.5369492
+0150665,Zürich - Brunaupark,mm,MM-Migros,Mittlere Filiale mit erweitertem Sortiment,Giesshübelstrasse 65,8045,Zürich,CH,47.3582422,8.5180694
+0150670,Wallisellen - Glattzentrum,mmm,MMM-Migros,Grosse Filiale mit Vollsortiment,Neue Winterthurerstrasse 99,8304,Wallisellen,CH,47.4084534,8.5960556
+0150801,VOI Zürich - Grünau,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Grünauring 37,8064,Zürich,CH,47.3963402,8.4863988
+0150802,VOI Buchs ZH,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Meierwiesenstrasse 20,8107,Buchs,CH,47.4563902,8.4396784
+0150803,VOI Horgen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Seestrasse 288,8810,Horgen,CH,47.2548701,8.6119618
+0150804,VOI Zürich - In der Ey,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Letzigraben 239,8047,Zürich,CH,47.3705108,8.4928295
+0150805,VOI Zürich - Paradies,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Paradiesstrasse 3,8038,Zürich,CH,47.3347241,8.5294762
+0150806,VOI Geroldswil,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Huebwiesenstrasse 26b,8954,Geroldswil,CH,47.4215795,8.4117228
+0150807,VOI Siebnen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Glarnerstrasse 36,8854,Siebnen,CH,47.1753754,8.9004331
+0150808,VOI Rümlang,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Lindenstrasse 16,8153,Rümlang,CH,47.4497963,8.5315694
+0150809,VOI Zürich - Leimbach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Ankenweid 10,8041,Zürich,CH,47.3297396,8.5153194
+0150810,VOI Schwerzenbach,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bahnstrasse 14,8603,Schwerzenbach,CH,47.3851497,8.6589504
+0150812,VOI Zürich - Hönggerstrasse,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Hönggerstrasse 117,8037,Zürich,CH,47.3952404,8.5184213
+0150813,VOI Kilchberg,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Bahnhofstrasse 3,8802,Kilchberg ZH,CH,47.3245116,8.5480624
+0150814,Zürich - Albisriederstrasse,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Albisriederstrasse 253,8047,Zürich,CH,47.3780898,8.493271
+0150815,VOI Wallisellen,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Schäfligrabenstrasse 45,8304,Wallisellen,CH,47.41978,8.597648
+0150816,VOI Bonstetten,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Schachenstrasse 115,8906,Bonstetten,CH,47.325294,8.472362
+0150817,VOI Obfelden,voi,VOI,Kleiner Nahversorger für Quartiere oder ländliche Orte,Dorfstrasse,8912,Obfelden,CH,47.264569,8.430915

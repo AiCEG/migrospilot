@@ -1,0 +1,79 @@
+# Plan for scoring each migros branch by close municipalities (income and population data)
+
+## Data Sources
+1. Migros branches data (migrosfilialen.json)
+   - Location (coordinates)
+   - Branch type limited to only "M, MM, MMM, VOI"
+   - Branch size/capacity
+
+2. Population data (GWS2023_GMDE.csv)
+   - Total population per municipality
+   - Population density
+   - Age distribution (if available)
+
+3. Income data (Durchschnittliches steuerbares Einkommen.csv)
+   - Average taxable income per capita
+   - Total taxable income per municipality
+
+## Processing Steps
+1. Data Preparation
+   - Clean and standardize municipality names across datasets
+   - Handle missing or incomplete data
+   - Normalize income and population metrics
+
+2. Geospatial Processing
+   - Geocode each Migros branch location
+   - Use OpenRouteService to create 20-minute bicycle radius polygons
+   - Identify municipalities that fall within each radius
+   - Calculate the percentage of each municipality's area within the radius
+
+3. Scoring Model Components
+   a) Population Score
+      - Weighted by distance from branch (closer = higher weight)
+      - Consider population density within radius
+      - Account for potential customer base (e.g., exclude very young/old populations)
+
+   b) Income Score
+      - Weighted by distance from branch
+      - Consider average disposable income
+      - Account for purchasing power differences
+
+   c) Competition Score
+      - Identify competing stores within radius by using openstreetmap
+      - Weight by store type and size if possible
+      - Consider market saturation
+
+   d) Branch Type Score
+      - Different scoring weights for M/MM/MMM/VOI branches
+      - research basic informations about capacity and service level of M/MM/MMM/VOI
+      - Consider branch capacity and service level
+
+4. Final Scoring Formula
+   Score = (Population_Score * W1) + (Income_Score * W2) - (Competition_Score * W3) + (Branch_Type_Score * W4)
+   Where W1, W2, W3, W4 are weights to be determined based on business priorities
+
+## Output
+1. For each branch:
+   - Total score
+   - Component scores (population, income, competition, branch type)
+   - List of municipalities within radius
+   - basic information about the area and branch
+   - Visual representation of service area
+
+2. Aggregated analysis:
+   - Score distribution across all branches
+   - Identification of high-potential areas
+   - Recommendations for branch optimization
+
+## Validation
+1. Compare scores with actual branch performance data (if available)
+2. Sensitivity analysis of scoring weights
+3. Cross-validation with different radius sizes
+4. Expert review of scoring results
+
+## Next Steps
+1. Implement data processing pipeline
+2. Develop scoring algorithm
+3. Create visualization tools
+4. Build validation framework
+5. Document methodology and assumptions

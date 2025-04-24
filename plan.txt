@@ -1,0 +1,16 @@
+Daten:
+- Migros filial daten -> als json -> done (postprocessing and data error checking)
+- Bevölkerungsdichte -> Gebäude und Wohnungs daten Bund -> excel / csv
+- Alternative Filialen -> openstreetmap
+- Kaufkraft -> Durchschnittliches steuerbares Einkommen* pro Kopf, 2020
+
+1. Filialdaten zusammentragenErfassung Migros-Filialen inkl. Größe (M / MM / MMM), Adresse und Infrastruktur.
+2. Rahmendaten erhebenSammeln von Bevölkerungsdichte- und Kaufkraftdaten in den jeweiligen Einzugsgebieten
+3. Lieferzonen berechnenMit OpenRouteService für jede Filiale die Lauf- bzw. Fahrzeiten-Polygon (10–20 Minuten per Velo/Mofa) generieren.
+4. Potenzialanalyse durchführen
+Jede migros filiale -> openstreetmap suche nach anderen einkaufsmöglichkeiten -> niedrigere Gewichtung der Filiale bei vielen alternativen
+
+Auswertung der erreichbaren Einwohnerzahl und Kaufkraft in jeder Zone; Entwicklung eines Scoring-Modells zur Priorisierung.
+1. Filial- und Gebietsauswahl treffenBasierend auf Scoring-Ergebnissen diejenigen Filialen mit hohem Kundenpotenzial und klar abgegrenzten Zonen auswählen.
+2. Kurierbedarf schätzen oder Daten finden (optional)Abschätzung der benötigten Anzahl Velo-/Mofa-Kuriere pro Filiale für die 10–20-Minuten-Lieferung.
+3. Konzeptdokument erstellenZusammenfassung aller Erkenntnisse, Karten der Lieferzonen und Handlungsempfehlungen für den Pilotstart.
