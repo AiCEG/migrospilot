@@ -61,7 +61,7 @@ class OpenRouteService:
                     self._save_results(results, output_file)
                 
                 # Add delay to respect API rate limits
-                time.sleep(1)
+                time.sleep(4)
                 
             except Exception as e:
                 print(f"Error processing {loc['name']}: {str(e)}")
@@ -93,6 +93,16 @@ def process_geospatial_data(api_key: str):
     
     # Process locations and save results
     output_file = '../output/isochrone_results.json'
+
+    # Remove already processed branches
+    # there are already processed branches in the output file
+    # so we need to remove them from the branches_data
+    # read the output file, look for the branch_id and remove the corresponding branch from branches_data
+    with open(output_file, 'r') as f:
+        processed_branches = [branch['branch_id'] for branch in json.load(f)]
+    branches_data = [branch for branch in branches_data if branch['id'] not in processed_branches]
+    
+
     ors.batch_process_locations(branches_data, output_file)
     
     print(f"\nGeospatial processing complete!")
@@ -101,4 +111,5 @@ def process_geospatial_data(api_key: str):
 if __name__ == "__main__":
     # You'll need to replace this with your actual OpenRouteService API key
     API_KEY = "5b3ce3597851110001cf62487c99fe6a43ed4e76ab7ff6715ade0102"
+    JOEL_API_KEY = "5b3ce3597851110001cf62487d3994c67c8e495d939a9b1f2fa9a0dc"
     process_geospatial_data(API_KEY) 
