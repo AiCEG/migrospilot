@@ -28,10 +28,11 @@
    - Calculate the percentage of each municipality's area within the radius
 
 3. Scoring Model Components
-   a) Population Score
+   a) Population Score (partly done. part with openrouteservice is missing)
       - Weighted by distance from branch (closer = higher weight)
       - Consider population density within radius
       - Account for potential customer base (e.g., exclude very young/old populations)
+      - ! use openrouteservice to calculate an additional area of 10min bycicle ride for inner circle and outer circle of scoring. then gradual, linear decay in scoring.
 
    b) ⏳ Income Score
       - Weighted by distance from branch

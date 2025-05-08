@@ -112,4 +112,4 @@ if __name__ == "__main__":
     # You'll need to replace this with your actual OpenRouteService API key
     API_KEY = "5b3ce3597851110001cf62487c99fe6a43ed4e76ab7ff6715ade0102"
     JOEL_API_KEY = "5b3ce3597851110001cf62487d3994c67c8e495d939a9b1f2fa9a0dc"
-    process_geospatial_data(API_KEY) 
+    process_geospatial_data(JOEL_API_KEY) 
