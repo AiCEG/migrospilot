@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 import os
-from typing import Dict, List
+from typing import Dict, List, Tuple
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -12,8 +12,9 @@ class LocationScore:
     branch_name: str
     branch_type: str
     city: str
-    population_coverage: float
-    population_density: float
+    inner_population: float  # 0-10 min population
+    outer_population: float  # 10-20 min population
+    population_score: float  # Combined weighted population score
     area_coverage: float
     reach_factor: float
     total_score: float
@@ -22,17 +23,26 @@ class LocationScorer:
     def __init__(self, isochrone_data_path: str):
         self.isochrone_data_path = isochrone_data_path
         self.scores: List[LocationScore] = []
+        
+        # Constants for scoring
+        self.INNER_RADIUS_MINUTES = 10
+        self.OUTER_RADIUS_MINUTES = 20
+        self.INNER_WEIGHT = 1.0
+        self.OUTER_WEIGHT = 0.5  # Linear decay from inner to outer
     
     def load_isochrone_data(self) -> List[Dict]:
         """Load the isochrone data from JSON file."""
         with open(self.isochrone_data_path, 'r') as f:
             return json.load(f)
     
-    def calculate_distance_weight(self, distance_km: float) -> float:
-        """Calculate weight based on distance from branch.
-        Closer distances get higher weights using an exponential decay function."""
-        # Using exponential decay with a half-distance of 5km
-        return np.exp(-distance_km / 5.0)
+    def calculate_population_score(self, inner_pop: float, outer_pop: float) -> float:
+        """Calculate population score using weighted inner and outer populations."""
+        # Normalize populations (using 25k for inner and 50k for outer as reference)
+        inner_score = min(inner_pop / 25000, 1.0) * self.INNER_WEIGHT
+        outer_score = min(outer_pop / 50000, 1.0) * self.OUTER_WEIGHT
+        
+        # Combine scores (max possible is 1.0 + 0.5 = 1.5, so normalize to 1.0)
+        return min((inner_score + outer_score) / 1.5, 1.0)
     
     def calculate_scores(self) -> List[LocationScore]:
         """Calculate scores for each location based on isochrone data."""
@@ -40,32 +50,24 @@ class LocationScorer:
         
         for location in data:
             try:
-                isochrone = location['isochrone_data']
+                # Get both 10min and 20min isochrone data
+                isochrone_10min = location['isochrone_data_10min']['features'][0]['properties']
+                isochrone_20min = location['isochrone_data_20min']['features'][0]['properties']
                 
-                # Extract metrics from isochrone data
-                properties = isochrone['features'][0]['properties']
-                population = properties.get('total_pop', 0)
-                area = properties.get('area', 0)  # Area in square meters
-                reach_factor = properties.get('reachfactor', 0)
+                # Extract metrics
+                inner_pop = isochrone_10min.get('total_pop', 0)
+                total_pop_20min = isochrone_20min.get('total_pop', 0)
+                # Calculate outer ring population (20min area minus 10min area)
+                outer_pop = max(0, total_pop_20min - inner_pop)
                 
-                # Calculate population density (people per square km)
-                area_km2 = area / 1000000  # Convert m² to km²
-                population_density = population / area_km2 if area_km2 > 0 else 0
+                # Get area and reach factor from 20min isochrone
+                area = isochrone_20min.get('area', 0)
+                reach_factor = isochrone_20min.get('reachfactor', 0)
                 
-                # Normalize population score with distance weighting
-                # Using the reach factor as a proxy for average distance
-                distance_weight = self.calculate_distance_weight(5 * (1 - reach_factor))  # 5km as base distance
-                weighted_population = population * distance_weight
-                population_score = min(weighted_population / 50000, 1.0)  # Normalize to 50k population
+                # Calculate population score
+                population_score = self.calculate_population_score(inner_pop, outer_pop)
                 
-                # Normalize population density score
-                # Using 5000 people/km² as a reference point (typical urban density)
-                density_score = min(population_density / 5000, 1.0)
-                
-                # Combine population and density scores
-                population_score = 0.7 * population_score + 0.3 * density_score
-                
-                # Normalize area score
+                # Calculate area score
                 area_score = min(area / 75000000, 1.0)  # Normalize to 75km²
                 
                 # Calculate total score (weighted average)
@@ -80,8 +82,9 @@ class LocationScorer:
                     branch_name=location['branch_name'],
                     branch_type=location['branch_type'],
                     city=location['city'],
-                    population_coverage=population_score,
-                    population_density=density_score,
+                    inner_population=inner_pop,
+                    outer_population=outer_pop,
+                    population_score=population_score,
                     area_coverage=area_score,
                     reach_factor=reach_factor,
                     total_score=total_score
@@ -104,8 +107,9 @@ class LocationScorer:
                 'branch_name': score.branch_name,
                 'branch_type': score.branch_type,
                 'city': score.city,
-                'population_coverage': score.population_coverage,
-                'population_density': score.population_density,
+                'inner_population': score.inner_population,
+                'outer_population': score.outer_population,
+                'population_score': score.population_score,
                 'area_coverage': score.area_coverage,
                 'reach_factor': score.reach_factor,
                 'total_score': score.total_score
@@ -147,8 +151,9 @@ def analyze_locations():
         for score in top_scores:
             print(f"\n{score.branch_name} ({score.city}):")
             print(f"  Total Score: {score.total_score:.2f}")
-            print(f"  Population Coverage: {score.population_coverage:.2f}")
-            print(f"  Population Density: {score.population_density:.2f}")
+            print(f"  Inner Population (0-10min): {score.inner_population:,.0f}")
+            print(f"  Outer Population (10-20min): {score.outer_population:,.0f}")
+            print(f"  Population Score: {score.population_score:.2f}")
             print(f"  Area Coverage: {score.area_coverage:.2f}")
             print(f"  Reach Factor: {score.reach_factor:.2f}")
 
