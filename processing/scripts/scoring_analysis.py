@@ -20,8 +20,9 @@ class LocationScore:
     total_score: float
 
 class LocationScorer:
-    def __init__(self, isochrone_data_path: str):
-        self.isochrone_data_path = isochrone_data_path
+    def __init__(self, isochrone_10min_path: str, isochrone_20min_path: str):
+        self.isochrone_10min_path = isochrone_10min_path
+        self.isochrone_20min_path = isochrone_20min_path
         self.scores: List[LocationScore] = []
         
         # Constants for scoring
@@ -30,10 +31,13 @@ class LocationScorer:
         self.INNER_WEIGHT = 1.0
         self.OUTER_WEIGHT = 0.5  # Linear decay from inner to outer
     
-    def load_isochrone_data(self) -> List[Dict]:
-        """Load the isochrone data from JSON file."""
-        with open(self.isochrone_data_path, 'r') as f:
-            return json.load(f)
+    def load_isochrone_data(self) -> Tuple[List[Dict], List[Dict]]:
+        """Load both 10min and 20min isochrone data from JSON files."""
+        with open(self.isochrone_10min_path, 'r') as f:
+            data_10min = json.load(f)
+        with open(self.isochrone_20min_path, 'r') as f:
+            data_20min = json.load(f)
+        return data_10min, data_20min
     
     def calculate_population_score(self, inner_pop: float, outer_pop: float) -> float:
         """Calculate population score using weighted inner and outer populations."""
@@ -46,23 +50,34 @@ class LocationScorer:
     
     def calculate_scores(self) -> List[LocationScore]:
         """Calculate scores for each location based on isochrone data."""
-        data = self.load_isochrone_data()
+        data_10min, data_20min = self.load_isochrone_data()
         
-        for location in data:
+        # Create lookup dictionaries for faster access
+        data_10min_dict = {item['branch_id']: item for item in data_10min}
+        data_20min_dict = {item['branch_id']: item for item in data_20min}
+        
+        # Process all unique branch IDs
+        all_branch_ids = set(data_10min_dict.keys()) | set(data_20min_dict.keys())
+        
+        for branch_id in all_branch_ids:
             try:
-                # Get both 10min and 20min isochrone data
-                isochrone_10min = location['isochrone_data_10min']['features'][0]['properties']
-                isochrone_20min = location['isochrone_data_20min']['features'][0]['properties']
+                # Get data for both time ranges
+                location_10min = data_10min_dict.get(branch_id)
+                location_20min = data_20min_dict.get(branch_id)
+                
+                if not location_10min or not location_20min:
+                    print(f"Skipping branch {branch_id}: Missing data for one or both time ranges")
+                    continue
                 
                 # Extract metrics
-                inner_pop = isochrone_10min.get('total_pop', 0)
-                total_pop_20min = isochrone_20min.get('total_pop', 0)
+                inner_pop = location_10min['isochrone_data']['features'][0]['properties'].get('total_pop', 0)
+                total_pop_20min = location_20min['isochrone_data']['features'][0]['properties'].get('total_pop', 0)
                 # Calculate outer ring population (20min area minus 10min area)
                 outer_pop = max(0, total_pop_20min - inner_pop)
                 
                 # Get area and reach factor from 20min isochrone
-                area = isochrone_20min.get('area', 0)
-                reach_factor = isochrone_20min.get('reachfactor', 0)
+                area = location_20min['isochrone_data']['features'][0]['properties'].get('area', 0)
+                reach_factor = location_20min['isochrone_data']['features'][0]['properties'].get('reachfactor', 0)
                 
                 # Calculate population score
                 population_score = self.calculate_population_score(inner_pop, outer_pop)
@@ -78,10 +93,10 @@ class LocationScorer:
                 )
                 
                 score = LocationScore(
-                    branch_id=location['branch_id'],
-                    branch_name=location['branch_name'],
-                    branch_type=location['branch_type'],
-                    city=location['city'],
+                    branch_id=branch_id,
+                    branch_name=location_20min['branch_name'],
+                    branch_type=location_20min['branch_type'],
+                    city=location_20min['city'],
                     inner_population=inner_pop,
                     outer_population=outer_pop,
                     population_score=population_score,
@@ -93,7 +108,7 @@ class LocationScorer:
                 self.scores.append(score)
                 
             except Exception as e:
-                print(f"Error processing {location.get('branch_name', 'unknown')}: {str(e)}")
+                print(f"Error processing branch {branch_id}: {str(e)}")
                 continue
         
         return self.scores
@@ -126,8 +141,11 @@ def analyze_locations():
     # Create output directory if it doesn't exist
     os.makedirs('../output', exist_ok=True)
     
-    # Initialize scorer
-    scorer = LocationScorer('../output/isochrone_results.json')
+    # Initialize scorer with both isochrone files
+    scorer = LocationScorer(
+        '../output/isochrone_results_10min.json',
+        '../output/isochrone_results_20min.json'
+    )
     
     # Calculate scores
     scores = scorer.calculate_scores()

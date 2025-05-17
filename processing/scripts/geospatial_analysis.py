@@ -146,18 +146,18 @@ def get_processed_branches(file_path: str) -> Set[str]:
 def process_geospatial_data(api_key: str):
     """Main function to process geospatial data."""
     # Create output directory if it doesn't exist
-    os.makedirs('output', exist_ok=True)
+    os.makedirs('../output', exist_ok=True)
     
     # Define output files for both ranges
-    output_file_20min = 'output/isochrone_results_20min.json'
-    output_file_10min = 'output/isochrone_results_10min.json'
+    output_file_20min = '../output/isochrone_results_20min.json'
+    output_file_10min = '../output/isochrone_results_10min.json'
     
     # Get processed branches from both files
     processed_20min = get_processed_branches(output_file_20min)
     processed_10min = get_processed_branches(output_file_10min)
     
     # Load branches data
-    branches_data = load_branches_data('output/geospatial_branches_data.csv')
+    branches_data = load_branches_data('../output/geospatial_branches_data.csv')
     print(f"\nTotal branches in input data: {len(branches_data)}")
     
     # Debug: Print first few entries from each source
@@ -200,4 +200,4 @@ if __name__ == "__main__":
     # You'll need to replace this with your actual OpenRouteService API key
     API_KEY = "5b3ce3597851110001cf62487c99fe6a43ed4e76ab7ff6715ade0102"
     JOEL_API_KEY = "5b3ce3597851110001cf62487d3994c67c8e495d939a9b1f2fa9a0dc"
-    process_geospatial_data(JOEL_API_KEY) 
+    process_geospatial_data(JOEL_API_KEY)
