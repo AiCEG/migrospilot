@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d3dbaec641188f5e7fea096ad4f3008c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d3dbaec641188f5e7fea096ad4f3008c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d3dbaec641188f5e7fea096ad4f3008c = L.map(
+                "map_d3dbaec641188f5e7fea096ad4f3008c",
+                {
+                    center: [46.8182, 8.2275],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_78094b4e14c12c2b8523967b89c313a4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_78094b4e14c12c2b8523967b89c313a4.addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+    var color_map_758a1247c509bbf0edb6aa76c202ca45 = {};
+
+    
+    color_map_758a1247c509bbf0edb6aa76c202ca45.color = d3.scale.threshold()
+              .domain([0.2976438866338461, 0.29849585649180177, 0.29934782634975743, 0.3001997962077131, 0.3010517660656688, 0.30190373592362446, 0.3027557057815801, 0.3036076756395358, 0.30445964549749144, 0.3053116153554471, 0.3061635852134028, 0.30701555507135847, 0.30786752492931413, 0.3087194947872698, 0.30957146464522545, 0.3104234345031811, 0.3112754043611368, 0.3121273742190925, 0.31297934407704814, 0.3138313139350038, 0.31468328379295946, 0.3155352536509151, 0.31638722350887083, 0.3172391933668265, 0.31809116322478215, 0.3189431330827378, 0.31979510294069347, 0.3206470727986491, 0.3214990426566048, 0.3223510125145605, 0.32320298237251616, 0.3240549522304718, 0.3249069220884275, 0.32575889194638313, 0.3266108618043388, 0.3274628316622945, 0.32831480152025017, 0.3291667713782058, 0.3300187412361615, 0.33087071109411714, 0.3317226809520728, 0.3325746508100285, 0.3334266206679842, 0.33427859052593983, 0.3351305603838955, 0.33598253024185115, 0.3368345000998068, 0.3376864699577625, 0.3385384398157182, 0.33939040967367384, 0.3402423795316295, 0.34109434938958516, 0.3419463192475408, 0.3427982891054965, 0.3436502589634522, 0.34450222882140785, 0.3453541986793635, 0.34620616853731917, 0.34705813839527483, 0.34791010825323054, 0.3487620781111862, 0.34961404796914186, 0.3504660178270975, 0.3513179876850532, 0.35216995754300884, 0.3530219274009645, 0.3538738972589202, 0.35472586711687587, 0.35557783697483153, 0.3564298068327872, 0.35728177669074285, 0.3581337465486985, 0.3589857164066542, 0.3598376862646099, 0.36068965612256554, 0.3615416259805212, 0.36239359583847686, 0.3632455656964325, 0.3640975355543882, 0.3649495054123439, 0.36580147527029955, 0.3666534451282552, 0.36750541498621087, 0.3683573848441665, 0.36920935470212224, 0.3700613245600779, 0.37091329441803356, 0.3717652642759892, 0.3726172341339449, 0.37346920399190053, 0.3743211738498562, 0.37517314370781185, 0.37602511356576757, 0.3768770834237232, 0.3777290532816789, 0.37858102313963454, 0.37943299299759026, 0.3802849628555459, 0.3811369327135016, 0.38198890257145723, 0.3828408724294129, 0.38369284228736855, 0.3845448121453242, 0.38539678200327987, 0.3862487518612356, 0.38710072171919124, 0.3879526915771469, 0.38880466143510256, 0.3896566312930582, 0.39050860115101393, 0.3913605710089696, 0.39221254086692525, 0.3930645107248809, 0.39391648058283657, 0.39476845044079223, 0.3956204202987479, 0.39647239015670355, 0.39732436001465926, 0.3981763298726149, 0.3990282997305706, 0.39988026958852624, 0.40073223944648195, 0.4015842093044376, 0.40243617916239327, 0.40328814902034893, 0.4041401188783046, 0.40499208873626025, 0.4058440585942159, 0.40669602845217157, 0.4075479983101273, 0.40839996816808294, 0.4092519380260386, 0.41010390788399426, 0.4109558777419499, 0.41180784759990563, 0.4126598174578613, 0.41351178731581695, 0.4143637571737726, 0.41521572703172827, 0.4160676968896839, 0.4169196667476396, 0.41777163660559524, 0.41862360646355096, 0.4194755763215066, 0.4203275461794623, 0.42117951603741793, 0.42203148589537365, 0.4228834557533293, 0.42373542561128497, 0.4245873954692406, 0.4254393653271963, 0.42629133518515194, 0.4271433050431076, 0.42799527490106326, 0.4288472447590189, 0.42969921461697463, 0.4305511844749303, 0.43140315433288595, 0.43225512419084167, 0.4331070940487973, 0.433959063906753, 0.43481103376470864, 0.4356630036226643, 0.43651497348061996, 0.4373669433385756, 0.4382189131965313, 0.43907088305448694, 0.43992285291244265, 0.4407748227703983, 0.44162679262835397, 0.4424787624863097, 0.44333073234426534, 0.444182702202221, 0.44503467206017666, 0.4458866419181323, 0.446738611776088, 0.44759058163404364, 0.4484425514919993, 0.44929452134995496, 0.4501464912079106, 0.45099846106586633, 0.451850430923822, 0.45270240078177765, 0.45355437063973336, 0.454406340497689, 0.4552583103556447, 0.45611028021360034, 0.456962250071556, 0.45781421992951166, 0.4586661897874673, 0.459518159645423, 0.46037012950337863, 0.46122209936133435, 0.46207406921929, 0.46292603907724567, 0.4637780089352014, 0.46462997879315704, 0.4654819486511127, 0.46633391850906836, 0.467185888367024, 0.4680378582249797, 0.46888982808293533, 0.469741797940891, 0.47059376779884665, 0.4714457376568023, 0.472297707514758, 0.4731496773727137, 0.47400164723066934, 0.47485361708862506, 0.4757055869465807, 0.4765575568045364, 0.47740952666249203, 0.4782614965204477, 0.47911346637840335, 0.479965436236359, 0.48081740609431467, 0.48166937595227033, 0.48252134581022604, 0.4833733156681817, 0.48422528552613736, 0.4850772553840931, 0.48592922524204873, 0.4867811951000044, 0.48763316495796005, 0.4884851348159157, 0.48933710467387137, 0.49018907453182703, 0.4910410443897827, 0.49189301424773835, 0.492744984105694, 0.4935969539636497, 0.4944489238216054, 0.49530089367956104, 0.49615286353751675, 0.4970048333954724, 0.49785680325342807, 0.49870877311138373, 0.4995607429693394, 0.500412712827295, 0.5012646826852507, 0.5021166525432064, 0.502968622401162, 0.5038205922591177, 0.5046725621170733, 0.505524531975029, 0.5063765018329848, 0.5072284716909404, 0.5080804415488961, 0.5089324114068517, 0.5097843812648074, 0.5106363511227631, 0.5114883209807187, 0.5123402908386744, 0.51319226069663, 0.5140442305545857, 0.5148962004125415, 0.5157481702704971, 0.5166001401284528, 0.5174521099864084, 0.5183040798443641, 0.5191560497023198, 0.5200080195602754, 0.5208599894182311, 0.5217119592761867, 0.5225639291341424, 0.5234158989920981, 0.5242678688500537, 0.5251198387080094, 0.525971808565965, 0.5268237784239207, 0.5276757482818765, 0.5285277181398321, 0.5293796879977878, 0.5302316578557434, 0.5310836277136991, 0.5319355975716548, 0.5327875674296104, 0.5336395372875661, 0.5344915071455217, 0.5353434770034774, 0.5361954468614332, 0.5370474167193888, 0.5378993865773445, 0.5387513564353001, 0.5396033262932558, 0.5404552961512115, 0.5413072660091671, 0.5421592358671228, 0.5430112057250784, 0.5438631755830341, 0.5447151454409898, 0.5455671152989454, 0.5464190851569011, 0.5472710550148567, 0.5481230248728124, 0.548974994730768, 0.5498269645887237, 0.5506789344466795, 0.5515309043046351, 0.5523828741625908, 0.5532348440205465, 0.5540868138785021, 0.5549387837364578, 0.5557907535944135, 0.5566427234523692, 0.5574946933103249, 0.5583466631682805, 0.5591986330262362, 0.5600506028841918, 0.5609025727421475, 0.5617545426001032, 0.5626065124580588, 0.5634584823160145, 0.5643104521739701, 0.5651624220319258, 0.5660143918898815, 0.5668663617478371, 0.5677183316057928, 0.5685703014637484, 0.5694222713217041, 0.5702742411796597, 0.5711262110376154, 0.5719781808955712, 0.5728301507535268, 0.5736821206114825, 0.5745340904694382, 0.5753860603273938, 0.5762380301853495, 0.5770900000433052, 0.5779419699012609, 0.5787939397592166, 0.5796459096171722, 0.5804978794751279, 0.5813498493330835, 0.5822018191910392, 0.5830537890489949, 0.5839057589069505, 0.5847577287649062, 0.5856096986228618, 0.5864616684808175, 0.5873136383387731, 0.5881656081967288, 0.5890175780546845, 0.5898695479126401, 0.5907215177705958, 0.5915734876285514, 0.5924254574865071, 0.5932774273444629, 0.5941293972024185, 0.5949813670603742, 0.5958333369183298, 0.5966853067762855, 0.5975372766342412, 0.5983892464921969, 0.5992412163501526, 0.6000931862081083, 0.6009451560660639, 0.6017971259240196, 0.6026490957819752, 0.6035010656399309, 0.6043530354978865, 0.6052050053558422, 0.6060569752137979, 0.6069089450717535, 0.6077609149297092, 0.6086128847876648, 0.6094648546456205, 0.6103168245035762, 0.6111687943615318, 0.6120207642194875, 0.6128727340774431, 0.6137247039353988, 0.6145766737933546, 0.6154286436513102, 0.6162806135092659, 0.6171325833672215, 0.6179845532251772, 0.6188365230831329, 0.6196884929410886, 0.6205404627990443, 0.621392432657, 0.6222444025149556, 0.6230963723729113, 0.6239483422308669, 0.6248003120888226, 0.6256522819467782, 0.6265042518047339, 0.6273562216626896, 0.6282081915206452, 0.6290601613786009, 0.6299121312365565, 0.6307641010945122, 0.6316160709524679, 0.6324680408104235, 0.6333200106683792, 0.6341719805263348, 0.6350239503842905, 0.6358759202422463, 0.6367278901002019, 0.6375798599581576, 0.6384318298161132, 0.6392837996740689, 0.6401357695320246, 0.6409877393899803, 0.641839709247936, 0.6426916791058916, 0.6435436489638473, 0.644395618821803, 0.6452475886797586, 0.6460995585377143, 0.6469515283956699, 0.6478034982536256, 0.6486554681115813, 0.6495074379695369, 0.6503594078274926, 0.6512113776854482, 0.6520633475434039, 0.6529153174013596, 0.6537672872593152, 0.6546192571172709, 0.6554712269752265, 0.6563231968331822, 0.657175166691138, 0.6580271365490936, 0.6588791064070493, 0.6597310762650049, 0.6605830461229606, 0.6614350159809163, 0.662286985838872, 0.6631389556968277, 0.6639909255547833, 0.664842895412739, 0.6656948652706947, 0.6665468351286503, 0.667398804986606, 0.6682507748445616, 0.6691027447025173, 0.669954714560473, 0.6708066844184286, 0.6716586542763843, 0.6725106241343399, 0.6733625939922956, 0.6742145638502512, 0.6750665337082069, 0.6759185035661626, 0.6767704734241182, 0.677622443282074, 0.6784744131400297, 0.6793263829979853, 0.680178352855941, 0.6810303227138966, 0.6818822925718523, 0.682734262429808, 0.6835862322877637, 0.6844382021457194, 0.685290172003675, 0.6861421418616307, 0.6869941117195864, 0.687846081577542, 0.6886980514354977, 0.6895500212934533, 0.690401991151409, 0.6912539610093646, 0.6921059308673203, 0.692957900725276, 0.6938098705832316, 0.6946618404411873, 0.6955138102991429, 0.6963657801570986, 0.6972177500150543, 0.6980697198730099, 0.6989216897309657, 0.6997736595889213, 0.700625629446877, 0.7014775993048327, 0.7023295691627883, 0.703181539020744, 0.7040335088786996, 0.7048854787366554, 0.7057374485946111, 0.7065894184525667, 0.7074413883105224, 0.708293358168478, 0.7091453280264337, 0.7099972978843894, 0.710849267742345, 0.7117012376003007, 0.7125532074582563, 0.713405177316212, 0.7142571471741677, 0.7151091170321233, 0.715961086890079, 0.7168130567480346, 0.7176650266059903, 0.718516996463946, 0.7193689663219016, 0.7202209361798574, 0.721072906037813, 0.7219248758957687, 0.7227768457537244])
+              .range(['#ff0000ff', '#ff0100ff', '#ff0200ff', '#ff0300ff', '#ff0400ff', '#ff0500ff', '#ff0600ff', '#ff0700ff', '#ff0800ff', '#ff0900ff', '#ff0a00ff', '#ff0b00ff', '#ff0c00ff', '#ff0d00ff', '#ff0e00ff', '#ff0f00ff', '#ff1000ff', '#ff1100ff', '#ff1200ff', '#ff1300ff', '#ff1400ff', '#ff1500ff', '#ff1600ff', '#ff1700ff', '#ff1800ff', '#ff1900ff', '#ff1a00ff', '#ff1b00ff', '#ff1c00ff', '#ff1d00ff', '#ff1e00ff', '#ff1f00ff', '#ff2000ff', '#ff2100ff', '#ff2200ff', '#ff2300ff', '#ff2400ff', '#ff2500ff', '#ff2600ff', '#ff2800ff', '#ff2900ff', '#ff2a00ff', '#ff2b00ff', '#ff2c00ff', '#ff2d00ff', '#ff2e00ff', '#ff2f00ff', '#ff3000ff', '#ff3100ff', '#ff3200ff', '#ff3300ff', '#ff3400ff', '#ff3500ff', '#ff3600ff', '#ff3700ff', '#ff3800ff', '#ff3900ff', '#ff3a00ff', '#ff3b00ff', '#ff3c00ff', '#ff3d00ff', '#ff3e00ff', '#ff3f00ff', '#ff4000ff', '#ff4100ff', '#ff4200ff', '#ff4300ff', '#ff4400ff', '#ff4500ff', '#ff4600ff', '#ff4700ff', '#ff4800ff', '#ff4900ff', '#ff4a00ff', '#ff4b00ff', '#ff4c00ff', '#ff4d00ff', '#ff4f00ff', '#ff5000ff', '#ff5100ff', '#ff5200ff', '#ff5300ff', '#ff5400ff', '#ff5500ff', '#ff5600ff', '#ff5700ff', '#ff5800ff', '#ff5900ff', '#ff5a00ff', '#ff5b00ff', '#ff5c00ff', '#ff5d00ff', '#ff5e00ff', '#ff5f00ff', '#ff6000ff', '#ff6100ff', '#ff6200ff', '#ff6300ff', '#ff6400ff', '#ff6500ff', '#ff6600ff', '#ff6700ff', '#ff6800ff', '#ff6900ff', '#ff6a00ff', '#ff6b00ff', '#ff6c00ff', '#ff6d00ff', '#ff6e00ff', '#ff6f00ff', '#ff7000ff', '#ff7100ff', '#ff7200ff', '#ff7300ff', '#ff7400ff', '#ff7500ff', '#ff7700ff', '#ff7800ff', '#ff7900ff', '#ff7a00ff', '#ff7b00ff', '#ff7c00ff', '#ff7d00ff', '#ff7e00ff', '#ff7f00ff', '#ff8000ff', '#ff8100ff', '#ff8200ff', '#ff8300ff', '#ff8400ff', '#ff8500ff', '#ff8600ff', '#ff8700ff', '#ff8800ff', '#ff8900ff', '#ff8a00ff', '#ff8b00ff', '#ff8c00ff', '#ff8d00ff', '#ff8e00ff', '#ff8f00ff', '#ff9000ff', '#ff9100ff', '#ff9200ff', '#ff9300ff', '#ff9400ff', '#ff9500ff', '#ff9600ff', '#ff9700ff', '#ff9800ff', '#ff9900ff', '#ff9a00ff', '#ff9b00ff', '#ff9c00ff', '#ff9e00ff', '#ff9f00ff', '#ffa000ff', '#ffa100ff', '#ffa200ff', '#ffa300ff', '#ffa400ff', '#ffa500ff', '#ffa600ff', '#ffa700ff', '#ffa800ff', '#ffa900ff', '#ffaa00ff', '#ffab00ff', '#ffac00ff', '#ffad00ff', '#ffae00ff', '#ffaf00ff', '#ffb000ff', '#ffb100ff', '#ffb200ff', '#ffb300ff', '#ffb400ff', '#ffb500ff', '#ffb600ff', '#ffb700ff', '#ffb800ff', '#ffb900ff', '#ffba00ff', '#ffbb00ff', '#ffbc00ff', '#ffbd00ff', '#ffbe00ff', '#ffbf00ff', '#ffc000ff', '#ffc100ff', '#ffc200ff', '#ffc300ff', '#ffc500ff', '#ffc600ff', '#ffc700ff', '#ffc800ff', '#ffc900ff', '#ffca00ff', '#ffcb00ff', '#ffcc00ff', '#ffcd00ff', '#ffce00ff', '#ffcf00ff', '#ffd000ff', '#ffd100ff', '#ffd200ff', '#ffd300ff', '#ffd400ff', '#ffd500ff', '#ffd600ff', '#ffd700ff', '#ffd800ff', '#ffd900ff', '#ffda00ff', '#ffdb00ff', '#ffdc00ff', '#ffdd00ff', '#ffde00ff', '#ffdf00ff', '#ffe000ff', '#ffe100ff', '#ffe200ff', '#ffe300ff', '#ffe400ff', '#ffe500ff', '#ffe600ff', '#ffe700ff', '#ffe800ff', '#ffe900ff', '#ffea00ff', '#ffeb00ff', '#ffed00ff', '#ffee00ff', '#ffef00ff', '#fff000ff', '#fff100ff', '#fff200ff', '#fff300ff', '#fff400ff', '#fff500ff', '#fff600ff', '#fff700ff', '#fff800ff', '#fff900ff', '#fffa00ff', '#fffb00ff', '#fffc00ff', '#fffd00ff', '#fffe00ff', '#ffff00ff', '#ffff00ff', '#feff00ff', '#fdfe00ff', '#fcfe00ff', '#fbfd00ff', '#fafd00ff', '#f9fc00ff', '#f8fc00ff', '#f7fb00ff', '#f6fb00ff', '#f5fa00ff', '#f4fa00ff', '#f3f900ff', '#f2f900ff', '#f1f800ff', '#f0f800ff', '#eff700ff', '#eef700ff', '#edf600ff', '#ebf600ff', '#eaf500ff', '#e9f500ff', '#e8f400ff', '#e7f300ff', '#e6f300ff', '#e5f200ff', '#e4f200ff', '#e3f100ff', '#e2f100ff', '#e1f000ff', '#e0f000ff', '#dfef00ff', '#deef00ff', '#ddee00ff', '#dcee00ff', '#dbed00ff', '#daed00ff', '#d9ec00ff', '#d8ec00ff', '#d7eb00ff', '#d6eb00ff', '#d5ea00ff', '#d4ea00ff', '#d3e900ff', '#d2e900ff', '#d1e800ff', '#d0e800ff', '#cfe700ff', '#cee700ff', '#cde600ff', '#cce600ff', '#cbe500ff', '#cae500ff', '#c9e400ff', '#c8e400ff', '#c7e300ff', '#c6e300ff', '#c5e200ff', '#c3e200ff', '#c2e100ff', '#c1e100ff', '#c0e000ff', '#bfe000ff', '#bedf00ff', '#bddf00ff', '#bcde00ff', '#bbde00ff', '#badd00ff', '#b9dc00ff', '#b8dc00ff', '#b7db00ff', '#b6db00ff', '#b5da00ff', '#b4da00ff', '#b3d900ff', '#b2d900ff', '#b1d800ff', '#b0d800ff', '#afd700ff', '#aed700ff', '#add600ff', '#acd600ff', '#abd500ff', '#aad500ff', '#a9d400ff', '#a8d400ff', '#a7d300ff', '#a6d300ff', '#a5d200ff', '#a4d200ff', '#a3d100ff', '#a2d100ff', '#a1d000ff', '#a0d000ff', '#9fcf00ff', '#9ecf00ff', '#9cce00ff', '#9bce00ff', '#9acd00ff', '#99cd00ff', '#98cc00ff', '#97cc00ff', '#96cb00ff', '#95cb00ff', '#94ca00ff', '#93ca00ff', '#92c900ff', '#91c900ff', '#90c800ff', '#8fc800ff', '#8ec700ff', '#8dc700ff', '#8cc600ff', '#8bc500ff', '#8ac500ff', '#89c400ff', '#88c400ff', '#87c300ff', '#86c300ff', '#85c200ff', '#84c200ff', '#83c100ff', '#82c100ff', '#81c000ff', '#80c000ff', '#7fbf00ff', '#7ebf00ff', '#7dbe00ff', '#7cbe00ff', '#7bbd00ff', '#7abd00ff', '#79bc00ff', '#78bc00ff', '#77bb00ff', '#75bb00ff', '#74ba00ff', '#73ba00ff', '#72b900ff', '#71b900ff', '#70b800ff', '#6fb800ff', '#6eb700ff', '#6db700ff', '#6cb600ff', '#6bb600ff', '#6ab500ff', '#69b500ff', '#68b400ff', '#67b400ff', '#66b300ff', '#65b300ff', '#64b200ff', '#63b200ff', '#62b100ff', '#61b100ff', '#60b000ff', '#5fb000ff', '#5eaf00ff', '#5daf00ff', '#5cae00ff', '#5bad00ff', '#5aad00ff', '#59ac00ff', '#58ac00ff', '#57ab00ff', '#56ab00ff', '#55aa00ff', '#54aa00ff', '#53a900ff', '#52a900ff', '#51a800ff', '#50a800ff', '#4fa700ff', '#4da700ff', '#4ca600ff', '#4ba600ff', '#4aa500ff', '#49a500ff', '#48a400ff', '#47a400ff', '#46a300ff', '#45a300ff', '#44a200ff', '#43a200ff', '#42a100ff', '#41a100ff', '#40a000ff', '#3fa000ff', '#3e9f00ff', '#3d9f00ff', '#3c9e00ff', '#3b9e00ff', '#3a9d00ff', '#399d00ff', '#389c00ff', '#379c00ff', '#369b00ff', '#359b00ff', '#349a00ff', '#339a00ff', '#329900ff', '#319900ff', '#309800ff', '#2f9800ff', '#2e9700ff', '#2d9600ff', '#2c9600ff', '#2b9500ff', '#2a9500ff', '#299400ff', '#289400ff', '#269300ff', '#259300ff', '#249200ff', '#239200ff', '#229100ff', '#219100ff', '#209000ff', '#1f9000ff', '#1e8f00ff', '#1d8f00ff', '#1c8e00ff', '#1b8e00ff', '#1a8d00ff', '#198d00ff', '#188c00ff', '#178c00ff', '#168b00ff', '#158b00ff', '#148a00ff', '#138a00ff', '#128900ff', '#118900ff', '#108800ff', '#0f8800ff', '#0e8700ff', '#0d8700ff', '#0c8600ff', '#0b8600ff', '#0a8500ff', '#098500ff', '#088400ff', '#078400ff', '#068300ff', '#058300ff', '#048200ff', '#038200ff', '#028100ff', '#018100ff', '#008000ff']);
+    
+
+    color_map_758a1247c509bbf0edb6aa76c202ca45.x = d3.scale.linear()
+              .domain([0.2976438866338461, 0.7227768457537244])
+              .range([0, 450 - 50]);
+
+    color_map_758a1247c509bbf0edb6aa76c202ca45.legend = L.control({position: 'topright'});
+    color_map_758a1247c509bbf0edb6aa76c202ca45.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_758a1247c509bbf0edb6aa76c202ca45.legend.addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+
+    color_map_758a1247c509bbf0edb6aa76c202ca45.xAxis = d3.svg.axis()
+        .scale(color_map_758a1247c509bbf0edb6aa76c202ca45.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.2976438866338461, 0.5102103661937852, 0.7227768457537244]);
+
+    color_map_758a1247c509bbf0edb6aa76c202ca45.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_758a1247c509bbf0edb6aa76c202ca45.g = color_map_758a1247c509bbf0edb6aa76c202ca45.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_758a1247c509bbf0edb6aa76c202ca45.g.selectAll("rect")
+        .data(color_map_758a1247c509bbf0edb6aa76c202ca45.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_758a1247c509bbf0edb6aa76c202ca45.x(color_map_758a1247c509bbf0edb6aa76c202ca45.color.domain()[i - 1]) : color_map_758a1247c509bbf0edb6aa76c202ca45.x.range()[0],
+            x1: i < color_map_758a1247c509bbf0edb6aa76c202ca45.color.domain().length ? color_map_758a1247c509bbf0edb6aa76c202ca45.x(color_map_758a1247c509bbf0edb6aa76c202ca45.color.domain()[i]) : color_map_758a1247c509bbf0edb6aa76c202ca45.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_758a1247c509bbf0edb6aa76c202ca45.g.call(color_map_758a1247c509bbf0edb6aa76c202ca45.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("");
+    
+            var circle_1afbcadb3c5499ad18b7a9ac08cbfe42 = L.circle(
+                [46.6734205, 7.8681811],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_05f1f1eb498c54ede1ae08620087d5fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_337b5bd7e766cd739c648286b1b6744b = $(`<div id="html_337b5bd7e766cd739c648286b1b6744b" style="width: 100.0%; height: 100.0%;">             <b>Matten</b><br>             Type: m<br>             Score: 0.30<br>             Population (10min): 15844<br>             Population (20min): 7559<br>             Income: 26220 CHF             </div>`)[0];
+                popup_05f1f1eb498c54ede1ae08620087d5fb.setContent(html_337b5bd7e766cd739c648286b1b6744b);
+            
+        
+
+        circle_1afbcadb3c5499ad18b7a9ac08cbfe42.bindPopup(popup_05f1f1eb498c54ede1ae08620087d5fb)
+        ;
+
+        
+    
+    
+            var circle_a8fdef702212a340f86033f54f355b08 = L.circle(
+                [46.6734205, 7.8681811],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_a25511c5adc87e12ed2bad02fba46476 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0a8e8aa93b5283ad14cea0912d4d047 = $(`<div id="html_c0a8e8aa93b5283ad14cea0912d4d047" style="width: 100.0%; height: 100.0%;">             <b>Matten</b><br>             Type: m<br>             Score: 0.30<br>             Population (10min): 15844<br>             Population (20min): 7559<br>             Income: 26220 CHF             </div>`)[0];
+                popup_a25511c5adc87e12ed2bad02fba46476.setContent(html_c0a8e8aa93b5283ad14cea0912d4d047);
+            
+        
+
+        circle_a8fdef702212a340f86033f54f355b08.bindPopup(popup_a25511c5adc87e12ed2bad02fba46476)
+        ;
+
+        
+    
+    
+            var circle_marker_01ffb9f95ac31a681a4b75a7cf9cd435 = L.circleMarker(
+                [46.6734205, 7.8681811],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_6320381b6f2fda2154ab926c3f15178e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c0a460231c122cb3c57784d6eeee28f = $(`<div id="html_2c0a460231c122cb3c57784d6eeee28f" style="width: 100.0%; height: 100.0%;">             <b>Matten</b><br>             Type: m<br>             Score: 0.30<br>             Population (10min): 15844<br>             Population (20min): 7559<br>             Income: 26220 CHF             </div>`)[0];
+                popup_6320381b6f2fda2154ab926c3f15178e.setContent(html_2c0a460231c122cb3c57784d6eeee28f);
+            
+        
+
+        circle_marker_01ffb9f95ac31a681a4b75a7cf9cd435.bindPopup(popup_6320381b6f2fda2154ab926c3f15178e)
+        ;
+
+        
+    
+    
+            var circle_3ec47ceb2040773185feef5b2be5bff0 = L.circle(
+                [47.385379, 8.5310561],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_3f253c2adc02cfdbe0cc8e04a3f1e5d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f925663227dfee2d64d1f0894b794cd8 = $(`<div id="html_f925663227dfee2d64d1f0894b794cd8" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Limmatplatz</b><br>             Type: mmm<br>             Score: 0.72<br>             Population (10min): 171327<br>             Population (20min): 228369<br>             Income: 42364 CHF             </div>`)[0];
+                popup_3f253c2adc02cfdbe0cc8e04a3f1e5d4.setContent(html_f925663227dfee2d64d1f0894b794cd8);
+            
+        
+
+        circle_3ec47ceb2040773185feef5b2be5bff0.bindPopup(popup_3f253c2adc02cfdbe0cc8e04a3f1e5d4)
+        ;
+
+        
+    
+    
+            var circle_503be06f82e43e964bd280f4712855cf = L.circle(
+                [47.385379, 8.5310561],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_5466c4e26479e953e6b2c1a49bccb04d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aed52e46fc4f21c53d0ce36c9d2c2ba9 = $(`<div id="html_aed52e46fc4f21c53d0ce36c9d2c2ba9" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Limmatplatz</b><br>             Type: mmm<br>             Score: 0.72<br>             Population (10min): 171327<br>             Population (20min): 228369<br>             Income: 42364 CHF             </div>`)[0];
+                popup_5466c4e26479e953e6b2c1a49bccb04d.setContent(html_aed52e46fc4f21c53d0ce36c9d2c2ba9);
+            
+        
+
+        circle_503be06f82e43e964bd280f4712855cf.bindPopup(popup_5466c4e26479e953e6b2c1a49bccb04d)
+        ;
+
+        
+    
+    
+            var circle_marker_e3d9633eb4e27a9fd80e73d739b2bbf2 = L.circleMarker(
+                [47.385379, 8.5310561],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_e3eff01b986be921747bec4b48ba7a55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41a61ef86745f41922e58540c1685cf2 = $(`<div id="html_41a61ef86745f41922e58540c1685cf2" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Limmatplatz</b><br>             Type: mmm<br>             Score: 0.72<br>             Population (10min): 171327<br>             Population (20min): 228369<br>             Income: 42364 CHF             </div>`)[0];
+                popup_e3eff01b986be921747bec4b48ba7a55.setContent(html_41a61ef86745f41922e58540c1685cf2);
+            
+        
+
+        circle_marker_e3d9633eb4e27a9fd80e73d739b2bbf2.bindPopup(popup_e3eff01b986be921747bec4b48ba7a55)
+        ;
+
+        
+    
+    
+            var circle_7a3be5946734f78b6c7b9eecdcc47a9e = L.circle(
+                [47.368282, 8.53412],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_3621666726aec72c7ee3a5aaafa27c92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47d7a282b4fc65df1d4333a9f4a0acaa = $(`<div id="html_47d7a282b4fc65df1d4333a9f4a0acaa" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Stockerstrasse M-Express</b><br>             Type: m<br>             Score: 0.71<br>             Population (10min): 175692<br>             Population (20min): 187624<br>             Income: 42364 CHF             </div>`)[0];
+                popup_3621666726aec72c7ee3a5aaafa27c92.setContent(html_47d7a282b4fc65df1d4333a9f4a0acaa);
+            
+        
+
+        circle_7a3be5946734f78b6c7b9eecdcc47a9e.bindPopup(popup_3621666726aec72c7ee3a5aaafa27c92)
+        ;
+
+        
+    
+    
+            var circle_88b53bf7418d495ab2fe7b500b977230 = L.circle(
+                [47.368282, 8.53412],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_91ab12d625a548a0c85816b1373a64c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c8034a9594a245dc87f5ba014e45a135 = $(`<div id="html_c8034a9594a245dc87f5ba014e45a135" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Stockerstrasse M-Express</b><br>             Type: m<br>             Score: 0.71<br>             Population (10min): 175692<br>             Population (20min): 187624<br>             Income: 42364 CHF             </div>`)[0];
+                popup_91ab12d625a548a0c85816b1373a64c9.setContent(html_c8034a9594a245dc87f5ba014e45a135);
+            
+        
+
+        circle_88b53bf7418d495ab2fe7b500b977230.bindPopup(popup_91ab12d625a548a0c85816b1373a64c9)
+        ;
+
+        
+    
+    
+            var circle_marker_ffcf1d8790520b59326e3008325ade6d = L.circleMarker(
+                [47.368282, 8.53412],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_34586b03ccbbb213b50ff6107aef370f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91b4f1781ab076c8c6fcd7d336a64736 = $(`<div id="html_91b4f1781ab076c8c6fcd7d336a64736" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Stockerstrasse M-Express</b><br>             Type: m<br>             Score: 0.71<br>             Population (10min): 175692<br>             Population (20min): 187624<br>             Income: 42364 CHF             </div>`)[0];
+                popup_34586b03ccbbb213b50ff6107aef370f.setContent(html_91b4f1781ab076c8c6fcd7d336a64736);
+            
+        
+
+        circle_marker_ffcf1d8790520b59326e3008325ade6d.bindPopup(popup_34586b03ccbbb213b50ff6107aef370f)
+        ;
+
+        
+    
+    
+            var circle_b342fa289c5be4fb9b6b8b2503b0ba0d = L.circle(
+                [46.2082241, 6.1231482],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_aab37dda8782a39ef1ca142b226301b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70e76d691cd2e4399fea29d87e76a425 = $(`<div id="html_70e76d691cd2e4399fea29d87e76a425" style="width: 100.0%; height: 100.0%;">             <b>Genève - Charmilles</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 178843<br>             Population (20min): 200203<br>             Income: 35399 CHF             </div>`)[0];
+                popup_aab37dda8782a39ef1ca142b226301b2.setContent(html_70e76d691cd2e4399fea29d87e76a425);
+            
+        
+
+        circle_b342fa289c5be4fb9b6b8b2503b0ba0d.bindPopup(popup_aab37dda8782a39ef1ca142b226301b2)
+        ;
+
+        
+    
+    
+            var circle_212e9297e7b2663ac181a51d45e622f6 = L.circle(
+                [46.2082241, 6.1231482],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_86fc8f87a3e94a4073070a6ecadace02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de24bad5fdec3d49cfb524971e33a7bf = $(`<div id="html_de24bad5fdec3d49cfb524971e33a7bf" style="width: 100.0%; height: 100.0%;">             <b>Genève - Charmilles</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 178843<br>             Population (20min): 200203<br>             Income: 35399 CHF             </div>`)[0];
+                popup_86fc8f87a3e94a4073070a6ecadace02.setContent(html_de24bad5fdec3d49cfb524971e33a7bf);
+            
+        
+
+        circle_212e9297e7b2663ac181a51d45e622f6.bindPopup(popup_86fc8f87a3e94a4073070a6ecadace02)
+        ;
+
+        
+    
+    
+            var circle_marker_0242dba2e2ba688c7f4eb3c8c2097a8a = L.circleMarker(
+                [46.2082241, 6.1231482],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_8e292f6b5ec7516651778aa075263e67 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_939ab4a2294228bf3f4b6582541ccd34 = $(`<div id="html_939ab4a2294228bf3f4b6582541ccd34" style="width: 100.0%; height: 100.0%;">             <b>Genève - Charmilles</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 178843<br>             Population (20min): 200203<br>             Income: 35399 CHF             </div>`)[0];
+                popup_8e292f6b5ec7516651778aa075263e67.setContent(html_939ab4a2294228bf3f4b6582541ccd34);
+            
+        
+
+        circle_marker_0242dba2e2ba688c7f4eb3c8c2097a8a.bindPopup(popup_8e292f6b5ec7516651778aa075263e67)
+        ;
+
+        
+    
+    
+            var circle_79f27c7e9ed47ba0cd44674d2e1cb2ba = L.circle(
+                [46.2039287, 6.1461998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_521d213a157cba4a822682f607c0d85d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ba2426437d721cf70ff1efb8709e68b = $(`<div id="html_6ba2426437d721cf70ff1efb8709e68b" style="width: 100.0%; height: 100.0%;">             <b>Genève - Fusterie M-Express</b><br>             Type: m<br>             Score: 0.67<br>             Population (10min): 224545<br>             Population (20min): 185320<br>             Income: 35399 CHF             </div>`)[0];
+                popup_521d213a157cba4a822682f607c0d85d.setContent(html_6ba2426437d721cf70ff1efb8709e68b);
+            
+        
+
+        circle_79f27c7e9ed47ba0cd44674d2e1cb2ba.bindPopup(popup_521d213a157cba4a822682f607c0d85d)
+        ;
+
+        
+    
+    
+            var circle_a9e02ab2a7138395ff71e089319768b1 = L.circle(
+                [46.2039287, 6.1461998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_88485dc1ee73a1d87853e663813463b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_31b873113487742e71a462e16a22d3b4 = $(`<div id="html_31b873113487742e71a462e16a22d3b4" style="width: 100.0%; height: 100.0%;">             <b>Genève - Fusterie M-Express</b><br>             Type: m<br>             Score: 0.67<br>             Population (10min): 224545<br>             Population (20min): 185320<br>             Income: 35399 CHF             </div>`)[0];
+                popup_88485dc1ee73a1d87853e663813463b2.setContent(html_31b873113487742e71a462e16a22d3b4);
+            
+        
+
+        circle_a9e02ab2a7138395ff71e089319768b1.bindPopup(popup_88485dc1ee73a1d87853e663813463b2)
+        ;
+
+        
+    
+    
+            var circle_marker_dadb81dd066a295c934128e78ca5bce2 = L.circleMarker(
+                [46.2039287, 6.1461998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_abb09d3f9eff50c59fcfc5d65103d809 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47299d3f5756c4959c79dec37f0669c8 = $(`<div id="html_47299d3f5756c4959c79dec37f0669c8" style="width: 100.0%; height: 100.0%;">             <b>Genève - Fusterie M-Express</b><br>             Type: m<br>             Score: 0.67<br>             Population (10min): 224545<br>             Population (20min): 185320<br>             Income: 35399 CHF             </div>`)[0];
+                popup_abb09d3f9eff50c59fcfc5d65103d809.setContent(html_47299d3f5756c4959c79dec37f0669c8);
+            
+        
+
+        circle_marker_dadb81dd066a295c934128e78ca5bce2.bindPopup(popup_abb09d3f9eff50c59fcfc5d65103d809)
+        ;
+
+        
+    
+    
+            var circle_a59caa65ade87686f6a3ef33632efea4 = L.circle(
+                [47.3780898, 8.493271],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_fb67e156dd01e1427861f11c54494cae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab514d5fc27c8687a8a111e8229f8732 = $(`<div id="html_ab514d5fc27c8687a8a111e8229f8732" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Albisriederstrasse</b><br>             Type: voi<br>             Score: 0.70<br>             Population (10min): 120149<br>             Population (20min): 209642<br>             Income: 42364 CHF             </div>`)[0];
+                popup_fb67e156dd01e1427861f11c54494cae.setContent(html_ab514d5fc27c8687a8a111e8229f8732);
+            
+        
+
+        circle_a59caa65ade87686f6a3ef33632efea4.bindPopup(popup_fb67e156dd01e1427861f11c54494cae)
+        ;
+
+        
+    
+    
+            var circle_be6b9ebcb6f08a9d9c5e5184ff038f40 = L.circle(
+                [47.3780898, 8.493271],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_2975bfb17392f82ed69ebfd7f2c55f2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d08521ddf7edf3b9f5fbb5e30c2ea493 = $(`<div id="html_d08521ddf7edf3b9f5fbb5e30c2ea493" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Albisriederstrasse</b><br>             Type: voi<br>             Score: 0.70<br>             Population (10min): 120149<br>             Population (20min): 209642<br>             Income: 42364 CHF             </div>`)[0];
+                popup_2975bfb17392f82ed69ebfd7f2c55f2b.setContent(html_d08521ddf7edf3b9f5fbb5e30c2ea493);
+            
+        
+
+        circle_be6b9ebcb6f08a9d9c5e5184ff038f40.bindPopup(popup_2975bfb17392f82ed69ebfd7f2c55f2b)
+        ;
+
+        
+    
+    
+            var circle_marker_9de8cedf2e3e56e96396ddb0c15fa789 = L.circleMarker(
+                [47.3780898, 8.493271],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_e8c930daa3ecb16dc5889cd07bca8f8c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0e0bb704d39ac9271bbed9b4a5f9544 = $(`<div id="html_d0e0bb704d39ac9271bbed9b4a5f9544" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Albisriederstrasse</b><br>             Type: voi<br>             Score: 0.70<br>             Population (10min): 120149<br>             Population (20min): 209642<br>             Income: 42364 CHF             </div>`)[0];
+                popup_e8c930daa3ecb16dc5889cd07bca8f8c.setContent(html_d0e0bb704d39ac9271bbed9b4a5f9544);
+            
+        
+
+        circle_marker_9de8cedf2e3e56e96396ddb0c15fa789.bindPopup(popup_e8c930daa3ecb16dc5889cd07bca8f8c)
+        ;
+
+        
+    
+    
+            var circle_79c346db81a57f888a94af76417f7dc8 = L.circle(
+                [46.2007896, 6.1306224],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_5d304559291209598b9790f4019e430d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3696ce79d39b6288e0e369f398431ca9 = $(`<div id="html_3696ce79d39b6288e0e369f398431ca9" style="width: 100.0%; height: 100.0%;">             <b>Genève - Jonction</b><br>             Type: mm<br>             Score: 0.67<br>             Population (10min): 240140<br>             Population (20min): 151602<br>             Income: 35399 CHF             </div>`)[0];
+                popup_5d304559291209598b9790f4019e430d.setContent(html_3696ce79d39b6288e0e369f398431ca9);
+            
+        
+
+        circle_79c346db81a57f888a94af76417f7dc8.bindPopup(popup_5d304559291209598b9790f4019e430d)
+        ;
+
+        
+    
+    
+            var circle_c4bd4547400988221c0e9b5abde19b46 = L.circle(
+                [46.2007896, 6.1306224],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_b96ae2f08790249a3fdbe261f06dbc3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56bac682904eaf5fa7f00f01c0439973 = $(`<div id="html_56bac682904eaf5fa7f00f01c0439973" style="width: 100.0%; height: 100.0%;">             <b>Genève - Jonction</b><br>             Type: mm<br>             Score: 0.67<br>             Population (10min): 240140<br>             Population (20min): 151602<br>             Income: 35399 CHF             </div>`)[0];
+                popup_b96ae2f08790249a3fdbe261f06dbc3e.setContent(html_56bac682904eaf5fa7f00f01c0439973);
+            
+        
+
+        circle_c4bd4547400988221c0e9b5abde19b46.bindPopup(popup_b96ae2f08790249a3fdbe261f06dbc3e)
+        ;
+
+        
+    
+    
+            var circle_marker_1df4505dce20bc41120448bfd0bc99a3 = L.circleMarker(
+                [46.2007896, 6.1306224],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_db11d2d04ae5d6904ae6ba262e83f053 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ce45af35160315038ac3c7b399f1d71 = $(`<div id="html_0ce45af35160315038ac3c7b399f1d71" style="width: 100.0%; height: 100.0%;">             <b>Genève - Jonction</b><br>             Type: mm<br>             Score: 0.67<br>             Population (10min): 240140<br>             Population (20min): 151602<br>             Income: 35399 CHF             </div>`)[0];
+                popup_db11d2d04ae5d6904ae6ba262e83f053.setContent(html_0ce45af35160315038ac3c7b399f1d71);
+            
+        
+
+        circle_marker_1df4505dce20bc41120448bfd0bc99a3.bindPopup(popup_db11d2d04ae5d6904ae6ba262e83f053)
+        ;
+
+        
+    
+    
+            var circle_7ca093a8b21812887e2ffa1c71e4b88b = L.circle(
+                [47.5701213, 7.6152494],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_012ca4edca01bc7cc0bd1b08f3fafef8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_108c2d34bc2b2b6de39fca4bc51c487a = $(`<div id="html_108c2d34bc2b2b6de39fca4bc51c487a" style="width: 100.0%; height: 100.0%;">             <b>Basel - Eglisee</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 93245<br>             Population (20min): 197650<br>             Income: 40666 CHF             </div>`)[0];
+                popup_012ca4edca01bc7cc0bd1b08f3fafef8.setContent(html_108c2d34bc2b2b6de39fca4bc51c487a);
+            
+        
+
+        circle_7ca093a8b21812887e2ffa1c71e4b88b.bindPopup(popup_012ca4edca01bc7cc0bd1b08f3fafef8)
+        ;
+
+        
+    
+    
+            var circle_d55806209aae8790fbbaf75dcdf50cee = L.circle(
+                [47.5701213, 7.6152494],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_e5fcebda8813b18ebcca5226bb597461 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_520900e7eb34c09fc082b0fd6b939ab2 = $(`<div id="html_520900e7eb34c09fc082b0fd6b939ab2" style="width: 100.0%; height: 100.0%;">             <b>Basel - Eglisee</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 93245<br>             Population (20min): 197650<br>             Income: 40666 CHF             </div>`)[0];
+                popup_e5fcebda8813b18ebcca5226bb597461.setContent(html_520900e7eb34c09fc082b0fd6b939ab2);
+            
+        
+
+        circle_d55806209aae8790fbbaf75dcdf50cee.bindPopup(popup_e5fcebda8813b18ebcca5226bb597461)
+        ;
+
+        
+    
+    
+            var circle_marker_c1cbce3d8f3c458c3003f9dc4ec0b096 = L.circleMarker(
+                [47.5701213, 7.6152494],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_b770b041797a1527f865333914d085fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4de83a1a4537800819474b0b8cdb7f3d = $(`<div id="html_4de83a1a4537800819474b0b8cdb7f3d" style="width: 100.0%; height: 100.0%;">             <b>Basel - Eglisee</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 93245<br>             Population (20min): 197650<br>             Income: 40666 CHF             </div>`)[0];
+                popup_b770b041797a1527f865333914d085fa.setContent(html_4de83a1a4537800819474b0b8cdb7f3d);
+            
+        
+
+        circle_marker_c1cbce3d8f3c458c3003f9dc4ec0b096.bindPopup(popup_b770b041797a1527f865333914d085fa)
+        ;
+
+        
+    
+    
+            var circle_40a15a495e7ad72872ca1aadc835628d = L.circle(
+                [46.1872348, 6.1274789],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_246bfdf54d6bed8623abf1e6895fdffd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ff5b1f805706ca392d1a437a6735411 = $(`<div id="html_0ff5b1f805706ca392d1a437a6735411" style="width: 100.0%; height: 100.0%;">             <b>Pont-Rouge</b><br>             Type: m<br>             Score: 0.60<br>             Population (10min): 189173<br>             Population (20min): 194529<br>             Income: 0 CHF             </div>`)[0];
+                popup_246bfdf54d6bed8623abf1e6895fdffd.setContent(html_0ff5b1f805706ca392d1a437a6735411);
+            
+        
+
+        circle_40a15a495e7ad72872ca1aadc835628d.bindPopup(popup_246bfdf54d6bed8623abf1e6895fdffd)
+        ;
+
+        
+    
+    
+            var circle_af1288285125f004103d627328f4e7d3 = L.circle(
+                [46.1872348, 6.1274789],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_b1dac80c900663836f2eeabe4e3ebb06 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_308e336bc6cedb33f5f2bd0073ecc929 = $(`<div id="html_308e336bc6cedb33f5f2bd0073ecc929" style="width: 100.0%; height: 100.0%;">             <b>Pont-Rouge</b><br>             Type: m<br>             Score: 0.60<br>             Population (10min): 189173<br>             Population (20min): 194529<br>             Income: 0 CHF             </div>`)[0];
+                popup_b1dac80c900663836f2eeabe4e3ebb06.setContent(html_308e336bc6cedb33f5f2bd0073ecc929);
+            
+        
+
+        circle_af1288285125f004103d627328f4e7d3.bindPopup(popup_b1dac80c900663836f2eeabe4e3ebb06)
+        ;
+
+        
+    
+    
+            var circle_marker_8718438b3d4c9d807aec0f383c92426a = L.circleMarker(
+                [46.1872348, 6.1274789],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_03415789b7fb3aaeb6333c8972358ebd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a89267c9c0f7e432acd9612f2fc70f4 = $(`<div id="html_5a89267c9c0f7e432acd9612f2fc70f4" style="width: 100.0%; height: 100.0%;">             <b>Pont-Rouge</b><br>             Type: m<br>             Score: 0.60<br>             Population (10min): 189173<br>             Population (20min): 194529<br>             Income: 0 CHF             </div>`)[0];
+                popup_03415789b7fb3aaeb6333c8972358ebd.setContent(html_5a89267c9c0f7e432acd9612f2fc70f4);
+            
+        
+
+        circle_marker_8718438b3d4c9d807aec0f383c92426a.bindPopup(popup_03415789b7fb3aaeb6333c8972358ebd)
+        ;
+
+        
+    
+    
+            var circle_6ee4098077ce7e0d73acf7ea88941178 = L.circle(
+                [46.2007706, 6.1588299],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_99c986e9daacfff0089c8edd10098abf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2943ead1ea86513b62e6b3ed397c273 = $(`<div id="html_f2943ead1ea86513b62e6b3ed397c273" style="width: 100.0%; height: 100.0%;">             <b>Genève - Villereuse</b><br>             Type: mm<br>             Score: 0.69<br>             Population (10min): 206545<br>             Population (20min): 218645<br>             Income: 35399 CHF             </div>`)[0];
+                popup_99c986e9daacfff0089c8edd10098abf.setContent(html_f2943ead1ea86513b62e6b3ed397c273);
+            
+        
+
+        circle_6ee4098077ce7e0d73acf7ea88941178.bindPopup(popup_99c986e9daacfff0089c8edd10098abf)
+        ;
+
+        
+    
+    
+            var circle_a8b4ab34a02a9d7e8249160bbedc69fd = L.circle(
+                [46.2007706, 6.1588299],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_2f88ea99b985036f1d16f2ff6aa17683 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a914e0be44f35a034ff1f38529d046a6 = $(`<div id="html_a914e0be44f35a034ff1f38529d046a6" style="width: 100.0%; height: 100.0%;">             <b>Genève - Villereuse</b><br>             Type: mm<br>             Score: 0.69<br>             Population (10min): 206545<br>             Population (20min): 218645<br>             Income: 35399 CHF             </div>`)[0];
+                popup_2f88ea99b985036f1d16f2ff6aa17683.setContent(html_a914e0be44f35a034ff1f38529d046a6);
+            
+        
+
+        circle_a8b4ab34a02a9d7e8249160bbedc69fd.bindPopup(popup_2f88ea99b985036f1d16f2ff6aa17683)
+        ;
+
+        
+    
+    
+            var circle_marker_333f64083a23748372c7d2a561433f19 = L.circleMarker(
+                [46.2007706, 6.1588299],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+        
+    
+        var popup_f7ef523f1d37601632e9a1649b40418c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41e05233df9dd518a5ce8da2547a627f = $(`<div id="html_41e05233df9dd518a5ce8da2547a627f" style="width: 100.0%; height: 100.0%;">             <b>Genève - Villereuse</b><br>             Type: mm<br>             Score: 0.69<br>             Population (10min): 206545<br>             Population (20min): 218645<br>             Income: 35399 CHF             </div>`)[0];
+                popup_f7ef523f1d37601632e9a1649b40418c.setContent(html_41e05233df9dd518a5ce8da2547a627f);
+            
+        
+
+        circle_marker_333f64083a23748372c7d2a561433f19.bindPopup(popup_f7ef523f1d37601632e9a1649b40418c)
+        ;
+
+        
+    
+    
+            var layer_control_15161b2350402f4be7c4bcea4ad484b5_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_78094b4e14c12c2b8523967b89c313a4,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_15161b2350402f4be7c4bcea4ad484b5 = L.control.layers(
+                layer_control_15161b2350402f4be7c4bcea4ad484b5_layers.base_layers,
+                layer_control_15161b2350402f4be7c4bcea4ad484b5_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_d3dbaec641188f5e7fea096ad4f3008c);
+
+        
+</script>
+</html>

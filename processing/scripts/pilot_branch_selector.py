@@ -9,6 +9,7 @@ from geopy.distance import geodesic
 import random
 from dataclasses import dataclass
 import os
+import json
 
 @dataclass
 class Branch:
@@ -24,7 +25,7 @@ class Branch:
     total_score: float
 
 class PilotBranchSelector:
-    def __init__(self, num_branches: int, min_distance_km: float = 5.0):
+    def __init__(self, num_branches: int, min_distance_km: float = 10.0):
         self.num_branches = num_branches
         self.min_distance_km = min_distance_km
         self.regions = {
@@ -259,6 +260,11 @@ def main():
     # Find optimal combination
     print("Finding optimal branch combination...")
     selected_branches = selector.find_optimal_combination(branches)
+    
+    # Save selected branch IDs
+    selected_branch_ids = [branch.branch_id for branch in selected_branches]
+    with open(os.path.join(output_dir, 'selected_branches.json'), 'w') as f:
+        json.dump(selected_branch_ids, f)
     
     # Visualize results
     print("Creating visualizations...")

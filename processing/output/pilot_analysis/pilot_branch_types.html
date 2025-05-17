@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4c95d655e49fe3b194316f6ca2134415 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; bottom: 50px; left: 50px; z-index: 1000; background-color: white; padding: 10px; border: 2px solid grey; border-radius: 5px">
+        <p><strong>Branch Types</strong></p>
+        <p><span style="color:#FF5733">●</span> M</p><p><span style="color:#33FF57">●</span> MM</p><p><span style="color:#3357FF">●</span> MMM</p><p><span style="color:#F333FF">●</span> VOI</p></div>
+    
+            <div class="folium-map" id="map_4c95d655e49fe3b194316f6ca2134415" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4c95d655e49fe3b194316f6ca2134415 = L.map(
+                "map_4c95d655e49fe3b194316f6ca2134415",
+                {
+                    center: [46.8182, 8.2275],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cebfa0dbc31f433a9b002ddc5fcdfbbf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cebfa0dbc31f433a9b002ddc5fcdfbbf.addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+            var circle_marker_0bb8d7cae336965935a87ee0ed7010c5 = L.circleMarker(
+                [46.6734205, 7.8681811],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_8f11c34b6bee36e27309beec561de4a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd01fdcbc84809088517a52dc3f6237b = $(`<div id="html_bd01fdcbc84809088517a52dc3f6237b" style="width: 100.0%; height: 100.0%;">             <b>Matten</b><br>             Type: m<br>             Score: 0.30             </div>`)[0];
+                popup_8f11c34b6bee36e27309beec561de4a2.setContent(html_bd01fdcbc84809088517a52dc3f6237b);
+            
+        
+
+        circle_marker_0bb8d7cae336965935a87ee0ed7010c5.bindPopup(popup_8f11c34b6bee36e27309beec561de4a2)
+        ;
+
+        
+    
+    
+            var circle_marker_73e23749e934f36a2666d7c31708bc2c = L.circleMarker(
+                [47.385379, 8.5310561],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_5094b856673cf19e83e95159167d1c95 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b059a7b11deb7579717fddf10c48da1 = $(`<div id="html_6b059a7b11deb7579717fddf10c48da1" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Limmatplatz</b><br>             Type: mmm<br>             Score: 0.72             </div>`)[0];
+                popup_5094b856673cf19e83e95159167d1c95.setContent(html_6b059a7b11deb7579717fddf10c48da1);
+            
+        
+
+        circle_marker_73e23749e934f36a2666d7c31708bc2c.bindPopup(popup_5094b856673cf19e83e95159167d1c95)
+        ;
+
+        
+    
+    
+            var circle_marker_c2f05d51d31261ad1169efd8552f28f8 = L.circleMarker(
+                [47.368282, 8.53412],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_7c21389e62973005e03973c786a22b65 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_527c626e93a7564d6189254f0ae9aff0 = $(`<div id="html_527c626e93a7564d6189254f0ae9aff0" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Stockerstrasse M-Express</b><br>             Type: m<br>             Score: 0.71             </div>`)[0];
+                popup_7c21389e62973005e03973c786a22b65.setContent(html_527c626e93a7564d6189254f0ae9aff0);
+            
+        
+
+        circle_marker_c2f05d51d31261ad1169efd8552f28f8.bindPopup(popup_7c21389e62973005e03973c786a22b65)
+        ;
+
+        
+    
+    
+            var circle_marker_68f85599776e7ef3c912cae2dc7974d5 = L.circleMarker(
+                [46.2082241, 6.1231482],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_4bdc93c5413d676277d432f9b43c4ccc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d9721520392fb24c5dcc2abcc26cb4a = $(`<div id="html_8d9721520392fb24c5dcc2abcc26cb4a" style="width: 100.0%; height: 100.0%;">             <b>Genève - Charmilles</b><br>             Type: mm<br>             Score: 0.64             </div>`)[0];
+                popup_4bdc93c5413d676277d432f9b43c4ccc.setContent(html_8d9721520392fb24c5dcc2abcc26cb4a);
+            
+        
+
+        circle_marker_68f85599776e7ef3c912cae2dc7974d5.bindPopup(popup_4bdc93c5413d676277d432f9b43c4ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_816d355053c17efb563fa1bd76624724 = L.circleMarker(
+                [46.2039287, 6.1461998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_14736ab3b327201e4dcc5a93a88da531 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebcf67ec7f41fb8d7fefd08f40b7cf70 = $(`<div id="html_ebcf67ec7f41fb8d7fefd08f40b7cf70" style="width: 100.0%; height: 100.0%;">             <b>Genève - Fusterie M-Express</b><br>             Type: m<br>             Score: 0.67             </div>`)[0];
+                popup_14736ab3b327201e4dcc5a93a88da531.setContent(html_ebcf67ec7f41fb8d7fefd08f40b7cf70);
+            
+        
+
+        circle_marker_816d355053c17efb563fa1bd76624724.bindPopup(popup_14736ab3b327201e4dcc5a93a88da531)
+        ;
+
+        
+    
+    
+            var circle_marker_f6fb7bdec3e4537d1155c3390abcd8f7 = L.circleMarker(
+                [47.3780898, 8.493271],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_9d6f39be5710dde00b0bf416adcb13b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ff426ccb1d7260f91a3670ce776c602 = $(`<div id="html_6ff426ccb1d7260f91a3670ce776c602" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Albisriederstrasse</b><br>             Type: voi<br>             Score: 0.70             </div>`)[0];
+                popup_9d6f39be5710dde00b0bf416adcb13b6.setContent(html_6ff426ccb1d7260f91a3670ce776c602);
+            
+        
+
+        circle_marker_f6fb7bdec3e4537d1155c3390abcd8f7.bindPopup(popup_9d6f39be5710dde00b0bf416adcb13b6)
+        ;
+
+        
+    
+    
+            var circle_marker_3d1af36e8e993c18dfdebbb3f83105c4 = L.circleMarker(
+                [46.2007896, 6.1306224],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_ef416a6935f536a486b4561bf5f6a168 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a6398609a712d17ff0c0ba4baefb19f = $(`<div id="html_5a6398609a712d17ff0c0ba4baefb19f" style="width: 100.0%; height: 100.0%;">             <b>Genève - Jonction</b><br>             Type: mm<br>             Score: 0.67             </div>`)[0];
+                popup_ef416a6935f536a486b4561bf5f6a168.setContent(html_5a6398609a712d17ff0c0ba4baefb19f);
+            
+        
+
+        circle_marker_3d1af36e8e993c18dfdebbb3f83105c4.bindPopup(popup_ef416a6935f536a486b4561bf5f6a168)
+        ;
+
+        
+    
+    
+            var circle_marker_dabcd11de391028e866ae15b1771f42c = L.circleMarker(
+                [47.5701213, 7.6152494],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_96280bcd31f38e6d9b4b6111f4e0a31a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2610d101dbc853719e28818e25663bdc = $(`<div id="html_2610d101dbc853719e28818e25663bdc" style="width: 100.0%; height: 100.0%;">             <b>Basel - Eglisee</b><br>             Type: m<br>             Score: 0.70             </div>`)[0];
+                popup_96280bcd31f38e6d9b4b6111f4e0a31a.setContent(html_2610d101dbc853719e28818e25663bdc);
+            
+        
+
+        circle_marker_dabcd11de391028e866ae15b1771f42c.bindPopup(popup_96280bcd31f38e6d9b4b6111f4e0a31a)
+        ;
+
+        
+    
+    
+            var circle_marker_93e37ee3ec9c27b45aa5e99de2959d3a = L.circleMarker(
+                [46.1872348, 6.1274789],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_9c837e8b4491707e2b3010da978bee5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2061de0d0bf8c279467636318438134 = $(`<div id="html_a2061de0d0bf8c279467636318438134" style="width: 100.0%; height: 100.0%;">             <b>Pont-Rouge</b><br>             Type: m<br>             Score: 0.60             </div>`)[0];
+                popup_9c837e8b4491707e2b3010da978bee5e.setContent(html_a2061de0d0bf8c279467636318438134);
+            
+        
+
+        circle_marker_93e37ee3ec9c27b45aa5e99de2959d3a.bindPopup(popup_9c837e8b4491707e2b3010da978bee5e)
+        ;
+
+        
+    
+    
+            var circle_marker_76b537281f22afae3b7ac03216a02fd3 = L.circleMarker(
+                [46.2007706, 6.1588299],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_4c95d655e49fe3b194316f6ca2134415);
+        
+    
+        var popup_c7ea581101c2bdbc202bb2d3fa5ceab2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79238548335ab7ae744046367114a561 = $(`<div id="html_79238548335ab7ae744046367114a561" style="width: 100.0%; height: 100.0%;">             <b>Genève - Villereuse</b><br>             Type: mm<br>             Score: 0.69             </div>`)[0];
+                popup_c7ea581101c2bdbc202bb2d3fa5ceab2.setContent(html_79238548335ab7ae744046367114a561);
+            
+        
+
+        circle_marker_76b537281f22afae3b7ac03216a02fd3.bindPopup(popup_c7ea581101c2bdbc202bb2d3fa5ceab2)
+        ;
+
+        
+    
+</script>
+</html>

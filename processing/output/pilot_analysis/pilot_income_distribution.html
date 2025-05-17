@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_787ea84c8b67713c9d69f30d31456156 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_787ea84c8b67713c9d69f30d31456156" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_787ea84c8b67713c9d69f30d31456156 = L.map(
+                "map_787ea84c8b67713c9d69f30d31456156",
+                {
+                    center: [46.8182, 8.2275],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_286e709279f3985e2ff9821efca1f473 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_286e709279f3985e2ff9821efca1f473.addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+    var color_map_b3807d002ca003b565488628421b3083 = {};
+
+    
+    color_map_b3807d002ca003b565488628421b3083.color = d3.scale.threshold()
+              .domain([0.0, 84.89779559118236, 169.79559118236472, 254.6933867735471, 339.59118236472943, 424.4889779559118, 509.3867735470942, 594.2845691382765, 679.1823647294589, 764.0801603206413, 848.9779559118236, 933.875751503006, 1018.7735470941884, 1103.6713426853707, 1188.569138276553, 1273.4669338677354, 1358.3647294589177, 1443.2625250501003, 1528.1603206412826, 1613.058116232465, 1697.9559118236473, 1782.8537074148296, 1867.751503006012, 1952.6492985971945, 2037.5470941883768, 2122.444889779559, 2207.3426853707415, 2292.240480961924, 2377.138276553106, 2462.0360721442885, 2546.933867735471, 2631.831663326653, 2716.7294589178355, 2801.6272545090183, 2886.5250501002006, 2971.422845691383, 3056.3206412825652, 3141.2184368737476, 3226.11623246493, 3311.0140280561122, 3395.9118236472946, 3480.809619238477, 3565.7074148296592, 3650.6052104208416, 3735.503006012024, 3820.400801603206, 3905.298597194389, 3990.1963927855713, 4075.0941883767537, 4159.991983967936, 4244.889779559118, 4329.787575150301, 4414.685370741483, 4499.583166332665, 4584.480961923848, 4669.37875751503, 4754.276553106212, 4839.174348697395, 4924.072144288577, 5008.969939879759, 5093.867735470942, 5178.765531062124, 5263.663326653306, 5348.561122244489, 5433.458917835671, 5518.356713426853, 5603.2545090180365, 5688.152304609219, 5773.050100200401, 5857.9478957915835, 5942.845691382766, 6027.743486973948, 6112.6412825651305, 6197.539078156313, 6282.436873747495, 6367.3346693386775, 6452.23246492986, 6537.130260521042, 6622.0280561122245, 6706.925851703407, 6791.823647294589, 6876.7214428857715, 6961.619238476954, 7046.517034068136, 7131.4148296593185, 7216.312625250501, 7301.210420841683, 7386.108216432865, 7471.006012024048, 7555.90380761523, 7640.801603206412, 7725.699398797595, 7810.597194388778, 7895.49498997996, 7980.392785571143, 8065.290581162325, 8150.188376753507, 8235.086172344689, 8319.983967935872, 8404.881763527053, 8489.779559118237, 8574.677354709418, 8659.575150300601, 8744.472945891783, 8829.370741482966, 8914.268537074147, 8999.16633266533, 9084.064128256514, 9168.961923847695, 9253.859719438879, 9338.75751503006, 9423.655310621243, 9508.553106212425, 9593.450901803608, 9678.34869739479, 9763.246492985973, 9848.144288577154, 9933.042084168337, 10017.939879759519, 10102.837675350702, 10187.735470941883, 10272.633266533066, 10357.531062124248, 10442.428857715431, 10527.326653306613, 10612.224448897796, 10697.122244488977, 10782.02004008016, 10866.917835671342, 10951.815631262525, 11036.713426853707, 11121.61122244489, 11206.509018036073, 11291.406813627254, 11376.304609218438, 11461.20240480962, 11546.100200400802, 11630.997995991984, 11715.895791583167, 11800.793587174348, 11885.691382765532, 11970.589178356713, 12055.486973947896, 12140.384769539078, 12225.282565130261, 12310.180360721442, 12395.078156312626, 12479.975951903807, 12564.87374749499, 12649.771543086172, 12734.669338677355, 12819.567134268536, 12904.46492985972, 12989.362725450901, 13074.260521042084, 13159.158316633266, 13244.056112224449, 13328.95390781563, 13413.851703406814, 13498.749498997997, 13583.647294589178, 13668.545090180362, 13753.442885771543, 13838.340681362726, 13923.238476953908, 14008.13627254509, 14093.034068136272, 14177.931863727455, 14262.829659318637, 14347.72745490982, 14432.625250501002, 14517.523046092185, 14602.420841683366, 14687.31863727455, 14772.21643286573, 14857.114228456914, 14942.012024048096, 15026.909819639279, 15111.80761523046, 15196.705410821643, 15281.603206412825, 15366.501002004008, 15451.39879759519, 15536.296593186373, 15621.194388777556, 15706.092184368737, 15790.98997995992, 15875.887775551102, 15960.785571142285, 16045.683366733467, 16130.58116232465, 16215.478957915831, 16300.376753507015, 16385.274549098198, 16470.172344689377, 16555.07014028056, 16639.967935871744, 16724.865731462927, 16809.763527054107, 16894.66132264529, 16979.559118236473, 17064.456913827657, 17149.354709418836, 17234.25250501002, 17319.150300601203, 17404.048096192386, 17488.945891783565, 17573.84368737475, 17658.741482965932, 17743.639278557115, 17828.537074148295, 17913.434869739478, 17998.33266533066, 18083.230460921844, 18168.128256513028, 18253.026052104207, 18337.92384769539, 18422.821643286574, 18507.719438877757, 18592.617234468937, 18677.51503006012, 18762.412825651303, 18847.310621242486, 18932.208416833666, 19017.10621242485, 19102.004008016032, 19186.901803607216, 19271.799599198395, 19356.69739478958, 19441.59519038076, 19526.492985971945, 19611.390781563125, 19696.288577154308, 19781.18637274549, 19866.084168336674, 19950.981963927854, 20035.879759519037, 20120.77755511022, 20205.675350701404, 20290.573146292587, 20375.470941883766, 20460.36873747495, 20545.266533066133, 20630.164328657316, 20715.062124248496, 20799.95991983968, 20884.857715430862, 20969.755511022046, 21054.653306613225, 21139.55110220441, 21224.44889779559, 21309.346693386775, 21394.244488977954, 21479.142284569138, 21564.04008016032, 21648.937875751504, 21733.835671342684, 21818.733466933867, 21903.63126252505, 21988.529058116234, 22073.426853707413, 22158.324649298596, 22243.22244488978, 22328.120240480963, 22413.018036072146, 22497.915831663326, 22582.81362725451, 22667.711422845692, 22752.609218436875, 22837.507014028055, 22922.40480961924, 23007.30260521042, 23092.200400801605, 23177.098196392784, 23261.995991983968, 23346.89378757515, 23431.791583166334, 23516.689378757514, 23601.587174348697, 23686.48496993988, 23771.382765531063, 23856.280561122243, 23941.178356713426, 24026.07615230461, 24110.973947895793, 24195.871743486972, 24280.769539078156, 24365.66733466934, 24450.565130260522, 24535.462925851705, 24620.360721442885, 24705.258517034068, 24790.15631262525, 24875.054108216435, 24959.951903807614, 25044.849699398797, 25129.74749498998, 25214.645290581164, 25299.543086172343, 25384.440881763527, 25469.33867735471, 25554.236472945893, 25639.134268537073, 25724.032064128256, 25808.92985971944, 25893.827655310623, 25978.725450901802, 26063.623246492985, 26148.52104208417, 26233.418837675352, 26318.31663326653, 26403.214428857715, 26488.112224448898, 26573.01002004008, 26657.90781563126, 26742.805611222444, 26827.703406813627, 26912.60120240481, 26997.498997995994, 27082.396793587173, 27167.294589178357, 27252.19238476954, 27337.090180360723, 27421.987975951903, 27506.885771543086, 27591.78356713427, 27676.681362725452, 27761.579158316632, 27846.476953907815, 27931.374749499, 28016.27254509018, 28101.17034068136, 28186.068136272545, 28270.965931863728, 28355.86372745491, 28440.76152304609, 28525.659318637274, 28610.557114228457, 28695.45490981964, 28780.35270541082, 28865.250501002003, 28950.148296593186, 29035.04609218437, 29119.943887775553, 29204.841683366732, 29289.739478957916, 29374.6372745491, 29459.535070140282, 29544.43286573146, 29629.330661322645, 29714.22845691383, 29799.12625250501, 29884.02404809619, 29968.921843687374, 30053.819639278558, 30138.71743486974, 30223.61523046092, 30308.513026052104, 30393.410821643287, 30478.30861723447, 30563.20641282565, 30648.104208416833, 30733.002004008016, 30817.8997995992, 30902.79759519038, 30987.695390781562, 31072.593186372746, 31157.49098196393, 31242.388777555112, 31327.28657314629, 31412.184368737475, 31497.082164328658, 31581.97995991984, 31666.87775551102, 31751.775551102204, 31836.673346693387, 31921.57114228457, 32006.46893787575, 32091.366733466934, 32176.264529058117, 32261.1623246493, 32346.06012024048, 32430.957915831663, 32515.855711422846, 32600.75350701403, 32685.65130260521, 32770.549098196396, 32855.44689378757, 32940.344689378755, 33025.24248496994, 33110.14028056112, 33195.038076152305, 33279.93587174349, 33364.83366733467, 33449.731462925854, 33534.62925851704, 33619.52705410821, 33704.4248496994, 33789.32264529058, 33874.22044088176, 33959.11823647295, 34044.01603206413, 34128.91382765531, 34213.811623246496, 34298.70941883767, 34383.607214428856, 34468.50501002004, 34553.40280561122, 34638.300601202405, 34723.19839679359, 34808.09619238477, 34892.993987975955, 34977.89178356713, 35062.789579158314, 35147.6873747495, 35232.58517034068, 35317.482965931864, 35402.38076152305, 35487.27855711423, 35572.17635270541, 35657.07414829659, 35741.97194388777, 35826.869739478956, 35911.76753507014, 35996.66533066132, 36081.563126252506, 36166.46092184369, 36251.35871743487, 36336.256513026055, 36421.15430861723, 36506.052104208415, 36590.9498997996, 36675.84769539078, 36760.745490981964, 36845.64328657315, 36930.54108216433, 37015.438877755514, 37100.33667334669, 37185.23446893787, 37270.13226452906, 37355.03006012024, 37439.92785571142, 37524.825651302606, 37609.72344689379, 37694.62124248497, 37779.51903807615, 37864.41683366733, 37949.314629258515, 38034.2124248497, 38119.11022044088, 38204.008016032065, 38288.90581162325, 38373.80360721443, 38458.701402805615, 38543.59919839679, 38628.496993987974, 38713.39478957916, 38798.29258517034, 38883.19038076152, 38968.08817635271, 39052.98597194389, 39137.88376753507, 39222.78156312625, 39307.67935871743, 39392.577154308616, 39477.4749498998, 39562.37274549098, 39647.270541082165, 39732.16833667335, 39817.06613226453, 39901.96392785571, 39986.86172344689, 40071.759519038074, 40156.65731462926, 40241.55511022044, 40326.452905811624, 40411.35070140281, 40496.24849699399, 40581.146292585174, 40666.04408817635, 40750.94188376753, 40835.839679358716, 40920.7374749499, 41005.63527054108, 41090.533066132266, 41175.43086172345, 41260.32865731463, 41345.22645290581, 41430.12424849699, 41515.022044088175, 41599.91983967936, 41684.81763527054, 41769.715430861725, 41854.61322645291, 41939.51102204409, 42024.40881763527, 42109.30661322645, 42194.20440881763, 42279.10220440882, 42364.0])
+              .range(['#0000ffff', '#0000feff', '#0001fcff', '#0002fbff', '#0003f9ff', '#0003f8ff', '#0004f6ff', '#0005f5ff', '#0006f3ff', '#0006f2ff', '#0007f0ff', '#0008efff', '#0009edff', '#000aebff', '#000aeaff', '#000be8ff', '#000ce7ff', '#000de5ff', '#000de4ff', '#000ee2ff', '#000fe1ff', '#0010dfff', '#0010deff', '#0011dcff', '#0012dbff', '#0013d9ff', '#0014d7ff', '#0014d6ff', '#0015d4ff', '#0016d3ff', '#0017d1ff', '#0017d0ff', '#0018ceff', '#0019cdff', '#001acbff', '#001bcaff', '#001bc8ff', '#001cc7ff', '#001dc5ff', '#001ec3ff', '#001ec2ff', '#001fc0ff', '#0020bfff', '#0021bdff', '#0021bcff', '#0022baff', '#0023b9ff', '#0024b7ff', '#0025b6ff', '#0025b4ff', '#0026b3ff', '#0027b1ff', '#0028afff', '#0028aeff', '#0029acff', '#002aabff', '#002ba9ff', '#002ca8ff', '#002ca6ff', '#002da5ff', '#002ea3ff', '#002fa2ff', '#002fa0ff', '#00309fff', '#00319dff', '#00329bff', '#00329aff', '#003398ff', '#003497ff', '#003595ff', '#003694ff', '#003692ff', '#003791ff', '#00388fff', '#00398eff', '#00398cff', '#003a8bff', '#003b89ff', '#003c87ff', '#003d86ff', '#003d84ff', '#003e83ff', '#003f81ff', '#004080ff', '#00407eff', '#00417dff', '#00427bff', '#00437aff', '#004378ff', '#004477ff', '#004575ff', '#004673ff', '#004772ff', '#004770ff', '#00486fff', '#00496dff', '#004a6cff', '#004a6aff', '#004b69ff', '#004c67ff', '#004d66ff', '#004e64ff', '#004e63ff', '#004f61ff', '#00505fff', '#00515eff', '#00515cff', '#00525bff', '#005359ff', '#005458ff', '#005456ff', '#005555ff', '#005653ff', '#005752ff', '#005850ff', '#00584fff', '#00594dff', '#005a4bff', '#005b4aff', '#005b48ff', '#005c47ff', '#005d45ff', '#005e44ff', '#005f42ff', '#005f41ff', '#00603fff', '#00613eff', '#00623cff', '#00623aff', '#006339ff', '#006437ff', '#006536ff', '#006534ff', '#006633ff', '#006731ff', '#006830ff', '#00692eff', '#00692dff', '#006a2bff', '#006b2aff', '#006c28ff', '#006c26ff', '#006d25ff', '#006e23ff', '#006f22ff', '#007020ff', '#00701fff', '#00711dff', '#00721cff', '#00731aff', '#007319ff', '#007417ff', '#007516ff', '#007614ff', '#007612ff', '#007711ff', '#00780fff', '#00790eff', '#007a0cff', '#007a0bff', '#007b09ff', '#007c08ff', '#007d06ff', '#007d05ff', '#007e03ff', '#007f02ff', '#008000ff', '#018100ff', '#028100ff', '#048200ff', '#058300ff', '#078400ff', '#088400ff', '#0a8500ff', '#0b8600ff', '#0d8700ff', '#0e8700ff', '#108800ff', '#118900ff', '#138a00ff', '#158a00ff', '#168b00ff', '#188c00ff', '#198d00ff', '#1b8e00ff', '#1c8e00ff', '#1e8f00ff', '#1f9000ff', '#219100ff', '#229100ff', '#249200ff', '#259300ff', '#279400ff', '#299400ff', '#2a9500ff', '#2c9600ff', '#2d9700ff', '#2f9800ff', '#309800ff', '#329900ff', '#339a00ff', '#359b00ff', '#369b00ff', '#389c00ff', '#399d00ff', '#3b9e00ff', '#3d9e00ff', '#3e9f00ff', '#40a000ff', '#41a100ff', '#43a100ff', '#44a200ff', '#46a300ff', '#47a400ff', '#49a500ff', '#4aa500ff', '#4ca600ff', '#4da700ff', '#4fa800ff', '#51a800ff', '#52a900ff', '#54aa00ff', '#55ab00ff', '#57ab00ff', '#58ac00ff', '#5aad00ff', '#5bae00ff', '#5daf00ff', '#5eaf00ff', '#60b000ff', '#61b100ff', '#63b200ff', '#65b200ff', '#66b300ff', '#68b400ff', '#69b500ff', '#6bb500ff', '#6cb600ff', '#6eb700ff', '#6fb800ff', '#71b800ff', '#72b900ff', '#74ba00ff', '#75bb00ff', '#77bc00ff', '#79bc00ff', '#7abd00ff', '#7cbe00ff', '#7dbf00ff', '#7fbf00ff', '#80c000ff', '#82c100ff', '#83c200ff', '#85c200ff', '#86c300ff', '#88c400ff', '#8ac500ff', '#8bc500ff', '#8dc600ff', '#8ec700ff', '#90c800ff', '#91c900ff', '#93c900ff', '#94ca00ff', '#96cb00ff', '#97cc00ff', '#99cc00ff', '#9acd00ff', '#9cce00ff', '#9ecf00ff', '#9fcf00ff', '#a1d000ff', '#a2d100ff', '#a4d200ff', '#a5d300ff', '#a7d300ff', '#a8d400ff', '#aad500ff', '#abd600ff', '#add600ff', '#aed700ff', '#b0d800ff', '#b2d900ff', '#b3d900ff', '#b5da00ff', '#b6db00ff', '#b8dc00ff', '#b9dc00ff', '#bbdd00ff', '#bcde00ff', '#bedf00ff', '#bfe000ff', '#c1e000ff', '#c2e100ff', '#c4e200ff', '#c6e300ff', '#c7e300ff', '#c9e400ff', '#cae500ff', '#cce600ff', '#cde600ff', '#cfe700ff', '#d0e800ff', '#d2e900ff', '#d3ea00ff', '#d5ea00ff', '#d6eb00ff', '#d8ec00ff', '#daed00ff', '#dbed00ff', '#ddee00ff', '#deef00ff', '#e0f000ff', '#e1f000ff', '#e3f100ff', '#e4f200ff', '#e6f300ff', '#e7f300ff', '#e9f400ff', '#eaf500ff', '#ecf600ff', '#eef700ff', '#eff700ff', '#f1f800ff', '#f2f900ff', '#f4fa00ff', '#f5fa00ff', '#f7fb00ff', '#f8fc00ff', '#fafd00ff', '#fbfd00ff', '#fdfe00ff', '#feff00ff', '#ffff00ff', '#fffd00ff', '#fffc00ff', '#fffa00ff', '#fff900ff', '#fff700ff', '#fff600ff', '#fff400ff', '#fff300ff', '#fff100ff', '#fff000ff', '#ffee00ff', '#ffed00ff', '#ffeb00ff', '#ffe900ff', '#ffe800ff', '#ffe600ff', '#ffe500ff', '#ffe300ff', '#ffe200ff', '#ffe000ff', '#ffdf00ff', '#ffdd00ff', '#ffdc00ff', '#ffda00ff', '#ffd900ff', '#ffd700ff', '#ffd500ff', '#ffd400ff', '#ffd200ff', '#ffd100ff', '#ffcf00ff', '#ffce00ff', '#ffcc00ff', '#ffcb00ff', '#ffc900ff', '#ffc800ff', '#ffc600ff', '#ffc500ff', '#ffc300ff', '#ffc100ff', '#ffc000ff', '#ffbe00ff', '#ffbd00ff', '#ffbb00ff', '#ffba00ff', '#ffb800ff', '#ffb700ff', '#ffb500ff', '#ffb400ff', '#ffb200ff', '#ffb000ff', '#ffaf00ff', '#ffad00ff', '#ffac00ff', '#ffaa00ff', '#ffa900ff', '#ffa700ff', '#ffa600ff', '#ffa400ff', '#ffa300ff', '#ffa100ff', '#ffa000ff', '#ff9e00ff', '#ff9c00ff', '#ff9b00ff', '#ff9900ff', '#ff9800ff', '#ff9600ff', '#ff9500ff', '#ff9300ff', '#ff9200ff', '#ff9000ff', '#ff8f00ff', '#ff8d00ff', '#ff8c00ff', '#ff8a00ff', '#ff8800ff', '#ff8700ff', '#ff8500ff', '#ff8400ff', '#ff8200ff', '#ff8100ff', '#ff7f00ff', '#ff7e00ff', '#ff7c00ff', '#ff7b00ff', '#ff7900ff', '#ff7800ff', '#ff7600ff', '#ff7400ff', '#ff7300ff', '#ff7100ff', '#ff7000ff', '#ff6e00ff', '#ff6d00ff', '#ff6b00ff', '#ff6a00ff', '#ff6800ff', '#ff6700ff', '#ff6500ff', '#ff6400ff', '#ff6200ff', '#ff6000ff', '#ff5f00ff', '#ff5d00ff', '#ff5c00ff', '#ff5a00ff', '#ff5900ff', '#ff5700ff', '#ff5600ff', '#ff5400ff', '#ff5300ff', '#ff5100ff', '#ff5000ff', '#ff4e00ff', '#ff4c00ff', '#ff4b00ff', '#ff4900ff', '#ff4800ff', '#ff4600ff', '#ff4500ff', '#ff4300ff', '#ff4200ff', '#ff4000ff', '#ff3f00ff', '#ff3d00ff', '#ff3c00ff', '#ff3a00ff', '#ff3800ff', '#ff3700ff', '#ff3500ff', '#ff3400ff', '#ff3200ff', '#ff3100ff', '#ff2f00ff', '#ff2e00ff', '#ff2c00ff', '#ff2b00ff', '#ff2900ff', '#ff2800ff', '#ff2600ff', '#ff2400ff', '#ff2300ff', '#ff2100ff', '#ff2000ff', '#ff1e00ff', '#ff1d00ff', '#ff1b00ff', '#ff1a00ff', '#ff1800ff', '#ff1700ff', '#ff1500ff', '#ff1400ff', '#ff1200ff', '#ff1000ff', '#ff0f00ff', '#ff0d00ff', '#ff0c00ff', '#ff0a00ff', '#ff0900ff', '#ff0700ff', '#ff0600ff', '#ff0400ff', '#ff0300ff', '#ff0100ff', '#ff0000ff']);
+    
+
+    color_map_b3807d002ca003b565488628421b3083.x = d3.scale.linear()
+              .domain([0.0, 42364.0])
+              .range([0, 450 - 50]);
+
+    color_map_b3807d002ca003b565488628421b3083.legend = L.control({position: 'topright'});
+    color_map_b3807d002ca003b565488628421b3083.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_b3807d002ca003b565488628421b3083.legend.addTo(map_787ea84c8b67713c9d69f30d31456156);
+
+    color_map_b3807d002ca003b565488628421b3083.xAxis = d3.svg.axis()
+        .scale(color_map_b3807d002ca003b565488628421b3083.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 14121.333333333334, 28242.666666666668, 42364.0]);
+
+    color_map_b3807d002ca003b565488628421b3083.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_b3807d002ca003b565488628421b3083.g = color_map_b3807d002ca003b565488628421b3083.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_b3807d002ca003b565488628421b3083.g.selectAll("rect")
+        .data(color_map_b3807d002ca003b565488628421b3083.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_b3807d002ca003b565488628421b3083.x(color_map_b3807d002ca003b565488628421b3083.color.domain()[i - 1]) : color_map_b3807d002ca003b565488628421b3083.x.range()[0],
+            x1: i < color_map_b3807d002ca003b565488628421b3083.color.domain().length ? color_map_b3807d002ca003b565488628421b3083.x(color_map_b3807d002ca003b565488628421b3083.color.domain()[i]) : color_map_b3807d002ca003b565488628421b3083.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_b3807d002ca003b565488628421b3083.g.call(color_map_b3807d002ca003b565488628421b3083.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("");
+    
+            var circle_ffa7241dee0cff9bb29d0e6b76ca33ca = L.circle(
+                [46.6734205, 7.8681811],
+                {"bubblingMouseEvents": true, "color": "#dbed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbed00ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_24dbb49dbefe7c6c3695879c2be10d37 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f9e0be1e1906f9d3effd5661f02b745 = $(`<div id="html_6f9e0be1e1906f9d3effd5661f02b745" style="width: 100.0%; height: 100.0%;">             <b>Matten</b><br>             Income: 26220 CHF<br>             Population: 15844             </div>`)[0];
+                popup_24dbb49dbefe7c6c3695879c2be10d37.setContent(html_6f9e0be1e1906f9d3effd5661f02b745);
+            
+        
+
+        circle_ffa7241dee0cff9bb29d0e6b76ca33ca.bindPopup(popup_24dbb49dbefe7c6c3695879c2be10d37)
+        ;
+
+        
+    
+    
+            var circle_5cefcc18f87a854c375d1bc263334dcd = L.circle(
+                [47.385379, 8.5310561],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_54e9d30a4536698302cbca581f9353b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0247034e273d74257ec82c4e500e628 = $(`<div id="html_f0247034e273d74257ec82c4e500e628" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Limmatplatz</b><br>             Income: 42364 CHF<br>             Population: 171327             </div>`)[0];
+                popup_54e9d30a4536698302cbca581f9353b6.setContent(html_f0247034e273d74257ec82c4e500e628);
+            
+        
+
+        circle_5cefcc18f87a854c375d1bc263334dcd.bindPopup(popup_54e9d30a4536698302cbca581f9353b6)
+        ;
+
+        
+    
+    
+            var circle_3d0dbaca127c081f103e87b0208d8e86 = L.circle(
+                [47.368282, 8.53412],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_248790f0b7c0772c009fed3e2fd36395 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2b8927e24cc9c44535cc8d73d632daf = $(`<div id="html_d2b8927e24cc9c44535cc8d73d632daf" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Stockerstrasse M-Express</b><br>             Income: 42364 CHF<br>             Population: 175692             </div>`)[0];
+                popup_248790f0b7c0772c009fed3e2fd36395.setContent(html_d2b8927e24cc9c44535cc8d73d632daf);
+            
+        
+
+        circle_3d0dbaca127c081f103e87b0208d8e86.bindPopup(popup_248790f0b7c0772c009fed3e2fd36395)
+        ;
+
+        
+    
+    
+            var circle_50db65809019775cf9682b89d034e583 = L.circle(
+                [46.2082241, 6.1231482],
+                {"bubblingMouseEvents": true, "color": "#ff7e00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7e00ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_5026a91b28f3a04a907fae8048ca6066 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c590aa63e671f64fdedb30f91bc1a98 = $(`<div id="html_2c590aa63e671f64fdedb30f91bc1a98" style="width: 100.0%; height: 100.0%;">             <b>Genève - Charmilles</b><br>             Income: 35399 CHF<br>             Population: 178843             </div>`)[0];
+                popup_5026a91b28f3a04a907fae8048ca6066.setContent(html_2c590aa63e671f64fdedb30f91bc1a98);
+            
+        
+
+        circle_50db65809019775cf9682b89d034e583.bindPopup(popup_5026a91b28f3a04a907fae8048ca6066)
+        ;
+
+        
+    
+    
+            var circle_a77b92091cadf8140396c172a2ae023b = L.circle(
+                [46.2039287, 6.1461998],
+                {"bubblingMouseEvents": true, "color": "#ff7e00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7e00ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_ef01c3002b25264217ad8c806a096fd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d1ead8fb9cb2b4ef746c22a75289ba4 = $(`<div id="html_2d1ead8fb9cb2b4ef746c22a75289ba4" style="width: 100.0%; height: 100.0%;">             <b>Genève - Fusterie M-Express</b><br>             Income: 35399 CHF<br>             Population: 224545             </div>`)[0];
+                popup_ef01c3002b25264217ad8c806a096fd8.setContent(html_2d1ead8fb9cb2b4ef746c22a75289ba4);
+            
+        
+
+        circle_a77b92091cadf8140396c172a2ae023b.bindPopup(popup_ef01c3002b25264217ad8c806a096fd8)
+        ;
+
+        
+    
+    
+            var circle_26acb32eef0f490bf5010d0d11c75561 = L.circle(
+                [47.3780898, 8.493271],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_080ba16d681fa85a335a867f472a4252 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb3f7b5e1c17d284a72943a3f2ffd0a5 = $(`<div id="html_eb3f7b5e1c17d284a72943a3f2ffd0a5" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Albisriederstrasse</b><br>             Income: 42364 CHF<br>             Population: 120149             </div>`)[0];
+                popup_080ba16d681fa85a335a867f472a4252.setContent(html_eb3f7b5e1c17d284a72943a3f2ffd0a5);
+            
+        
+
+        circle_26acb32eef0f490bf5010d0d11c75561.bindPopup(popup_080ba16d681fa85a335a867f472a4252)
+        ;
+
+        
+    
+    
+            var circle_37050a21814ea502cf0f23c72647b979 = L.circle(
+                [46.2007896, 6.1306224],
+                {"bubblingMouseEvents": true, "color": "#ff7e00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7e00ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_ca266d1f4342fa0311596f5b14931b33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61a506718745b640ff3798264e0c3c8f = $(`<div id="html_61a506718745b640ff3798264e0c3c8f" style="width: 100.0%; height: 100.0%;">             <b>Genève - Jonction</b><br>             Income: 35399 CHF<br>             Population: 240140             </div>`)[0];
+                popup_ca266d1f4342fa0311596f5b14931b33.setContent(html_61a506718745b640ff3798264e0c3c8f);
+            
+        
+
+        circle_37050a21814ea502cf0f23c72647b979.bindPopup(popup_ca266d1f4342fa0311596f5b14931b33)
+        ;
+
+        
+    
+    
+            var circle_3708f162398580badcd1d1b3190f7be9 = L.circle(
+                [47.5701213, 7.6152494],
+                {"bubblingMouseEvents": true, "color": "#ff1e00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff1e00ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_2cad2e927ee48aced78a1d23e5b638ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3290b673e0df3f943761337ba9e518fd = $(`<div id="html_3290b673e0df3f943761337ba9e518fd" style="width: 100.0%; height: 100.0%;">             <b>Basel - Eglisee</b><br>             Income: 40666 CHF<br>             Population: 93245             </div>`)[0];
+                popup_2cad2e927ee48aced78a1d23e5b638ac.setContent(html_3290b673e0df3f943761337ba9e518fd);
+            
+        
+
+        circle_3708f162398580badcd1d1b3190f7be9.bindPopup(popup_2cad2e927ee48aced78a1d23e5b638ac)
+        ;
+
+        
+    
+    
+            var circle_36d0e174d30d5a66c2f09cc131221389 = L.circle(
+                [46.1872348, 6.1274789],
+                {"bubblingMouseEvents": true, "color": "#0000ffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_93f590fc99a6d1d23855469f3ffb9b34 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8da28357ea6f676a943459e665f5e125 = $(`<div id="html_8da28357ea6f676a943459e665f5e125" style="width: 100.0%; height: 100.0%;">             <b>Pont-Rouge</b><br>             Income: 0 CHF<br>             Population: 189173             </div>`)[0];
+                popup_93f590fc99a6d1d23855469f3ffb9b34.setContent(html_8da28357ea6f676a943459e665f5e125);
+            
+        
+
+        circle_36d0e174d30d5a66c2f09cc131221389.bindPopup(popup_93f590fc99a6d1d23855469f3ffb9b34)
+        ;
+
+        
+    
+    
+            var circle_52eaa2accd62c4eafc54ee97f7bdbc0d = L.circle(
+                [46.2007706, 6.1588299],
+                {"bubblingMouseEvents": true, "color": "#ff7e00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7e00ff", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
+            ).addTo(map_787ea84c8b67713c9d69f30d31456156);
+        
+    
+        var popup_99b52e7d57d5235a59144aa130becb4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f1126a77cd9b9d848ed739915496f4cb = $(`<div id="html_f1126a77cd9b9d848ed739915496f4cb" style="width: 100.0%; height: 100.0%;">             <b>Genève - Villereuse</b><br>             Income: 35399 CHF<br>             Population: 206545             </div>`)[0];
+                popup_99b52e7d57d5235a59144aa130becb4e.setContent(html_f1126a77cd9b9d848ed739915496f4cb);
+            
+        
+
+        circle_52eaa2accd62c4eafc54ee97f7bdbc0d.bindPopup(popup_99b52e7d57d5235a59144aa130becb4e)
+        ;
+
+        
+    
+</script>
+</html>
