@@ -38,6 +38,7 @@
       - Weighted by distance from branch
       - Consider average disposable income
       - Account for purchasing power differences
+      - Added Income / Popluation Scoring for areas. considers the relationship between population density and income levels. This can help identify areas with both high population and good purchasing power.
 
    c) ⏳ Competition Score
       - Identify competing stores within radius by using openstreetmap

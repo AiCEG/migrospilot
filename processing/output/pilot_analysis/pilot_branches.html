@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d0784268028afb231f407cc2ad197bd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6d0784268028afb231f407cc2ad197bd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6d0784268028afb231f407cc2ad197bd = L.map(
+                "map_6d0784268028afb231f407cc2ad197bd",
+                {
+                    center: [46.8182, 8.2275],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a94748b2b20fefd367c5f406a9819346 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a94748b2b20fefd367c5f406a9819346.addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+            var circle_marker_3b22213a9918105e3301adda08cab391 = L.circleMarker(
+                [47.5479172, 7.5886351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_9543e641de34f6730d844f056a42d9f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b522ca5dac2300c24f1ae6c5504ec87 = $(`<div id="html_0b522ca5dac2300c24f1ae6c5504ec87" style="width: 100.0%; height: 100.0%;">             <b>Basel - Bahnhof SBB</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 155988<br>             Population (20min): 132393<br>             Income: 40666 CHF             </div>`)[0];
+                popup_9543e641de34f6730d844f056a42d9f6.setContent(html_0b522ca5dac2300c24f1ae6c5504ec87);
+            
+        
+
+        circle_marker_3b22213a9918105e3301adda08cab391.bindPopup(popup_9543e641de34f6730d844f056a42d9f6)
+        ;
+
+        
+    
+    
+            var circle_marker_6b6ddb8db7950f39f42be692fd82aaad = L.circleMarker(
+                [46.941223, 7.464587],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_0f59f1a26177bc6927639650c0abcc5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a24ab9a0e867b64613fabc97501105ff = $(`<div id="html_a24ab9a0e867b64613fabc97501105ff" style="width: 100.0%; height: 100.0%;">             <b>Bern Burgernziel</b><br>             Type: m<br>             Score: 0.63<br>             Population (10min): 73859<br>             Population (20min): 115344<br>             Income: 36370 CHF             </div>`)[0];
+                popup_0f59f1a26177bc6927639650c0abcc5f.setContent(html_a24ab9a0e867b64613fabc97501105ff);
+            
+        
+
+        circle_marker_6b6ddb8db7950f39f42be692fd82aaad.bindPopup(popup_0f59f1a26177bc6927639650c0abcc5f)
+        ;
+
+        
+    
+    
+            var circle_marker_219db5dffedd0c6b199a284d87fd1019 = L.circleMarker(
+                [46.2039608, 6.1585088],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_eb1c2bb00b1f83cc9403c9568a0d420d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccb446acaf5439b6a9a937c06b4d8540 = $(`<div id="html_ccb446acaf5439b6a9a937c06b4d8540" style="width: 100.0%; height: 100.0%;">             <b>Genève - Eaux-Vives</b><br>             Type: mm<br>             Score: 0.68<br>             Population (10min): 202031<br>             Population (20min): 218508<br>             Income: 35399 CHF             </div>`)[0];
+                popup_eb1c2bb00b1f83cc9403c9568a0d420d.setContent(html_ccb446acaf5439b6a9a937c06b4d8540);
+            
+        
+
+        circle_marker_219db5dffedd0c6b199a284d87fd1019.bindPopup(popup_eb1c2bb00b1f83cc9403c9568a0d420d)
+        ;
+
+        
+    
+    
+            var circle_marker_7b073a962fa3ecec08369f3de083a6d5 = L.circleMarker(
+                [46.1914249, 6.1376403],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_a540ae0f1a17f23352d0010089b941af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a2341262e3fdc2d0fcf56ccebb194c3 = $(`<div id="html_4a2341262e3fdc2d0fcf56ccebb194c3" style="width: 100.0%; height: 100.0%;">             <b>Carouge - Acacias</b><br>             Type: m<br>             Score: 0.60<br>             Population (10min): 221105<br>             Population (20min): 177222<br>             Income: 0 CHF             </div>`)[0];
+                popup_a540ae0f1a17f23352d0010089b941af.setContent(html_4a2341262e3fdc2d0fcf56ccebb194c3);
+            
+        
+
+        circle_marker_7b073a962fa3ecec08369f3de083a6d5.bindPopup(popup_a540ae0f1a17f23352d0010089b941af)
+        ;
+
+        
+    
+    
+            var circle_marker_854ae3d7d5ccf1c13a9a65de3124ab8a = L.circleMarker(
+                [46.2007706, 6.1588299],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_7de0da2635213d2e5d407007e9ce366e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b829cdcba0301aa34cbffda7ebad215f = $(`<div id="html_b829cdcba0301aa34cbffda7ebad215f" style="width: 100.0%; height: 100.0%;">             <b>Genève - Villereuse</b><br>             Type: mm<br>             Score: 0.69<br>             Population (10min): 206545<br>             Population (20min): 218645<br>             Income: 35399 CHF             </div>`)[0];
+                popup_7de0da2635213d2e5d407007e9ce366e.setContent(html_b829cdcba0301aa34cbffda7ebad215f);
+            
+        
+
+        circle_marker_854ae3d7d5ccf1c13a9a65de3124ab8a.bindPopup(popup_7de0da2635213d2e5d407007e9ce366e)
+        ;
+
+        
+    
+    
+            var circle_marker_3cdb0cf64b5a367ce54714d3b326411e = L.circleMarker(
+                [46.5206694, 6.6296469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_c2b06b1d683ffb9892cd7a8324ef6fb5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41dc7aeda35aee8e98aeb917bd349912 = $(`<div id="html_41dc7aeda35aee8e98aeb917bd349912" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Flon Europe</b><br>             Type: m<br>             Score: 0.57<br>             Population (10min): 141959<br>             Population (20min): 102201<br>             Income: 30639 CHF             </div>`)[0];
+                popup_c2b06b1d683ffb9892cd7a8324ef6fb5.setContent(html_41dc7aeda35aee8e98aeb917bd349912);
+            
+        
+
+        circle_marker_3cdb0cf64b5a367ce54714d3b326411e.bindPopup(popup_c2b06b1d683ffb9892cd7a8324ef6fb5)
+        ;
+
+        
+    
+    
+            var circle_marker_a4aac409f5bec8826a99dc7f85ebc865 = L.circleMarker(
+                [46.1909267, 6.1524674],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_0bd58951ae861131a0eb1ccb92fda7e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4f50be7d8bfd221ad0982eebed86168 = $(`<div id="html_a4f50be7d8bfd221ad0982eebed86168" style="width: 100.0%; height: 100.0%;">             <b>Genève - Champel</b><br>             Type: mm<br>             Score: 0.68<br>             Population (10min): 187889<br>             Population (20min): 215621<br>             Income: 35399 CHF             </div>`)[0];
+                popup_0bd58951ae861131a0eb1ccb92fda7e0.setContent(html_a4f50be7d8bfd221ad0982eebed86168);
+            
+        
+
+        circle_marker_a4aac409f5bec8826a99dc7f85ebc865.bindPopup(popup_0bd58951ae861131a0eb1ccb92fda7e0)
+        ;
+
+        
+    
+    
+            var circle_marker_fb48164fa5ccbb5740dd60588c969b1d = L.circleMarker(
+                [46.1824507, 6.1344054],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_9d4c8be2185632c811f236c7aa42508c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a2a29b04e21c6670e8d2c60f378b0133 = $(`<div id="html_a2a29b04e21c6670e8d2c60f378b0133" style="width: 100.0%; height: 100.0%;">             <b>Carouge - Vibert</b><br>             Type: mm<br>             Score: 0.57<br>             Population (10min): 137676<br>             Population (20min): 224186<br>             Income: 0 CHF             </div>`)[0];
+                popup_9d4c8be2185632c811f236c7aa42508c.setContent(html_a2a29b04e21c6670e8d2c60f378b0133);
+            
+        
+
+        circle_marker_fb48164fa5ccbb5740dd60588c969b1d.bindPopup(popup_9d4c8be2185632c811f236c7aa42508c)
+        ;
+
+        
+    
+    
+            var circle_marker_979d74a900196df66ec18c5392f6a781 = L.circleMarker(
+                [46.2039287, 6.1461998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_101ce60fd9440a5dc5a6e933b3f30332 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ab73dbe3e1ee1ba5550129983f3fff2 = $(`<div id="html_6ab73dbe3e1ee1ba5550129983f3fff2" style="width: 100.0%; height: 100.0%;">             <b>Genève - Fusterie M-Express</b><br>             Type: m<br>             Score: 0.67<br>             Population (10min): 224545<br>             Population (20min): 185320<br>             Income: 35399 CHF             </div>`)[0];
+                popup_101ce60fd9440a5dc5a6e933b3f30332.setContent(html_6ab73dbe3e1ee1ba5550129983f3fff2);
+            
+        
+
+        circle_marker_979d74a900196df66ec18c5392f6a781.bindPopup(popup_101ce60fd9440a5dc5a6e933b3f30332)
+        ;
+
+        
+    
+    
+            var circle_marker_75a00a8c6de0dfe4a99cc6fb70e6b324 = L.circleMarker(
+                [46.522757, 6.626973],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_6d0784268028afb231f407cc2ad197bd);
+        
+    
+        var popup_3f463c6fbefb2524e15d1c3eaca2c3fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bdccfd45b2ac1170baf6051c7b2007dd = $(`<div id="html_bdccfd45b2ac1170baf6051c7b2007dd" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Métropole</b><br>             Type: mmm<br>             Score: 0.59<br>             Population (10min): 153767<br>             Population (20min): 97507<br>             Income: 30639 CHF             </div>`)[0];
+                popup_3f463c6fbefb2524e15d1c3eaca2c3fd.setContent(html_bdccfd45b2ac1170baf6051c7b2007dd);
+            
+        
+
+        circle_marker_75a00a8c6de0dfe4a99cc6fb70e6b324.bindPopup(popup_3f463c6fbefb2524e15d1c3eaca2c3fd)
+        ;
+
+        
+    
+</script>
+</html>
