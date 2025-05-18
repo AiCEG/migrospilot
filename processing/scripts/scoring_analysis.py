@@ -52,8 +52,7 @@ class LocationScorer:
             'M': 0.4,      # Small neighborhood stores
             'MM': 0.6,     # Medium-sized stores
             'MMM': 0.8,    # Large stores
-            'MMMM': 0.9,   # Extra large stores
-            'MMMM+': 1.0   # Flagship stores
+            'VOI': 0.3,   # VOI
         }
     
     def calculate_branch_type_score(self, branch_type: str) -> float:
@@ -61,12 +60,8 @@ class LocationScorer:
         # Clean and standardize branch type
         branch_type = branch_type.strip().upper()
         
-        # Handle special cases
-        if 'FLAGSHIP' in branch_type or 'FLAG' in branch_type:
-            return self.BRANCH_TYPE_SCORES['MMMM+']
-        
         # Get base score from mapping
-        base_score = self.BRANCH_TYPE_SCORES.get(branch_type, 0.3)  # Default to 0.3 for unknown types
+        base_score = self.BRANCH_TYPE_SCORES.get(branch_type, 0.4)  # Default to 0.3 for unknown types
         
         # Additional bonus for special locations (e.g., train stations, airports)
         if any(keyword in branch_type.upper() for keyword in ['BAHN', 'SBB', 'AIRPORT', 'FLUGHAFEN']):

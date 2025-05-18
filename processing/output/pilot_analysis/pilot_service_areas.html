@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_429ffc5a7e4149836666c3f5f2efe694 {
+                #map_fa0716f7937ef8d4fed1cb844355c9f6 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -55,14 +55,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_429ffc5a7e4149836666c3f5f2efe694" ></div>
+            <div class="folium-map" id="map_fa0716f7937ef8d4fed1cb844355c9f6" ></div>
         
 </body>
 <script>
     
     
-            var map_429ffc5a7e4149836666c3f5f2efe694 = L.map(
-                "map_429ffc5a7e4149836666c3f5f2efe694",
+            var map_fa0716f7937ef8d4fed1cb844355c9f6 = L.map(
+                "map_fa0716f7937ef8d4fed1cb844355c9f6",
                 {
                     center: [46.8182, 8.2275],
                     crs: L.CRS.EPSG3857,
@@ -79,7 +79,7 @@
 
         
     
-            var tile_layer_604bbb26b855db9522384c943d468b13 = L.tileLayer(
+            var tile_layer_cdd2ba2bb0c8942b48970ab4777443b6 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -96,46 +96,46 @@
             );
         
     
-            tile_layer_604bbb26b855db9522384c943d468b13.addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            tile_layer_cdd2ba2bb0c8942b48970ab4777443b6.addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-    var color_map_00c6a4b1f98a5081cf636d7bebe0b1b9 = {};
+    var color_map_c1a23e3f943e401c6e624ac1831a800e = {};
 
     
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.color = d3.scale.threshold()
+    color_map_c1a23e3f943e401c6e624ac1831a800e.color = d3.scale.threshold()
               .domain([0.5334679338695342, 0.5338028684933653, 0.5341378031171965, 0.5344727377410277, 0.5348076723648587, 0.5351426069886899, 0.535477541612521, 0.5358124762363522, 0.5361474108601834, 0.5364823454840145, 0.5368172801078457, 0.5371522147316768, 0.5374871493555079, 0.5378220839793391, 0.5381570186031702, 0.5384919532270014, 0.5388268878508325, 0.5391618224746637, 0.5394967570984949, 0.5398316917223259, 0.5401666263461571, 0.5405015609699882, 0.5408364955938194, 0.5411714302176506, 0.5415063648414817, 0.5418412994653129, 0.542176234089144, 0.5425111687129751, 0.5428461033368063, 0.5431810379606374, 0.5435159725844686, 0.5438509072082998, 0.5441858418321309, 0.5445207764559621, 0.5448557110797931, 0.5451906457036243, 0.5455255803274555, 0.5458605149512866, 0.5461954495751178, 0.546530384198949, 0.5468653188227801, 0.5472002534466112, 0.5475351880704423, 0.5478701226942735, 0.5482050573181046, 0.5485399919419358, 0.548874926565767, 0.5492098611895981, 0.5495447958134292, 0.5498797304372604, 0.5502146650610915, 0.5505495996849227, 0.5508845343087538, 0.551219468932585, 0.5515544035564162, 0.5518893381802472, 0.5522242728040784, 0.5525592074279095, 0.5528941420517407, 0.5532290766755719, 0.553564011299403, 0.5538989459232342, 0.5542338805470653, 0.5545688151708964, 0.5549037497947276, 0.5552386844185587, 0.5555736190423899, 0.555908553666221, 0.5562434882900522, 0.5565784229138834, 0.5569133575377144, 0.5572482921615456, 0.5575832267853768, 0.5579181614092079, 0.5582530960330391, 0.5585880306568702, 0.5589229652807014, 0.5592578999045326, 0.5595928345283636, 0.5599277691521948, 0.5602627037760259, 0.5605976383998571, 0.5609325730236883, 0.5612675076475194, 0.5616024422713506, 0.5619373768951816, 0.5622723115190128, 0.562607246142844, 0.5629421807666751, 0.5632771153905063, 0.5636120500143375, 0.5639469846381686, 0.5642819192619997, 0.5646168538858308, 0.564951788509662, 0.5652867231334932, 0.5656216577573243, 0.5659565923811555, 0.5662915270049866, 0.5666264616288177, 0.5669613962526489, 0.56729633087648, 0.5676312655003112, 0.5679662001241423, 0.5683011347479735, 0.5686360693718047, 0.5689710039956358, 0.5693059386194669, 0.569640873243298, 0.5699758078671292, 0.5703107424909604, 0.5706456771147915, 0.5709806117386227, 0.5713155463624539, 0.5716504809862849, 0.5719854156101161, 0.5723203502339472, 0.5726552848577784, 0.5729902194816096, 0.5733251541054407, 0.5736600887292719, 0.573995023353103, 0.5743299579769341, 0.5746648926007653, 0.5749998272245964, 0.5753347618484276, 0.5756696964722587, 0.5760046310960899, 0.5763395657199211, 0.5766745003437521, 0.5770094349675833, 0.5773443695914144, 0.5776793042152456, 0.5780142388390768, 0.5783491734629079, 0.5786841080867391, 0.5790190427105701, 0.5793539773344013, 0.5796889119582325, 0.5800238465820636, 0.5803587812058948, 0.580693715829726, 0.5810286504535571, 0.5813635850773882, 0.5816985197012193, 0.5820334543250505, 0.5823683889488817, 0.5827033235727128, 0.583038258196544, 0.5833731928203751, 0.5837081274442063, 0.5840430620680374, 0.5843779966918685, 0.5847129313156997, 0.5850478659395308, 0.585382800563362, 0.5857177351871932, 0.5860526698110243, 0.5863876044348554, 0.5867225390586865, 0.5870574736825177, 0.5873924083063489, 0.58772734293018, 0.5880622775540112, 0.5883972121778424, 0.5887321468016735, 0.5890670814255046, 0.5894020160493357, 0.5897369506731669, 0.590071885296998, 0.5904068199208292, 0.5907417545446604, 0.5910766891684915, 0.5914116237923226, 0.5917465584161538, 0.5920814930399849, 0.5924164276638161, 0.5927513622876472, 0.5930862969114784, 0.5934212315353096, 0.5937561661591406, 0.5940911007829718, 0.5944260354068029, 0.5947609700306341, 0.5950959046544653, 0.5954308392782964, 0.5957657739021276, 0.5961007085259586, 0.5964356431497898, 0.596770577773621, 0.5971055123974521, 0.5974404470212833, 0.5977753816451145, 0.5981103162689456, 0.5984452508927768, 0.5987801855166079, 0.599115120140439, 0.5994500547642702, 0.5997849893881013, 0.6001199240119325, 0.6004548586357636, 0.6007897932595948, 0.601124727883426, 0.601459662507257, 0.6017945971310882, 0.6021295317549193, 0.6024644663787505, 0.6027994010025817, 0.6031343356264128, 0.603469270250244, 0.603804204874075, 0.6041391394979062, 0.6044740741217374, 0.6048090087455685, 0.6051439433693997, 0.6054788779932309, 0.605813812617062, 0.6061487472408931, 0.6064836818647242, 0.6068186164885554, 0.6071535511123866, 0.6074884857362177, 0.6078234203600489, 0.60815835498388, 0.6084932896077111, 0.6088282242315423, 0.6091631588553734, 0.6094980934792046, 0.6098330281030357, 0.6101679627268669, 0.6105028973506981, 0.6108378319745291, 0.6111727665983603, 0.6115077012221914, 0.6118426358460226, 0.6121775704698538, 0.6125125050936849, 0.6128474397175161, 0.6131823743413473, 0.6135173089651784, 0.6138522435890095, 0.6141871782128406, 0.6145221128366718, 0.614857047460503, 0.6151919820843341, 0.6155269167081653, 0.6158618513319964, 0.6161967859558275, 0.6165317205796587, 0.6168666552034898, 0.617201589827321, 0.6175365244511521, 0.6178714590749833, 0.6182063936988145, 0.6185413283226455, 0.6188762629464767, 0.6192111975703078, 0.619546132194139, 0.6198810668179702, 0.6202160014418013, 0.6205509360656325, 0.6208858706894635, 0.6212208053132947, 0.6215557399371259, 0.621890674560957, 0.6222256091847882, 0.6225605438086194, 0.6228954784324505, 0.6232304130562816, 0.6235653476801127, 0.6239002823039439, 0.6242352169277751, 0.6245701515516062, 0.6249050861754374, 0.6252400207992685, 0.6255749554230996, 0.6259098900469308, 0.6262448246707619, 0.6265797592945931, 0.6269146939184242, 0.6272496285422554, 0.6275845631660866, 0.6279194977899176, 0.6282544324137488, 0.62858936703758, 0.6289243016614111, 0.6292592362852423, 0.6295941709090734, 0.6299291055329046, 0.6302640401567358, 0.6305989747805669, 0.630933909404398, 0.6312688440282291, 0.6316037786520603, 0.6319387132758915, 0.6322736478997226, 0.6326085825235538, 0.632943517147385, 0.633278451771216, 0.6336133863950472, 0.6339483210188783, 0.6342832556427095, 0.6346181902665406, 0.6349531248903718, 0.635288059514203, 0.635622994138034, 0.6359579287618652, 0.6362928633856964, 0.6366277980095275, 0.6369627326333587, 0.6372976672571898, 0.637632601881021, 0.637967536504852, 0.6383024711286832, 0.6386374057525144, 0.6389723403763455, 0.6393072750001767, 0.6396422096240079, 0.639977144247839, 0.6403120788716701, 0.6406470134955012, 0.6409819481193324, 0.6413168827431636, 0.6416518173669947, 0.6419867519908259, 0.642321686614657, 0.6426566212384881, 0.6429915558623193, 0.6433264904861504, 0.6436614251099816, 0.6439963597338128, 0.6443312943576439, 0.6446662289814751, 0.6450011636053062, 0.6453360982291373, 0.6456710328529685, 0.6460059674767996, 0.6463409021006308, 0.6466758367244619, 0.6470107713482931, 0.6473457059721243, 0.6476806405959554, 0.6480155752197865, 0.6483505098436176, 0.6486854444674488, 0.64902037909128, 0.6493553137151111, 0.6496902483389423, 0.6500251829627735, 0.6503601175866045, 0.6506950522104357, 0.6510299868342668, 0.651364921458098, 0.6516998560819292, 0.6520347907057603, 0.6523697253295915, 0.6527046599534225, 0.6530395945772537, 0.6533745292010849, 0.653709463824916, 0.6540443984487472, 0.6543793330725783, 0.6547142676964095, 0.6550492023202406, 0.6553841369440717, 0.6557190715679029, 0.656054006191734, 0.6563889408155652, 0.6567238754393964, 0.6570588100632275, 0.6573937446870587, 0.6577286793108897, 0.6580636139347209, 0.6583985485585521, 0.6587334831823832, 0.6590684178062144, 0.6594033524300456, 0.6597382870538767, 0.6600732216777079, 0.6604081563015389, 0.6607430909253701, 0.6610780255492013, 0.6614129601730324, 0.6617478947968636, 0.6620828294206947, 0.6624177640445259, 0.662752698668357, 0.6630876332921881, 0.6634225679160193, 0.6637575025398504, 0.6640924371636816, 0.6644273717875128, 0.6647623064113439, 0.665097241035175, 0.6654321756590061, 0.6657671102828373, 0.6661020449066685, 0.6664369795304996, 0.6667719141543308, 0.667106848778162, 0.667441783401993, 0.6677767180258243, 0.6681116526496553, 0.6684465872734865, 0.6687815218973177, 0.6691164565211488, 0.66945139114498, 0.669786325768811, 0.6701212603926423, 0.6704561950164734, 0.6707911296403045, 0.6711260642641357, 0.6714609988879668, 0.671795933511798, 0.6721308681356291, 0.6724658027594603, 0.6728007373832914, 0.6731356720071225, 0.6734706066309537, 0.6738055412547849, 0.674140475878616, 0.6744754105024471, 0.6748103451262784, 0.6751452797501094, 0.6754802143739406, 0.6758151489977717, 0.6761500836216029, 0.676485018245434, 0.6768199528692652, 0.6771548874930964, 0.6774898221169274, 0.6778247567407586, 0.6781596913645898, 0.6784946259884209, 0.6788295606122521, 0.6791644952360832, 0.6794994298599144, 0.6798343644837455, 0.6801692991075766, 0.6805042337314078, 0.6808391683552389, 0.6811741029790701, 0.6815090376029013, 0.6818439722267324, 0.6821789068505635, 0.6825138414743946, 0.6828487760982258, 0.683183710722057, 0.6835186453458881, 0.6838535799697193, 0.6841885145935505, 0.6845234492173815, 0.6848583838412127, 0.6851933184650438, 0.685528253088875, 0.6858631877127062, 0.6861981223365373, 0.6865330569603685, 0.6868679915841995, 0.6872029262080307, 0.6875378608318619, 0.687872795455693, 0.6882077300795242, 0.6885426647033553, 0.6888775993271865, 0.6892125339510176, 0.6895474685748488, 0.6898824031986799, 0.690217337822511, 0.6905522724463422, 0.6908872070701734, 0.6912221416940045, 0.6915570763178357, 0.6918920109416669, 0.6922269455654979, 0.6925618801893292, 0.6928968148131602, 0.6932317494369914, 0.6935666840608226, 0.6939016186846537, 0.6942365533084849, 0.6945714879323159, 0.6949064225561472, 0.6952413571799783, 0.6955762918038094, 0.6959112264276406, 0.6962461610514717, 0.6965810956753029, 0.696916030299134, 0.6972509649229652, 0.6975858995467963, 0.6979208341706274, 0.6982557687944586, 0.6985907034182898, 0.6989256380421209, 0.699260572665952, 0.6995955072897833, 0.6999304419136143, 0.7002653765374455, 0.7006003111612766])
               .range(['#ff0000ff', '#ff0100ff', '#ff0200ff', '#ff0300ff', '#ff0400ff', '#ff0500ff', '#ff0600ff', '#ff0700ff', '#ff0800ff', '#ff0900ff', '#ff0a00ff', '#ff0b00ff', '#ff0c00ff', '#ff0d00ff', '#ff0e00ff', '#ff0f00ff', '#ff1000ff', '#ff1100ff', '#ff1200ff', '#ff1300ff', '#ff1400ff', '#ff1500ff', '#ff1600ff', '#ff1700ff', '#ff1800ff', '#ff1900ff', '#ff1a00ff', '#ff1b00ff', '#ff1c00ff', '#ff1d00ff', '#ff1e00ff', '#ff1f00ff', '#ff2000ff', '#ff2100ff', '#ff2200ff', '#ff2300ff', '#ff2400ff', '#ff2500ff', '#ff2600ff', '#ff2800ff', '#ff2900ff', '#ff2a00ff', '#ff2b00ff', '#ff2c00ff', '#ff2d00ff', '#ff2e00ff', '#ff2f00ff', '#ff3000ff', '#ff3100ff', '#ff3200ff', '#ff3300ff', '#ff3400ff', '#ff3500ff', '#ff3600ff', '#ff3700ff', '#ff3800ff', '#ff3900ff', '#ff3a00ff', '#ff3b00ff', '#ff3c00ff', '#ff3d00ff', '#ff3e00ff', '#ff3f00ff', '#ff4000ff', '#ff4100ff', '#ff4200ff', '#ff4300ff', '#ff4400ff', '#ff4500ff', '#ff4600ff', '#ff4700ff', '#ff4800ff', '#ff4900ff', '#ff4a00ff', '#ff4b00ff', '#ff4c00ff', '#ff4d00ff', '#ff4f00ff', '#ff5000ff', '#ff5100ff', '#ff5200ff', '#ff5300ff', '#ff5400ff', '#ff5500ff', '#ff5600ff', '#ff5700ff', '#ff5800ff', '#ff5900ff', '#ff5a00ff', '#ff5b00ff', '#ff5c00ff', '#ff5d00ff', '#ff5e00ff', '#ff5f00ff', '#ff6000ff', '#ff6100ff', '#ff6200ff', '#ff6300ff', '#ff6400ff', '#ff6500ff', '#ff6600ff', '#ff6700ff', '#ff6800ff', '#ff6900ff', '#ff6a00ff', '#ff6b00ff', '#ff6c00ff', '#ff6d00ff', '#ff6e00ff', '#ff6f00ff', '#ff7000ff', '#ff7100ff', '#ff7200ff', '#ff7300ff', '#ff7400ff', '#ff7500ff', '#ff7700ff', '#ff7800ff', '#ff7900ff', '#ff7a00ff', '#ff7b00ff', '#ff7c00ff', '#ff7d00ff', '#ff7e00ff', '#ff7f00ff', '#ff8000ff', '#ff8100ff', '#ff8200ff', '#ff8300ff', '#ff8400ff', '#ff8500ff', '#ff8600ff', '#ff8700ff', '#ff8800ff', '#ff8900ff', '#ff8a00ff', '#ff8b00ff', '#ff8c00ff', '#ff8d00ff', '#ff8e00ff', '#ff8f00ff', '#ff9000ff', '#ff9100ff', '#ff9200ff', '#ff9300ff', '#ff9400ff', '#ff9500ff', '#ff9600ff', '#ff9700ff', '#ff9800ff', '#ff9900ff', '#ff9a00ff', '#ff9b00ff', '#ff9c00ff', '#ff9e00ff', '#ff9f00ff', '#ffa000ff', '#ffa100ff', '#ffa200ff', '#ffa300ff', '#ffa400ff', '#ffa500ff', '#ffa600ff', '#ffa700ff', '#ffa800ff', '#ffa900ff', '#ffaa00ff', '#ffab00ff', '#ffac00ff', '#ffad00ff', '#ffae00ff', '#ffaf00ff', '#ffb000ff', '#ffb100ff', '#ffb200ff', '#ffb300ff', '#ffb400ff', '#ffb500ff', '#ffb600ff', '#ffb700ff', '#ffb800ff', '#ffb900ff', '#ffba00ff', '#ffbb00ff', '#ffbc00ff', '#ffbd00ff', '#ffbe00ff', '#ffbf00ff', '#ffc000ff', '#ffc100ff', '#ffc200ff', '#ffc300ff', '#ffc500ff', '#ffc600ff', '#ffc700ff', '#ffc800ff', '#ffc900ff', '#ffca00ff', '#ffcb00ff', '#ffcc00ff', '#ffcd00ff', '#ffce00ff', '#ffcf00ff', '#ffd000ff', '#ffd100ff', '#ffd200ff', '#ffd300ff', '#ffd400ff', '#ffd500ff', '#ffd600ff', '#ffd700ff', '#ffd800ff', '#ffd900ff', '#ffda00ff', '#ffdb00ff', '#ffdc00ff', '#ffdd00ff', '#ffde00ff', '#ffdf00ff', '#ffe000ff', '#ffe100ff', '#ffe200ff', '#ffe300ff', '#ffe400ff', '#ffe500ff', '#ffe600ff', '#ffe700ff', '#ffe800ff', '#ffe900ff', '#ffea00ff', '#ffeb00ff', '#ffed00ff', '#ffee00ff', '#ffef00ff', '#fff000ff', '#fff100ff', '#fff200ff', '#fff300ff', '#fff400ff', '#fff500ff', '#fff600ff', '#fff700ff', '#fff800ff', '#fff900ff', '#fffa00ff', '#fffb00ff', '#fffc00ff', '#fffd00ff', '#fffe00ff', '#ffff00ff', '#ffff00ff', '#feff00ff', '#fdfe00ff', '#fcfe00ff', '#fbfd00ff', '#fafd00ff', '#f9fc00ff', '#f8fc00ff', '#f7fb00ff', '#f6fb00ff', '#f5fa00ff', '#f4fa00ff', '#f3f900ff', '#f2f900ff', '#f1f800ff', '#f0f800ff', '#eff700ff', '#eef700ff', '#edf600ff', '#ebf600ff', '#eaf500ff', '#e9f500ff', '#e8f400ff', '#e7f300ff', '#e6f300ff', '#e5f200ff', '#e4f200ff', '#e3f100ff', '#e2f100ff', '#e1f000ff', '#e0f000ff', '#dfef00ff', '#deef00ff', '#ddee00ff', '#dcee00ff', '#dbed00ff', '#daed00ff', '#d9ec00ff', '#d8ec00ff', '#d7eb00ff', '#d6eb00ff', '#d5ea00ff', '#d4ea00ff', '#d3e900ff', '#d2e900ff', '#d1e800ff', '#d0e800ff', '#cfe700ff', '#cee700ff', '#cde600ff', '#cce600ff', '#cbe500ff', '#cae500ff', '#c9e400ff', '#c8e400ff', '#c7e300ff', '#c6e300ff', '#c5e200ff', '#c3e200ff', '#c2e100ff', '#c1e100ff', '#c0e000ff', '#bfe000ff', '#bedf00ff', '#bddf00ff', '#bcde00ff', '#bbde00ff', '#badd00ff', '#b9dc00ff', '#b8dc00ff', '#b7db00ff', '#b6db00ff', '#b5da00ff', '#b4da00ff', '#b3d900ff', '#b2d900ff', '#b1d800ff', '#b0d800ff', '#afd700ff', '#aed700ff', '#add600ff', '#acd600ff', '#abd500ff', '#aad500ff', '#a9d400ff', '#a8d400ff', '#a7d300ff', '#a6d300ff', '#a5d200ff', '#a4d200ff', '#a3d100ff', '#a2d100ff', '#a1d000ff', '#a0d000ff', '#9fcf00ff', '#9ecf00ff', '#9cce00ff', '#9bce00ff', '#9acd00ff', '#99cd00ff', '#98cc00ff', '#97cc00ff', '#96cb00ff', '#95cb00ff', '#94ca00ff', '#93ca00ff', '#92c900ff', '#91c900ff', '#90c800ff', '#8fc800ff', '#8ec700ff', '#8dc700ff', '#8cc600ff', '#8bc500ff', '#8ac500ff', '#89c400ff', '#88c400ff', '#87c300ff', '#86c300ff', '#85c200ff', '#84c200ff', '#83c100ff', '#82c100ff', '#81c000ff', '#80c000ff', '#7fbf00ff', '#7ebf00ff', '#7dbe00ff', '#7cbe00ff', '#7bbd00ff', '#7abd00ff', '#79bc00ff', '#78bc00ff', '#77bb00ff', '#75bb00ff', '#74ba00ff', '#73ba00ff', '#72b900ff', '#71b900ff', '#70b800ff', '#6fb800ff', '#6eb700ff', '#6db700ff', '#6cb600ff', '#6bb600ff', '#6ab500ff', '#69b500ff', '#68b400ff', '#67b400ff', '#66b300ff', '#65b300ff', '#64b200ff', '#63b200ff', '#62b100ff', '#61b100ff', '#60b000ff', '#5fb000ff', '#5eaf00ff', '#5daf00ff', '#5cae00ff', '#5bad00ff', '#5aad00ff', '#59ac00ff', '#58ac00ff', '#57ab00ff', '#56ab00ff', '#55aa00ff', '#54aa00ff', '#53a900ff', '#52a900ff', '#51a800ff', '#50a800ff', '#4fa700ff', '#4da700ff', '#4ca600ff', '#4ba600ff', '#4aa500ff', '#49a500ff', '#48a400ff', '#47a400ff', '#46a300ff', '#45a300ff', '#44a200ff', '#43a200ff', '#42a100ff', '#41a100ff', '#40a000ff', '#3fa000ff', '#3e9f00ff', '#3d9f00ff', '#3c9e00ff', '#3b9e00ff', '#3a9d00ff', '#399d00ff', '#389c00ff', '#379c00ff', '#369b00ff', '#359b00ff', '#349a00ff', '#339a00ff', '#329900ff', '#319900ff', '#309800ff', '#2f9800ff', '#2e9700ff', '#2d9600ff', '#2c9600ff', '#2b9500ff', '#2a9500ff', '#299400ff', '#289400ff', '#269300ff', '#259300ff', '#249200ff', '#239200ff', '#229100ff', '#219100ff', '#209000ff', '#1f9000ff', '#1e8f00ff', '#1d8f00ff', '#1c8e00ff', '#1b8e00ff', '#1a8d00ff', '#198d00ff', '#188c00ff', '#178c00ff', '#168b00ff', '#158b00ff', '#148a00ff', '#138a00ff', '#128900ff', '#118900ff', '#108800ff', '#0f8800ff', '#0e8700ff', '#0d8700ff', '#0c8600ff', '#0b8600ff', '#0a8500ff', '#098500ff', '#088400ff', '#078400ff', '#068300ff', '#058300ff', '#048200ff', '#038200ff', '#028100ff', '#018100ff', '#008000ff']);
     
 
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.x = d3.scale.linear()
+    color_map_c1a23e3f943e401c6e624ac1831a800e.x = d3.scale.linear()
               .domain([0.5334679338695342, 0.7006003111612766])
               .range([0, 450 - 50]);
 
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.legend = L.control({position: 'topright'});
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.legend.addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+    color_map_c1a23e3f943e401c6e624ac1831a800e.legend = L.control({position: 'topright'});
+    color_map_c1a23e3f943e401c6e624ac1831a800e.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_c1a23e3f943e401c6e624ac1831a800e.legend.addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
 
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.xAxis = d3.svg.axis()
-        .scale(color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.x)
+    color_map_c1a23e3f943e401c6e624ac1831a800e.xAxis = d3.svg.axis()
+        .scale(color_map_c1a23e3f943e401c6e624ac1831a800e.x)
         .orient("top")
         .tickSize(1)
         .tickValues([0.5334679338695342, 0.6170341225154055, 0.7006003111612766]);
 
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.svg = d3.select(".legend.leaflet-control").append("svg")
+    color_map_c1a23e3f943e401c6e624ac1831a800e.svg = d3.select(".legend.leaflet-control").append("svg")
         .attr("id", 'legend')
         .attr("width", 450)
         .attr("height", 40);
 
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.g = color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.svg.append("g")
+    color_map_c1a23e3f943e401c6e624ac1831a800e.g = color_map_c1a23e3f943e401c6e624ac1831a800e.svg.append("g")
         .attr("class", "key")
         .attr("fill", "black")
         .attr("transform", "translate(25,16)");
 
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.g.selectAll("rect")
-        .data(color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.color.range().map(function(d, i) {
+    color_map_c1a23e3f943e401c6e624ac1831a800e.g.selectAll("rect")
+        .data(color_map_c1a23e3f943e401c6e624ac1831a800e.color.range().map(function(d, i) {
           return {
-            x0: i ? color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.x(color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.color.domain()[i - 1]) : color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.x.range()[0],
-            x1: i < color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.color.domain().length ? color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.x(color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.color.domain()[i]) : color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.x.range()[1],
+            x0: i ? color_map_c1a23e3f943e401c6e624ac1831a800e.x(color_map_c1a23e3f943e401c6e624ac1831a800e.color.domain()[i - 1]) : color_map_c1a23e3f943e401c6e624ac1831a800e.x.range()[0],
+            x1: i < color_map_c1a23e3f943e401c6e624ac1831a800e.color.domain().length ? color_map_c1a23e3f943e401c6e624ac1831a800e.x(color_map_c1a23e3f943e401c6e624ac1831a800e.color.domain()[i]) : color_map_c1a23e3f943e401c6e624ac1831a800e.x.range()[1],
             z: d
           };
         }))
@@ -145,718 +145,718 @@
         .attr("width", function(d) { return d.x1 - d.x0; })
         .style("fill", function(d) { return d.z; });
 
-    color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.g.call(color_map_00c6a4b1f98a5081cf636d7bebe0b1b9.xAxis).append("text")
+    color_map_c1a23e3f943e401c6e624ac1831a800e.g.call(color_map_c1a23e3f943e401c6e624ac1831a800e.xAxis).append("text")
         .attr("class", "caption")
         .attr("y", 21)
         .attr("fill", "black")
         .text("");
     
-            var circle_de27cd38eef21e08fa6b5cc53a6dd038 = L.circle(
+            var circle_7a03198fb976cb22bebe1248b8a2617e = L.circle(
                 [47.050865, 8.299126],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_b52f80f222bf7f39b52b2dd58cee0a48 = L.popup({
+        var popup_1ef615d27e3396b953816abcea93f44c = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_89ab31c90443727d519a1671d299f7f8 = $(`<div id="html_89ab31c90443727d519a1671d299f7f8" style="width: 100.0%; height: 100.0%;">             <b>Luzern - Bruchstrasse</b><br>             Type: m<br>             Score: 0.64<br>             Population (10min): 87735<br>             Population (20min): 75901<br>             Income: 36474 CHF             </div>`)[0];
-                popup_b52f80f222bf7f39b52b2dd58cee0a48.setContent(html_89ab31c90443727d519a1671d299f7f8);
+                var html_a669584ab648310f4450593abf308cbd = $(`<div id="html_a669584ab648310f4450593abf308cbd" style="width: 100.0%; height: 100.0%;">             <b>Luzern - Bruchstrasse</b><br>             Type: m<br>             Score: 0.64<br>             Population (10min): 87735<br>             Population (20min): 75901<br>             Income: 36474 CHF             </div>`)[0];
+                popup_1ef615d27e3396b953816abcea93f44c.setContent(html_a669584ab648310f4450593abf308cbd);
             
         
 
-        circle_de27cd38eef21e08fa6b5cc53a6dd038.bindPopup(popup_b52f80f222bf7f39b52b2dd58cee0a48)
+        circle_7a03198fb976cb22bebe1248b8a2617e.bindPopup(popup_1ef615d27e3396b953816abcea93f44c)
         ;
 
         
     
     
-            var circle_8f1c71896fd5878330dcc08b6462910f = L.circle(
+            var circle_5b9d23ac255b16e42adcf1b73c2e664c = L.circle(
                 [47.050865, 8.299126],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_fbce6aa617409e60e49ab52a42f56fbb = L.popup({
+        var popup_35685b1da0c3c6010bfbb6cef610c64a = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_52cfd5a51cea3660bf4ee564dda82b32 = $(`<div id="html_52cfd5a51cea3660bf4ee564dda82b32" style="width: 100.0%; height: 100.0%;">             <b>Luzern - Bruchstrasse</b><br>             Type: m<br>             Score: 0.64<br>             Population (10min): 87735<br>             Population (20min): 75901<br>             Income: 36474 CHF             </div>`)[0];
-                popup_fbce6aa617409e60e49ab52a42f56fbb.setContent(html_52cfd5a51cea3660bf4ee564dda82b32);
+                var html_3b92e657ea04d75c0b331ea16e7ead9c = $(`<div id="html_3b92e657ea04d75c0b331ea16e7ead9c" style="width: 100.0%; height: 100.0%;">             <b>Luzern - Bruchstrasse</b><br>             Type: m<br>             Score: 0.64<br>             Population (10min): 87735<br>             Population (20min): 75901<br>             Income: 36474 CHF             </div>`)[0];
+                popup_35685b1da0c3c6010bfbb6cef610c64a.setContent(html_3b92e657ea04d75c0b331ea16e7ead9c);
             
         
 
-        circle_8f1c71896fd5878330dcc08b6462910f.bindPopup(popup_fbce6aa617409e60e49ab52a42f56fbb)
+        circle_5b9d23ac255b16e42adcf1b73c2e664c.bindPopup(popup_35685b1da0c3c6010bfbb6cef610c64a)
         ;
 
         
     
     
-            var circle_marker_5e6792f638abab5313d856fe73546971 = L.circleMarker(
+            var circle_marker_5565dc5e2ba7736a469ef2ea0f08c339 = L.circleMarker(
                 [47.050865, 8.299126],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_c3c9b2004263ffe769900d09cec6a3be = L.popup({
+        var popup_ca2d1f26c1364db586400bccf271c8bd = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_62434ca5ff543b441fc6943d10f8f13f = $(`<div id="html_62434ca5ff543b441fc6943d10f8f13f" style="width: 100.0%; height: 100.0%;">             <b>Luzern - Bruchstrasse</b><br>             Type: m<br>             Score: 0.64<br>             Population (10min): 87735<br>             Population (20min): 75901<br>             Income: 36474 CHF             </div>`)[0];
-                popup_c3c9b2004263ffe769900d09cec6a3be.setContent(html_62434ca5ff543b441fc6943d10f8f13f);
+                var html_05b78ea92f432c763ba0e3f22f404160 = $(`<div id="html_05b78ea92f432c763ba0e3f22f404160" style="width: 100.0%; height: 100.0%;">             <b>Luzern - Bruchstrasse</b><br>             Type: m<br>             Score: 0.64<br>             Population (10min): 87735<br>             Population (20min): 75901<br>             Income: 36474 CHF             </div>`)[0];
+                popup_ca2d1f26c1364db586400bccf271c8bd.setContent(html_05b78ea92f432c763ba0e3f22f404160);
             
         
 
-        circle_marker_5e6792f638abab5313d856fe73546971.bindPopup(popup_c3c9b2004263ffe769900d09cec6a3be)
+        circle_marker_5565dc5e2ba7736a469ef2ea0f08c339.bindPopup(popup_ca2d1f26c1364db586400bccf271c8bd)
         ;
 
         
     
     
-            var circle_556341fbf003ad04944722f3f4be9372 = L.circle(
+            var circle_a6d8429e64c0dab112305c6c5501408c = L.circle(
                 [47.4352582, 9.3862519],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_757b3f83af3b21e2e36259305d5d843a = L.popup({
+        var popup_85a3fdedc4b5c191a8dac6a213717ad2 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1a5f645df814d36e8789be35680c3245 = $(`<div id="html_1a5f645df814d36e8789be35680c3245" style="width: 100.0%; height: 100.0%;">             <b>St. Gallen - Langgasse</b><br>             Type: m<br>             Score: 0.53<br>             Population (10min): 54945<br>             Population (20min): 33428<br>             Income: 30935 CHF             </div>`)[0];
-                popup_757b3f83af3b21e2e36259305d5d843a.setContent(html_1a5f645df814d36e8789be35680c3245);
+                var html_16948f4bc4e008d91307e46ecafba261 = $(`<div id="html_16948f4bc4e008d91307e46ecafba261" style="width: 100.0%; height: 100.0%;">             <b>St. Gallen - Langgasse</b><br>             Type: m<br>             Score: 0.53<br>             Population (10min): 54945<br>             Population (20min): 33428<br>             Income: 30935 CHF             </div>`)[0];
+                popup_85a3fdedc4b5c191a8dac6a213717ad2.setContent(html_16948f4bc4e008d91307e46ecafba261);
             
         
 
-        circle_556341fbf003ad04944722f3f4be9372.bindPopup(popup_757b3f83af3b21e2e36259305d5d843a)
+        circle_a6d8429e64c0dab112305c6c5501408c.bindPopup(popup_85a3fdedc4b5c191a8dac6a213717ad2)
         ;
 
         
     
     
-            var circle_a7a1d03cd0e7d3863aa16c77429cf38f = L.circle(
+            var circle_f94e7324859d317e4359f096a8c34db4 = L.circle(
                 [47.4352582, 9.3862519],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_a88235f5bbcde5a40998d25ac498e178 = L.popup({
+        var popup_49552944dc1ca9461a238bb545e0711b = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1da3e722cffb72a799d1178997f0b990 = $(`<div id="html_1da3e722cffb72a799d1178997f0b990" style="width: 100.0%; height: 100.0%;">             <b>St. Gallen - Langgasse</b><br>             Type: m<br>             Score: 0.53<br>             Population (10min): 54945<br>             Population (20min): 33428<br>             Income: 30935 CHF             </div>`)[0];
-                popup_a88235f5bbcde5a40998d25ac498e178.setContent(html_1da3e722cffb72a799d1178997f0b990);
+                var html_2a49b44dca5c51c73722ce1d57b30307 = $(`<div id="html_2a49b44dca5c51c73722ce1d57b30307" style="width: 100.0%; height: 100.0%;">             <b>St. Gallen - Langgasse</b><br>             Type: m<br>             Score: 0.53<br>             Population (10min): 54945<br>             Population (20min): 33428<br>             Income: 30935 CHF             </div>`)[0];
+                popup_49552944dc1ca9461a238bb545e0711b.setContent(html_2a49b44dca5c51c73722ce1d57b30307);
             
         
 
-        circle_a7a1d03cd0e7d3863aa16c77429cf38f.bindPopup(popup_a88235f5bbcde5a40998d25ac498e178)
+        circle_f94e7324859d317e4359f096a8c34db4.bindPopup(popup_49552944dc1ca9461a238bb545e0711b)
         ;
 
         
     
     
-            var circle_marker_0cf8da99cd74da6cd4c6f0c21452ac63 = L.circleMarker(
+            var circle_marker_fa0689407462a465ec3664f93997df24 = L.circleMarker(
                 [47.4352582, 9.3862519],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_fe6ac956dd8d8b3d73a2001217b64525 = L.popup({
+        var popup_fa2b028a97b9e909a107a3d82e0cd274 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f9f5808a4a88587ba6c18a9bba125eba = $(`<div id="html_f9f5808a4a88587ba6c18a9bba125eba" style="width: 100.0%; height: 100.0%;">             <b>St. Gallen - Langgasse</b><br>             Type: m<br>             Score: 0.53<br>             Population (10min): 54945<br>             Population (20min): 33428<br>             Income: 30935 CHF             </div>`)[0];
-                popup_fe6ac956dd8d8b3d73a2001217b64525.setContent(html_f9f5808a4a88587ba6c18a9bba125eba);
+                var html_5c97556827e804b1b7d480ebb4c8524f = $(`<div id="html_5c97556827e804b1b7d480ebb4c8524f" style="width: 100.0%; height: 100.0%;">             <b>St. Gallen - Langgasse</b><br>             Type: m<br>             Score: 0.53<br>             Population (10min): 54945<br>             Population (20min): 33428<br>             Income: 30935 CHF             </div>`)[0];
+                popup_fa2b028a97b9e909a107a3d82e0cd274.setContent(html_5c97556827e804b1b7d480ebb4c8524f);
             
         
 
-        circle_marker_0cf8da99cd74da6cd4c6f0c21452ac63.bindPopup(popup_fe6ac956dd8d8b3d73a2001217b64525)
+        circle_marker_fa0689407462a465ec3664f93997df24.bindPopup(popup_fa2b028a97b9e909a107a3d82e0cd274)
         ;
 
         
     
     
-            var circle_ca50ef382cca58c0d3412e27e42e86b2 = L.circle(
+            var circle_b56ce4a68e606945ad6043d26693c489 = L.circle(
                 [46.95615, 7.4827247],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_c3aa9057a9dfa28ea44d2f37b7397e0c = L.popup({
+        var popup_1535527d48fa10b0282cbe74d4b6981a = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1fb38513367a6362f60d320ccb6819d2 = $(`<div id="html_1fb38513367a6362f60d320ccb6819d2" style="width: 100.0%; height: 100.0%;">             <b>Ostermundigen Poststrasse</b><br>             Type: m<br>             Score: 0.57<br>             Population (10min): 68763<br>             Population (20min): 96694<br>             Income: 0 CHF             </div>`)[0];
-                popup_c3aa9057a9dfa28ea44d2f37b7397e0c.setContent(html_1fb38513367a6362f60d320ccb6819d2);
+                var html_81b9d4f7685d9e10b1729f9e6f06e949 = $(`<div id="html_81b9d4f7685d9e10b1729f9e6f06e949" style="width: 100.0%; height: 100.0%;">             <b>Ostermundigen Poststrasse</b><br>             Type: m<br>             Score: 0.57<br>             Population (10min): 68763<br>             Population (20min): 96694<br>             Income: 0 CHF             </div>`)[0];
+                popup_1535527d48fa10b0282cbe74d4b6981a.setContent(html_81b9d4f7685d9e10b1729f9e6f06e949);
             
         
 
-        circle_ca50ef382cca58c0d3412e27e42e86b2.bindPopup(popup_c3aa9057a9dfa28ea44d2f37b7397e0c)
+        circle_b56ce4a68e606945ad6043d26693c489.bindPopup(popup_1535527d48fa10b0282cbe74d4b6981a)
         ;
 
         
     
     
-            var circle_12e25cf0b4e0341b2eff4edf0b0e654a = L.circle(
+            var circle_2fc1c9f1e620b27ce34b610bd0403419 = L.circle(
                 [46.95615, 7.4827247],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_1153be743ec858a11412b05586ebfa56 = L.popup({
+        var popup_de90d938be31e6ba4ad613e171865ee5 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_a074a0852b9be9a920b56f2befd3ff73 = $(`<div id="html_a074a0852b9be9a920b56f2befd3ff73" style="width: 100.0%; height: 100.0%;">             <b>Ostermundigen Poststrasse</b><br>             Type: m<br>             Score: 0.57<br>             Population (10min): 68763<br>             Population (20min): 96694<br>             Income: 0 CHF             </div>`)[0];
-                popup_1153be743ec858a11412b05586ebfa56.setContent(html_a074a0852b9be9a920b56f2befd3ff73);
+                var html_84199dbfddc4b5f95ac07801178d8e7b = $(`<div id="html_84199dbfddc4b5f95ac07801178d8e7b" style="width: 100.0%; height: 100.0%;">             <b>Ostermundigen Poststrasse</b><br>             Type: m<br>             Score: 0.57<br>             Population (10min): 68763<br>             Population (20min): 96694<br>             Income: 0 CHF             </div>`)[0];
+                popup_de90d938be31e6ba4ad613e171865ee5.setContent(html_84199dbfddc4b5f95ac07801178d8e7b);
             
         
 
-        circle_12e25cf0b4e0341b2eff4edf0b0e654a.bindPopup(popup_1153be743ec858a11412b05586ebfa56)
+        circle_2fc1c9f1e620b27ce34b610bd0403419.bindPopup(popup_de90d938be31e6ba4ad613e171865ee5)
         ;
 
         
     
     
-            var circle_marker_40ebe49dd53de85e232920aa26925fd2 = L.circleMarker(
+            var circle_marker_9233cad08566b2d631e682a784431c1f = L.circleMarker(
                 [46.95615, 7.4827247],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_079febf7bc1b69a7e8af9a3b15593a30 = L.popup({
+        var popup_a90c5f7abb4dd2b7807cc8fd8e26bb2f = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_986c9b0c0ed052629f8030ef9282dedb = $(`<div id="html_986c9b0c0ed052629f8030ef9282dedb" style="width: 100.0%; height: 100.0%;">             <b>Ostermundigen Poststrasse</b><br>             Type: m<br>             Score: 0.57<br>             Population (10min): 68763<br>             Population (20min): 96694<br>             Income: 0 CHF             </div>`)[0];
-                popup_079febf7bc1b69a7e8af9a3b15593a30.setContent(html_986c9b0c0ed052629f8030ef9282dedb);
+                var html_db551482cba8d0647f955f64847faee2 = $(`<div id="html_db551482cba8d0647f955f64847faee2" style="width: 100.0%; height: 100.0%;">             <b>Ostermundigen Poststrasse</b><br>             Type: m<br>             Score: 0.57<br>             Population (10min): 68763<br>             Population (20min): 96694<br>             Income: 0 CHF             </div>`)[0];
+                popup_a90c5f7abb4dd2b7807cc8fd8e26bb2f.setContent(html_db551482cba8d0647f955f64847faee2);
             
         
 
-        circle_marker_40ebe49dd53de85e232920aa26925fd2.bindPopup(popup_079febf7bc1b69a7e8af9a3b15593a30)
+        circle_marker_9233cad08566b2d631e682a784431c1f.bindPopup(popup_a90c5f7abb4dd2b7807cc8fd8e26bb2f)
         ;
 
         
     
     
-            var circle_0643eff3ca2357702ef6c050ddaa179d = L.circle(
+            var circle_545988ba650ca26a1d609fa0a14350d0 = L.circle(
                 [47.3976505, 8.598034],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_0767500fb713d07654fa5c8732259219 = L.popup({
+        var popup_3c6032b10e986a637ac67874d3144101 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ae64bb012ac607a9948bd958667b2756 = $(`<div id="html_ae64bb012ac607a9948bd958667b2756" style="width: 100.0%; height: 100.0%;">             <b>Dübendorf Stettbach</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 52315<br>             Population (20min): 190693<br>             Income: 38457 CHF             </div>`)[0];
-                popup_0767500fb713d07654fa5c8732259219.setContent(html_ae64bb012ac607a9948bd958667b2756);
+                var html_d948e8cdd43a0d9499633bc296eaae92 = $(`<div id="html_d948e8cdd43a0d9499633bc296eaae92" style="width: 100.0%; height: 100.0%;">             <b>Dübendorf Stettbach</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 52315<br>             Population (20min): 190693<br>             Income: 38457 CHF             </div>`)[0];
+                popup_3c6032b10e986a637ac67874d3144101.setContent(html_d948e8cdd43a0d9499633bc296eaae92);
             
         
 
-        circle_0643eff3ca2357702ef6c050ddaa179d.bindPopup(popup_0767500fb713d07654fa5c8732259219)
+        circle_545988ba650ca26a1d609fa0a14350d0.bindPopup(popup_3c6032b10e986a637ac67874d3144101)
         ;
 
         
     
     
-            var circle_9a328e2d2fc8f6382f69c834fa3ed1ec = L.circle(
+            var circle_178b65c1f222e35b6f2a13d1da74dcf6 = L.circle(
                 [47.3976505, 8.598034],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_def413586355121af1a3ac67912a18cf = L.popup({
+        var popup_87f5c53cf09beb45e3d4cb6c0cf507f7 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f9eaea1fb46ba0d0812b0323c7de1380 = $(`<div id="html_f9eaea1fb46ba0d0812b0323c7de1380" style="width: 100.0%; height: 100.0%;">             <b>Dübendorf Stettbach</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 52315<br>             Population (20min): 190693<br>             Income: 38457 CHF             </div>`)[0];
-                popup_def413586355121af1a3ac67912a18cf.setContent(html_f9eaea1fb46ba0d0812b0323c7de1380);
+                var html_13e4139b065c49e4a1d735f0f8c3a30c = $(`<div id="html_13e4139b065c49e4a1d735f0f8c3a30c" style="width: 100.0%; height: 100.0%;">             <b>Dübendorf Stettbach</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 52315<br>             Population (20min): 190693<br>             Income: 38457 CHF             </div>`)[0];
+                popup_87f5c53cf09beb45e3d4cb6c0cf507f7.setContent(html_13e4139b065c49e4a1d735f0f8c3a30c);
             
         
 
-        circle_9a328e2d2fc8f6382f69c834fa3ed1ec.bindPopup(popup_def413586355121af1a3ac67912a18cf)
+        circle_178b65c1f222e35b6f2a13d1da74dcf6.bindPopup(popup_87f5c53cf09beb45e3d4cb6c0cf507f7)
         ;
 
         
     
     
-            var circle_marker_85129e7baba11aacc66765944ce94a70 = L.circleMarker(
+            var circle_marker_2a5f109426888464e80587d320de3cd4 = L.circleMarker(
                 [47.3976505, 8.598034],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_165d52bb8d8c5c1dd4a859f7d921ed64 = L.popup({
+        var popup_2559bed2a0553e100b791f90b85bfbda = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_66ce7754a06c8fccc0b2fa9acf40f350 = $(`<div id="html_66ce7754a06c8fccc0b2fa9acf40f350" style="width: 100.0%; height: 100.0%;">             <b>Dübendorf Stettbach</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 52315<br>             Population (20min): 190693<br>             Income: 38457 CHF             </div>`)[0];
-                popup_165d52bb8d8c5c1dd4a859f7d921ed64.setContent(html_66ce7754a06c8fccc0b2fa9acf40f350);
+                var html_ef1f5ccc6fd900d74f0b4ac2f88f2c82 = $(`<div id="html_ef1f5ccc6fd900d74f0b4ac2f88f2c82" style="width: 100.0%; height: 100.0%;">             <b>Dübendorf Stettbach</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 52315<br>             Population (20min): 190693<br>             Income: 38457 CHF             </div>`)[0];
+                popup_2559bed2a0553e100b791f90b85bfbda.setContent(html_ef1f5ccc6fd900d74f0b4ac2f88f2c82);
             
         
 
-        circle_marker_85129e7baba11aacc66765944ce94a70.bindPopup(popup_165d52bb8d8c5c1dd4a859f7d921ed64)
+        circle_marker_2a5f109426888464e80587d320de3cd4.bindPopup(popup_2559bed2a0553e100b791f90b85bfbda)
         ;
 
         
     
     
-            var circle_b675c62039ac1c236c89316985aa656d = L.circle(
+            var circle_b9a7b4462bf2f9eaa2efb483dadc99d9 = L.circle(
                 [47.35856, 8.554269],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_3c39e9a429076e11abf22e1e8e003a87 = L.popup({
+        var popup_0877c40a811008288583464719aa0b4d = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_12c1ea8fe3def17d6d38c9a6f96ba682 = $(`<div id="html_12c1ea8fe3def17d6d38c9a6f96ba682" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Höschgasse</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 100700<br>             Population (20min): 196942<br>             Income: 42364 CHF             </div>`)[0];
-                popup_3c39e9a429076e11abf22e1e8e003a87.setContent(html_12c1ea8fe3def17d6d38c9a6f96ba682);
+                var html_5b15230086be4891dddcd0e89c75ccda = $(`<div id="html_5b15230086be4891dddcd0e89c75ccda" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Höschgasse</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 100700<br>             Population (20min): 196942<br>             Income: 42364 CHF             </div>`)[0];
+                popup_0877c40a811008288583464719aa0b4d.setContent(html_5b15230086be4891dddcd0e89c75ccda);
             
         
 
-        circle_b675c62039ac1c236c89316985aa656d.bindPopup(popup_3c39e9a429076e11abf22e1e8e003a87)
+        circle_b9a7b4462bf2f9eaa2efb483dadc99d9.bindPopup(popup_0877c40a811008288583464719aa0b4d)
         ;
 
         
     
     
-            var circle_5da19d5a03427aa5f9ded0915bd5e196 = L.circle(
+            var circle_3630c4920da7990ff7de6b8aaf6d1758 = L.circle(
                 [47.35856, 8.554269],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_3669b98574abff2956ae7ff962b90b11 = L.popup({
+        var popup_9955b7d9d6fa2515896d5d2d84a558fc = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ff071de93811a414ca1cd99c49552e21 = $(`<div id="html_ff071de93811a414ca1cd99c49552e21" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Höschgasse</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 100700<br>             Population (20min): 196942<br>             Income: 42364 CHF             </div>`)[0];
-                popup_3669b98574abff2956ae7ff962b90b11.setContent(html_ff071de93811a414ca1cd99c49552e21);
+                var html_5d64a02edc7dbbfa07321ea77b05a9ff = $(`<div id="html_5d64a02edc7dbbfa07321ea77b05a9ff" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Höschgasse</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 100700<br>             Population (20min): 196942<br>             Income: 42364 CHF             </div>`)[0];
+                popup_9955b7d9d6fa2515896d5d2d84a558fc.setContent(html_5d64a02edc7dbbfa07321ea77b05a9ff);
             
         
 
-        circle_5da19d5a03427aa5f9ded0915bd5e196.bindPopup(popup_3669b98574abff2956ae7ff962b90b11)
+        circle_3630c4920da7990ff7de6b8aaf6d1758.bindPopup(popup_9955b7d9d6fa2515896d5d2d84a558fc)
         ;
 
         
     
     
-            var circle_marker_00f377de1a2be500cd93483b0b270e8e = L.circleMarker(
+            var circle_marker_85a224482c20d26ca21e441f888e14c5 = L.circleMarker(
                 [47.35856, 8.554269],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_27efb094cda00f3572f56352d4b534c3 = L.popup({
+        var popup_1a4af70b068db846cf02236bbfe178df = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_8766e0abdf2c209350fecde2e6eba85b = $(`<div id="html_8766e0abdf2c209350fecde2e6eba85b" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Höschgasse</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 100700<br>             Population (20min): 196942<br>             Income: 42364 CHF             </div>`)[0];
-                popup_27efb094cda00f3572f56352d4b534c3.setContent(html_8766e0abdf2c209350fecde2e6eba85b);
+                var html_db4f0892e33481b51e21e187ac197db2 = $(`<div id="html_db4f0892e33481b51e21e187ac197db2" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Höschgasse</b><br>             Type: m<br>             Score: 0.68<br>             Population (10min): 100700<br>             Population (20min): 196942<br>             Income: 42364 CHF             </div>`)[0];
+                popup_1a4af70b068db846cf02236bbfe178df.setContent(html_db4f0892e33481b51e21e187ac197db2);
             
         
 
-        circle_marker_00f377de1a2be500cd93483b0b270e8e.bindPopup(popup_27efb094cda00f3572f56352d4b534c3)
+        circle_marker_85a224482c20d26ca21e441f888e14c5.bindPopup(popup_1a4af70b068db846cf02236bbfe178df)
         ;
 
         
     
     
-            var circle_4c2c1ff8c8d842452fbb31c3fb97b75f = L.circle(
+            var circle_115704d4576956e4f17a8dab183d9b5e = L.circle(
                 [47.39148, 8.487461],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_7986f7ac29d4c25e72202d5aa8a451d5 = L.popup({
+        var popup_36b0ce37280d6c037a440eb31e3d0ef8 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fda288cd6dcd5e8ba4c13b414df1531e = $(`<div id="html_fda288cd6dcd5e8ba4c13b414df1531e" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Altstetten M-Express</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 95164<br>             Population (20min): 221358<br>             Income: 42364 CHF             </div>`)[0];
-                popup_7986f7ac29d4c25e72202d5aa8a451d5.setContent(html_fda288cd6dcd5e8ba4c13b414df1531e);
+                var html_4801c75cb2c1f3eacc47e6dd86fd24ec = $(`<div id="html_4801c75cb2c1f3eacc47e6dd86fd24ec" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Altstetten M-Express</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 95164<br>             Population (20min): 221358<br>             Income: 42364 CHF             </div>`)[0];
+                popup_36b0ce37280d6c037a440eb31e3d0ef8.setContent(html_4801c75cb2c1f3eacc47e6dd86fd24ec);
             
         
 
-        circle_4c2c1ff8c8d842452fbb31c3fb97b75f.bindPopup(popup_7986f7ac29d4c25e72202d5aa8a451d5)
+        circle_115704d4576956e4f17a8dab183d9b5e.bindPopup(popup_36b0ce37280d6c037a440eb31e3d0ef8)
         ;
 
         
     
     
-            var circle_ba041b67188ac96bb76455f930e0e9ce = L.circle(
+            var circle_24b0a00d92fb8b8c0fbfc6d533f0cba4 = L.circle(
                 [47.39148, 8.487461],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_8080bb1c0e9382a4f9d6a7431f5aaa97 = L.popup({
+        var popup_361c5dd31675107a3a2dbe0cbfe1b327 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_0bf2f54bb9ebf9d80044da7a7e5e7ac9 = $(`<div id="html_0bf2f54bb9ebf9d80044da7a7e5e7ac9" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Altstetten M-Express</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 95164<br>             Population (20min): 221358<br>             Income: 42364 CHF             </div>`)[0];
-                popup_8080bb1c0e9382a4f9d6a7431f5aaa97.setContent(html_0bf2f54bb9ebf9d80044da7a7e5e7ac9);
+                var html_de61a7dc3821f472294add456c70baf1 = $(`<div id="html_de61a7dc3821f472294add456c70baf1" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Altstetten M-Express</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 95164<br>             Population (20min): 221358<br>             Income: 42364 CHF             </div>`)[0];
+                popup_361c5dd31675107a3a2dbe0cbfe1b327.setContent(html_de61a7dc3821f472294add456c70baf1);
             
         
 
-        circle_ba041b67188ac96bb76455f930e0e9ce.bindPopup(popup_8080bb1c0e9382a4f9d6a7431f5aaa97)
+        circle_24b0a00d92fb8b8c0fbfc6d533f0cba4.bindPopup(popup_361c5dd31675107a3a2dbe0cbfe1b327)
         ;
 
         
     
     
-            var circle_marker_9f5ee92ebaa95af642151b2cae9c51b0 = L.circleMarker(
+            var circle_marker_f1923036ce75cf5ae228c1112aa530b3 = L.circleMarker(
                 [47.39148, 8.487461],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_7162c57ce92fe2bbbb377406ae4b1c9d = L.popup({
+        var popup_9ae248bea168dbec8f213edcdcfeea35 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ecef4024945e745c006a4a68508a6dc8 = $(`<div id="html_ecef4024945e745c006a4a68508a6dc8" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Altstetten M-Express</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 95164<br>             Population (20min): 221358<br>             Income: 42364 CHF             </div>`)[0];
-                popup_7162c57ce92fe2bbbb377406ae4b1c9d.setContent(html_ecef4024945e745c006a4a68508a6dc8);
+                var html_0c2718a6bad897c164a5235765297890 = $(`<div id="html_0c2718a6bad897c164a5235765297890" style="width: 100.0%; height: 100.0%;">             <b>Zürich - Altstetten M-Express</b><br>             Type: m<br>             Score: 0.70<br>             Population (10min): 95164<br>             Population (20min): 221358<br>             Income: 42364 CHF             </div>`)[0];
+                popup_9ae248bea168dbec8f213edcdcfeea35.setContent(html_0c2718a6bad897c164a5235765297890);
             
         
 
-        circle_marker_9f5ee92ebaa95af642151b2cae9c51b0.bindPopup(popup_7162c57ce92fe2bbbb377406ae4b1c9d)
+        circle_marker_f1923036ce75cf5ae228c1112aa530b3.bindPopup(popup_9ae248bea168dbec8f213edcdcfeea35)
         ;
 
         
     
     
-            var circle_4839d2cef10ed0db3210bf1ba64eb25e = L.circle(
+            var circle_22b88f32cdf71081efd18fb9a317231e = L.circle(
                 [46.527309, 6.651514],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_40da55fef32c35c20c69e15441bf1914 = L.popup({
+        var popup_472c9058243c08ba2fb266ff00c44342 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_a703acee4a13a2ae10aab782bc6f60c5 = $(`<div id="html_a703acee4a13a2ae10aab782bc6f60c5" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Chailly</b><br>             Type: mm<br>             Score: 0.57<br>             Population (10min): 109049<br>             Population (20min): 103675<br>             Income: 30639 CHF             </div>`)[0];
-                popup_40da55fef32c35c20c69e15441bf1914.setContent(html_a703acee4a13a2ae10aab782bc6f60c5);
+                var html_6596e24424677df93f92cd37a748c89a = $(`<div id="html_6596e24424677df93f92cd37a748c89a" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Chailly</b><br>             Type: mm<br>             Score: 0.57<br>             Population (10min): 109049<br>             Population (20min): 103675<br>             Income: 30639 CHF             </div>`)[0];
+                popup_472c9058243c08ba2fb266ff00c44342.setContent(html_6596e24424677df93f92cd37a748c89a);
             
         
 
-        circle_4839d2cef10ed0db3210bf1ba64eb25e.bindPopup(popup_40da55fef32c35c20c69e15441bf1914)
+        circle_22b88f32cdf71081efd18fb9a317231e.bindPopup(popup_472c9058243c08ba2fb266ff00c44342)
         ;
 
         
     
     
-            var circle_2210e3fc29a5f30f6f0bfec4a1092cd5 = L.circle(
+            var circle_2e57cd773e202f543d4d79a0931f2a1d = L.circle(
                 [46.527309, 6.651514],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_67e7e249979af7201cac0dc58fd6d997 = L.popup({
+        var popup_48e4efd55a93ba7cfbb051d445fee5cc = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_57b16b6652d3bc01829bb17f9608c320 = $(`<div id="html_57b16b6652d3bc01829bb17f9608c320" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Chailly</b><br>             Type: mm<br>             Score: 0.57<br>             Population (10min): 109049<br>             Population (20min): 103675<br>             Income: 30639 CHF             </div>`)[0];
-                popup_67e7e249979af7201cac0dc58fd6d997.setContent(html_57b16b6652d3bc01829bb17f9608c320);
+                var html_367f678c7bf089b3ba748579188ee0f8 = $(`<div id="html_367f678c7bf089b3ba748579188ee0f8" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Chailly</b><br>             Type: mm<br>             Score: 0.57<br>             Population (10min): 109049<br>             Population (20min): 103675<br>             Income: 30639 CHF             </div>`)[0];
+                popup_48e4efd55a93ba7cfbb051d445fee5cc.setContent(html_367f678c7bf089b3ba748579188ee0f8);
             
         
 
-        circle_2210e3fc29a5f30f6f0bfec4a1092cd5.bindPopup(popup_67e7e249979af7201cac0dc58fd6d997)
+        circle_2e57cd773e202f543d4d79a0931f2a1d.bindPopup(popup_48e4efd55a93ba7cfbb051d445fee5cc)
         ;
 
         
     
     
-            var circle_marker_127c3e6807e59c31d3f15a6e88f8a926 = L.circleMarker(
+            var circle_marker_657edc043a3c9959775fa84dc3841cc0 = L.circleMarker(
                 [46.527309, 6.651514],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_1c332df02c28cd123a5578eaed3c446a = L.popup({
+        var popup_3183292b31cc90b6efb94ca6a722ae55 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_de5871e67fc462b74b253fcf02b97aee = $(`<div id="html_de5871e67fc462b74b253fcf02b97aee" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Chailly</b><br>             Type: mm<br>             Score: 0.57<br>             Population (10min): 109049<br>             Population (20min): 103675<br>             Income: 30639 CHF             </div>`)[0];
-                popup_1c332df02c28cd123a5578eaed3c446a.setContent(html_de5871e67fc462b74b253fcf02b97aee);
+                var html_2936231036e69fbb34256544573d8b28 = $(`<div id="html_2936231036e69fbb34256544573d8b28" style="width: 100.0%; height: 100.0%;">             <b>Lausanne - Chailly</b><br>             Type: mm<br>             Score: 0.57<br>             Population (10min): 109049<br>             Population (20min): 103675<br>             Income: 30639 CHF             </div>`)[0];
+                popup_3183292b31cc90b6efb94ca6a722ae55.setContent(html_2936231036e69fbb34256544573d8b28);
             
         
 
-        circle_marker_127c3e6807e59c31d3f15a6e88f8a926.bindPopup(popup_1c332df02c28cd123a5578eaed3c446a)
+        circle_marker_657edc043a3c9959775fa84dc3841cc0.bindPopup(popup_3183292b31cc90b6efb94ca6a722ae55)
         ;
 
         
     
     
-            var circle_c68a99a64efdb7d4e5b1f432f6f8f481 = L.circle(
+            var circle_3491d8b5748f1b231bf7f0a7bc9ceee9 = L.circle(
                 [46.212579, 6.14974],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_7b835123e4ad2bc52720abf318372b58 = L.popup({
+        var popup_8415bc733d1aba83a4b51eca0e055f19 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_01e8723a338dfd2b9aec8394960b0284 = $(`<div id="html_01e8723a338dfd2b9aec8394960b0284" style="width: 100.0%; height: 100.0%;">             <b>Genève - Navigation</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 190896<br>             Population (20min): 191915<br>             Income: 35399 CHF             </div>`)[0];
-                popup_7b835123e4ad2bc52720abf318372b58.setContent(html_01e8723a338dfd2b9aec8394960b0284);
+                var html_637a044ed9be3695192a106d6bcb35fd = $(`<div id="html_637a044ed9be3695192a106d6bcb35fd" style="width: 100.0%; height: 100.0%;">             <b>Genève - Navigation</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 190896<br>             Population (20min): 191915<br>             Income: 35399 CHF             </div>`)[0];
+                popup_8415bc733d1aba83a4b51eca0e055f19.setContent(html_637a044ed9be3695192a106d6bcb35fd);
             
         
 
-        circle_c68a99a64efdb7d4e5b1f432f6f8f481.bindPopup(popup_7b835123e4ad2bc52720abf318372b58)
+        circle_3491d8b5748f1b231bf7f0a7bc9ceee9.bindPopup(popup_8415bc733d1aba83a4b51eca0e055f19)
         ;
 
         
     
     
-            var circle_cced96383ca64e477209306e5ccdb7d2 = L.circle(
+            var circle_4afc12956a2f5630a3b2ad266176444c = L.circle(
                 [46.212579, 6.14974],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_24db9a5021cd597ed2574d5bd0583d33 = L.popup({
+        var popup_60c17733f4e30a6da5204a346fa3b6bd = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_be62a282b00bb2183bf205a0d84366b0 = $(`<div id="html_be62a282b00bb2183bf205a0d84366b0" style="width: 100.0%; height: 100.0%;">             <b>Genève - Navigation</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 190896<br>             Population (20min): 191915<br>             Income: 35399 CHF             </div>`)[0];
-                popup_24db9a5021cd597ed2574d5bd0583d33.setContent(html_be62a282b00bb2183bf205a0d84366b0);
+                var html_b35aee09356103d06cc3509cdd1f0f47 = $(`<div id="html_b35aee09356103d06cc3509cdd1f0f47" style="width: 100.0%; height: 100.0%;">             <b>Genève - Navigation</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 190896<br>             Population (20min): 191915<br>             Income: 35399 CHF             </div>`)[0];
+                popup_60c17733f4e30a6da5204a346fa3b6bd.setContent(html_b35aee09356103d06cc3509cdd1f0f47);
             
         
 
-        circle_cced96383ca64e477209306e5ccdb7d2.bindPopup(popup_24db9a5021cd597ed2574d5bd0583d33)
+        circle_4afc12956a2f5630a3b2ad266176444c.bindPopup(popup_60c17733f4e30a6da5204a346fa3b6bd)
         ;
 
         
     
     
-            var circle_marker_cdeb6b7f4d72de078c2632ce04eeef85 = L.circleMarker(
+            var circle_marker_4391446fb8780c2a4f57d1e46a462219 = L.circleMarker(
                 [46.212579, 6.14974],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_b9e5c0b36946422fbb2ff09758967036 = L.popup({
+        var popup_14f2b4b3b90dafc2b07b156a85a8e2c0 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ba5b6746688c369a636b15298e41931e = $(`<div id="html_ba5b6746688c369a636b15298e41931e" style="width: 100.0%; height: 100.0%;">             <b>Genève - Navigation</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 190896<br>             Population (20min): 191915<br>             Income: 35399 CHF             </div>`)[0];
-                popup_b9e5c0b36946422fbb2ff09758967036.setContent(html_ba5b6746688c369a636b15298e41931e);
+                var html_0cdc14e54572d84b25801585a6b0c2ca = $(`<div id="html_0cdc14e54572d84b25801585a6b0c2ca" style="width: 100.0%; height: 100.0%;">             <b>Genève - Navigation</b><br>             Type: mm<br>             Score: 0.64<br>             Population (10min): 190896<br>             Population (20min): 191915<br>             Income: 35399 CHF             </div>`)[0];
+                popup_14f2b4b3b90dafc2b07b156a85a8e2c0.setContent(html_0cdc14e54572d84b25801585a6b0c2ca);
             
         
 
-        circle_marker_cdeb6b7f4d72de078c2632ce04eeef85.bindPopup(popup_b9e5c0b36946422fbb2ff09758967036)
+        circle_marker_4391446fb8780c2a4f57d1e46a462219.bindPopup(popup_14f2b4b3b90dafc2b07b156a85a8e2c0)
         ;
 
         
     
     
-            var circle_1859175e0a3e05247a1ab3e7272f5da8 = L.circle(
+            var circle_6d1bdf15c29b6ab25e5025e2cc3f097f = L.circle(
                 [46.1674266, 6.1148529],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_2a2b1b90ee36a102532817b46c280f95 = L.popup({
+        var popup_4c0726952cf895d8aad48078d15c9e94 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_626247f7ad99097bb3d5784f3731ce92 = $(`<div id="html_626247f7ad99097bb3d5784f3731ce92" style="width: 100.0%; height: 100.0%;">             <b>Plan-les-Ouates</b><br>             Type: mm<br>             Score: 0.70<br>             Population (10min): 62748<br>             Population (20min): 226797<br>             Income: 41620 CHF             </div>`)[0];
-                popup_2a2b1b90ee36a102532817b46c280f95.setContent(html_626247f7ad99097bb3d5784f3731ce92);
+                var html_f9a8c1828aeb64996bad5beefd3966bf = $(`<div id="html_f9a8c1828aeb64996bad5beefd3966bf" style="width: 100.0%; height: 100.0%;">             <b>Plan-les-Ouates</b><br>             Type: mm<br>             Score: 0.70<br>             Population (10min): 62748<br>             Population (20min): 226797<br>             Income: 41620 CHF             </div>`)[0];
+                popup_4c0726952cf895d8aad48078d15c9e94.setContent(html_f9a8c1828aeb64996bad5beefd3966bf);
             
         
 
-        circle_1859175e0a3e05247a1ab3e7272f5da8.bindPopup(popup_2a2b1b90ee36a102532817b46c280f95)
+        circle_6d1bdf15c29b6ab25e5025e2cc3f097f.bindPopup(popup_4c0726952cf895d8aad48078d15c9e94)
         ;
 
         
     
     
-            var circle_48d807fa06b8653dc5bc2bc86ab8ea1a = L.circle(
+            var circle_e2e87b2ab57180f8ad6c6341bfd17589 = L.circle(
                 [46.1674266, 6.1148529],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_ce660164bfa642e627225d61d7643468 = L.popup({
+        var popup_af526902d7a6312024fc28bd3d14177f = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_1e2ab846d174ff52591dc7c3883bcd2e = $(`<div id="html_1e2ab846d174ff52591dc7c3883bcd2e" style="width: 100.0%; height: 100.0%;">             <b>Plan-les-Ouates</b><br>             Type: mm<br>             Score: 0.70<br>             Population (10min): 62748<br>             Population (20min): 226797<br>             Income: 41620 CHF             </div>`)[0];
-                popup_ce660164bfa642e627225d61d7643468.setContent(html_1e2ab846d174ff52591dc7c3883bcd2e);
+                var html_38671c9901a2c45e25ee0e73d6e57269 = $(`<div id="html_38671c9901a2c45e25ee0e73d6e57269" style="width: 100.0%; height: 100.0%;">             <b>Plan-les-Ouates</b><br>             Type: mm<br>             Score: 0.70<br>             Population (10min): 62748<br>             Population (20min): 226797<br>             Income: 41620 CHF             </div>`)[0];
+                popup_af526902d7a6312024fc28bd3d14177f.setContent(html_38671c9901a2c45e25ee0e73d6e57269);
             
         
 
-        circle_48d807fa06b8653dc5bc2bc86ab8ea1a.bindPopup(popup_ce660164bfa642e627225d61d7643468)
+        circle_e2e87b2ab57180f8ad6c6341bfd17589.bindPopup(popup_af526902d7a6312024fc28bd3d14177f)
         ;
 
         
     
     
-            var circle_marker_17467276a1eae7f945098311a4c755f6 = L.circleMarker(
+            var circle_marker_e3942afcaf15309c64dc2b407408c793 = L.circleMarker(
                 [46.1674266, 6.1148529],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_ba7120d953788e861ba90fb4f52417df = L.popup({
+        var popup_25cdc81c9e823e82dec60140f5edb40e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_85492a2362e75c95967b146ae6ff9773 = $(`<div id="html_85492a2362e75c95967b146ae6ff9773" style="width: 100.0%; height: 100.0%;">             <b>Plan-les-Ouates</b><br>             Type: mm<br>             Score: 0.70<br>             Population (10min): 62748<br>             Population (20min): 226797<br>             Income: 41620 CHF             </div>`)[0];
-                popup_ba7120d953788e861ba90fb4f52417df.setContent(html_85492a2362e75c95967b146ae6ff9773);
+                var html_62ff28acd93d5066f4d179807bf9b522 = $(`<div id="html_62ff28acd93d5066f4d179807bf9b522" style="width: 100.0%; height: 100.0%;">             <b>Plan-les-Ouates</b><br>             Type: mm<br>             Score: 0.70<br>             Population (10min): 62748<br>             Population (20min): 226797<br>             Income: 41620 CHF             </div>`)[0];
+                popup_25cdc81c9e823e82dec60140f5edb40e.setContent(html_62ff28acd93d5066f4d179807bf9b522);
             
         
 
-        circle_marker_17467276a1eae7f945098311a4c755f6.bindPopup(popup_ba7120d953788e861ba90fb4f52417df)
+        circle_marker_e3942afcaf15309c64dc2b407408c793.bindPopup(popup_25cdc81c9e823e82dec60140f5edb40e)
         ;
 
         
     
     
-            var circle_b648b7e8bbe4647f5401c5efc77c87b2 = L.circle(
+            var circle_55c0181e15427f9f5f94ab22c982afe5 = L.circle(
                 [47.5615832, 7.5920619],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2500.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_cc668fb371befe47cff1452459e58dce = L.popup({
+        var popup_075c21395d724822fc9b3cf614c1ca2a = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_278bd55f798ac264341ccf86d9ed3f42 = $(`<div id="html_278bd55f798ac264341ccf86d9ed3f42" style="width: 100.0%; height: 100.0%;">             <b>Basel - Claramarkt</b><br>             Type: mmm<br>             Score: 0.70<br>             Population (10min): 149965<br>             Population (20min): 151882<br>             Income: 40666 CHF             </div>`)[0];
-                popup_cc668fb371befe47cff1452459e58dce.setContent(html_278bd55f798ac264341ccf86d9ed3f42);
+                var html_dd696ba55ace6e2b7e55598a14296383 = $(`<div id="html_dd696ba55ace6e2b7e55598a14296383" style="width: 100.0%; height: 100.0%;">             <b>Basel - Claramarkt</b><br>             Type: mmm<br>             Score: 0.70<br>             Population (10min): 149965<br>             Population (20min): 151882<br>             Income: 40666 CHF             </div>`)[0];
+                popup_075c21395d724822fc9b3cf614c1ca2a.setContent(html_dd696ba55ace6e2b7e55598a14296383);
             
         
 
-        circle_b648b7e8bbe4647f5401c5efc77c87b2.bindPopup(popup_cc668fb371befe47cff1452459e58dce)
+        circle_55c0181e15427f9f5f94ab22c982afe5.bindPopup(popup_075c21395d724822fc9b3cf614c1ca2a)
         ;
 
         
     
     
-            var circle_d179ee5fd950e9089a8d2ba80a7954a6 = L.circle(
+            var circle_cb8dd65ba0a60f3d16580a1f85d904cc = L.circle(
                 [47.5615832, 7.5920619],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000.0, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_d9af203e9ef7f30b8bb14ffd87361d64 = L.popup({
+        var popup_f34c09a20287b59f2e2d75e1c187c767 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_2b620e0bc4791fbb0141a8289d5fbac4 = $(`<div id="html_2b620e0bc4791fbb0141a8289d5fbac4" style="width: 100.0%; height: 100.0%;">             <b>Basel - Claramarkt</b><br>             Type: mmm<br>             Score: 0.70<br>             Population (10min): 149965<br>             Population (20min): 151882<br>             Income: 40666 CHF             </div>`)[0];
-                popup_d9af203e9ef7f30b8bb14ffd87361d64.setContent(html_2b620e0bc4791fbb0141a8289d5fbac4);
+                var html_851f53854d608fd9cf14db48623e1dd7 = $(`<div id="html_851f53854d608fd9cf14db48623e1dd7" style="width: 100.0%; height: 100.0%;">             <b>Basel - Claramarkt</b><br>             Type: mmm<br>             Score: 0.70<br>             Population (10min): 149965<br>             Population (20min): 151882<br>             Income: 40666 CHF             </div>`)[0];
+                popup_f34c09a20287b59f2e2d75e1c187c767.setContent(html_851f53854d608fd9cf14db48623e1dd7);
             
         
 
-        circle_d179ee5fd950e9089a8d2ba80a7954a6.bindPopup(popup_d9af203e9ef7f30b8bb14ffd87361d64)
+        circle_cb8dd65ba0a60f3d16580a1f85d904cc.bindPopup(popup_f34c09a20287b59f2e2d75e1c187c767)
         ;
 
         
     
     
-            var circle_marker_ed4a70bfb5ebfe7c08842561bc73c120 = L.circleMarker(
+            var circle_marker_c5b03995de62e1603c64326a3c7b2abc = L.circleMarker(
                 [47.5615832, 7.5920619],
                 {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
         
     
-        var popup_047440a7efed8719ebcfb09401fa9746 = L.popup({
+        var popup_d3821b7495149967862a36953557f88d = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e77906d04de9758503e603c94adc027f = $(`<div id="html_e77906d04de9758503e603c94adc027f" style="width: 100.0%; height: 100.0%;">             <b>Basel - Claramarkt</b><br>             Type: mmm<br>             Score: 0.70<br>             Population (10min): 149965<br>             Population (20min): 151882<br>             Income: 40666 CHF             </div>`)[0];
-                popup_047440a7efed8719ebcfb09401fa9746.setContent(html_e77906d04de9758503e603c94adc027f);
+                var html_1242369dbe7e2027e9ec99fcf7518ecc = $(`<div id="html_1242369dbe7e2027e9ec99fcf7518ecc" style="width: 100.0%; height: 100.0%;">             <b>Basel - Claramarkt</b><br>             Type: mmm<br>             Score: 0.70<br>             Population (10min): 149965<br>             Population (20min): 151882<br>             Income: 40666 CHF             </div>`)[0];
+                popup_d3821b7495149967862a36953557f88d.setContent(html_1242369dbe7e2027e9ec99fcf7518ecc);
             
         
 
-        circle_marker_ed4a70bfb5ebfe7c08842561bc73c120.bindPopup(popup_047440a7efed8719ebcfb09401fa9746)
+        circle_marker_c5b03995de62e1603c64326a3c7b2abc.bindPopup(popup_d3821b7495149967862a36953557f88d)
         ;
 
         
     
     
-            var layer_control_ed4cf7d8fb68171b8558adfbf8d7e27b_layers = {
+            var layer_control_748ea46e2c3d97163c75c49502202329_layers = {
                 base_layers : {
-                    "openstreetmap" : tile_layer_604bbb26b855db9522384c943d468b13,
+                    "openstreetmap" : tile_layer_cdd2ba2bb0c8942b48970ab4777443b6,
                 },
                 overlays :  {
                 },
             };
-            let layer_control_ed4cf7d8fb68171b8558adfbf8d7e27b = L.control.layers(
-                layer_control_ed4cf7d8fb68171b8558adfbf8d7e27b_layers.base_layers,
-                layer_control_ed4cf7d8fb68171b8558adfbf8d7e27b_layers.overlays,
+            let layer_control_748ea46e2c3d97163c75c49502202329 = L.control.layers(
+                layer_control_748ea46e2c3d97163c75c49502202329_layers.base_layers,
+                layer_control_748ea46e2c3d97163c75c49502202329_layers.overlays,
                 {
   "position": "topright",
   "collapsed": true,
   "autoZIndex": true,
 }
-            ).addTo(map_429ffc5a7e4149836666c3f5f2efe694);
+            ).addTo(map_fa0716f7937ef8d4fed1cb844355c9f6);
 
         
 </script>

@@ -1,0 +1,1043 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pilot Branch Analysis Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <style>
+            .card { margin-bottom: 20px; }
+            .stat-card { text-align: center; padding: 20px; }
+            .stat-value { font-size: 24px; font-weight: bold; }
+            .stat-label { color: #666; }
+            .branch-card { margin-bottom: 30px; }
+            .branch-header { background-color: #f8f9fa; padding: 15px; border-radius: 5px; }
+            .metric-value { font-size: 18px; font-weight: bold; }
+            .metric-label { color: #666; font-size: 14px; }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid py-4">
+            <h1 class="mb-4">Pilot Branch Analysis Dashboard</h1>
+            
+            <!-- Summary Statistics -->
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <div class="card stat-card">
+                        <div class="stat-value">2,461,565</div>
+                        <div class="stat-label">Total Population Served</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stat-card">
+                        <div class="stat-value">88,460,630,798 CHF</div>
+                        <div class="stat-label">Total Income Potential</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stat-card">
+                        <div class="stat-value">90.0%</div>
+                        <div class="stat-label">Average Area Coverage</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card stat-card">
+                        <div class="stat-value">0.87</div>
+                        <div class="stat-label">Average Reach Factor</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Individual Branch Analysis -->
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Dübendorf Stettbach</h3>
+                                <p class="mb-1"><strong>Type:</strong> m</p>
+                                <p class="mb-1"><strong>City:</strong> Dübendorf</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.68</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">243,008</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">38,457 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">100.0%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">1.00</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Wallisellen - Glattzentrum (mmm): 1.2 km</li>
+                                    
+                                    <li>Wallisellen (m): 1.9 km</li>
+                                    
+                                    <li>Dübendorf (mm): 2.2 km</li>
+                                    
+                                    <li>VOI Wallisellen (voi): 2.5 km</li>
+                                    
+                                    <li>Zürich - Schwamendingen (m): 2.9 km</li>
+                                    
+                                    <li>Dietlikon - Brunnenwiese (m): 3.5 km</li>
+                                    
+                                    <li>Zürich - Witikon-Zentrum (mm): 4.5 km</li>
+                                    
+                                    <li>Zürich - Toblerplatz (m): 4.7 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="d0c28945-bb11-4397-b3e8-699139fa38a4" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d0c28945-bb11-4397-b3e8-699139fa38a4")) {                    Plotly.newPlot(                        "d0c28945-bb11-4397-b3e8-699139fa38a4",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[52315.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[190693.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"D\u00fcbendorf Stettbach - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 52,315</li>
+                                        <li>Outer Area (10-20 min): 190,693</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 38,457 CHF</li>
+                                        <li>Total Potential: 9,345,358,656 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Zürich - Höschgasse</h3>
+                                <p class="mb-1"><strong>Type:</strong> m</p>
+                                <p class="mb-1"><strong>City:</strong> Zürich</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.68</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">297,642</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">42,364 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">87.1%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.83</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Zürich - Kreuzplatz (mm): 0.7 km</li>
+                                    
+                                    <li>Zürich - Stadelhofen (m): 1.1 km</li>
+                                    
+                                    <li>Zürich - Burgwies (m): 1.9 km</li>
+                                    
+                                    <li>Zürich - Toblerplatz (m): 2.4 km</li>
+                                    
+                                    <li>Zürich - Stockerstrasse M-Express (m): 2.5 km</li>
+                                    
+                                    <li>Zürich - ShopVilleMärt (m): 2.6 km</li>
+                                    
+                                    <li>Zürich - Bahnhof Enge (m): 2.6 km</li>
+                                    
+                                    <li>Zürich - Hauptbahnhof (m): 2.7 km</li>
+                                    
+                                    <li>Zürich - City (mmm): 2.7 km</li>
+                                    
+                                    <li>Zürich - HB Sihlquai (m): 3.0 km</li>
+                                    
+                                    <li>Daily Zürich-Zollstrasse (m): 3.0 km</li>
+                                    
+                                    <li>Zürich - Wollishofen (mm): 3.1 km</li>
+                                    
+                                    <li>Zürich - Rigiplatz (m): 3.1 km</li>
+                                    
+                                    <li>Zollikon - Dorf (m): 3.3 km</li>
+                                    
+                                    <li>Zürich - Witikon-Zentrum (mm): 3.5 km</li>
+                                    
+                                    <li>VOI Zürich - Paradies (voi): 3.8 km</li>
+                                    
+                                    <li>VOI Kilchberg (voi): 3.8 km</li>
+                                    
+                                    <li>Zürich - Wengihof (m): 3.9 km</li>
+                                    
+                                    <li>Zürich - Limmatplatz (mmm): 3.9 km</li>
+                                    
+                                    <li>Zürich - Schmiede Wiedikon (m): 4.0 km</li>
+                                    
+                                    <li>Zürich - Brunaupark (mm): 4.0 km</li>
+                                    
+                                    <li>Zürich - Schaffhauserplatz (m): 4.2 km</li>
+                                    
+                                    <li>Zürich - Leimbach Sihlbogen (m): 4.6 km</li>
+                                    
+                                    <li>Zürich - Wipkingen (m): 4.8 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="f855f9b9-c101-4c5f-9456-910f4666e021" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("f855f9b9-c101-4c5f-9456-910f4666e021")) {                    Plotly.newPlot(                        "f855f9b9-c101-4c5f-9456-910f4666e021",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[100700.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[196942.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Z\u00fcrich - H\u00f6schgasse - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 100,700</li>
+                                        <li>Outer Area (10-20 min): 196,942</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 42,364 CHF</li>
+                                        <li>Total Potential: 12,609,305,688 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Lausanne - Chailly</h3>
+                                <p class="mb-1"><strong>Type:</strong> mm</p>
+                                <p class="mb-1"><strong>City:</strong> Lausanne</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.57</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">212,724</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">30,639 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">75.3%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.72</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Lausanne - La Sallaz (m): 0.8 km</li>
+                                    
+                                    <li>Pully (mm): 2.0 km</li>
+                                    
+                                    <li>Lausanne - La Borde (m): 2.0 km</li>
+                                    
+                                    <li>Lausanne - Bellevaux (m): 2.3 km</li>
+                                    
+                                    <li>Lausanne - Closelet (mm): 2.5 km</li>
+                                    
+                                    <li>Lausanne - Flon Europe (m): 2.5 km</li>
+                                    
+                                    <li>Lausanne - Métropole (mmm): 2.8 km</li>
+                                    
+                                    <li>Epalinges (mm): 3.2 km</li>
+                                    
+                                    <li>Lutry – La Conversion (m): 3.2 km</li>
+                                    
+                                    <li>Lausanne - La Harpe (m): 3.3 km</li>
+                                    
+                                    <li>Lausanne - Bergières (mm): 3.7 km</li>
+                                    
+                                    <li>Lausanne - Sévelin (m): 3.9 km</li>
+                                    
+                                    <li>Blécherette (m): 3.9 km</li>
+                                    
+                                    <li>Lausanne - Saint-Paul (m): 3.9 km</li>
+                                    
+                                    <li>Lausanne - Cour (m): 4.0 km</li>
+                                    
+                                    <li>Prilly (m): 4.9 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="9a0e6667-7412-426a-8ca1-77d53d14c47a" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("9a0e6667-7412-426a-8ca1-77d53d14c47a")) {                    Plotly.newPlot(                        "9a0e6667-7412-426a-8ca1-77d53d14c47a",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[109049.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[103675.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Lausanne - Chailly - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 109,049</li>
+                                        <li>Outer Area (10-20 min): 103,675</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 30,639 CHF</li>
+                                        <li>Total Potential: 6,517,650,636 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Luzern - Bruchstrasse</h3>
+                                <p class="mb-1"><strong>Type:</strong> m</p>
+                                <p class="mb-1"><strong>City:</strong> Luzern</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.64</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">163,636</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">36,474 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">92.7%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.89</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Luzern - Waldstätter (m): 1.0 km</li>
+                                    
+                                    <li>Luzern - Bahnhof Daily (m): 1.2 km</li>
+                                    
+                                    <li>Luzern - Bahnhof (m): 1.2 km</li>
+                                    
+                                    <li>Luzern - Schweizerhof (mm): 1.2 km</li>
+                                    
+                                    <li>Luzern - Schlossberg (m): 1.5 km</li>
+                                    
+                                    <li>VOI Luzern Wesemlin (voi): 2.0 km</li>
+                                    
+                                    <li>Weinbergli Luzern (m): 2.1 km</li>
+                                    
+                                    <li>Luzern - Allmend (m): 2.2 km</li>
+                                    
+                                    <li>Kriens - Hofmatt (mm): 2.6 km</li>
+                                    
+                                    <li>Emmen - Wohncenter (mm): 2.6 km</li>
+                                    
+                                    <li>Kriens - Mattenhof (m): 2.7 km</li>
+                                    
+                                    <li>Ruopigen Zentrum Luzern (m): 3.1 km</li>
+                                    
+                                    <li>Luzern - Schönbühl (mm): 3.6 km</li>
+                                    
+                                    <li>Horw (m): 3.7 km</li>
+                                    
+                                    <li>Luzern - Grossmatte (m): 4.0 km</li>
+                                    
+                                    <li>Emmenbrücke - Sonnenplatz (mm): 4.0 km</li>
+                                    
+                                    <li>Luzern - Brüelstrasse (m): 4.6 km</li>
+                                    
+                                    <li>Luzern - Würzenbachstrasse (m): 5.0 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="fcf539ea-5969-41f8-a9c4-07ac7d12fe44" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("fcf539ea-5969-41f8-a9c4-07ac7d12fe44")) {                    Plotly.newPlot(                        "fcf539ea-5969-41f8-a9c4-07ac7d12fe44",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[87735.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[75901.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Luzern - Bruchstrasse - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 87,735</li>
+                                        <li>Outer Area (10-20 min): 75,901</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 36,474 CHF</li>
+                                        <li>Total Potential: 5,968,459,464 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Genève - Navigation</h3>
+                                <p class="mb-1"><strong>Type:</strong> mm</p>
+                                <p class="mb-1"><strong>City:</strong> Genève</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.64</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">382,811</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">35,399 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">82.4%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.79</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Genève - Les Cygnes (mm): 0.6 km</li>
+                                    
+                                    <li>Genève - Cornavin Gare (m): 0.8 km</li>
+                                    
+                                    <li>Genève - Fusterie M-Express (m): 1.0 km</li>
+                                    
+                                    <li>Genève - Vidollet (m): 1.2 km</li>
+                                    
+                                    <li>Genève - Eaux-Vives (mm): 1.4 km</li>
+                                    
+                                    <li>Genève - Villereuse (mm): 1.6 km</li>
+                                    
+                                    <li>VOI Genève-Cirque (voi): 1.7 km</li>
+                                    
+                                    <li>Servette (mm): 2.2 km</li>
+                                    
+                                    <li>Genève - Plainpalais (mm): 2.3 km</li>
+                                    
+                                    <li>Genève - Champel (mm): 2.4 km</li>
+                                    
+                                    <li>Genève - Jonction (mm): 2.5 km</li>
+                                    
+                                    <li>Carouge - Acacias (m): 2.7 km</li>
+                                    
+                                    <li>Genève - Rieu (mm): 2.8 km</li>
+                                    
+                                    <li>Genève - Tourelle (m): 3.0 km</li>
+                                    
+                                    <li>Genève - Charmilles (mm): 3.0 km</li>
+                                    
+                                    <li>Carouge (m): 3.4 km</li>
+                                    
+                                    <li>Gradelle (m): 3.6 km</li>
+                                    
+                                    <li>Pont-Rouge (m): 3.7 km</li>
+                                    
+                                    <li>Carouge - Vibert (mm): 3.8 km</li>
+                                    
+                                    <li>Gd Saconnex - Le Pommier (m): 3.8 km</li>
+                                    
+                                    <li>Genève - Balexert (mmm): 4.1 km</li>
+                                    
+                                    <li>VOI Bellevue (voi): 4.2 km</li>
+                                    
+                                    <li>Genève - Cointrin Aéroport (m): 4.8 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="7a5abd65-47a6-49ac-86e9-267c80775eb0" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("7a5abd65-47a6-49ac-86e9-267c80775eb0")) {                    Plotly.newPlot(                        "7a5abd65-47a6-49ac-86e9-267c80775eb0",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[190896.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[191915.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Gen\u00e8ve - Navigation - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 190,896</li>
+                                        <li>Outer Area (10-20 min): 191,915</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 35,399 CHF</li>
+                                        <li>Total Potential: 13,551,126,589 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Plan-les-Ouates</h3>
+                                <p class="mb-1"><strong>Type:</strong> mm</p>
+                                <p class="mb-1"><strong>City:</strong> Plan-les-Ouates</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.70</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">289,545</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">41,620 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">98.0%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.94</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Grand-Lancy - Palettes (mm): 1.2 km</li>
+                                    
+                                    <li>Lancy-Onex (mm): 2.4 km</li>
+                                    
+                                    <li>Pont-Rouge (m): 2.6 km</li>
+                                    
+                                    <li>Carouge - Vibert (mm): 2.7 km</li>
+                                    
+                                    <li>Carouge (m): 3.4 km</li>
+                                    
+                                    <li>Carouge - Acacias (m): 3.7 km</li>
+                                    
+                                    <li>Genève - Jonction (mm): 4.1 km</li>
+                                    
+                                    <li>Genève - Plainpalais (mm): 4.3 km</li>
+                                    
+                                    <li>Le Lignon (m): 4.5 km</li>
+                                    
+                                    <li>Genève - Charmilles (mm): 4.6 km</li>
+                                    
+                                    <li>VOI Genève-Cirque (voi): 4.7 km</li>
+                                    
+                                    <li>Genève - Champel (mm): 4.9 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="8903fef5-aaf6-46b2-8afc-c893e479532f" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("8903fef5-aaf6-46b2-8afc-c893e479532f")) {                    Plotly.newPlot(                        "8903fef5-aaf6-46b2-8afc-c893e479532f",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[62748.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[226797.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Plan-les-Ouates - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 62,748</li>
+                                        <li>Outer Area (10-20 min): 226,797</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 41,620 CHF</li>
+                                        <li>Total Potential: 12,050,862,900 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Basel - Claramarkt</h3>
+                                <p class="mb-1"><strong>Type:</strong> mmm</p>
+                                <p class="mb-1"><strong>City:</strong> Basel</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.70</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">301,847</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">40,666 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">100.0%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">1.00</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Basel - Märtplatz (m): 0.5 km</li>
+                                    
+                                    <li>Basel - Efringer (mm): 1.0 km</li>
+                                    
+                                    <li>Basel - Drachen-Center (mm): 1.0 km</li>
+                                    
+                                    <li>Basel - Juniors Market (m): 1.1 km</li>
+                                    
+                                    <li>Basel - Schützenmatt (m): 1.4 km</li>
+                                    
+                                    <li>Basel - Bahnhof SBB (m): 1.6 km</li>
+                                    
+                                    <li>Basel - Mülhauser (m): 1.6 km</li>
+                                    
+                                    <li>Basel - Gundelitor (mm): 2.0 km</li>
+                                    
+                                    <li>Basel - Stücki (m): 2.1 km</li>
+                                    
+                                    <li>Basel - Allschwiler (m): 2.2 km</li>
+                                    
+                                    <li>Basel - Hardstrasse (m): 2.2 km</li>
+                                    
+                                    <li>Basel - Burgfelder (mm): 2.2 km</li>
+                                    
+                                    <li>Basel - Eglisee (m): 2.7 km</li>
+                                    
+                                    <li>Binningen - Zentrum (m): 3.0 km</li>
+                                    
+                                    <li>Basel - Neuweiler (m): 3.5 km</li>
+                                    
+                                    <li>Lehenmatt (m): 3.6 km</li>
+                                    
+                                    <li>Birsfelden (mm): 3.6 km</li>
+                                    
+                                    <li>Binningen - Gorenmatt (mm): 3.9 km</li>
+                                    
+                                    <li>Allschwil - Paradies (mmm): 4.5 km</li>
+                                    
+                                    <li>Münchenstein - Gartenstadt (mm): 4.7 km</li>
+                                    
+                                    <li>Allschwil - Ziegelei (m): 4.8 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="5831f7a0-141e-41c1-a932-ae1a0fb7d1f1" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5831f7a0-141e-41c1-a932-ae1a0fb7d1f1")) {                    Plotly.newPlot(                        "5831f7a0-141e-41c1-a932-ae1a0fb7d1f1",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[149965.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[151882.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Basel - Claramarkt - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 149,965</li>
+                                        <li>Outer Area (10-20 min): 151,882</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 40,666 CHF</li>
+                                        <li>Total Potential: 12,274,910,102 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Zürich - Altstetten M-Express</h3>
+                                <p class="mb-1"><strong>Type:</strong> m</p>
+                                <p class="mb-1"><strong>City:</strong> Zürich</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.70</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">316,522</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">42,364 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">95.3%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.91</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Zürich - Altstetten Neumarkt (mmm): 0.3 km</li>
+                                    
+                                    <li>VOI Zürich - Grünau (voi): 0.6 km</li>
+                                    
+                                    <li>Zürich - Albisriederstrasse (voi): 1.6 km</li>
+                                    
+                                    <li>Zürich - Höngg (m): 1.8 km</li>
+                                    
+                                    <li>Zürich - Pünt (m): 1.8 km</li>
+                                    
+                                    <li>VOI Zürich - In der Ey (voi): 2.4 km</li>
+                                    
+                                    <li>Zürich - Albisriederplatz (m): 2.7 km</li>
+                                    
+                                    <li>Oberengstringen (m): 3.3 km</li>
+                                    
+                                    <li>Zürich - Wiedikon M-Märt (mm): 3.3 km</li>
+                                    
+                                    <li>Zürich - Puls 5 M-Express (m): 3.4 km</li>
+                                    
+                                    <li>VOI Zürich - Hönggerstrasse (voi): 3.5 km</li>
+                                    
+                                    <li>Uitikon-Waldegg (m): 3.8 km</li>
+                                    
+                                    <li>Zürich - Affoltern (mm): 3.9 km</li>
+                                    
+                                    <li>Zürich - Schmiede Wiedikon (m): 4.3 km</li>
+                                    
+                                    <li>Zürich - Wengihof (m): 4.4 km</li>
+                                    
+                                    <li>Schlieren - Zentrum (m): 4.6 km</li>
+                                    
+                                    <li>Zürich - Wipkingen (m): 4.6 km</li>
+                                    
+                                    <li>Regensdorf - Zentrum (mmm): 4.9 km</li>
+                                    
+                                    <li>Zürich - Limmatplatz (mmm): 4.9 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="2fcc0d98-8d27-4a84-8bd9-b741bae21fd1" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("2fcc0d98-8d27-4a84-8bd9-b741bae21fd1")) {                    Plotly.newPlot(                        "2fcc0d98-8d27-4a84-8bd9-b741bae21fd1",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[95164.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[221358.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Z\u00fcrich - Altstetten M-Express - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 95,164</li>
+                                        <li>Outer Area (10-20 min): 221,358</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 42,364 CHF</li>
+                                        <li>Total Potential: 13,409,138,008 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>Ostermundigen Poststrasse</h3>
+                                <p class="mb-1"><strong>Type:</strong> m</p>
+                                <p class="mb-1"><strong>City:</strong> Ostermundigen 1</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.57</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">165,457</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">89.7%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.86</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>Ostermundigen (mm): 1.4 km</li>
+                                    
+                                    <li>Bern - Freudenberg (mm): 1.6 km</li>
+                                    
+                                    <li>Ittigen (mm): 2.0 km</li>
+                                    
+                                    <li>Bern - Egghölzli (m): 2.3 km</li>
+                                    
+                                    <li>Bern - Winkelried (mm): 2.4 km</li>
+                                    
+                                    <li>VOI Bern - Schosshalde (voi): 2.5 km</li>
+                                    
+                                    <li>Bern Burgernziel (m): 2.6 km</li>
+                                    
+                                    <li>VOI Bern - Viktoriastrasse (voi): 3.1 km</li>
+                                    
+                                    <li>Bern - Breitenrain (m): 3.3 km</li>
+                                    
+                                    <li>Gümligen (m): 3.5 km</li>
+                                    
+                                    <li>Bern - Kirchenfeld (m): 3.6 km</li>
+                                    
+                                    <li>VOI Bern - Kramgasse (voi): 3.8 km</li>
+                                    
+                                    <li>Bern - Lorraine (m): 4.0 km</li>
+                                    
+                                    <li>Bern - Marktgasse (mmm): 4.3 km</li>
+                                    
+                                    <li>Wabern - Chly Wabere (mm): 4.5 km</li>
+                                    
+                                    <li>VOI Wabern (voi): 4.5 km</li>
+                                    
+                                    <li>VOI Stettlen (voi): 4.5 km</li>
+                                    
+                                    <li>Bern - Bahnhof (mm): 4.8 km</li>
+                                    
+                                    <li>Bern - Christoffel (m): 4.8 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="5d553d1d-cb27-4e3e-8645-2e78ecee6240" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("5d553d1d-cb27-4e3e-8645-2e78ecee6240")) {                    Plotly.newPlot(                        "5d553d1d-cb27-4e3e-8645-2e78ecee6240",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[68763.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[96694.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"Ostermundigen Poststrasse - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 68,763</li>
+                                        <li>Outer Area (10-20 min): 96,694</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 0 CHF</li>
+                                        <li>Total Potential: 0 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card branch-card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="branch-header">
+                                <h3>St. Gallen - Langgasse</h3>
+                                <p class="mb-1"><strong>Type:</strong> m</p>
+                                <p class="mb-1"><strong>City:</strong> St. Gallen</p>
+                                <p class="mb-0"><strong>Total Score:</strong> 0.53</p>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">88,373</div>
+                                    <div class="metric-label">Total Population</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">30,935 CHF</div>
+                                    <div class="metric-label">Income per Capita</div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="metric-value">79.3%</div>
+                                    <div class="metric-label">Area Coverage</div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="metric-value">0.76</div>
+                                    <div class="metric-label">Reach Factor</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h5>Nearby Branches</h5>
+                                <ul class="list-unstyled">
+                                    
+                                    <li>St. Gallen - St. Fiden (mm): 0.6 km</li>
+                                    
+                                    <li>St. Gallen - Silberturm (m): 1.1 km</li>
+                                    
+                                    <li>St. Gallen - Spisermarkt (m): 1.4 km</li>
+                                    
+                                    <li>St. Gallen - Neudorf (m): 2.1 km</li>
+                                    
+                                    <li>St. Gallen - Neumarkt (mmm): 2.3 km</li>
+                                    
+                                    <li>Wittenbach (mm): 2.8 km</li>
+                                    
+                                    <li>St. Gallen - Lachen (m): 4.0 km</li>
+                                    
+                                    <li>Teufen (m): 5.0 km</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-8">
+                            <div>                            <div id="427c6e6c-4a71-4321-86ef-1e59d44d24a7" class="plotly-graph-div" style="height:300px; width:100%;"></div>            <script type="text/javascript">                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("427c6e6c-4a71-4321-86ef-1e59d44d24a7")) {                    Plotly.newPlot(                        "427c6e6c-4a71-4321-86ef-1e59d44d24a7",                        [{"marker":{"color":"#2ecc71"},"name":"Inner Area (0-10 min)","x":["Population"],"y":[54945.0],"type":"bar"},{"marker":{"color":"#3498db"},"name":"Outer Area (10-20 min)","x":["Population"],"y":[33428.0],"type":"bar"}],                        {"template":{"data":{"histogram2dcontour":[{"type":"histogram2dcontour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"choropleth":[{"type":"choropleth","colorbar":{"outlinewidth":0,"ticks":""}}],"histogram2d":[{"type":"histogram2d","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"heatmap":[{"type":"heatmap","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"type":"contourcarpet","colorbar":{"outlinewidth":0,"ticks":""}}],"contour":[{"type":"contour","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"surface":[{"type":"surface","colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"mesh3d":[{"type":"mesh3d","colorbar":{"outlinewidth":0,"ticks":""}}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"parcoords":[{"type":"parcoords","line":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"scattergl":[{"type":"scattergl","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatter3d":[{"type":"scatter3d","line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermap":[{"type":"scattermap","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"outlinewidth":0,"ticks":""}}}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"pie":[{"automargin":true,"type":"pie"}]},"layout":{"autotypenumbers":"strict","colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"hovermode":"closest","hoverlabel":{"align":"left"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"bgcolor":"#E5ECF6","angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"ternary":{"bgcolor":"#E5ECF6","aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]]},"xaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"yaxis":{"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","automargin":true,"zerolinewidth":2},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white","gridwidth":2}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"geo":{"bgcolor":"white","landcolor":"#E5ECF6","subunitcolor":"white","showland":true,"showlakes":true,"lakecolor":"white"},"title":{"x":0.05},"mapbox":{"style":"light"}}},"margin":{"l":20,"r":20,"t":40,"b":20},"title":{"text":"St. Gallen - Langgasse - Population Coverage"},"barmode":"stack","showlegend":true,"height":300},                        {"responsive": true}                    )                };            </script>        </div>
+                            
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <h5>Population Distribution</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Inner Area (0-10 min): 54,945</li>
+                                        <li>Outer Area (10-20 min): 33,428</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5>Income Analysis</h5>
+                                    <ul class="list-unstyled">
+                                        <li>Average Income: 30,935 CHF</li>
+                                        <li>Total Potential: 2,733,818,755 CHF</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+    </html>
+    

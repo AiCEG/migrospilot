@@ -1,0 +1,1170 @@
+[
+  {
+    "branch_id": 150082,
+    "branch_name": "D\u00fcbendorf Stettbach",
+    "branch_type": "m",
+    "city": "D\u00fcbendorf",
+    "total_population_served": 243008.0,
+    "inner_population": 52315.0,
+    "outer_population": 190693.0,
+    "avg_income_per_capita": 38457.0,
+    "total_income_potential": 9345358656.0,
+    "area_coverage": 1.0,
+    "reach_factor": 1.0,
+    "total_score": 0.6847441589735578,
+    "nearby_branches": [
+      {
+        "branch_id": 150670,
+        "branch_name": "Wallisellen - Glattzentrum",
+        "branch_type": "mmm",
+        "distance_km": 1.22
+      },
+      {
+        "branch_id": 150163,
+        "branch_name": "Wallisellen",
+        "branch_type": "m",
+        "distance_km": 1.9
+      },
+      {
+        "branch_id": 150054,
+        "branch_name": "D\u00fcbendorf",
+        "branch_type": "mm",
+        "distance_km": 2.17
+      },
+      {
+        "branch_id": 150815,
+        "branch_name": "VOI Wallisellen",
+        "branch_type": "voi",
+        "distance_km": 2.46
+      },
+      {
+        "branch_id": 150014,
+        "branch_name": "Z\u00fcrich - Schwamendingen",
+        "branch_type": "m",
+        "distance_km": 2.91
+      },
+      {
+        "branch_id": 150169,
+        "branch_name": "Dietlikon - Brunnenwiese",
+        "branch_type": "m",
+        "distance_km": 3.54
+      },
+      {
+        "branch_id": 150011,
+        "branch_name": "Z\u00fcrich - Witikon-Zentrum",
+        "branch_type": "mm",
+        "distance_km": 4.51
+      },
+      {
+        "branch_id": 150319,
+        "branch_name": "Z\u00fcrich - Toblerplatz",
+        "branch_type": "m",
+        "distance_km": 4.74
+      }
+    ]
+  },
+  {
+    "branch_id": 150116,
+    "branch_name": "Z\u00fcrich - H\u00f6schgasse",
+    "branch_type": "m",
+    "city": "Z\u00fcrich",
+    "total_population_served": 297642.0,
+    "inner_population": 100700.0,
+    "outer_population": 196942.0,
+    "avg_income_per_capita": 42364.0,
+    "total_income_potential": 12609305688.0,
+    "area_coverage": 0.8710269860000001,
+    "reach_factor": 0.8318,
+    "total_score": 0.6757915051647633,
+    "nearby_branches": [
+      {
+        "branch_id": 150009,
+        "branch_name": "Z\u00fcrich - Kreuzplatz",
+        "branch_type": "mm",
+        "distance_km": 0.66
+      },
+      {
+        "branch_id": 150007,
+        "branch_name": "Z\u00fcrich - Stadelhofen",
+        "branch_type": "m",
+        "distance_km": 1.05
+      },
+      {
+        "branch_id": 150117,
+        "branch_name": "Z\u00fcrich - Burgwies",
+        "branch_type": "m",
+        "distance_km": 1.92
+      },
+      {
+        "branch_id": 150319,
+        "branch_name": "Z\u00fcrich - Toblerplatz",
+        "branch_type": "m",
+        "distance_km": 2.4
+      },
+      {
+        "branch_id": 150131,
+        "branch_name": "Z\u00fcrich - Stockerstrasse M-Express",
+        "branch_type": "m",
+        "distance_km": 2.48
+      },
+      {
+        "branch_id": 150140,
+        "branch_name": "Z\u00fcrich - ShopVilleM\u00e4rt",
+        "branch_type": "m",
+        "distance_km": 2.6
+      },
+      {
+        "branch_id": 150303,
+        "branch_name": "Z\u00fcrich - Bahnhof Enge",
+        "branch_type": "m",
+        "distance_km": 2.64
+      },
+      {
+        "branch_id": 150184,
+        "branch_name": "Z\u00fcrich - Hauptbahnhof",
+        "branch_type": "m",
+        "distance_km": 2.67
+      },
+      {
+        "branch_id": 150202,
+        "branch_name": "Z\u00fcrich - City",
+        "branch_type": "mmm",
+        "distance_km": 2.74
+      },
+      {
+        "branch_id": 150361,
+        "branch_name": "Z\u00fcrich - HB Sihlquai",
+        "branch_type": "m",
+        "distance_km": 3.02
+      },
+      {
+        "branch_id": 150362,
+        "branch_name": "Daily Z\u00fcrich-Zollstrasse",
+        "branch_type": "m",
+        "distance_km": 3.04
+      },
+      {
+        "branch_id": 150008,
+        "branch_name": "Z\u00fcrich - Wollishofen",
+        "branch_type": "mm",
+        "distance_km": 3.09
+      },
+      {
+        "branch_id": 150115,
+        "branch_name": "Z\u00fcrich - Rigiplatz",
+        "branch_type": "m",
+        "distance_km": 3.13
+      },
+      {
+        "branch_id": 150177,
+        "branch_name": "Zollikon - Dorf",
+        "branch_type": "m",
+        "distance_km": 3.34
+      },
+      {
+        "branch_id": 150011,
+        "branch_name": "Z\u00fcrich - Witikon-Zentrum",
+        "branch_type": "mm",
+        "distance_km": 3.48
+      },
+      {
+        "branch_id": 150805,
+        "branch_name": "VOI Z\u00fcrich - Paradies",
+        "branch_type": "voi",
+        "distance_km": 3.82
+      },
+      {
+        "branch_id": 150813,
+        "branch_name": "VOI Kilchberg",
+        "branch_type": "voi",
+        "distance_km": 3.84
+      },
+      {
+        "branch_id": 150010,
+        "branch_name": "Z\u00fcrich - Wengihof",
+        "branch_type": "m",
+        "distance_km": 3.91
+      },
+      {
+        "branch_id": 150018,
+        "branch_name": "Z\u00fcrich - Limmatplatz",
+        "branch_type": "mmm",
+        "distance_km": 3.94
+      },
+      {
+        "branch_id": 150120,
+        "branch_name": "Z\u00fcrich - Schmiede Wiedikon",
+        "branch_type": "m",
+        "distance_km": 3.98
+      },
+      {
+        "branch_id": 150665,
+        "branch_name": "Z\u00fcrich - Brunaupark",
+        "branch_type": "mm",
+        "distance_km": 4.02
+      },
+      {
+        "branch_id": 150312,
+        "branch_name": "Z\u00fcrich - Schaffhauserplatz",
+        "branch_type": "m",
+        "distance_km": 4.17
+      },
+      {
+        "branch_id": 150183,
+        "branch_name": "Z\u00fcrich - Leimbach Sihlbogen",
+        "branch_type": "m",
+        "distance_km": 4.64
+      },
+      {
+        "branch_id": 150326,
+        "branch_name": "Z\u00fcrich - Wipkingen",
+        "branch_type": "m",
+        "distance_km": 4.81
+      }
+    ]
+  },
+  {
+    "branch_id": 64520,
+    "branch_name": "Lausanne - Chailly",
+    "branch_type": "mm",
+    "city": "Lausanne",
+    "total_population_served": 212724.0,
+    "inner_population": 109049.0,
+    "outer_population": 103675.0,
+    "avg_income_per_capita": 30639.0,
+    "total_income_potential": 6517650636.0,
+    "area_coverage": 0.7530160394666667,
+    "reach_factor": 0.7191,
+    "total_score": 0.5725248145747653,
+    "nearby_branches": [
+      {
+        "branch_id": 64340,
+        "branch_name": "Lausanne - La Sallaz",
+        "branch_type": "m",
+        "distance_km": 0.85
+      },
+      {
+        "branch_id": 64600,
+        "branch_name": "Pully",
+        "branch_type": "mm",
+        "distance_km": 1.96
+      },
+      {
+        "branch_id": 63865,
+        "branch_name": "Lausanne - La Borde",
+        "branch_type": "m",
+        "distance_km": 2.05
+      },
+      {
+        "branch_id": 63880,
+        "branch_name": "Lausanne - Bellevaux",
+        "branch_type": "m",
+        "distance_km": 2.29
+      },
+      {
+        "branch_id": 64580,
+        "branch_name": "Lausanne - Closelet",
+        "branch_type": "mm",
+        "distance_km": 2.5
+      },
+      {
+        "branch_id": 63895,
+        "branch_name": "Lausanne - Flon Europe",
+        "branch_type": "m",
+        "distance_km": 2.54
+      },
+      {
+        "branch_id": 64970,
+        "branch_name": "Lausanne - M\u00e9tropole",
+        "branch_type": "mmm",
+        "distance_km": 2.77
+      },
+      {
+        "branch_id": 63940,
+        "branch_name": "Epalinges",
+        "branch_type": "mm",
+        "distance_km": 3.18
+      },
+      {
+        "branch_id": 63835,
+        "branch_name": "Lutry \u2013 La Conversion",
+        "branch_type": "m",
+        "distance_km": 3.21
+      },
+      {
+        "branch_id": 63710,
+        "branch_name": "Lausanne - La Harpe",
+        "branch_type": "m",
+        "distance_km": 3.29
+      },
+      {
+        "branch_id": 64570,
+        "branch_name": "Lausanne - Bergi\u00e8res",
+        "branch_type": "mm",
+        "distance_km": 3.7
+      },
+      {
+        "branch_id": 63770,
+        "branch_name": "Lausanne - S\u00e9velin",
+        "branch_type": "m",
+        "distance_km": 3.92
+      },
+      {
+        "branch_id": 63695,
+        "branch_name": "Bl\u00e9cherette",
+        "branch_type": "m",
+        "distance_km": 3.93
+      },
+      {
+        "branch_id": 63970,
+        "branch_name": "Lausanne - Saint-Paul",
+        "branch_type": "m",
+        "distance_km": 3.94
+      },
+      {
+        "branch_id": 63660,
+        "branch_name": "Lausanne - Cour",
+        "branch_type": "m",
+        "distance_km": 3.97
+      },
+      {
+        "branch_id": 63820,
+        "branch_name": "Prilly",
+        "branch_type": "m",
+        "distance_km": 4.91
+      }
+    ]
+  },
+  {
+    "branch_id": 73770,
+    "branch_name": "Luzern - Bruchstrasse",
+    "branch_type": "m",
+    "city": "Luzern",
+    "total_population_served": 163636.0,
+    "inner_population": 87735.0,
+    "outer_population": 75901.0,
+    "avg_income_per_capita": 36474.0,
+    "total_income_potential": 5968459464.0,
+    "area_coverage": 0.926884072,
+    "reach_factor": 0.8851,
+    "total_score": 0.6417830836106719,
+    "nearby_branches": [
+      {
+        "branch_id": 73690,
+        "branch_name": "Luzern - Waldst\u00e4tter",
+        "branch_type": "m",
+        "distance_km": 1.03
+      },
+      {
+        "branch_id": 73150,
+        "branch_name": "Luzern - Bahnhof Daily",
+        "branch_type": "m",
+        "distance_km": 1.18
+      },
+      {
+        "branch_id": 73230,
+        "branch_name": "Luzern - Bahnhof",
+        "branch_type": "m",
+        "distance_km": 1.25
+      },
+      {
+        "branch_id": 74380,
+        "branch_name": "Luzern - Schweizerhof",
+        "branch_type": "mm",
+        "distance_km": 1.25
+      },
+      {
+        "branch_id": 73140,
+        "branch_name": "Luzern - Schlossberg",
+        "branch_type": "m",
+        "distance_km": 1.5
+      },
+      {
+        "branch_id": 77355,
+        "branch_name": "VOI Luzern Wesemlin",
+        "branch_type": "voi",
+        "distance_km": 2.05
+      },
+      {
+        "branch_id": 73170,
+        "branch_name": "Weinbergli Luzern",
+        "branch_type": "m",
+        "distance_km": 2.08
+      },
+      {
+        "branch_id": 73840,
+        "branch_name": "Luzern - Allmend",
+        "branch_type": "m",
+        "distance_km": 2.24
+      },
+      {
+        "branch_id": 74360,
+        "branch_name": "Kriens - Hofmatt",
+        "branch_type": "mm",
+        "distance_km": 2.61
+      },
+      {
+        "branch_id": 74390,
+        "branch_name": "Emmen - Wohncenter",
+        "branch_type": "mm",
+        "distance_km": 2.63
+      },
+      {
+        "branch_id": 73980,
+        "branch_name": "Kriens - Mattenhof",
+        "branch_type": "m",
+        "distance_km": 2.68
+      },
+      {
+        "branch_id": 73710,
+        "branch_name": "Ruopigen Zentrum Luzern",
+        "branch_type": "m",
+        "distance_km": 3.06
+      },
+      {
+        "branch_id": 74260,
+        "branch_name": "Luzern - Sch\u00f6nb\u00fchl",
+        "branch_type": "mm",
+        "distance_km": 3.58
+      },
+      {
+        "branch_id": 73800,
+        "branch_name": "Horw",
+        "branch_type": "m",
+        "distance_km": 3.7
+      },
+      {
+        "branch_id": 73930,
+        "branch_name": "Luzern - Grossmatte",
+        "branch_type": "m",
+        "distance_km": 3.97
+      },
+      {
+        "branch_id": 74350,
+        "branch_name": "Emmenbr\u00fccke - Sonnenplatz",
+        "branch_type": "mm",
+        "distance_km": 4.01
+      },
+      {
+        "branch_id": 73670,
+        "branch_name": "Luzern - Br\u00fcelstrasse",
+        "branch_type": "m",
+        "distance_km": 4.58
+      },
+      {
+        "branch_id": 73270,
+        "branch_name": "Luzern - W\u00fcrzenbachstrasse",
+        "branch_type": "m",
+        "distance_km": 4.97
+      }
+    ]
+  },
+  {
+    "branch_id": 44430,
+    "branch_name": "Gen\u00e8ve - Navigation",
+    "branch_type": "mm",
+    "city": "Gen\u00e8ve",
+    "total_population_served": 382811.0,
+    "inner_population": 190896.0,
+    "outer_population": 191915.0,
+    "avg_income_per_capita": 35399.0,
+    "total_income_potential": 13551126589.0,
+    "area_coverage": 0.8239325770666667,
+    "reach_factor": 0.7868,
+    "total_score": 0.6362398089450025,
+    "nearby_branches": [
+      {
+        "branch_id": 44450,
+        "branch_name": "Gen\u00e8ve - Les Cygnes",
+        "branch_type": "mm",
+        "distance_km": 0.55
+      },
+      {
+        "branch_id": 44180,
+        "branch_name": "Gen\u00e8ve - Cornavin Gare",
+        "branch_type": "m",
+        "distance_km": 0.85
+      },
+      {
+        "branch_id": 44290,
+        "branch_name": "Gen\u00e8ve - Fusterie M-Express",
+        "branch_type": "m",
+        "distance_km": 1.04
+      },
+      {
+        "branch_id": 44890,
+        "branch_name": "Gen\u00e8ve - Vidollet",
+        "branch_type": "m",
+        "distance_km": 1.24
+      },
+      {
+        "branch_id": 44250,
+        "branch_name": "Gen\u00e8ve - Eaux-Vives",
+        "branch_type": "mm",
+        "distance_km": 1.36
+      },
+      {
+        "branch_id": 44900,
+        "branch_name": "Gen\u00e8ve - Villereuse",
+        "branch_type": "mm",
+        "distance_km": 1.65
+      },
+      {
+        "branch_id": 49100,
+        "branch_name": "VOI Gen\u00e8ve-Cirque",
+        "branch_type": "voi",
+        "distance_km": 1.69
+      },
+      {
+        "branch_id": 44810,
+        "branch_name": "Servette",
+        "branch_type": "mm",
+        "distance_km": 2.23
+      },
+      {
+        "branch_id": 44230,
+        "branch_name": "Gen\u00e8ve - Plainpalais",
+        "branch_type": "mm",
+        "distance_km": 2.27
+      },
+      {
+        "branch_id": 44110,
+        "branch_name": "Gen\u00e8ve - Champel",
+        "branch_type": "mm",
+        "distance_km": 2.42
+      },
+      {
+        "branch_id": 44350,
+        "branch_name": "Gen\u00e8ve - Jonction",
+        "branch_type": "mm",
+        "distance_km": 2.49
+      },
+      {
+        "branch_id": 44010,
+        "branch_name": "Carouge - Acacias",
+        "branch_type": "m",
+        "distance_km": 2.71
+      },
+      {
+        "branch_id": 44730,
+        "branch_name": "Gen\u00e8ve - Rieu",
+        "branch_type": "mm",
+        "distance_km": 2.78
+      },
+      {
+        "branch_id": 44840,
+        "branch_name": "Gen\u00e8ve - Tourelle",
+        "branch_type": "m",
+        "distance_km": 2.96
+      },
+      {
+        "branch_id": 44140,
+        "branch_name": "Gen\u00e8ve - Charmilles",
+        "branch_type": "mm",
+        "distance_km": 2.99
+      },
+      {
+        "branch_id": 44090,
+        "branch_name": "Carouge",
+        "branch_type": "m",
+        "distance_km": 3.38
+      },
+      {
+        "branch_id": 44360,
+        "branch_name": "Gradelle",
+        "branch_type": "m",
+        "distance_km": 3.58
+      },
+      {
+        "branch_id": 44600,
+        "branch_name": "Pont-Rouge",
+        "branch_type": "m",
+        "distance_km": 3.74
+      },
+      {
+        "branch_id": 44950,
+        "branch_name": "Carouge - Vibert",
+        "branch_type": "mm",
+        "distance_km": 3.75
+      },
+      {
+        "branch_id": 44340,
+        "branch_name": "Gd Saconnex - Le Pommier",
+        "branch_type": "m",
+        "distance_km": 3.79
+      },
+      {
+        "branch_id": 44030,
+        "branch_name": "Gen\u00e8ve - Balexert",
+        "branch_type": "mmm",
+        "distance_km": 4.12
+      },
+      {
+        "branch_id": 49103,
+        "branch_name": "VOI Bellevue",
+        "branch_type": "voi",
+        "distance_km": 4.19
+      },
+      {
+        "branch_id": 44060,
+        "branch_name": "Gen\u00e8ve - Cointrin A\u00e9roport",
+        "branch_type": "m",
+        "distance_km": 4.85
+      }
+    ]
+  },
+  {
+    "branch_id": 44590,
+    "branch_name": "Plan-les-Ouates",
+    "branch_type": "mm",
+    "city": "Plan-les-Ouates",
+    "total_population_served": 289545.0,
+    "inner_population": 62748.0,
+    "outer_population": 226797.0,
+    "avg_income_per_capita": 41620.0,
+    "total_income_potential": 12050862900.0,
+    "area_coverage": 0.9799482670666668,
+    "reach_factor": 0.9358,
+    "total_score": 0.6985059239703801,
+    "nearby_branches": [
+      {
+        "branch_id": 44550,
+        "branch_name": "Grand-Lancy - Palettes",
+        "branch_type": "mm",
+        "distance_km": 1.18
+      },
+      {
+        "branch_id": 44530,
+        "branch_name": "Lancy-Onex",
+        "branch_type": "mm",
+        "distance_km": 2.4
+      },
+      {
+        "branch_id": 44600,
+        "branch_name": "Pont-Rouge",
+        "branch_type": "m",
+        "distance_km": 2.61
+      },
+      {
+        "branch_id": 44950,
+        "branch_name": "Carouge - Vibert",
+        "branch_type": "mm",
+        "distance_km": 2.74
+      },
+      {
+        "branch_id": 44090,
+        "branch_name": "Carouge",
+        "branch_type": "m",
+        "distance_km": 3.38
+      },
+      {
+        "branch_id": 44010,
+        "branch_name": "Carouge - Acacias",
+        "branch_type": "m",
+        "distance_km": 3.67
+      },
+      {
+        "branch_id": 44350,
+        "branch_name": "Gen\u00e8ve - Jonction",
+        "branch_type": "mm",
+        "distance_km": 4.1
+      },
+      {
+        "branch_id": 44230,
+        "branch_name": "Gen\u00e8ve - Plainpalais",
+        "branch_type": "mm",
+        "distance_km": 4.27
+      },
+      {
+        "branch_id": 44370,
+        "branch_name": "Le Lignon",
+        "branch_type": "m",
+        "distance_km": 4.49
+      },
+      {
+        "branch_id": 44140,
+        "branch_name": "Gen\u00e8ve - Charmilles",
+        "branch_type": "mm",
+        "distance_km": 4.62
+      },
+      {
+        "branch_id": 49100,
+        "branch_name": "VOI Gen\u00e8ve-Cirque",
+        "branch_type": "voi",
+        "distance_km": 4.65
+      },
+      {
+        "branch_id": 44110,
+        "branch_name": "Gen\u00e8ve - Champel",
+        "branch_type": "mm",
+        "distance_km": 4.92
+      }
+    ]
+  },
+  {
+    "branch_id": 24240,
+    "branch_name": "Basel - Claramarkt",
+    "branch_type": "mmm",
+    "city": "Basel",
+    "total_population_served": 301847.0,
+    "inner_population": 149965.0,
+    "outer_population": 151882.0,
+    "avg_income_per_capita": 40666.0,
+    "total_income_potential": 12274910102.0,
+    "area_coverage": 1.0,
+    "reach_factor": 1.0,
+    "total_score": 0.7006003111612766,
+    "nearby_branches": [
+      {
+        "branch_id": 23820,
+        "branch_name": "Basel - M\u00e4rtplatz",
+        "branch_type": "m",
+        "distance_km": 0.54
+      },
+      {
+        "branch_id": 23840,
+        "branch_name": "Basel - Efringer",
+        "branch_type": "mm",
+        "distance_km": 0.98
+      },
+      {
+        "branch_id": 24280,
+        "branch_name": "Basel - Drachen-Center",
+        "branch_type": "mm",
+        "distance_km": 0.98
+      },
+      {
+        "branch_id": 23890,
+        "branch_name": "Basel - Juniors Market",
+        "branch_type": "m",
+        "distance_km": 1.11
+      },
+      {
+        "branch_id": 23160,
+        "branch_name": "Basel - Sch\u00fctzenmatt",
+        "branch_type": "m",
+        "distance_km": 1.35
+      },
+      {
+        "branch_id": 23900,
+        "branch_name": "Basel - Bahnhof SBB",
+        "branch_type": "m",
+        "distance_km": 1.56
+      },
+      {
+        "branch_id": 23720,
+        "branch_name": "Basel - M\u00fclhauser",
+        "branch_type": "m",
+        "distance_km": 1.58
+      },
+      {
+        "branch_id": 24520,
+        "branch_name": "Basel - Gundelitor",
+        "branch_type": "mm",
+        "distance_km": 2.03
+      },
+      {
+        "branch_id": 23910,
+        "branch_name": "Basel - St\u00fccki",
+        "branch_type": "m",
+        "distance_km": 2.08
+      },
+      {
+        "branch_id": 23170,
+        "branch_name": "Basel - Allschwiler",
+        "branch_type": "m",
+        "distance_km": 2.16
+      },
+      {
+        "branch_id": 23870,
+        "branch_name": "Basel - Hardstrasse",
+        "branch_type": "m",
+        "distance_km": 2.16
+      },
+      {
+        "branch_id": 24560,
+        "branch_name": "Basel - Burgfelder",
+        "branch_type": "mm",
+        "distance_km": 2.18
+      },
+      {
+        "branch_id": 23880,
+        "branch_name": "Basel - Eglisee",
+        "branch_type": "m",
+        "distance_km": 2.74
+      },
+      {
+        "branch_id": 24540,
+        "branch_name": "Binningen - Zentrum",
+        "branch_type": "m",
+        "distance_km": 2.99
+      },
+      {
+        "branch_id": 23670,
+        "branch_name": "Basel - Neuweiler",
+        "branch_type": "m",
+        "distance_km": 3.49
+      },
+      {
+        "branch_id": 23310,
+        "branch_name": "Lehenmatt",
+        "branch_type": "m",
+        "distance_km": 3.58
+      },
+      {
+        "branch_id": 24440,
+        "branch_name": "Birsfelden",
+        "branch_type": "mm",
+        "distance_km": 3.64
+      },
+      {
+        "branch_id": 23740,
+        "branch_name": "Binningen - Gorenmatt",
+        "branch_type": "mm",
+        "distance_km": 3.86
+      },
+      {
+        "branch_id": 24720,
+        "branch_name": "Allschwil - Paradies",
+        "branch_type": "mmm",
+        "distance_km": 4.55
+      },
+      {
+        "branch_id": 24580,
+        "branch_name": "M\u00fcnchenstein - Gartenstadt",
+        "branch_type": "mm",
+        "distance_km": 4.74
+      },
+      {
+        "branch_id": 23220,
+        "branch_name": "Allschwil - Ziegelei",
+        "branch_type": "m",
+        "distance_km": 4.77
+      }
+    ]
+  },
+  {
+    "branch_id": 150360,
+    "branch_name": "Z\u00fcrich - Altstetten M-Express",
+    "branch_type": "m",
+    "city": "Z\u00fcrich",
+    "total_population_served": 316522.0,
+    "inner_population": 95164.0,
+    "outer_population": 221358.0,
+    "avg_income_per_capita": 42364.0,
+    "total_income_potential": 13409138008.0,
+    "area_coverage": 0.952689268,
+    "reach_factor": 0.9098,
+    "total_score": 0.6987595548113409,
+    "nearby_branches": [
+      {
+        "branch_id": 150201,
+        "branch_name": "Z\u00fcrich - Altstetten Neumarkt",
+        "branch_type": "mmm",
+        "distance_km": 0.35
+      },
+      {
+        "branch_id": 150801,
+        "branch_name": "VOI Z\u00fcrich - Gr\u00fcnau",
+        "branch_type": "voi",
+        "distance_km": 0.55
+      },
+      {
+        "branch_id": 150814,
+        "branch_name": "Z\u00fcrich - Albisriederstrasse",
+        "branch_type": "voi",
+        "distance_km": 1.62
+      },
+      {
+        "branch_id": 150077,
+        "branch_name": "Z\u00fcrich - H\u00f6ngg",
+        "branch_type": "m",
+        "distance_km": 1.76
+      },
+      {
+        "branch_id": 150122,
+        "branch_name": "Z\u00fcrich - P\u00fcnt",
+        "branch_type": "m",
+        "distance_km": 1.83
+      },
+      {
+        "branch_id": 150804,
+        "branch_name": "VOI Z\u00fcrich - In der Ey",
+        "branch_type": "voi",
+        "distance_km": 2.4
+      },
+      {
+        "branch_id": 150327,
+        "branch_name": "Z\u00fcrich - Albisriederplatz",
+        "branch_type": "m",
+        "distance_km": 2.72
+      },
+      {
+        "branch_id": 150161,
+        "branch_name": "Oberengstringen",
+        "branch_type": "m",
+        "distance_km": 3.32
+      },
+      {
+        "branch_id": 150016,
+        "branch_name": "Z\u00fcrich - Wiedikon M-M\u00e4rt",
+        "branch_type": "mm",
+        "distance_km": 3.34
+      },
+      {
+        "branch_id": 150132,
+        "branch_name": "Z\u00fcrich - Puls 5 M-Express",
+        "branch_type": "m",
+        "distance_km": 3.41
+      },
+      {
+        "branch_id": 150812,
+        "branch_name": "VOI Z\u00fcrich - H\u00f6nggerstrasse",
+        "branch_type": "voi",
+        "distance_km": 3.46
+      },
+      {
+        "branch_id": 150080,
+        "branch_name": "Uitikon-Waldegg",
+        "branch_type": "m",
+        "distance_km": 3.82
+      },
+      {
+        "branch_id": 150015,
+        "branch_name": "Z\u00fcrich - Affoltern",
+        "branch_type": "mm",
+        "distance_km": 3.94
+      },
+      {
+        "branch_id": 150120,
+        "branch_name": "Z\u00fcrich - Schmiede Wiedikon",
+        "branch_type": "m",
+        "distance_km": 4.35
+      },
+      {
+        "branch_id": 150010,
+        "branch_name": "Z\u00fcrich - Wengihof",
+        "branch_type": "m",
+        "distance_km": 4.36
+      },
+      {
+        "branch_id": 150198,
+        "branch_name": "Schlieren - Zentrum",
+        "branch_type": "m",
+        "distance_km": 4.58
+      },
+      {
+        "branch_id": 150326,
+        "branch_name": "Z\u00fcrich - Wipkingen",
+        "branch_type": "m",
+        "distance_km": 4.64
+      },
+      {
+        "branch_id": 150060,
+        "branch_name": "Regensdorf - Zentrum",
+        "branch_type": "mmm",
+        "distance_km": 4.87
+      },
+      {
+        "branch_id": 150018,
+        "branch_name": "Z\u00fcrich - Limmatplatz",
+        "branch_type": "mmm",
+        "distance_km": 4.89
+      }
+    ]
+  },
+  {
+    "branch_id": 33720,
+    "branch_name": "Ostermundigen Poststrasse",
+    "branch_type": "m",
+    "city": "Ostermundigen 1",
+    "total_population_served": 165457.0,
+    "inner_population": 68763.0,
+    "outer_population": 96694.0,
+    "avg_income_per_capita": 0.0,
+    "total_income_potential": 0.0,
+    "area_coverage": 0.8972600129333334,
+    "reach_factor": 0.8568,
+    "total_score": 0.5651320025866666,
+    "nearby_branches": [
+      {
+        "branch_id": 34430,
+        "branch_name": "Ostermundigen",
+        "branch_type": "mm",
+        "distance_km": 1.44
+      },
+      {
+        "branch_id": 34220,
+        "branch_name": "Bern - Freudenberg",
+        "branch_type": "mm",
+        "distance_km": 1.63
+      },
+      {
+        "branch_id": 34510,
+        "branch_name": "Ittigen",
+        "branch_type": "mm",
+        "distance_km": 2.03
+      },
+      {
+        "branch_id": 33140,
+        "branch_name": "Bern - Eggh\u00f6lzli",
+        "branch_type": "m",
+        "distance_km": 2.3
+      },
+      {
+        "branch_id": 34230,
+        "branch_name": "Bern - Winkelried",
+        "branch_type": "mm",
+        "distance_km": 2.39
+      },
+      {
+        "branch_id": 37311,
+        "branch_name": "VOI Bern - Schosshalde",
+        "branch_type": "voi",
+        "distance_km": 2.5
+      },
+      {
+        "branch_id": 33390,
+        "branch_name": "Bern Burgernziel",
+        "branch_type": "m",
+        "distance_km": 2.61
+      },
+      {
+        "branch_id": 37334,
+        "branch_name": "VOI Bern - Viktoriastrasse",
+        "branch_type": "voi",
+        "distance_km": 3.14
+      },
+      {
+        "branch_id": 33630,
+        "branch_name": "Bern - Breitenrain",
+        "branch_type": "m",
+        "distance_km": 3.28
+      },
+      {
+        "branch_id": 33091,
+        "branch_name": "G\u00fcmligen",
+        "branch_type": "m",
+        "distance_km": 3.53
+      },
+      {
+        "branch_id": 33220,
+        "branch_name": "Bern - Kirchenfeld",
+        "branch_type": "m",
+        "distance_km": 3.63
+      },
+      {
+        "branch_id": 37343,
+        "branch_name": "VOI Bern - Kramgasse",
+        "branch_type": "voi",
+        "distance_km": 3.77
+      },
+      {
+        "branch_id": 33121,
+        "branch_name": "Bern - Lorraine",
+        "branch_type": "m",
+        "distance_km": 4.01
+      },
+      {
+        "branch_id": 34710,
+        "branch_name": "Bern - Marktgasse",
+        "branch_type": "mmm",
+        "distance_km": 4.3
+      },
+      {
+        "branch_id": 34350,
+        "branch_name": "Wabern - Chly Wabere",
+        "branch_type": "mm",
+        "distance_km": 4.51
+      },
+      {
+        "branch_id": 37313,
+        "branch_name": "VOI Wabern",
+        "branch_type": "voi",
+        "distance_km": 4.55
+      },
+      {
+        "branch_id": 37361,
+        "branch_name": "VOI Stettlen",
+        "branch_type": "voi",
+        "distance_km": 4.55
+      },
+      {
+        "branch_id": 34530,
+        "branch_name": "Bern - Bahnhof",
+        "branch_type": "mm",
+        "distance_km": 4.78
+      },
+      {
+        "branch_id": 33115,
+        "branch_name": "Bern - Christoffel",
+        "branch_type": "m",
+        "distance_km": 4.82
+      }
+    ]
+  },
+  {
+    "branch_id": 90335,
+    "branch_name": "St. Gallen - Langgasse",
+    "branch_type": "m",
+    "city": "St. Gallen",
+    "total_population_served": 88373.0,
+    "inner_population": 54945.0,
+    "outer_population": 33428.0,
+    "avg_income_per_capita": 30935.0,
+    "total_income_potential": 2733818755.0,
+    "area_coverage": 0.7929328687999999,
+    "reach_factor": 0.7572,
+    "total_score": 0.5334679338695342,
+    "nearby_branches": [
+      {
+        "branch_id": 90448,
+        "branch_name": "St. Gallen - St. Fiden",
+        "branch_type": "mm",
+        "distance_km": 0.6
+      },
+      {
+        "branch_id": 90447,
+        "branch_name": "St. Gallen - Silberturm",
+        "branch_type": "m",
+        "distance_km": 1.08
+      },
+      {
+        "branch_id": 90339,
+        "branch_name": "St. Gallen - Spisermarkt",
+        "branch_type": "m",
+        "distance_km": 1.43
+      },
+      {
+        "branch_id": 90336,
+        "branch_name": "St. Gallen - Neudorf",
+        "branch_type": "m",
+        "distance_km": 2.09
+      },
+      {
+        "branch_id": 90478,
+        "branch_name": "St. Gallen - Neumarkt",
+        "branch_type": "mmm",
+        "distance_km": 2.26
+      },
+      {
+        "branch_id": 90390,
+        "branch_name": "Wittenbach",
+        "branch_type": "mm",
+        "distance_km": 2.81
+      },
+      {
+        "branch_id": 90321,
+        "branch_name": "St. Gallen - Lachen",
+        "branch_type": "m",
+        "distance_km": 3.97
+      },
+      {
+        "branch_id": 90385,
+        "branch_name": "Teufen",
+        "branch_type": "m",
+        "distance_km": 4.97
+      }
+    ]
+  }
+]
