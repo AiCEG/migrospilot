@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pilot Analysis Visualizations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .nav-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            height: 100%;
+        }
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .card-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #0d6efd;
+        }
+        .card-title {
+            color: #212529;
+            font-weight: 600;
+        }
+        .card-description {
+            color: #6c757d;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container py-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 mb-3">Pilot Analysis Visualizations</h1>
+            <p class="lead text-muted">Interactive visualizations for the pilot branch analysis</p>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="card nav-card" onclick="window.location.href='combined_pilot_map.html'">
+                    <div class="card-body text-center p-5">
+                        <i class="bi bi-map card-icon"></i>
+                        <h2 class="card-title mb-3">Interactive Map</h2>
+                        <p class="card-description">
+                            Explore the pilot branches on an interactive map with service areas, 
+                            population coverage, and income distribution. Toggle different layers 
+                            to analyze various aspects of the pilot program.
+                        </p>
+                        <div class="mt-4">
+                            <span class="badge bg-primary me-2">Service Areas</span>
+                            <span class="badge bg-primary me-2">Population</span>
+                            <span class="badge bg-primary me-2">Income</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card nav-card" onclick="window.location.href='pilot_branch_analysis_dashboard.html'">
+                    <div class="card-body text-center p-5">
+                        <i class="bi bi-bar-chart card-icon"></i>
+                        <h2 class="card-title mb-3">Analysis Dashboard</h2>
+                        <p class="card-description">
+                            Detailed analysis of each pilot branch with population distribution, 
+                            income metrics, and performance indicators. Compare branches and 
+                            explore key statistics.
+                        </p>
+                        <div class="mt-4">
+                            <span class="badge bg-primary me-2">Statistics</span>
+                            <span class="badge bg-primary me-2">Charts</span>
+                            <span class="badge bg-primary me-2">Metrics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center mt-5 text-muted">
+            <p>Pilot Analysis Visualizations - Last updated: {{ last_updated }}</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add last updated date
+        document.querySelector('footer p').textContent = 
+            'Pilot Analysis Visualizations - Last updated: ' + 
+            new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+    </script>
+</body>
+</html> 
