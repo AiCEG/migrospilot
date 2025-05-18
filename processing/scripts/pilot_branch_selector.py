@@ -25,7 +25,7 @@ class Branch:
     total_score: float
 
 class PilotBranchSelector:
-    def __init__(self, num_branches: int, min_distance_km: float = 10.0):
+    def __init__(self, num_branches: int, min_distance_km: float = 5.0):
         self.num_branches = num_branches
         self.min_distance_km = min_distance_km
         self.regions = {
@@ -251,7 +251,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     
     # Initialize selector
-    selector = PilotBranchSelector(num_branches=10)  # Adjust number as needed
+    selector = PilotBranchSelector(num_branches=30)  # Adjust number as needed
     
     # Load data
     print("Loading branch data...")
