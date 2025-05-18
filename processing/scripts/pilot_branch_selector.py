@@ -90,10 +90,17 @@ class PilotBranchSelector:
                 return region
         return 'other'
     
+    def is_valid_combination(self, selected_branches: List[Branch]) -> bool:
+        """Check if the combination of branches satisfies the minimum distance constraint."""
+        for i, branch1 in enumerate(selected_branches):
+            for branch2 in selected_branches[i+1:]:
+                if self.calculate_distance(branch1, branch2) < self.min_distance_km:
+                    return False
+        return True
+    
     def calculate_coverage_score(self, selected_branches: List[Branch]) -> float:
-        """Calculate population coverage score with overlap penalty."""
+        """Calculate population coverage score."""
         total_population = 0
-        overlap_penalty = 0
         
         # Calculate population coverage
         for branch in selected_branches:
@@ -101,14 +108,7 @@ class PilotBranchSelector:
             # Add outer population with distance-based weighting
             total_population += branch.outer_population * 0.5
         
-        # Calculate overlap penalty
-        for i, branch1 in enumerate(selected_branches):
-            for branch2 in selected_branches[i+1:]:
-                distance = self.calculate_distance(branch1, branch2)
-                if distance < self.min_distance_km:
-                    overlap_penalty += (self.min_distance_km - distance) * 1000
-        
-        return total_population - overlap_penalty
+        return total_population
     
     def calculate_diversity_score(self, selected_branches: List[Branch]) -> float:
         """Calculate diversity score based on branch types and regions."""
@@ -132,6 +132,9 @@ class PilotBranchSelector:
     
     def evaluate_fitness(self, selected_branches: List[Branch]) -> float:
         """Evaluate the fitness of a combination of branches."""
+        if not self.is_valid_combination(selected_branches):
+            return float('-inf')  # Invalid combination gets lowest possible score
+            
         coverage_score = self.calculate_coverage_score(selected_branches)
         diversity_score = self.calculate_diversity_score(selected_branches)
         performance_score = self.calculate_performance_score(selected_branches)
@@ -144,9 +147,18 @@ class PilotBranchSelector:
                             population_size: int) -> List[List[Branch]]:
         """Initialize population for genetic algorithm."""
         population = []
-        for _ in range(population_size):
+        attempts = 0
+        max_attempts = population_size * 10  # Limit attempts to avoid infinite loop
+        
+        while len(population) < population_size and attempts < max_attempts:
             individual = random.sample(all_branches, self.num_branches)
-            population.append(individual)
+            if self.is_valid_combination(individual):
+                population.append(individual)
+            attempts += 1
+            
+        if len(population) < population_size:
+            raise ValueError(f"Could not generate enough valid combinations. Only found {len(population)} valid combinations after {max_attempts} attempts.")
+            
         return population
     
     def select_parents(self, population: List[List[Branch]], 
@@ -166,14 +178,29 @@ class PilotBranchSelector:
         point = random.randint(1, self.num_branches - 1)
         child1 = parent1[:point] + [b for b in parent2 if b not in parent1[:point]]
         child2 = parent2[:point] + [b for b in parent1 if b not in parent2[:point]]
+        
+        # Ensure children maintain minimum distance
+        if not self.is_valid_combination(child1):
+            child1 = parent1
+        if not self.is_valid_combination(child2):
+            child2 = parent2
+            
         return child1[:self.num_branches], child2[:self.num_branches]
     
     def mutate(self, individual: List[Branch], all_branches: List[Branch]) -> List[Branch]:
         """Mutate an individual by replacing a random branch."""
         if random.random() < 0.1:  # 10% mutation rate
             idx = random.randint(0, len(individual) - 1)
-            new_branch = random.choice([b for b in all_branches if b not in individual])
-            individual[idx] = new_branch
+            # Try to find a valid replacement
+            attempts = 0
+            max_attempts = 50
+            while attempts < max_attempts:
+                new_branch = random.choice([b for b in all_branches if b not in individual])
+                test_individual = individual.copy()
+                test_individual[idx] = new_branch
+                if self.is_valid_combination(test_individual):
+                    return test_individual
+                attempts += 1
         return individual
     
     def find_optimal_combination(self, all_branches: List[Branch]) -> List[Branch]:
@@ -182,12 +209,26 @@ class PilotBranchSelector:
         generations = 50
         
         # Initialize population
-        population = self.initialize_population(all_branches, population_size)
+        try:
+            population = self.initialize_population(all_branches, population_size)
+        except ValueError as e:
+            print(f"Error: {e}")
+            print("Try reducing the number of branches or increasing the minimum distance.")
+            return []
+        
+        best_solution = None
+        best_fitness = float('-inf')
         
         for generation in range(generations):
             # Evaluate fitness
             fitness_scores = [self.evaluate_fitness(individual) 
                             for individual in population]
+            
+            # Update best solution
+            max_fitness_idx = np.argmax(fitness_scores)
+            if fitness_scores[max_fitness_idx] > best_fitness:
+                best_fitness = fitness_scores[max_fitness_idx]
+                best_solution = population[max_fitness_idx]
             
             # Select parents
             parents = self.select_parents(population, fitness_scores)
@@ -203,8 +244,7 @@ class PilotBranchSelector:
             
             population = new_population
         
-        # Return best solution
-        return max(population, key=self.evaluate_fitness)
+        return best_solution if best_solution else []
     
     def visualize_selection(self, selected_branches: List[Branch], output_dir: str):
         """Create visualizations for the selected branches."""
@@ -230,6 +270,16 @@ class PilotBranchSelector:
                 fill=True,
                 fill_opacity=0.7
             ).add_to(m)
+            
+            # Add minimum distance circle
+            folium.Circle(
+                location=[branch.latitude, branch.longitude],
+                radius=self.min_distance_km * 1000,  # Convert to meters
+                color='gray',
+                fill=False,
+                weight=1,
+                dash_array='5, 5'
+            ).add_to(m)
         
         # Save the map
         m.save(os.path.join(output_dir, 'pilot_branches.html'))
@@ -251,24 +301,28 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     
     # Initialize selector
-    selector = PilotBranchSelector(num_branches=30)  # Adjust number as needed
+    selector = PilotBranchSelector(num_branches=10, min_distance_km=5.0)
     
     # Load data
     print("Loading branch data...")
     branches = selector.load_data()
     
     # Find optimal combination
-    print("Finding optimal branch combination...")
+    print("Finding optimal combination...")
     selected_branches = selector.find_optimal_combination(branches)
     
-    # Save selected branch IDs
-    selected_branch_ids = [branch.branch_id for branch in selected_branches]
-    with open(os.path.join(output_dir, 'selected_branches.json'), 'w') as f:
-        json.dump(selected_branch_ids, f)
+    if not selected_branches:
+        print("No valid combination found. Try adjusting parameters.")
+        return
     
-    # Visualize results
+    # Visualize selection
     print("Creating visualizations...")
     stats = selector.visualize_selection(selected_branches, output_dir)
+    
+    # Save selected branch IDs
+    selected_ids = [b.branch_id for b in selected_branches]
+    with open(os.path.join(output_dir, 'selected_branches.json'), 'w') as f:
+        json.dump(selected_ids, f)
     
     # Print summary
     print("\nSelected Branches:")
@@ -276,8 +330,15 @@ def main():
         print(f"- {branch.branch_name} ({branch.branch_type})")
     
     print("\nSummary Statistics:")
-    for key, value in stats.items():
-        print(f"{key}: {value}")
+    print(f"Total Population Reached: {stats['Total Population Reached']:,.0f}")
+    print(f"Average Score: {stats['Average Score']:.2f}")
+    print("\nBranch Types:")
+    for branch_type, count in stats['Branch Types'].items():
+        print(f"- {branch_type}: {count}")
+    print("\nRegions:")
+    for region, count in stats['Regions'].items():
+        print(f"- {region}: {count}")
+    print(f"\nAverage Income: {stats['Average Income']:,.0f} CHF")
 
 if __name__ == "__main__":
     main() 

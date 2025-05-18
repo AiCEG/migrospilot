@@ -4,6 +4,9 @@ from folium.plugins import HeatMap, FeatureGroupSubGroup
 import branca.colormap as cm
 import os
 import json
+import geopandas as gpd
+from shapely.geometry import shape
+import numpy as np
 
 # Color mapping for branch types
 BRANCH_COLORS = {
@@ -17,15 +20,30 @@ BRANCH_COLORS = {
 def load_data():
     scores_df = pd.read_csv('../output/location_scores.csv')
     geo_df = pd.read_csv('../output/geospatial_branches_data.csv')
-    geo_df['radius_10min'] = 2.5  # km
-    geo_df['radius_20min'] = 5.0  # km
+    
+    # Load isochrone data
+    with open('../output/isochrone_results_10min.json', 'r') as f:
+        isochrone_10min = json.load(f)
+    with open('../output/isochrone_results_20min.json', 'r') as f:
+        isochrone_20min = json.load(f)
+    
+    # Create lookup dictionaries for isochrone data
+    isochrone_10min_dict = {item['branch_id']: item for item in isochrone_10min}
+    isochrone_20min_dict = {item['branch_id']: item for item in isochrone_20min}
+    
+    # Merge data
     merged_df = pd.merge(
         scores_df,
-        geo_df[['id', 'latitude', 'longitude', 'radius_10min', 'radius_20min']],
+        geo_df[['id', 'latitude', 'longitude']],
         left_on='branch_id',
         right_on='id',
         how='left'
     )
+    
+    # Add isochrone data to merged dataframe
+    merged_df['isochrone_10min'] = merged_df['branch_id'].map(lambda x: isochrone_10min_dict.get(x, {}).get('isochrone_data', {}))
+    merged_df['isochrone_20min'] = merged_df['branch_id'].map(lambda x: isochrone_20min_dict.get(x, {}).get('isochrone_data', {}))
+    
     return merged_df
 
 # Helper to load selected branch IDs
@@ -36,6 +54,35 @@ def load_selected_branch_ids():
             return set(json.load(f))
     except FileNotFoundError:
         return set()
+
+def generate_heatmap_points(geometry, population, num_points=100):
+    """Generate points within a geometry for heatmap visualization."""
+    if not geometry:
+        return []
+    
+    # Convert to shapely geometry if it's a dict
+    if isinstance(geometry, dict):
+        geometry = shape(geometry)
+    
+    # Get bounds
+    minx, miny, maxx, maxy = geometry.bounds
+    
+    points = []
+    attempts = 0
+    max_attempts = num_points * 10  # Allow more attempts to ensure we get enough points
+    
+    while len(points) < num_points and attempts < max_attempts:
+        # Generate random point within bounds
+        x = np.random.uniform(minx, maxx)
+        y = np.random.uniform(miny, maxy)
+        
+        # Check if point is within geometry
+        if geometry.contains(shape({'type': 'Point', 'coordinates': [x, y]})):
+            points.append([y, x, population / num_points])  # Note: folium uses [lat, lon]
+        
+        attempts += 1
+    
+    return points
 
 def create_combined_map():
     output_dir = '../output/pilot_analysis'
@@ -60,7 +107,8 @@ def create_combined_map():
     fg_heatmap = folium.FeatureGroup(name='Population Coverage Heatmap', show=False)
     fg_income = folium.FeatureGroup(name='Income Distribution', show=False)
 
-    # Branch markers
+    # Branch markers and service areas
+    heatmap_data = []
     for _, branch in selected_branches.iterrows():
         popup_text = f"""
         <b>{branch['branch_name']}</b><br>
@@ -70,6 +118,8 @@ def create_combined_map():
         Population (20min): {branch['outer_population']:.0f}<br>
         Income: {branch['income_per_capita']:.0f} CHF
         """
+        
+        # Add branch marker
         folium.CircleMarker(
             location=[branch['latitude'], branch['longitude']],
             radius=8,
@@ -79,46 +129,72 @@ def create_combined_map():
             popup=folium.Popup(popup_text, max_width=300)
         ).add_to(fg_branches)
 
-        # Service areas
-        folium.Circle(
-            location=[branch['latitude'], branch['longitude']],
-            radius=branch['radius_20min'] * 1000,
-            color=BRANCH_COLORS.get(branch['branch_type'], 'gray'),
-            fill=True,
-            fill_opacity=0.08,
-            weight=1
-        ).add_to(fg_service_areas)
-        folium.Circle(
-            location=[branch['latitude'], branch['longitude']],
-            radius=branch['radius_10min'] * 1000,
-            color=BRANCH_COLORS.get(branch['branch_type'], 'gray'),
-            fill=True,
-            fill_opacity=0.18,
-            weight=2
-        ).add_to(fg_service_areas)
+        # Add service areas using actual isochrone data
+        if branch['isochrone_20min'] and 'features' in branch['isochrone_20min']:
+            # 20-minute service area
+            geometry_20min = shape(branch['isochrone_20min']['features'][0]['geometry'])
+            folium.GeoJson(
+                geometry_20min.__geo_interface__,
+                style_function=lambda x: {
+                    'fillColor': BRANCH_COLORS.get(branch['branch_type'], 'gray'),
+                    'color': BRANCH_COLORS.get(branch['branch_type'], 'gray'),
+                    'fillOpacity': 0.08,
+                    'weight': 1
+                }
+            ).add_to(fg_service_areas)
+            
+            # Add heatmap points for outer area (20min - 10min)
+            if branch['isochrone_10min'] and 'features' in branch['isochrone_10min']:
+                geometry_10min = shape(branch['isochrone_10min']['features'][0]['geometry'])
+                outer_geometry = geometry_20min.difference(geometry_10min)
+                outer_population = branch['outer_population'] - branch['inner_population']
+                heatmap_data.extend(generate_heatmap_points(outer_geometry, outer_population, num_points=50))
 
-        # Income overlay (inner area)
-        folium.Circle(
-            location=[branch['latitude'], branch['longitude']],
-            radius=branch['radius_10min'] * 1000,
-            color=income_colormap(branch['income_per_capita']),
-            fill=True,
-            fill_opacity=0.25,
-            weight=0.5
-        ).add_to(fg_income)
+        if branch['isochrone_10min'] and 'features' in branch['isochrone_10min']:
+            # 10-minute service area
+            geometry_10min = shape(branch['isochrone_10min']['features'][0]['geometry'])
+            folium.GeoJson(
+                geometry_10min.__geo_interface__,
+                style_function=lambda x: {
+                    'fillColor': BRANCH_COLORS.get(branch['branch_type'], 'gray'),
+                    'color': BRANCH_COLORS.get(branch['branch_type'], 'gray'),
+                    'fillOpacity': 0.18,
+                    'weight': 2
+                }
+            ).add_to(fg_service_areas)
+            
+            # Add heatmap points for inner area (10min)
+            heatmap_data.extend(generate_heatmap_points(geometry_10min, branch['inner_population'], num_points=100))
 
-    # Population coverage heatmap
-    heat_data = []
-    for _, branch in selected_branches.iterrows():
-        heat_data.extend([
-            [branch['latitude'], branch['longitude'], branch['inner_population']]
-            for _ in range(10)
-        ])
-        heat_data.extend([
-            [branch['latitude'], branch['longitude'], branch['outer_population'] * 0.5]
-            for _ in range(5)
-        ])
-    HeatMap(heat_data, radius=15, blur=10, min_opacity=0.3).add_to(fg_heatmap)
+        # Income distribution using actual service areas
+        if branch['isochrone_20min'] and 'features' in branch['isochrone_20min']:
+            # 20-minute service area with income color
+            geometry_20min = shape(branch['isochrone_20min']['features'][0]['geometry'])
+            folium.GeoJson(
+                geometry_20min.__geo_interface__,
+                style_function=lambda x: {
+                    'fillColor': income_colormap(branch['income_per_capita']),
+                    'color': income_colormap(branch['income_per_capita']),
+                    'fillOpacity': 0.15,
+                    'weight': 1
+                }
+            ).add_to(fg_income)
+
+            # 10-minute service area with higher opacity
+            if branch['isochrone_10min'] and 'features' in branch['isochrone_10min']:
+                geometry_10min = shape(branch['isochrone_10min']['features'][0]['geometry'])
+                folium.GeoJson(
+                    geometry_10min.__geo_interface__,
+                    style_function=lambda x: {
+                        'fillColor': income_colormap(branch['income_per_capita']),
+                        'color': income_colormap(branch['income_per_capita']),
+                        'fillOpacity': 0.3,
+                        'weight': 1
+                    }
+                ).add_to(fg_income)
+
+    # Add population coverage heatmap
+    HeatMap(heatmap_data, radius=15, blur=10, min_opacity=0.3).add_to(fg_heatmap)
 
     # Add feature groups to map
     fg_branches.add_to(m)
